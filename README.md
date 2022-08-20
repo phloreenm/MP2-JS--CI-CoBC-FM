@@ -41,3 +41,10 @@
     *  [**Media**](#media)
     *  [**Other Resources:**](#other-resources-and-tools-used)
 1. [**Aknowledgment**](#aknowledgment)
+
+---
+**CREDITS**
+    - [Maps JavaScript API](AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4)
+    - Code Snippets
+        - [Google Maps Markers](https://developers.google.com/maps/documentation/javascript/markers#maps_marker_simple-javascript)
+        - [google-maps-js-api-v3-simple-multiple-marker-example](https://www.anycodings.com/1questions/3879/google-maps-js-api-v3-simple-multiple-marker-example)
