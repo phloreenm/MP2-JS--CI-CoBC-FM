@@ -42,6 +42,19 @@
     *  [**Other Resources:**](#other-resources-and-tools-used)
 1. [**Aknowledgment**](#aknowledgment)
 
+
+**Testing**
+- Jest installing:
+    - starting point json - with default values 
+    ``` npm init -y ```
+    - modify in json file to:
+    ``` "test": "jest" ```
+    - testing library (framework) into our enviroment:
+    ``` npm i --save-dev jest ```
+    - create testing file, following the naming rule:
+    ``` fileName.test.js ```
+    - run test/-s file/-s:
+    ``` npm test ```
 ---
 **CREDITS**
     - [Maps JavaScript API](AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4)
