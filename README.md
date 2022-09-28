@@ -50,7 +50,7 @@
     - modify in json file to:
     ``` "test": "jest" ```
     - or to add coverage:
-    ``` "test": "jest" --coverage```
+    ``` "test": "jest --coverage" ```
     - testing library (framework) into our enviroment:
     ``` npm i --save-dev jest ```
     - create testing file, following the naming rule:
