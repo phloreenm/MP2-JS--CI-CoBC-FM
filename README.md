@@ -51,8 +51,10 @@
     ``` "test": "jest" ```
     - or to add coverage:
     ``` "test": "jest --coverage" ```
-    - testing library (framework) into our enviroment:
+    - installing library (framework) testing into our enviroment:
     ``` npm i --save-dev jest ```
+    - install [jest-environment-jsdom](https://www.npmjs.com/package/jest-environment-jsdom):
+    ``` npm i jest-environment-jsdom ```
     - create testing file, following the naming rule:
     ``` fileName.test.js ```
     - run test/-s file/-s:
