@@ -1,0 +1,30 @@
+/* all document */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+
+/* Main content */
+
+/* Footer */
+/* 
+ * map sizes
+ */
+#map_1 {
+  width: 700px;
+  height: 500px;
+  margin-left: 80px;
+  border: solid 1px black;
+}
+#map_2 {
+  width: 700px;
+  height: 500px;
+  margin-left: 80px;
+  border: solid 1px black;
+}
+
+/* Media queries */
+
