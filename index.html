@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IMKN</title>
-</head>
-<body>
+    
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4&callback=initMap"
+    ></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4&callback=initMap2"
+    ></script>
+  </head>
+  <body>
     <h1>IMKN</h1>
-</body>
+    <div
+      id="map_1"
+      style="
+        width: 700px;
+        height: 500px;
+        margin-left: 80px;
+        border: solid 1px black;
+      "
+    ></div>
+    <div
+      id="map_2"
+      style="
+        width: 700px;
+        height: 500px;
+        margin-left: 80px;
+        border: solid 1px black;
+      "
+    ></div>
+    <script src="./scripts/gmaps-markers.js"></script>
+    <script src="./scripts/gmaps-earth.js"></script>
+  </body>
 </html>
