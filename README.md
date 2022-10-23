@@ -26,6 +26,7 @@
                     * [Menu page](#menu-page)
                     * [Gallery page](#gallery-page)
                     * [Contact page](#contact-page)
+                * [Maps](#maps)
                 * [Footer area](#footer)
             *  [**Typography**](#fonts)
             *  [**Colour theme**](#colours)
@@ -42,6 +43,9 @@
     *  [**Other Resources:**](#other-resources-and-tools-used)
 1. [**Aknowledgment**](#aknowledgment)
 
+
+**Maps**
+- The displayed map uses a custom icon ("temple_ruins.png"), hosted locally.
 
 **Testing**
 - Jest installing:
@@ -63,6 +67,13 @@
 **CREDITS**
     - [Google Maps JavaScript API Cookbook Kindle Edition](https://www.amazon.co.uk/Google-Maps-JavaScript-API-Cookbook-ebook/dp/B00HJR6RD6)
     - [Maps JavaScript API](AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4)
+    - [Custom Markers](https://developers.google.com/maps/documentation/javascript/custom-markers#maps_custom_markers-javascript)
+    - [Google Earth/Maps Icons](https://kml4earth.appspot.com/icons.html)
+    - [Monuments & Structures map markers](https://mapicons.mapsmarker.com/category/markers/tourism/monuments-structures/)
+    <!-- - [Host icons on Google Drive](https://mapicons.mapsmarker.com/faq/host-the-icons-on-google-drive/) -->
+    - [Google Maps Icons Credits: Matthias Stasiak](https://mapicons.mapsmarker.com/author/matthias.stasiak/)
+    <!-- - [My icons folder on my Google Drive](https://drive.google.com/drive/folders/1EQA5hQEVGGVN6HaBYut6yXVS8KlTC4ST?usp=sharing) -->
+    - [Street View API](https://developers.google.com/maps/documentation/javascript/streetview)
     - Code Snippets
         - [Adding a Google Map with a Marker to Your Website](https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript)
         - [Google Maps Markers](https://developers.google.com/maps/documentation/javascript/markers#maps_marker_simple-javascript)
