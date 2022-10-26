@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Three main ancient Greek citadels on western shores of the Black Sea Histria, Tomis and Callatis"
+    />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/temple_ruins.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Citadels Maps</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Histria')">
+        Histria
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Tomis')">Tomis</button>
+      <button class="tablinks" onclick="openCity(event, 'Callatis')">
+        Callatis
+      </button>
+    </div>
+
+    <div id="ToAction" class="tabcontent">
+      <h3>Call to Action</h3>
+      <p>Click left tabs to display your maps</p>
+    </div>
+
+    <!-- Histria Vertical Tab Content -->
+    <div id="Histria" class="tabcontent" style="display: none">
+      <!-- <h3>Histria</h3> -->
+      <!-- <p>Histria is the capital city of England.</p> -->
+      <!-- horizontal tabs in a vertical tab -->
+      <div class="sub-tabs">
+        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-info')">
+          Wiki
+        </button>
+        <button
+          class="sub-tablinks"
+          onclick="openInfo(event, 'Histria-Travel')"
+        >
+          Travel
+        </button>
+        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-map')">
+          Street View Map
+        </button>
+      </div>
+
+      <div id="Histria-info" class="sub-tabcontent" style="active">
+        <h3>History</h3>
+        <p>
+          Histria or Istros (Ancient Greek: Ἰστρίη, Thracian river god, Danube),
+          was a Greek colony or polis (πόλις, city) near the mouths of the
+          Danube (known as Ister in Ancient Greek), on the western coast of the
+          Black Sea. It was the first urban settlement on today's Romanian
+          territory when founded by Milesian settlers in the 7th century BC. It
+          was under Roman rule from the 1st to 3rd centuries AD. Invasions
+          during the 7th century AD rendered it indefensible, and the city was
+          abandoned. In antiquity, it also bore the names Istropolis,
+          Istriopolis, and Histriopolis (Ἰστρόπολις, Ἰστρία πόλις).[1]
+          <br><br> Histriopolis was a fort in the Roman province of Moesia. As Tabula
+          Peutingeriana shows it is situated between Tomis and Ad Stoma; 11
+          miles from Tomis and 9 miles from Ad Stoma.
+        </p>
+        <!-- Use Wikipedia API to display extracts for the Info Page -->
+        <a
+          href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
+          >Wiki API Source</a
+        >
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
+          target="_blank"
+          >Histria Wiki</a
+        >
+      </div>
+      <div id="Histria-Travel" class="sub-tabcontent" style="display: none">
+        <h3>Histria Travel</h3>
+        <p>Travel to Histria by bus</p>
+      </div>
+      <div id="Histria-map" class="sub-tabcontent" style="display: none">
+        <h3>Histria Maps</h3>
+        <p>Street View Histria Citadel</p>
+        <!-- <div id="map_1"></div> -->
+        <div class="streetViewMap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1666795722566!6m8!1m7!1sCAoSLEFGMVFpcE5QTjZQeUNFS0lhaHZGWExXbHhfdzI2LU91VHpaTFc3NmdzNXQy!2m2!1d44.5472221!2d28.773056!3f235.5837123811416!4f-17.290084368714417!5f0.7820865974627469"
+            width="100%"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Histria Vertical Tab Content -->
+    <div id="Tomis" class="tabcontent" style="display: none">
+      <!-- <h3>Histria</h3> -->
+      <!-- <p>Histria is the capital city of England.</p> -->
+      <!-- horizontal tabs in a vertical tab -->
+      <div class="sub-tabs">
+        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-info')">
+          Wiki
+        </button>
+        <button
+          class="sub-tablinks"
+          onclick="openInfo(event, 'Histria-travel')"
+        >
+          Travel
+        </button>
+        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-map')">
+          Street View Map
+        </button>
+      </div>
+
+      <div id="Tomis-info" class="sub-tabcontent" style="active">
+        <h3>History</h3>
+        <p>
+          According to Jordanes (after Cassiodorus), the foundation of the city
+          was ascribed to Tomyris, the queen of the Massagetae (the origin and
+          deeds of the Goths):
+          <span style="font-size: 1.1em">
+            After achieving this victory (against Cyrus the Great) and winning
+            so much booty from her enemies, Queen Tomyris crossed over into that
+            part of Moesia which is now called Lesser Scythia - a name borrowed
+            from Great Scythia -, and built on the Moesian shore of the Black
+            Sea the city of Tomi, named after herself.</span
+          >
+          <br /><br />
+          Ruins of Tomis In 29 BC, the Romans captured the region from the
+          Odrysian kingdom, and annexed it as far as the Danube, under the name
+          of Limes Scythicus ("Scythian Frontier"). In AD 8, the Emperor
+          Augustus banished the Roman poet Ovid (43 BC-17AD) here by Augustus
+          for the last eight years of his life. He lamented his Tomisian exile
+          in his poems Tristia and Epistulae ex Ponto.<br /><br />
+          Tomis was "by his account a town located in a war-stricken cultural
+          wasteland on the remotest margins of the empire".[13] Casino after the
+          occupation of the port of Constanța by Soviet sailors in 1944. Statue
+          of Ovid in front of the Museum of National History A number of
+          inscriptions found in and around the city show that Constanța stands
+          over the site of Tomis.[14] Some of these finds are now preserved in
+          the British Museum in London.[15] The city was afterwards included in
+          the Province of Moesia, and, from the time of Diocletian, in Scythia
+          Minor, of which it was the metropolis.<br /><br />
+          After the 5th century, Tomis fell under the rule of the Eastern Roman
+          Empire. During Maurice's Balkan campaigns, Tomis was besieged by the
+          Avars in the winter of 597/598.<br />
+          <br />
+          Tomis was later renamed to Constantiana in honour of Constantia, the
+          half-sister of Roman Emperor Constantine the Great (274-337). The
+          earliest known usage of this name was in 950. The city lay at the
+          seaward end of the Great Wall of Trajan, and was surrounded by
+          fortifications of its own.
+        </p>
+        <!-- Use Wikipedia API to display extracts for the Info Page -->
+        <a
+          href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
+          >Wiki API Source</a
+        >
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
+          target="_blank"
+          >Histria Wiki</a
+        >
+      </div>
+      <div id="Tomis-travel" class="sub-tabcontent" style="display: none">
+        <h3>Tomis Travel</h3>
+        <p>Travel to Tomis by bus</p>
+      </div>
+      <div id="Tomis-map" class="sub-tabcontent" style="display: none">
+        <h3>Tomis Maps</h3>
+        <p>Street View Tomis Citadel</p>
+        <div id="map_1"></div>
+      </div>
+    </div>
+    <!-- Histria Vertical Tab Content -->
+    <div id="Callatis" class="tabcontent" style="display: none">
+      <!-- <h3>Histria</h3> -->
+      <!-- <p>Histria is the capital city of England.</p> -->
+      <!-- horizontal tabs in a vertical tab -->
+      <div class="sub-tabs">
+        <button class="sub-tablinks" onclick="openInfo(event, 'Callatis-info')">
+          Wiki
+        </button>
+        <button
+          class="sub-tablinks"
+          onclick="openInfo(event, 'Callatis-travel')"
+        >
+          Travel
+        </button>
+        <button class="sub-tablinks" onclick="openInfo(event, 'Callatis-map')">
+          Street View Map
+        </button>
+      </div>
+
+      <div id="Callatis-info" class="sub-tabcontent" style="active">
+        <h3>History</h3>
+        <p>
+          The Greek town Callatis existed until the mid-7th century under this
+          name. Life in the town resumed from the 10th century. In the 13th
+          century Callatis came to be known as Pangalia.[3] The Vlachs called it
+          Tomisovara[4] and the Greeks called it Panglicara.[4] From the 16th
+          century the town had acquired its present name, Mangalia. <br />
+          A Greek colony named Callatis was founded in the 6th century BC by the
+          city of Heraclea Pontica.[5] Its first silver coinage was minted
+          around 350 BC. In 72 BC, Callatis was conquered by the Roman general
+          Lucullus and was assigned to the Roman province of Moesia Inferior.
+          Throughout the 2nd century AD, the city built defensive fortifications
+          and the minting of coinage under the Roman emperors Septimius Severus
+          and Caracalla continued. Callatis suffered multiple invasions in the
+          3rd century AD but recovered in the 4th century AD to regain its
+          status as an important trade hub and port city.[6] From the 7th to the
+          11th century the city was under the rule of the First Bulgarian
+          Empire.
+        </p>
+        <!-- Use Wikipedia API to display extracts for the Info Page -->
+        <a
+          href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
+          >Wiki API Source</a
+        >
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
+          target="_blank"
+          >Histria Wiki</a
+        >
+      </div>
+      <div id="Callatis-travel" class="sub-tabcontent" style="display: none">
+        <h3>Callatis Travel</h3>
+        <p>Travel to Callatis by bus</p>
+      </div>
+      <div id="Callatis-map" class="sub-tabcontent" style="display: none">
+        <h3>Callatis Maps</h3>
+        <p>Street View Callatis Citadel</p>
+        <div id="map_1"></div>
+      </div>
+    </div>
+
+    <!-- <div id="Tomis" class="tabcontent" style="display: none;">
+        <h3>Tomis</h3>
+        <p>Tomis is the capital of France.</p>
+        <div id="map_1"></div>
+      </div>
+      
+      <div id="Callatis" class="tabcontent" style="display: none;">
+        <h3>Callatis</h3>
+        <p>Callatis is the capital of Japan.</p>
+        <div id="map_1"></div>
+      </div>  -->
+    <script src="./scripts/maps-vert-tabs.js"></script>
+    <script src="./scripts/gmaps-earth.js"></script>
+  </body>
+</html>

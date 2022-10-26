@@ -41,8 +41,8 @@ logo-link {
 #header-title {
   font-size: 2em;
   color: aqua;
-border: solid 1px #000;
-display: flex;
+  border: solid 1px #000;
+  display: flex;
   flex-direction: column;
 }
 
@@ -55,8 +55,113 @@ display: flex;
   margin: 0;
   padding: 0;
 }
+
 /* Main content */
 
+/* ---------------------------------------------- */
+/* Maps vertical & horizontal tabs */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  /* valori pentru desktop in media queries */
+  /* width: 30%;
+  height: 100%; */
+  width: 100%;
+  height: 180px;
+}
+.tab-hor {
+  overflow: hidden;
+  border: 10px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sub-tabs button {
+  /* background-color: inherit; */
+  background-color: rgb(145, 145, 145);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  width: 33%;
+}
+/* Change background color of buttons on hover */
+.tab button:hover, .sub-tabs button:hover {
+  background-color: #ddd;
+}
+.sub-tabs button:hover {
+  /* background-color: #ddd; */
+  border-bottom: 3px solid red;
+}
+/* .tab-hor button:hover {
+  background-color: #ddd;
+} */
+/* Create an active/current "tab button" class */
+.tab button.active, .sub-tabs button.active {
+  background-color: #ccc;
+}
+/* .tab-hor button.active {
+  background-color: #ccc;
+} */
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  /* valoare pentru desktop view */
+  /* width: 70%; */
+  width: 100%;
+  border-left: none;
+  height: 100%;
+}
+.tabcontent-hor {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Fade in Tabs */
+/* .tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+} */
+.tabcontent, .sub-tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* ---------------------------------------------- */
 /* Footer */
 footer {
   display: flex;
@@ -71,13 +176,17 @@ footer {
   height: 100%;
 }
 
+
 /* 
  * map sizes
  */
 #map_1 {
-  max-width: 700px;
-  height: 500px;
-  padding: 10px;
+  /* max-width: 700px; */
+  max-width:90%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 10px; */
   border: solid 1px black;
 }
 /* #map_2 {
@@ -88,4 +197,3 @@ footer {
 } */
 
 /* Media queries */
-
