@@ -92,6 +92,7 @@
   - [google-maps-js-api-v3-simple-multiple-marker-example](https://www.anycodings.com/1questions/3879/google-maps-js-api-v3-simple-multiple-marker-example)
   - [Maps page vertical tabs code source](https://www.w3schools.com/howto/howto_js_vertical_tabs.asp)
   - [Maps page horizontal tabs code source](https://www.w3schools.com/howto/howto_js_tabs.asp)
+  - [Wikipedia API search base code](https://femkreations.com/how-to-build-a-wikipedia-search-app-in-9-steps/)
 - Media credits
   - [Google Maps Icons Credits: Matthias Stasiak](https://mapicons.mapsmarker.com/author/matthias.stasiak/)
   - [Greek Column SVG Vector & PNG](https://www.svgrepo.com/svg/160058/greek-column)
