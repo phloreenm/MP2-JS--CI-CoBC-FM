@@ -6,7 +6,11 @@ histriaWikis.onload = displaySearchResults(citadelName);
 
 function displaySearchResults(searchItem){
 	
-	let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${searchItem}`;
+	// let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=7&srsearch=${searchItem}`;
+	let url = "https://en.wikipedia.org/w/api.php?" +
+        new URLSearchParams({"action": "query", "list": "search", "prop": "info", "inprop": "url", "utf8": "", "format": "json", "origin": "*", "srlimit": "7", "srsearch": `${searchItem}`});
+
+
 	console.log(url);
 	
 	fetch(url)
