@@ -83,6 +83,9 @@
 - [Monuments & Structures map markers](https://mapicons.mapsmarker.com/category/markers/tourism/monuments-structures/)
     <!-- - [Host icons on Google Drive](https://mapicons.mapsmarker.com/faq/host-the-icons-on-google-drive/) -->
 - [Google Maps Icons Credits: Matthias Stasiak](https://mapicons.mapsmarker.com/author/matthias.stasiak/)
+- [Greek Column SVG Vector & PNG](https://www.svgrepo.com/svg/160058/greek-column)
+- [Ancient Columns SVG Vector & PNG](https://www.pngrepo.com/svg/321726/ancient-columns)
+- [Greek Vase SVG Vector & PNG](https://www.svgrepo.com/svg/104220/greek-vase)
     <!-- - [My icons folder on my Google Drive](https://drive.google.com/drive/folders/1EQA5hQEVGGVN6HaBYut6yXVS8KlTC4ST?usp=sharing) -->
 - [Street View API](https://developers.google.com/maps/documentation/javascript/streetview)
 - Code Snippets

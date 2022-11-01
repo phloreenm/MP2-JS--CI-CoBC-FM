@@ -1,42 +1,75 @@
 /* all document */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+  /* background: #e8cbc0; */
+  /* background: #232931; */
+  background: #215162;
+  color: white;
 }
 body {
   min-width: 300px;
 }
 /* Header */
 header {
-  background: #0000b4;
+  /* background: #0000b4; */
+  border: #006E51 1px solid;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   margin: 0;
-  height: 200px;
+  /* height: 200px; */
 }
+/* override Bootsrap font color in header */
+.navbar-dark .navbar-brand, .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+  /* color: #4191FA; */
+  color: #8ed77e;
+}
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+  /* color: #5CA3FF; */
+  color: #f9f871;
+}
+.navbar-dark .navbar-nav .nav-link {
+  /* color: hsla(0,0%,100%,.55); */
+  /* color: #5CA3FF; */
+  color: #34ad8b;
+}
+/* .bg-dark {
+  background-color: rgba(51,45,45,var(--mdb-bg-opacity))!important;
+}
+
+.bg-dark {
+  --mdb-bg-opacity: 1;
+  background-color: rgba(var(--mdb-dark-rgb),var(--mdb-bg-opacity))!important;
+} */
 #logo-wr {
   width: 100px;
   height: 100px;
-  margin: 0;
-  padding: 0;
-  display: flex;
+  /* margin: 0;
+  padding: 0; */
+  display: block;
   flex-direction: column;
   flex-direction: column;
   border: solid 1px #000;
 }
 logo-link {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  /* flex-direction: column; */
 }
 #logo-wr img {
   width: 100%;
   height: 100%;
   border: solid 1px white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 #header-title {
   font-size: 2em;
@@ -158,6 +191,11 @@ logo-link {
     opacity: 1;
   }
 }
+
+/* TIMELINE styling */
+
+/* ------TIMELINE---------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 
 
