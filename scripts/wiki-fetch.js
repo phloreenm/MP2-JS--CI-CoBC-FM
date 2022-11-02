@@ -4,47 +4,71 @@ let citadelName = "Histria";
 
 histriaWikis.onload = displaySearchResults(citadelName);
 
-function displaySearchResults(searchItem){
-	
-	// let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=7&srsearch=${searchItem}`;
-	let url = "https://en.wikipedia.org/w/api.php?" +
-        new URLSearchParams({"action": "query", "list": "search", "prop": "info", "inprop": "url", "utf8": "", "format": "json", "origin": "*", "srlimit": "7", "srsearch": `${searchItem}`});
+function displaySearchResults(searchItem) {
 
+    // let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=7&srsearch=${searchItem}`;
+    let url = "https://en.wikipedia.org/w/api.php?" +
+        new URLSearchParams({
+            "action": "query",
+            "list": "search",
+            "prop": "info",
+            // "prop":"extracts",
+            // "exsentences": "1",
+            // "exlimit": "max",
+            "inprop": "url",
+            "utf8": "",
+            "format": "json",
+            "origin": "*",
+            "srlimit": "7",
+            "srsearch": `${searchItem}`
+        });
 
-	console.log(url);
-	
-	fetch(url)
-		.then(function(response) {
-    		return (response.json());
-  		})
-  		.then(function(data){
-  			let resultsArray = data.query.search;
-  			resultsOnPage(resultsArray);
-  		})
-  		.catch(function () {
-   			console.log('An error occured');
-		});
+    console.log("For debugging purposes:");
+    console.log(url);
+
+    fetch(url)
+        .then(function (response) {
+            return (response.json());
+        })
+        .then(function (data) {
+            let resultsArray = data.query.search;
+            resultsOnPage(resultsArray);
+
+            console.log("For debugging purposes:");
+            resultsArray.forEach(function (item) {
+                console.log(item);
+                console.log(`Title: ${item.title}, Word Count: ${item.wordcount}, Snippet: ${item.snippet}`);
+            });
+            
+        })
+        .catch(function () {
+            console.log('An error occured');
+        });
 }
 
-function resultsOnPage(myArray){
+function resultsOnPage(myArray) {
 
-	histriaWikis.innerHTML = " ";
-	histriaWikis.insertAdjacentHTML('beforeend', `<h2>Search Results for ${citadelName} </h2>`);
+    histriaWikis.innerHTML = " ";
+    histriaWikis.insertAdjacentHTML('beforeend', `<h2>More information about ${citadelName} can be found at the following links:</h2>`);
 
-	myArray.forEach(function(item){
-		let itemTitle = item.title;
-		let itemSnippet = item.snippet;
-		let itemUrl = encodeURI(`https://en.wikipedia.org/wiki/${item.title}`);
-		
-		histriaWikis.insertAdjacentHTML('beforeend',
-      	`<div class="resultItem">
+    myArray.forEach(function (item) {
+        let itemTitle = item.title;
+        let itemSnippet = item.snippet;
+        let itemSmth = item.extract;
+        let itemExtracts = item.extracts;
+        // let itm = item.
+        let itemUrl = encodeURI(`https://en.wikipedia.org/wiki/${item.title}`);
+
+        histriaWikis.insertAdjacentHTML('beforeend',
+            `<div class="resultItem">
          <h3 class="resultTitle">
           <a href="${itemUrl}" target="_blank" rel="noopener">${itemTitle}</a>
          </h3>
-         <p class="resultSnippet"><a href="${itemUrl}"  target="_blank" rel="noopener">
-         ${itemSnippet}</a></p>
+         <p class="resultSnippet"><a href="${itemUrl}"  target="_blank" rel="noopener">${itemSnippet}</a></p>
+         <p class="resultSnippet">itemExtracts: ${itemExtracts}</p>
+         <p class="resultSnippet">itemSmth: ${itemSmth}</p>
         </div>`
-    	);
+        );
     });
 }
 
