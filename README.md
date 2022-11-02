@@ -43,6 +43,8 @@
     *  [**Other Resources:**](#other-resources-and-tools-used)
 1. [**Aknowledgment**](#aknowledgment) -->
 
+
+---
 ### Live site on [GitHub Pages (custom domain)](http://phloreenm.me/MP2-JS--CI-CoBC-FM/) or [GitHub Pages 'https'](https://phloreenm.github.io/MP2-JS--CI-CoBC-FM//MP2-JS--CI-CoBC-FM/)
 ### Link to this GitHub repository [here](https://github.com/phloreenm/MP2-JS--CI-CoBC-FM)  
 

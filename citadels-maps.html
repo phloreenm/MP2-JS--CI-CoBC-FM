@@ -6,22 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Three main ancient Greek citadels on western shores of the Black Sea Histria, Tomis and Callatis"
-    />
+      content="Three ancient Greek colonies in Scythia Minor, on the western coast of the Black Sea: Histria, Tomis and Callatis"/>
 
     <link
       rel="icon"
       type="image/x-icon"
       href="./assets/images/temple_ruins.png"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
-      rel="stylesheet"
-    />
 
-    <title>Citadels Maps</title>
-
+    <title>Histria, Tomis, Callatis</title>
+    <!-- STYLES -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -43,78 +37,69 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- SCRIPTS -->
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4&callback=gMapsMap"
+      <!--gmaps-earth.js-Multiple
+      Markers--
+    ></script>
+    <!-- <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4&callback=initMap2"
+    ></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4&callback=streetViewInit"
+    ></script> -->
   </head>
   <body>
     <header>
-      <!-- <div class="fixed-top" id="logo-wr">
-        <a id="logo-link" href="#"><img src="./assets/images/temple_ruins.png" alt="" srcset=""></a>
-        <!-- <h4 id="header-title">Ancient Greek Citadels</h4> -->
-      <!-- </div>
-      <div class="nav-wr">
-        <nav class="nav-menu">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false">Navigation Menu
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdown
-          
-          MenuButton">
-            <a class="dropdown-item" href="#">Home Page</a>
-            <a class="dropdown-item" href="./citadels-maps.html">Wiki</a>
-            
-            <a class="dropdown-item" href="#">Trip</a>
-          </div>
-        </nav>
-      </div> -->
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
           <!-- Navbar brand -->
-          <a class="navbar-brand mt-2 mt-lg-0" href="#">
-            <img
+          <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+                        <img
               src="./assets/images/greek-vase-pngrepo-com.png"
+              class="logo-img-filtering"
               height="70"
               alt="Site Logo: Greek Vase"
-              loading="lazy"
-            />
+              loading="lazy"/>
           </a>
-          <a class="navbar-brand" href="#">Greek colonies in Scythia Minor</a>
+          <a class="navbar-brand" href="index.html"
+            >Greek colonies in Scythia Minor</a>
           <button
             class="navbar-toggler"
             type="button"
             data-mdb-toggle="collapse"
-            data-mdb-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
+            data-mdb-target="#navbarToggler"
+            aria-controls="navbarToggler"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Navigation menu">
             <i class="fas fa-bars"></i>MENU
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
+              <li class="nav-item"><a
+                  class="nav-link"
                   aria-current="page"
                   href="./index.html"
-                  >Home</a
-                >
+                  >Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./citadels-maps.html">Wiki & Maps</a>
+                <a class="nav-link active" href="./citadels-maps.html">Wiki & Maps</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="./citadels-trips.html"
-                  >Link</a
-                >
+                <a class="nav-link" href="./citadels-trips.html">Link</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="./citadels-wiki.html"
-                  >Wiki</a
-                >
+                <a class="nav-link" href="./citadels-wiki.html">Wiki</a>
               </li>
               <!-- <li class="nav-item"><a class="nav-link disabled">Disabled</a></li> -->
             </ul>
@@ -122,7 +107,7 @@
         </div>
       </nav>
     </header>
-
+    <main>
     <div class="tab">
       <button class="tablinks" onclick="openCity(event, 'Histria')">
         Histria
@@ -144,21 +129,22 @@
       <!-- <p>Histria is the capital city of England.</p> -->
       <!-- horizontal tabs in a vertical tab -->
       <div class="sub-tabs">
-        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-info')">
-          Short History
+        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-Info')">
+          Chronicle
+        <!-- history, record -->
         </button>
         <button
           class="sub-tablinks"
-          onclick="openInfo(event, 'Histria-Travel')"
+          onclick="openInfo(event, 'Histria-Wiki')"
         >
-          Timeline
+          Wikipedia
         </button>
-        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-map')">
-          Street View Maps
+        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-Map')">
+          StreetView
         </button>
       </div>
 
-      <div id="Histria-info" class="sub-tabcontent" style="active">
+      <div id="Histria-Info" class="sub-tabcontent" style="active">
         <h3>Short History</h3>
         <p>
           Histria or Istros (Ancient Greek: Ἰστρίη, Thracian river god, Danube),
@@ -176,13 +162,9 @@
           miles from Tomis and 9 miles from Ad Stoma.
         </p>
 
-        <p>Bellow is the WIKI API</p>
-        <div id="histriaWikiRes" style="border: 1px solid black;">Results</div>
-        
-        <!-- <div id="example2-wiki" style="border: 1px solid black;">TEXT before replacement</div> -->
 
-        <!-- Use Wikipedia API to display extracts for the Info Page -->
-        <br><br><br>
+        
+        <!-- <br><br><br>
         <a
           href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
           >Wiki API Source</a
@@ -192,16 +174,17 @@
           href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
           target="_blank"
           >Histria Wiki</a
-        >
+        > -->
       </div>
       <div
-        id="Histria-Travel"
-        class="sub-tabcontent"
-        style="display: none"
-      ></div>
-      <div id="Histria-map" class="sub-tabcontent" style="display: none">
+        id="Histria-Wiki"
+        class="sub-tabcontent">
+        <!-- <p>Bellow is the WIKI API</p> -->
+        <div id="histriaWikiRes" style="border: 1px solid black;">Results</div>
+      </div>
+      <div id="Histria-Map" class="sub-tabcontent" style="display: none">
         <h3>Histria Maps</h3>
-        <p>Street View Histria Citadel</p>
+        <p>StreetView Histria Citadel</p>
         <!-- <div id="map_1"></div> -->
         <div class="streetViewMap">
           <iframe
@@ -222,27 +205,27 @@
       <!-- <p>Histria is the capital city of England.</p> -->
       <!-- horizontal tabs in a vertical tab -->
       <div class="sub-tabs">
-        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-info')">
-          Wiki
+        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-Info')">
+          Chronicle
         </button>
         <button
           class="sub-tablinks"
-          onclick="openInfo(event, 'Histria-travel')"
+          onclick="openInfo(event, 'Histria-Wiki')"
         >
-          Travel
+          Wikipedia
         </button>
-        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-map')">
-          Street View Map
+        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-Map')">
+          StreetView
         </button>
       </div>
 
-      <div id="Tomis-info" class="sub-tabcontent" style="active">
-        <h3>History</h3>
+      <div id="Tomis-Info" class="sub-tabcontent" style="active">
+        <h3>/h3>
         <p>
           According to Jordanes (after Cassiodorus), the foundation of the city
           was ascribed to Tomyris, the queen of the Massagetae (the origin and
           deeds of the Goths):
-          <span style="font-size: 1.1em">
+          <span style="font-size: 1.1em;">
             After achieving this victory (against Cyrus the Great) and winning
             so much booty from her enemies, Queen Tomyris crossed over into that
             part of Moesia which is now called Lesser Scythia - a name borrowed
@@ -287,13 +270,13 @@
           >Histria Wiki</a
         >
       </div>
-      <div id="Tomis-travel" class="sub-tabcontent" style="display: none">
+      <div id="Tomis-Wiki" class="sub-tabcontent" style="display: none">
         <h3>Tomis Travel</h3>
         <p>Travel to Tomis by bus</p>
       </div>
-      <div id="Tomis-map" class="sub-tabcontent" style="display: none">
+      <div id="Tomis-Map" class="sub-tabcontent" style="display: none">
         <h3>Tomis Maps</h3>
-        <p>Street View Tomis Citadel</p>
+        <p>StreetView Tomis Citadel</p>
         <div id="map_1"></div>
       </div>
     </div>
@@ -303,21 +286,21 @@
       <!-- <p>Histria is the capital city of England.</p> -->
       <!-- horizontal tabs in a vertical tab -->
       <div class="sub-tabs">
-        <button class="sub-tablinks" onclick="openInfo(event, 'Callatis-info')">
-          Wiki
+        <button class="sub-tablinks" onclick="openInfo(event, 'Callatis-Info')">
+          Chronicle
         </button>
         <button
           class="sub-tablinks"
-          onclick="openInfo(event, 'Callatis-travel')"
+          onclick="openInfo(event, 'Callatis-Wiki')"
         >
-          Travel
+        Wikipedia
         </button>
-        <button class="sub-tablinks" onclick="openInfo(event, 'Callatis-map')">
-          Street View Map
+        <button class="sub-tablinks" onclick="openInfo(event, 'Callatis-Map')">
+          StreetView
         </button>
       </div>
 
-      <div id="Callatis-info" class="sub-tabcontent" style="active">
+      <div id="Callatis-Info" class="sub-tabcontent" style="active">
         <h3>History</h3>
         <p>
           The Greek town Callatis existed until the mid-7th century under this
@@ -420,13 +403,13 @@
           >Histria Wiki</a
         >
       </div>
-      <div id="Callatis-travel" class="sub-tabcontent" style="display: none">
+      <div id="Callatis-Wiki" class="sub-tabcontent" style="display: none">
         <h3>Callatis Travel</h3>
         <p>Travel to Callatis by bus</p>
       </div>
-      <div id="Callatis-map" class="sub-tabcontent" style="display: none">
+      <div id="Callatis-Map" class="sub-tabcontent" style="display: none">
         <h3>Callatis Maps</h3>
-        <p>Street View Callatis Citadel</p>
+        <p>StreetView Callatis Citadel</p>
         <div id="map_1"></div>
       </div>
     </div>
@@ -442,6 +425,28 @@
         <p>Callatis is the capital of Japan.</p>
         <div id="map_1"></div>
       </div>  -->
+    </main>
+        <!-- FOOTER AREA -->
+        <footer class="navbar-dark bg-dark">
+
+          <div class="footer-content">
+            <div class="footer-section about">
+              <h1 class="logo-text">FOOTER AREA</h1>
+              <h1 class="logo-text">Greek Ancient Cities</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                quae, voluptatum, quod, voluptas quibusdam voluptates quidem
+                voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae,
+                voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus
+                quos quia quas nesciunt. Quisquam, quae.
+              </p>
+              <div class="contact">
+                <span><i class="fas fa-phone"></i> &nbsp; 01247570043</span>
+                <span><i class="fas fa-envelope"></i> &nbsp; </span>
+              </div>
+            </div>
+          </div>
+        </footer>
     <!-- <script src="./scripts/maps-vert-tabs.js"></script> -->
     <script src="./scripts/gmaps-earth.js"></script>
     <script src="./scripts/wiki-fetch.js"></script>

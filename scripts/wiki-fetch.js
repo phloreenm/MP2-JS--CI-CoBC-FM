@@ -26,7 +26,7 @@ function displaySearchResults(searchItem) {
     console.log("For debugging purposes:");
     console.log(url);
 
-    fetch(url)
+    fetch(url)              
         .then(function (response) {
             return (response.json());
         })
@@ -34,11 +34,11 @@ function displaySearchResults(searchItem) {
             let resultsArray = data.query.search;
             resultsOnPage(resultsArray);
 
-            console.log("For debugging purposes:");
-            resultsArray.forEach(function (item) {
-                console.log(item);
-                console.log(`Title: ${item.title}, Word Count: ${item.wordcount}, Snippet: ${item.snippet}`);
-            });
+            // console.log("For debugging purposes:");
+            // resultsArray.forEach(function (item) {
+            //     console.log(item);
+            //     console.log(`Title: ${item.title}, Word Count: ${item.wordcount}, Snippet: ${item.snippet}`);
+            // });
             
         })
         .catch(function () {
@@ -54,8 +54,7 @@ function resultsOnPage(myArray) {
     myArray.forEach(function (item) {
         let itemTitle = item.title;
         let itemSnippet = item.snippet;
-        let itemSmth = item.extract;
-        let itemExtracts = item.extracts;
+
         // let itm = item.
         let itemUrl = encodeURI(`https://en.wikipedia.org/wiki/${item.title}`);
 
@@ -65,8 +64,7 @@ function resultsOnPage(myArray) {
           <a href="${itemUrl}" target="_blank" rel="noopener">${itemTitle}</a>
          </h3>
          <p class="resultSnippet"><a href="${itemUrl}"  target="_blank" rel="noopener">${itemSnippet}</a></p>
-         <p class="resultSnippet">itemExtracts: ${itemExtracts}</p>
-         <p class="resultSnippet">itemSmth: ${itemSmth}</p>
+
         </div>`
         );
     });
