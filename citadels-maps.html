@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Three ancient Greek colonies in Scythia Minor, on the western coast of the Black Sea: Histria, Tomis and Callatis"/>
+      content="Three ancient Greek colonies in Scythia Minor, on the western coast of the Black Sea: Histria, Tomis and Callatis"
+    />
 
     <link
       rel="icon"
@@ -65,15 +66,17 @@
         <div class="container-fluid">
           <!-- Navbar brand -->
           <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
-                        <img
+            <img
               src="./assets/images/greek-vase-pngrepo-com.png"
               class="logo-img-filtering"
               height="70"
               alt="Site Logo: Greek Vase"
-              loading="lazy"/>
+              loading="lazy"
+            />
           </a>
           <a class="navbar-brand" href="index.html"
-            >Greek colonies in Scythia Minor</a>
+            >Greek colonies in Scythia Minor</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -81,25 +84,31 @@
             data-mdb-target="#navbarToggler"
             aria-controls="navbarToggler"
             aria-expanded="false"
-            aria-label="Navigation menu">
+            aria-label="Navigation menu"
+          >
             <i class="fas fa-bars"></i>MENU
           </button>
           <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a
-                  class="nav-link"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./citadels-maps.html">Wiki & Maps</a>
+                <a class="nav-link active" href="./citadels-maps.html"
+                  >Wiki & Maps</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./citadels-trips.html">Link</a>
+                <a class="nav-link disabled" href="./citadels-trips.html"
+                  >Link</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./citadels-wiki.html">Wiki</a>
+                <a class="nav-link disabled" href="./citadels-wiki.html"
+                  >Link</a
+                >
               </li>
               <!-- <li class="nav-item"><a class="nav-link disabled">Disabled</a></li> -->
             </ul>
@@ -108,63 +117,67 @@
       </nav>
     </header>
     <main>
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'Histria')">
-        Histria
-      </button>
-      <button class="tablinks" onclick="openCity(event, 'Tomis')">Tomis</button>
-      <button class="tablinks" onclick="openCity(event, 'Callatis')">
-        Callatis
-      </button>
-    </div>
-
-    <div id="ToAction" class="tabcontent">
-      <h3>Call to Action</h3>
-      <p>Click left tabs to display your maps</p>
-    </div>
-
-    <!-- Histria Vertical Tab Content -->
-    <div id="Histria" class="tabcontent" style="display: none">
-      <!-- <h3>Histria</h3> -->
-      <!-- <p>Histria is the capital city of England.</p> -->
-      <!-- horizontal tabs in a vertical tab -->
-      <div class="sub-tabs">
-        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-Info')">
-          Chronicle
-        <!-- history, record -->
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Histria')">
+          Histria
         </button>
-        <button
-          class="sub-tablinks"
-          onclick="openInfo(event, 'Histria-Wiki')"
-        >
-          Wikipedia
+        <button class="tablinks" onclick="openCity(event, 'Tomis')">
+          Tomis
         </button>
-        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-Map')">
-          StreetView
+        <button class="tablinks" onclick="openCity(event, 'Callatis')">
+          Callatis
         </button>
       </div>
 
-      <div id="Histria-Info" class="sub-tabcontent" style="active">
-        <h3>Short History</h3>
-        <p>
-          Histria or Istros (Ancient Greek: Ἰστρίη, Thracian river god, Danube),
-          was a Greek colony or polis (πόλις, city) near the mouths of the
-          Danube (known as Ister in Ancient Greek), on the western coast of the
-          Black Sea. It was the first urban settlement on today's Romanian
-          territory when founded by Milesian settlers in the 7th century BC. It
-          was under Roman rule from the 1st to 3rd centuries AD. Invasions
-          during the 7th century AD rendered it indefensible, and the city was
-          abandoned. In antiquity, it also bore the names Istropolis,
-          Istriopolis, and Histriopolis (Ἰστρόπολις, Ἰστρία πόλις).[1]
-          <br/><br/>
-          Histriopolis was a fort in the Roman province of Moesia. As Tabula
-          Peutingeriana shows it is situated between Tomis and Ad Stoma; 11
-          miles from Tomis and 9 miles from Ad Stoma.
-        </p>
+      <div id="ToAction" class="tabcontent">
+        <h3>Call to Action</h3>
+        <p>Click left tabs to display your maps</p>
+      </div>
 
+      <!-- Histria Vertical Tab Content -->
+      <div id="Histria" class="tabcontent" style="display: none">
+        <!-- <h3>Histria</h3> -->
+        <!-- <p>Histria is the capital city of England.</p> -->
+        <!-- horizontal tabs in a vertical tab -->
+        <div class="sub-tabs">
+          <button
+            class="sub-tablinks"
+            onclick="openInfo(event, 'Histria-Info')"
+          >
+            Chronicle
+            <!-- history, record -->
+          </button>
+          <button
+            class="sub-tablinks"
+            onclick="openInfo(event, 'Histria-Wiki')"
+          >
+            Wikipedia
+          </button>
+          <button class="sub-tablinks" onclick="openInfo(event, 'Histria-Map')">
+            StreetView
+          </button>
+        </div>
 
-        
-        <!-- <br><br><br>
+        <div id="Histria-Info" class="sub-tabcontent" style="active">
+          <h3>Short History</h3>
+          <p>
+            Histria or Istros (Ancient Greek: Ἰστρίη, Thracian river god,
+            Danube), was a Greek colony or polis (πόλις, city) near the mouths
+            of the Danube (known as Ister in Ancient Greek), on the western
+            coast of the Black Sea. It was the first urban settlement on today's
+            Romanian territory when founded by Milesian settlers in the 7th
+            century BC. It was under Roman rule from the 1st to 3rd centuries
+            AD. Invasions during the 7th century AD rendered it indefensible,
+            and the city was abandoned. In antiquity, it also bore the names
+            Istropolis, Istriopolis, and Histriopolis (Ἰστρόπολις, Ἰστρία
+            πόλις).[1]
+            <br /><br />
+            Histriopolis was a fort in the Roman province of Moesia. As Tabula
+            Peutingeriana shows it is situated between Tomis and Ad Stoma; 11
+            miles from Tomis and 9 miles from Ad Stoma.
+          </p>
+
+          <!-- <br><br><br>
         <a
           href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
           >Wiki API Source</a
@@ -175,246 +188,271 @@
           target="_blank"
           >Histria Wiki</a
         > -->
-      </div>
-      <div
-        id="Histria-Wiki"
-        class="sub-tabcontent">
-        <!-- <p>Bellow is the WIKI API</p> -->
-        <div id="histriaWikiRes" style="border: 1px solid black;">Results</div>
-      </div>
-      <div id="Histria-Map" class="sub-tabcontent" style="display: none">
-        <h3>Histria Maps</h3>
-        <p>StreetView Histria Citadel</p>
-        <!-- <div id="map_1"></div> -->
-        <div class="streetViewMap">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!4v1666795722566!6m8!1m7!1sCAoSLEFGMVFpcE5QTjZQeUNFS0lhaHZGWExXbHhfdzI2LU91VHpaTFc3NmdzNXQy!2m2!1d44.5472221!2d28.773056!3f235.5837123811416!4f-17.290084368714417!5f0.7820865974627469"
-            width="100%"
-            height="350"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        </div>
+        <div id="Histria-Wiki" class="sub-tabcontent">
+          <!-- <p>Bellow is the WIKI API</p> -->
+          <div id="histriaWikiRes" style="border: 1px solid black">Results</div>
+        </div>
+        <div id="Histria-Map" class="sub-tabcontent" style="display: none">
+          <h3>Histria Maps</h3>
+          <p>StreetView Histria Citadel</p>
+          <!-- <div id="map_1"></div> -->
+          <div class="streetViewMap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!4v1666795722566!6m8!1m7!1sCAoSLEFGMVFpcE5QTjZQeUNFS0lhaHZGWExXbHhfdzI2LU91VHpaTFc3NmdzNXQy!2m2!1d44.5472221!2d28.773056!3f235.5837123811416!4f-17.290084368714417!5f0.7820865974627469"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Histria Vertical Tab Content -->
-    <div id="Tomis" class="tabcontent" style="display: none">
-      <!-- <h3>Histria</h3> -->
-      <!-- <p>Histria is the capital city of England.</p> -->
-      <!-- horizontal tabs in a vertical tab -->
-      <div class="sub-tabs">
-        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-Info')">
-          Chronicle
-        </button>
-        <button
-          class="sub-tablinks"
-          onclick="openInfo(event, 'Histria-Wiki')"
-        >
-          Wikipedia
-        </button>
-        <button class="sub-tablinks" onclick="openInfo(event, 'Histria-Map')">
-          StreetView
-        </button>
-      </div>
-
-      <div id="Tomis-Info" class="sub-tabcontent" style="active">
-        <h3>/h3>
-        <p>
-          According to Jordanes (after Cassiodorus), the foundation of the city
-          was ascribed to Tomyris, the queen of the Massagetae (the origin and
-          deeds of the Goths):
-          <span style="font-size: 1.1em;">
-            After achieving this victory (against Cyrus the Great) and winning
-            so much booty from her enemies, Queen Tomyris crossed over into that
-            part of Moesia which is now called Lesser Scythia - a name borrowed
-            from Great Scythia -, and built on the Moesian shore of the Black
-            Sea the city of Tomi, named after herself.</span
+      <!-- Histria Vertical Tab Content -->
+      <div id="Tomis" class="tabcontent" style="display: none">
+        <!-- <h3>Histria</h3> -->
+        <!-- <p>Histria is the capital city of England.</p> -->
+        <!-- horizontal tabs in a vertical tab -->
+        <div class="sub-tabs">
+          <button
+            class="sub-tablinks"
+            onclick="openInfo(event, 'Histria-Info')"
           >
-          <br /><br />
-          Ruins of Tomis In 29 BC, the Romans captured the region from the
-          Odrysian kingdom, and annexed it as far as the Danube, under the name
-          of Limes Scythicus ("Scythian Frontier"). In AD 8, the Emperor
-          Augustus banished the Roman poet Ovid (43 BC-17AD) here by Augustus
-          for the last eight years of his life. He lamented his Tomisian exile
-          in his poems Tristia and Epistulae ex Ponto.<br /><br />
-          Tomis was "by his account a town located in a war-stricken cultural
-          wasteland on the remotest margins of the empire".[13] Casino after the
-          occupation of the port of Constanța by Soviet sailors in 1944. Statue
-          of Ovid in front of the Museum of National History A number of
-          inscriptions found in and around the city show that Constanța stands
-          over the site of Tomis.[14] Some of these finds are now preserved in
-          the British Museum in London.[15] The city was afterwards included in
-          the Province of Moesia, and, from the time of Diocletian, in Scythia
-          Minor, of which it was the metropolis.<br /><br />
-          After the 5th century, Tomis fell under the rule of the Eastern Roman
-          Empire. During Maurice's Balkan campaigns, Tomis was besieged by the
-          Avars in the winter of 597/598.<br />
+            Chronicle
+          </button>
+          <button
+            class="sub-tablinks"
+            onclick="openInfo(event, 'Histria-Wiki')"
+          >
+            Wikipedia
+          </button>
+          <button class="sub-tablinks" onclick="openInfo(event, 'Histria-Map')">
+            StreetView
+          </button>
+        </div>
+
+        <div id="Tomis-Info" class="sub-tabcontent" style="active">
+          <h3></h3>
+          <p>
+            One of the legends of this historic place says that the beautiful
+            Medea, the princess of Colchis (nowadays Georgia), flees from her
+            parents, taking with her, the little brother, Absirt. Offended by
+            her deed, Aeetes, her father follows her ship and almost catch it
+            when Medea, frightened, kills her brother, cuts up his body and
+            scatters the parts on the sea to delay him and escape from his
+            anger. The unhappy parent stops his ship every time he sees parts of
+            his beloved son. Overwhelming with all the pieces, Aeetes moors the
+            boat to bury the son. This shore, the city that rose then here, has
+            been called Tomis which in Greek language means piece.
+          </p>
+
           <br />
-          Tomis was later renamed to Constantiana in honour of Constantia, the
-          half-sister of Roman Emperor Constantine the Great (274-337). The
-          earliest known usage of this name was in 950. The city lay at the
-          seaward end of the Great Wall of Trajan, and was surrounded by
-          fortifications of its own.
-        </p>
-        <!-- Use Wikipedia API to display extracts for the Info Page -->
-        <a
-          href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
-          >Wiki API Source</a
-        >
-        <br />
-        <a
-          href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
-          target="_blank"
-          >Histria Wiki</a
-        >
+          <p>
+            According to Jordanes (after Cassiodorus), the foundation of the
+            city was ascribed to Tomyris, the queen of the Massagetae (the
+            origin and deeds of the Goths):
+            <span style="font-size: 1.1em">
+              After achieving this victory (against Cyrus the Great) and winning
+              so much booty from her enemies, Queen Tomyris crossed over into
+              that part of Moesia which is now called Lesser Scythia - a name
+              borrowed from Great Scythia -, and built on the Moesian shore of
+              the Black Sea the city of Tomi, named after herself.</span
+            >
+            <br /><br />
+            Ruins of Tomis In 29 BC, the Romans captured the region from the
+            Odrysian kingdom, and annexed it as far as the Danube, under the
+            name of Limes Scythicus ("Scythian Frontier"). In AD 8, the Emperor
+            Augustus banished the Roman poet Ovid (43 BC-17AD) here by Augustus
+            for the last eight years of his life. He lamented his Tomisian exile
+            in his poems Tristia and Epistulae ex Ponto.<br /><br />
+            Tomis was "by his account a town located in a war-stricken cultural
+            wasteland on the remotest margins of the empire".[13] Casino after
+            the occupation of the port of Constanța by Soviet sailors in 1944.
+            Statue of Ovid in front of the Museum of National History A number
+            of inscriptions found in and around the city show that Constanța
+            stands over the site of Tomis.[14] Some of these finds are now
+            preserved in the British Museum in London.[15] The city was
+            afterwards included in the Province of Moesia, and, from the time of
+            Diocletian, in Scythia Minor, of which it was the metropolis.<br /><br />
+            After the 5th century, Tomis fell under the rule of the Eastern
+            Roman Empire. During Maurice's Balkan campaigns, Tomis was besieged
+            by the Avars in the winter of 597/598.<br />
+            <br />
+            Tomis was later renamed to Constantiana in honour of Constantia, the
+            half-sister of Roman Emperor Constantine the Great (274-337). The
+            earliest known usage of this name was in 950. The city lay at the
+            seaward end of the Great Wall of Trajan, and was surrounded by
+            fortifications of its own.
+          </p>
+          <!-- Use Wikipedia API to display extracts for the Info Page -->
+          <a
+            href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
+            >Wiki API Source</a
+          >
+          <br />
+          <a
+            href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
+            target="_blank"
+            >Histria Wiki</a
+          >
+        </div>
+        <div id="Tomis-Wiki" class="sub-tabcontent" style="display: none">
+          <h3>Tomis Travel</h3>
+          <p>Travel to Tomis by bus</p>
+        </div>
+        <div id="Tomis-Map" class="sub-tabcontent" style="display: none">
+          <h3>Tomis Maps</h3>
+          <p>StreetView Tomis Citadel</p>
+          <div id="map_1"></div>
+        </div>
       </div>
-      <div id="Tomis-Wiki" class="sub-tabcontent" style="display: none">
-        <h3>Tomis Travel</h3>
-        <p>Travel to Tomis by bus</p>
-      </div>
-      <div id="Tomis-Map" class="sub-tabcontent" style="display: none">
-        <h3>Tomis Maps</h3>
-        <p>StreetView Tomis Citadel</p>
-        <div id="map_1"></div>
-      </div>
-    </div>
-    <!-- Histria Vertical Tab Content -->
-    <div id="Callatis" class="tabcontent" style="display: none">
-      <!-- <h3>Histria</h3> -->
-      <!-- <p>Histria is the capital city of England.</p> -->
-      <!-- horizontal tabs in a vertical tab -->
-      <div class="sub-tabs">
-        <button class="sub-tablinks" onclick="openInfo(event, 'Callatis-Info')">
-          Chronicle
-        </button>
-        <button
-          class="sub-tablinks"
-          onclick="openInfo(event, 'Callatis-Wiki')"
-        >
-        Wikipedia
-        </button>
-        <button class="sub-tablinks" onclick="openInfo(event, 'Callatis-Map')">
-          StreetView
-        </button>
+      <!-- Histria Vertical Tab Content -->
+      <div id="Callatis" class="tabcontent" style="display: none">
+        <!-- <h3>Histria</h3> -->
+        <!-- <p>Histria is the capital city of England.</p> -->
+        <!-- horizontal tabs in a vertical tab -->
+        <div class="sub-tabs">
+          <button
+            class="sub-tablinks"
+            onclick="openInfo(event, 'Callatis-Info')"
+          >
+            Chronicle
+          </button>
+          <button
+            class="sub-tablinks"
+            onclick="openInfo(event, 'Callatis-Wiki')"
+          >
+            Wikipedia
+          </button>
+          <button
+            class="sub-tablinks"
+            onclick="openInfo(event, 'Callatis-Map')"
+          >
+            StreetView
+          </button>
+        </div>
+
+        <div id="Callatis-Info" class="sub-tabcontent" style="active">
+          <h3>History</h3>
+          <p>
+            The Greek town Callatis existed until the mid-7th century under this
+            name. Life in the town resumed from the 10th century. In the 13th
+            century Callatis came to be known as Pangalia.[3] The Vlachs called
+            it Tomisovara[4] and the Greeks called it Panglicara.[4] From the
+            16th century the town had acquired its present name, Mangalia.
+            <br />
+            A Greek colony named Callatis was founded in the 6th century BC by
+            the city of Heraclea Pontica.[5] Its first silver coinage was minted
+            around 350 BC. In 72 BC, Callatis was conquered by the Roman general
+            Lucullus and was assigned to the Roman province of Moesia Inferior.
+            Throughout the 2nd century AD, the city built defensive
+            fortifications and the minting of coinage under the Roman emperors
+            Septimius Severus and Caracalla continued. Callatis suffered
+            multiple invasions in the 3rd century AD but recovered in the 4th
+            century AD to regain its status as an important trade hub and port
+            city.[6] From the 7th to the 11th century the city was under the
+            rule of the First Bulgarian Empire.
+            <br />
+            <br />
+            Experts and archaeologists agree that Callatis was the most
+            important cultural centre in antiquity in the entire region of
+            Dobrudja, an area lying between the Danube and the Black Sea. It was
+            a great economic centre, especially thanks to its harbour. Callatis
+            was built by Greek colonists from Heraclea Pontica on the site of an
+            older Getae settlement known as Acervatis or Cerbatis. The
+            inhabitants were at first a mixture of the local Getae population
+            and the Greeks newly arrived. On the site once occupied by Callatis
+            we find today the town of Mangalia, with a population of around
+            33,000 inhabitants. Sorin Marcel Colesniuc, the curator of the
+            Callatis Museum, which is part of the Callatis Cultural Complex,
+            told us about what has survived to this day of the ancient city of
+            Callatis: “First of all, we have a number of inscriptions we have
+            dug up in Mangalia, as well as funeral stones featuring a number of
+            ancient teachers. We also have the ancient writers in the old city
+            of Callatis, such as Istros of Callatis, Demetrius of Callatis,
+            Herakleides Lembos, and the philosopher Thales. In Mangalia, we
+            found the only ancient papyrus discovered on Romanian territory. It
+            was uncovered in 1959, and because the country didn’t have the
+            proper conditions to preserve it, it was sent to Moscow. It was
+            believed lost to researchers in Romania for half a century. I looked
+            for this papyrus together with my colleague Ion Paslaru and found it
+            after 2 years of searching, in 2011, at the Moscow Centre for
+            Restoration and Conservation. That year we brought back to Romania
+            this unique document. We don’t know exactly what the text says,
+            because it disintegrated when exposed to air and sun after being
+            found. It could have been lost forever, but luckily it got to Moscow
+            and it was preserved. Today there are 154 surviving fragments, and
+            on the larger fragments we can make out letters in ancient Greek. We
+            don’t have any complete word, just a few letters here and there. The
+            papyrus dates back to the 4th century BC.” We asked Sorin Marcel
+            Colesniuc what visitors can see in the Callatis Museum: “The museum
+            exhibits many architectural pieces, such as columns, capitals,
+            architraves, friezes with metopes, cornices featuring bucrania and
+            various ceramic vessels, the most important being the amphorae.
+            There are also oil lamps, aqueducts, Tanagra figurines, vessels made
+            of glass, funerary stelae, inscriptions, depictions of the gods,
+            jewels, coins and metal objects. In front of the museum, you can see
+            lots of architectural fragments. There is also an architectural
+            park, as well as the sites around Mangalia. You can see the north
+            wall of the city of Callatis and its north-western wall which has
+            been dug up and extensively studied. Another site worth a visit is a
+            princely tomb located 3 km away from Mangalia, on the way to the
+            village of Albesti.” The ancient harbour provides significant
+            insight into the economy of the ancient city of Callatis.
+            Unfortunately, however, it lies today below the sea surface. Sorin
+            Marcel Colesniuc, the curator of the Callatis Museum, explains: “The
+            harbour in Callatis was built in the 4th century BC. Unfortunately,
+            the sea level went up about 2 metres in the last 2,000 years, so the
+            ports and its structures are now under the Black Sea. In the 1960s
+            and 1970s, Constantin Scarlat did an underwater survey and drew a
+            map of the ancient harbour. He found many architectural fragments,
+            lots of ceramic pieces, especially shingles and amphorae, and we
+            have the map he published in 1973 in a science journal in Cluj. The
+            map includes a few sunken ships as well. We worked with companies
+            from Italy and Hungary which came to scan the bottom of the Black
+            Sea in the Mangalia area, and their scanners have confirmed the
+            presence of these ancient shipwrecks.” From a flourishing city,
+            Callatis gradually suffered a dramatic decline, which Sorin Marcel
+            Colesniuc says was the result of migrations: “In the 2nd century AD,
+            the area saw the arrival of migratory populations. The first are the
+            Costoboci, followed by the Goths, the Carpi and the Huns, in the 5th
+            century. The Avars and the Slavs arrived in these parts in the late
+            6th and early 7th century. They dealt the final blow to Callatis,
+            and for the next 300 years nothing is known of the city. No
+            archaeological traces were found from this period. Later, around the
+            13th century, we encounter for the first time the name of Pangalia
+            to refer to the site of the ancient Callatis. The Mangalia was first
+            mentioned in historical records in 1593.” As is often the case with
+            history, few traces remain of what was once the ancient city of
+            Callatis and they tell us very little about the people who lived
+            here.
+          </p>
+          <!-- Use Wikipedia API to display extracts for the Info Page -->
+          <a
+            href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
+            >Wiki API Source</a
+          >
+          <br />
+          <a
+            href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
+            target="_blank"
+            >Histria Wiki</a
+          >
+        </div>
+        <div id="Callatis-Wiki" class="sub-tabcontent" style="display: none">
+          <h3>Callatis Travel</h3>
+          <p>Travel to Callatis by bus</p>
+        </div>
+        <div id="Callatis-Map" class="sub-tabcontent" style="display: none">
+          <h3>Callatis Maps</h3>
+          <p>StreetView Callatis Citadel</p>
+          <div id="map_1"></div>
+        </div>
       </div>
 
-      <div id="Callatis-Info" class="sub-tabcontent" style="active">
-        <h3>History</h3>
-        <p>
-          The Greek town Callatis existed until the mid-7th century under this
-          name. Life in the town resumed from the 10th century. In the 13th
-          century Callatis came to be known as Pangalia.[3] The Vlachs called it
-          Tomisovara[4] and the Greeks called it Panglicara.[4] From the 16th
-          century the town had acquired its present name, Mangalia. <br />
-          A Greek colony named Callatis was founded in the 6th century BC by the
-          city of Heraclea Pontica.[5] Its first silver coinage was minted
-          around 350 BC. In 72 BC, Callatis was conquered by the Roman general
-          Lucullus and was assigned to the Roman province of Moesia Inferior.
-          Throughout the 2nd century AD, the city built defensive fortifications
-          and the minting of coinage under the Roman emperors Septimius Severus
-          and Caracalla continued. Callatis suffered multiple invasions in the
-          3rd century AD but recovered in the 4th century AD to regain its
-          status as an important trade hub and port city.[6] From the 7th to the
-          11th century the city was under the rule of the First Bulgarian
-          Empire.
-          <br />
-          <br />
-          Experts and archaeologists agree that Callatis was the most important
-          cultural centre in antiquity in the entire region of Dobrudja, an area
-          lying between the Danube and the Black Sea. It was a great economic
-          centre, especially thanks to its harbour. Callatis was built by Greek
-          colonists from Heraclea Pontica on the site of an older Getae
-          settlement known as Acervatis or Cerbatis. The inhabitants were at
-          first a mixture of the local Getae population and the Greeks newly
-          arrived. On the site once occupied by Callatis we find today the town
-          of Mangalia, with a population of around 33,000 inhabitants. Sorin
-          Marcel Colesniuc, the curator of the Callatis Museum, which is part of
-          the Callatis Cultural Complex, told us about what has survived to this
-          day of the ancient city of Callatis: “First of all, we have a number
-          of inscriptions we have dug up in Mangalia, as well as funeral stones
-          featuring a number of ancient teachers. We also have the ancient
-          writers in the old city of Callatis, such as Istros of Callatis,
-          Demetrius of Callatis, Herakleides Lembos, and the philosopher Thales.
-          In Mangalia, we found the only ancient papyrus discovered on Romanian
-          territory. It was uncovered in 1959, and because the country didn’t
-          have the proper conditions to preserve it, it was sent to Moscow. It
-          was believed lost to researchers in Romania for half a century. I
-          looked for this papyrus together with my colleague Ion Paslaru and
-          found it after 2 years of searching, in 2011, at the Moscow Centre for
-          Restoration and Conservation. That year we brought back to Romania
-          this unique document. We don’t know exactly what the text says,
-          because it disintegrated when exposed to air and sun after being
-          found. It could have been lost forever, but luckily it got to Moscow
-          and it was preserved. Today there are 154 surviving fragments, and on
-          the larger fragments we can make out letters in ancient Greek. We
-          don’t have any complete word, just a few letters here and there. The
-          papyrus dates back to the 4th century BC.” We asked Sorin Marcel
-          Colesniuc what visitors can see in the Callatis Museum: “The museum
-          exhibits many architectural pieces, such as columns, capitals,
-          architraves, friezes with metopes, cornices featuring bucrania and
-          various ceramic vessels, the most important being the amphorae. There
-          are also oil lamps, aqueducts, Tanagra figurines, vessels made of
-          glass, funerary stelae, inscriptions, depictions of the gods, jewels,
-          coins and metal objects. In front of the museum, you can see lots of
-          architectural fragments. There is also an architectural park, as well
-          as the sites around Mangalia. You can see the north wall of the city
-          of Callatis and its north-western wall which has been dug up and
-          extensively studied. Another site worth a visit is a princely tomb
-          located 3 km away from Mangalia, on the way to the village of
-          Albesti.” The ancient harbour provides significant insight into the
-          economy of the ancient city of Callatis. Unfortunately, however, it
-          lies today below the sea surface. Sorin Marcel Colesniuc, the curator
-          of the Callatis Museum, explains: “The harbour in Callatis was built
-          in the 4th century BC. Unfortunately, the sea level went up about 2
-          metres in the last 2,000 years, so the ports and its structures are
-          now under the Black Sea. In the 1960s and 1970s, Constantin Scarlat
-          did an underwater survey and drew a map of the ancient harbour. He
-          found many architectural fragments, lots of ceramic pieces, especially
-          shingles and amphorae, and we have the map he published in 1973 in a
-          science journal in Cluj. The map includes a few sunken ships as well.
-          We worked with companies from Italy and Hungary which came to scan the
-          bottom of the Black Sea in the Mangalia area, and their scanners have
-          confirmed the presence of these ancient shipwrecks.” From a
-          flourishing city, Callatis gradually suffered a dramatic decline,
-          which Sorin Marcel Colesniuc says was the result of migrations: “In
-          the 2nd century AD, the area saw the arrival of migratory populations.
-          The first are the Costoboci, followed by the Goths, the Carpi and the
-          Huns, in the 5th century. The Avars and the Slavs arrived in these
-          parts in the late 6th and early 7th century. They dealt the final blow
-          to Callatis, and for the next 300 years nothing is known of the city.
-          No archaeological traces were found from this period. Later, around
-          the 13th century, we encounter for the first time the name of Pangalia
-          to refer to the site of the ancient Callatis. The Mangalia was first
-          mentioned in historical records in 1593.” As is often the case with
-          history, few traces remain of what was once the ancient city of
-          Callatis and they tell us very little about the people who lived here.
-        </p>
-        <!-- Use Wikipedia API to display extracts for the Info Page -->
-        <a
-          href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
-          >Wiki API Source</a
-        >
-        <br />
-        <a
-          href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
-          target="_blank"
-          >Histria Wiki</a
-        >
-      </div>
-      <div id="Callatis-Wiki" class="sub-tabcontent" style="display: none">
-        <h3>Callatis Travel</h3>
-        <p>Travel to Callatis by bus</p>
-      </div>
-      <div id="Callatis-Map" class="sub-tabcontent" style="display: none">
-        <h3>Callatis Maps</h3>
-        <p>StreetView Callatis Citadel</p>
-        <div id="map_1"></div>
-      </div>
-    </div>
-
-    <!-- <div id="Tomis" class="tabcontent" style="display: none;">
+      <!-- <div id="Tomis" class="tabcontent" style="display: none;">
         <h3>Tomis</h3>
         <p>Tomis is the capital of France.</p>
         <div id="map_1"></div>
@@ -426,27 +464,26 @@
         <div id="map_1"></div>
       </div>  -->
     </main>
-        <!-- FOOTER AREA -->
-        <footer class="navbar-dark bg-dark">
-
-          <div class="footer-content">
-            <div class="footer-section about">
-              <h1 class="logo-text">FOOTER AREA</h1>
-              <h1 class="logo-text">Greek Ancient Cities</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                quae, voluptatum, quod, voluptas quibusdam voluptates quidem
-                voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae,
-                voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus
-                quos quia quas nesciunt. Quisquam, quae.
-              </p>
-              <div class="contact">
-                <span><i class="fas fa-phone"></i> &nbsp; 01247570043</span>
-                <span><i class="fas fa-envelope"></i> &nbsp; </span>
-              </div>
-            </div>
+    <!-- FOOTER AREA -->
+    <footer class="navbar-dark bg-dark">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text">FOOTER AREA</h1>
+          <h1 class="logo-text">Greek Ancient Cities</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quae, voluptatum, quod, voluptas quibusdam voluptates quidem
+            voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam quae,
+            voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus
+            quos quia quas nesciunt. Quisquam, quae.
+          </p>
+          <div class="contact">
+            <span><i class="fas fa-phone"></i> &nbsp; 01247570043</span>
+            <span><i class="fas fa-envelope"></i> &nbsp; </span>
           </div>
-        </footer>
+        </div>
+      </div>
+    </footer>
     <!-- <script src="./scripts/maps-vert-tabs.js"></script> -->
     <script src="./scripts/gmaps-earth.js"></script>
     <script src="./scripts/wiki-fetch.js"></script>
