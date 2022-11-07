@@ -1,67 +1,63 @@
 // JavaScript Document
-let histriaResponse = document.getElementById('Histria-Response');
-// console.log("Printing TEST 1");
+let fetchedInfoResponse = "";
 
-let btnWikiPressed = document.getElementById('histria_wikipedia');
-// console.log("Printing TEST 2");
-let searchItem = document.getElementById('histria_wikipedia');
-// console.log("Printing TEST 3");
+let searchedItem = "";
+let searchingItem = "";
 
 
 function fetchWiki(id) {
-    // console.log("Printing TEST 4");
-    // console.log("searched id: " + id);
-    
-	// e.preventDefault();
-    // console.log("Printing TEST 5");
-	displaySearchResults(searchItem.value);
+	// Getting the id of the city-button clicked:
+	searchedItem = document.getElementById(id);
+	// Split the id to the city name only:
+	searchingItem = searchedItem.id.split('_')[0];
+	// Getting the coresponding  city div to print the results on:
+	fetchedInfoResponse = document.getElementById(searchingItem + '-wiki-fetching');
+	// Calling the fetchWikiResults function, passing the city name as a parameter, to fetch the results:
+	fetchWikiResults(searchingItem);
 }
 
-
-
-// btnWikiPressed.addEventListener('onclick', (e)=> {
-//     console.log("Printing TEST 4");
-// 	e.preventDefault();
-//     console.log("Printing TEST 5");
-// 	displaySearchResults(searchItem.value);
-// })
-
-
-function displaySearchResults(x){
-	// console.log("Printing TEST 6");
-	let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${x}`;
-	console.log(url);
-    // console.log("Printing TEST 7");
-	
+// This function fetches the results from the Wikipedia API:
+function fetchWikiResults(x){
+	// let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${x}`;
+	let url = "https://en.wikipedia.org/w/api.php?" +
+        new URLSearchParams({
+            "action": "query",
+            "list": "search",
+            "prop": "info",
+            "inprop": "url",
+            "utf8": "",
+            "format": "json",
+            "origin": "*",
+            "srlimit": "7",
+            "srsearch": `${searchingItem}`
+        });
+// fetching the response from the API:
 	fetch(url)
 		.then(function(response) {
-            // console.log("Printing TEST 8");
+			// getting the response data in JSON format
     		return (response.json());
   		})
   		.then(function(data){
-            // console.log("Printing TEST 9");
+			// saving the query objects in an array:
   			let resultsArray = data.query.search;
-            //   console.log("Printing TEST 10");
-  			resultsOnPage(resultsArray);
+			// calling the printResultsOnPage function, passing the array as a parameter:
+			printResultsOnPage(resultsArray);
   		})
   		.catch(function () {
    			console.log('An error occured');
 		});
 }
 
-
-function resultsOnPage(myArray){
-    // console.log("Printing TEST 11");
-	histriaResponse.innerHTML = " ";
-	histriaResponse.insertAdjacentHTML('beforeend', `<h2>Results for ${searchItem} </h2>`);
-
-
+// function to print the results on the wikipedia tab:
+function printResultsOnPage(myArray){
+	fetchedInfoResponse.innerHTML = " ";
+	fetchedInfoResponse.insertAdjacentHTML('beforeend', `<h2>Results for \"${searchingItem}\" </h2>`);
 	myArray.forEach(function(item){
 		let itemTitle = item.title;
 		let itemSnippet = item.snippet;
 		let itemUrl = encodeURI(`https://en.wikipedia.org/wiki/${item.title}`);
 		
-		histriaResponse.insertAdjacentHTML('beforeend',
+		fetchedInfoResponse.insertAdjacentHTML('beforeend',
       	`<div class="resultItem">
          <h3 class="resultTitle">
           <a href="${itemUrl}" target="_blank" rel="noopener">${itemTitle}</a>

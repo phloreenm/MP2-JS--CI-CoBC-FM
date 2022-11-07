@@ -43,6 +43,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/loading-anim.css" />
 
     <!-- SCRIPTS -->
     <!-- <script
@@ -124,22 +125,19 @@
         <button
           id="tab-button-histria"
           class="tablinks"
-          onclick="openCity(event, 'Histria')"
-        >
+          onclick="openCity(event, 'histria')">
           Histria
         </button>
         <button
           id="tab-button-tomis"
           class="tablinks"
-          onclick="openCity(event, 'Tomis')"
-        >
+          onclick="openCity(event, 'tomis')">
           Tomis
         </button>
         <button
           id="tab-button-callatis"
           class="tablinks"
-          onclick="openCity(event, 'Callatis')"
-        >
+          onclick="openCity(event, 'callatis')">
           Callatis
         </button>
       </div>
@@ -150,37 +148,36 @@
         <p>Click a button to select a city</p>
       </div>
       <!-- ===HISTRIA================================================== -->
-      <!-- HISTRIA Vertical Tab Content -->
-      <div id="Histria" class="tabcontent" style="display: none">
+      <!-- HISTRIA Vertical Tabs Content -->
+      <div id="histria" class="tabcontent" style="display: none">
         <!-- horizontal tabs in a vertical tab -->
         <div class="sub-tabs">
           <button
             class="sub-tablinks"
-            onclick="openInfo(event, 'Histria-Info')">
+            onclick="openInfo(event, 'histria-info')">
             Chronicle
             <!-- history, record -->
           </button>
-          <!-- onclick="openInfo(event, 'Histria-Wiki'); takeButtonId(this.id)"> -->
+          <!-- value="Histria" -->
           <button
             id="histria_wikipedia"
-            value="Histria"
             class="sub-tablinks"
-            onclick="openInfo(event, 'Histria-Wiki'); fetchWiki(this.id)">
+            onclick="openInfo(event, 'histria-wiki'); fetchWiki(this.id)">
             Wikipedia
           </button>
-          <button class="sub-tablinks" onclick="openInfo(event, 'Histria-Map')">
+          <button class="sub-tablinks" onclick="openInfo(event, 'histria-map')">
             StreetView
           </button>
         </div>
         <!-- HISTRIA - SUB-Tabs -->
-        <div id="Histria-Info" class="sub-tabcontent" style="active">
+        <div id="histria-info" class="sub-tabcontent" style="active">
           <h3>Short History</h3>
           <p>
             Histria or Istros (Ancient Greek: Ἰστρίη, Thracian river god,
             Danube), was a Greek colony or polis (πόλις, city) near the mouths
             of the Danube (known as Ister in Ancient Greek), on the western
             coast of the Black Sea. It was the first urban settlement on today's
-            Romanian territory when founded by Milesian settlers in the 7th
+            Romanian territory when founded by Milesiistria-an settlers in the 7th
             century BC. It was under Roman rule from the 1st to 3rd centuries
             AD. Invasions during the 7th century AD rendered it indefensible,
             and the city was abandoned. In antiquity, it also bore the names
@@ -192,13 +189,12 @@
             miles from Tomis and 9 miles from Ad Stoma.
           </p>
         </div>
-        <div id="Histria-Wiki" class="sub-tabcontent">
-          <!-- <p>Bellow is the WIKI API</p> -->
-          <div id="Histria-Response" style="border: 1px solid black;">
-            Fetching Results...
+        <div id="histria-wiki" class="sub-tabcontent">
+          <div id="histria-wiki-fetching" style="border: 1px solid black;">
+            Response from Wikipedia API
           </div>
         </div>
-        <div id="Histria-Map" class="sub-tabcontent" style="display: none">
+        <div id="histria-map" class="sub-tabcontent" style="display: none">
           <h3>Histria Maps</h3>
           <p>StreetView Histria Citadel</p>
           <!-- <div id="map_1"></div> -->
@@ -217,29 +213,27 @@
       </div>
       <!-- ===TOMIS================================================== -->
       <!-- TOMIS Vertical Tab Content -->
-      <div id="Tomis" class="tabcontent" style="display: none">
+      <div id="tomis" class="tabcontent" style="display: none">
         <!-- horizontal tabs in a vertical tab -->
         <div class="sub-tabs">
-          <button
-            class="sub-tablinks"
-            onclick="openInfo(event, 'Tomis-Info')">
+
+          <button class="sub-tablinks" onclick="openInfo(event, 'tomis-info')">
             Chronicle
           </button>
-          <!-- onclick="openInfo(event, 'Tomis-Wiki'); takeThisButtonId(this.id)"> -->
+
           <button
-            id="tomis-wiki"
+            id="tomis_wikipedia"
             class="sub-tablinks"
-            onclick="openInfo(event, 'Tomis-Wiki')">
+            onclick="openInfo(event, 'tomis-wiki'); fetchWiki(this.id)">
             Wikipedia
           </button>
-          <button
-          class="sub-tablinks"
-          onclick="openInfo(event, 'Tomis-Map')">
+
+          <button class="sub-tablinks" onclick="openInfo(event, 'tomis-map')">
             StreetView
           </button>
         </div>
 
-        <div id="Tomis-Info" class="sub-tabcontent" style="active">
+        <div id="tomis-info" class="sub-tabcontent" style="active">
           <h3></h3>
           <p>
             One of the legends of this historic place says that the beautiful
@@ -304,12 +298,12 @@
             >Histria Wiki</a
           >
         </div>
-        <div id="Tomis-Wiki" class="sub-tabcontent" style="display: none">
-          <!-- <h3>Tomis Travel</h3>
-          <p>Travel to Tomis by bus</p> -->
-          <div id="tomis-wiki-fetching"><h1 style="color: red;">This should be replaced by Tomis Wiki Fetching MAIN Version</h1></div>
+        <div id="tomis-wiki" class="sub-tabcontent" style="display: none">
+          <div id="tomis-wiki-fetching" style="border: 1px solid black;">
+            Response from Wikipedia API
+          </div>
         </div>
-        <div id="Tomis-Map" class="sub-tabcontent" style="display: none">
+        <div id="tomis-map" class="sub-tabcontent" style="display: none">
           <h3>Tomis Maps</h3>
           <p>StreetView Tomis Citadel</p>
           <div id="map_1"></div>
@@ -317,29 +311,29 @@
       </div>
       <!-- ===CALLATIS================================================== -->
       <!-- CALLATIS Vertical Tab Content -->
-      <div id="Callatis" class="tabcontent" style="display: none">
+      <div id="callatis" class="tabcontent" style="display: none">
         <div class="sub-tabs">
           <button
             class="sub-tablinks"
-            onclick="openInfo(event, 'Callatis-Info')"
+            onclick="openInfo(event, 'callatis-info')"
           >
             Chronicle
           </button>
           <button
+          id="callatis_wikipedia"
             class="sub-tablinks"
-            onclick="openInfo(event, 'Callatis-Wiki')"
-          >
+            onclick="openInfo(event, 'callatis-wiki'); fetchWiki(this.id)">
             Wikipedia
           </button>
           <button
             class="sub-tablinks"
-            onclick="openInfo(event, 'Callatis-Map')"
+            onclick="openInfo(event, 'callatis-map')"
           >
             StreetView
           </button>
         </div>
 
-        <div id="Callatis-Info" class="sub-tabcontent" style="active">
+        <div id="callatis-info" class="sub-tabcontent" style="active">
           <h3>History</h3>
           <p>
             The Greek town Callatis existed until the mid-7th century under this
@@ -435,19 +429,23 @@
             here.
           </p>
           <!-- Use Wikipedia API to display extracts for the Info Page -->
-          <a href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
-            >Wiki API Source</a>
+          <a
+            href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
+            >Wiki API Source</a
+          >
           <br />
           <a
             href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
             target="_blank"
-            >Histria Wiki</a>
+            >Histria Wiki</a
+          >
         </div>
-        <div id="Callatis-Wiki" class="sub-tabcontent" style="display: none">
-          <h3>Callatis Travel</h3>
-          <p>Travel to Callatis by bus</p>
+        <div id="callatis-wiki" class="sub-tabcontent" style="display: none">
+          <div id="callatis-wiki-fetching" style="border: 1px solid black;">
+            Response from Wikipedia API
+          </div>
         </div>
-        <div id="Callatis-Map" class="sub-tabcontent" style="display: none">
+        <div id="callatis-map" class="sub-tabcontent" style="display: none">
           <h3>Callatis Maps</h3>
           <p>StreetView Callatis Citadel</p>
           <div id="map_1"></div>
@@ -479,7 +477,7 @@
     <script type="text/javascript" src="./scripts/tabs-display.js"></script>
     <script type="text/javascript" src="./scripts/gmaps-earth.js"></script>
     <script type="text/javascript" src="./scripts/wiki-fetch.js"></script>
-  
+
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
