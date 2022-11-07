@@ -1,3 +1,4 @@
+// SOURCE: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript
 function gMapsMap() {
     var locations = [
         ["Tomis", 44.171006, 28.661011, 1],
