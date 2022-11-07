@@ -253,7 +253,7 @@ logo-link {
 /* Footer */
 footer {
   flex-direction: row;
-  padding-bottom: 70px;
+  padding-top: 70px;
   margin-bottom: 0;
 }
 .footer-content {
