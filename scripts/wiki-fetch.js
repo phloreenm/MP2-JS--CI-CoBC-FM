@@ -10,7 +10,7 @@ let searchItem = document.getElementById('histria_wikipedia');
 
 function fetchWiki(id) {
     // console.log("Printing TEST 4");
-    console.log("searched id: " + id);
+    // console.log("searched id: " + id);
     
 	// e.preventDefault();
     // console.log("Printing TEST 5");
