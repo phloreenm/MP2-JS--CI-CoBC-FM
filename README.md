@@ -94,13 +94,13 @@
   - [Callatis, the ancient city on the Black Sea coast](https://www.rri.ro/en_gb/callatis_the_ancient_city_on_the_black_sea_coast-2529250 )
   - [Callatis - Ancient Village or Settlement in Romania](https://www.megalithic.co.uk/article.php?sid=37857)
   - [Tomis – the ancient metropolis](https://atlastracer.wordpress.com/articles/tomis-the-ancient-metropolis/)
+  - [Ancient City Tomis](https://imperiumromanum.pl/en/article/ancient-city-tomis/)
 - Code Snippets,  APIs and tutorials:
   - [Google Maps JavaScript API Cookbook Kindle Edition](https://www.amazon.co.uk/Google-Maps-JavaScript-API-Cookbook-ebook/dp/B00HJR6RD6)
   - [Maps JavaScript API](AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4)
   - [Custom Markers](https://developers.google.com/maps/documentation/javascript/custom-markers#maps_custom_markers-javascript)
   - [Google Earth/Maps Icons](https://kml4earth.appspot.com/icons.html)
   - [Monuments & Structures map markers](https://mapicons.mapsmarker.com/category/markers/tourism/monuments-structures/)
-      <!-- - [Host icons on Google Drive](https://mapicons.mapsmarker.com/faq/host-the-icons-on-google-drive/) -->
   - [Street View API](https://developers.google.com/maps/documentation/javascript/streetview)
   - [Adding a Google Map with a Marker to Your Website](https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript)
   - [Google Maps Markers](https://developers.google.com/maps/documentation/javascript/markers#maps_marker_simple-javascript)
@@ -108,11 +108,11 @@
   - [Maps page vertical tabs code source](https://www.w3schools.com/howto/howto_js_vertical_tabs.asp)
   - [Maps page horizontal tabs code source](https://www.w3schools.com/howto/howto_js_tabs.asp)
   - [Wikipedia API search base code](https://femkreations.com/how-to-build-a-wikipedia-search-app-in-9-steps/)
-  - [Animation loader](https://webdeasy.de/en/css-loading-animations/)
+  - [Loading animation file](https://icons8.com/preloaders/en/search/loading)
+  - [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 - Media credits
   - [Google Maps Icons Credits: Matthias Stasiak](https://mapicons.mapsmarker.com/author/matthias.stasiak/)
   - [Greek Column SVG Vector & PNG](https://www.svgrepo.com/svg/160058/greek-column)
   - [Ancient Columns SVG Vector & PNG](https://www.pngrepo.com/svg/321726/ancient-columns)
   - [Greek Vase SVG Vector & PNG](https://www.svgrepo.com/svg/104220/greek-vase)
-      <!-- - [My icons folder on my Google Drive](https://drive.google.com/drive/folders/1EQA5hQEVGGVN6HaBYut6yXVS8KlTC4ST?usp=sharing) -->
 

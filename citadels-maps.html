@@ -43,7 +43,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/loading-anim.css" />
 
     <!-- SCRIPTS -->
     <!-- <script
@@ -144,8 +143,10 @@
       <!-- ===================================================== -->
       <!-- CALL TO ACTION -->
       <div id="callToAction" class="tabcontent">
-        <h3 style="text-align: center;">SELECT CITY</h3>
-        <p style="text-align: center;">Select one of the upper tabs to display further information</p>
+        <h3 style="text-align: center">SELECT CITY</h3>
+        <p style="text-align: center">
+          Select one of the upper tabs to display further information
+        </p>
       </div>
       <!-- ===HISTRIA================================================== -->
       <!-- HISTRIA Tabs Content -->
@@ -156,42 +157,43 @@
             class="sub-tablinks"
             onclick="openInfo(event, 'histria-info')">
             Chronicle
-            <!-- history, record -->
           </button>
-          <!-- value="Histria" -->
           <button
             id="histria_wikipedia"
             class="sub-tablinks"
             onclick="openInfo(event, 'histria-wiki'); fetchWiki(this.id)">
             Wikipedia
           </button>
-          <button class="sub-tablinks" onclick="openInfo(event, 'histria-map')">
+          <button class="sub-tablinks"
+            onclick="openInfo(event, 'histria-map')">
             StreetView
           </button>
         </div>
         <!-- HISTRIA - SUB-Tabs -->
         <div id="histria-info" class="sub-tabcontent" style="active">
-          <h3>Short History</h3>
+          <h3>History</h3>
           <p>
             Histria or Istros (Ancient Greek: Ἰστρίη, Thracian river god,
             Danube), was a Greek colony or polis (πόλις, city) near the mouths
             of the Danube (known as Ister in Ancient Greek), on the western
             coast of the Black Sea. It was the first urban settlement on today's
-            Romanian territory when founded by Milesiistria-an settlers in the 7th
-            century BC. It was under Roman rule from the 1st to 3rd centuries
-            AD. Invasions during the 7th century AD rendered it indefensible,
-            and the city was abandoned. In antiquity, it also bore the names
-            Istropolis, Istriopolis, and Histriopolis (Ἰστρόπολις, Ἰστρία
-            πόλις).[1]
+            Romanian territory when founded by Milesiistria-an settlers in the
+            7th century BC. It was under Roman rule from the 1st to 3rd
+            centuries AD. Invasions during the 7th century AD rendered it
+            indefensible, and the city was abandoned. In antiquity, it also bore
+            the names Istropolis, Istriopolis, and Histriopolis (Ἰστρόπολις,
+            Ἰστρία πόλις).[1]
             <br /><br />
             Histriopolis was a fort in the Roman province of Moesia. As Tabula
             Peutingeriana shows it is situated between Tomis and Ad Stoma; 11
             miles from Tomis and 9 miles from Ad Stoma.
           </p>
         </div>
-        <div id="histria-wiki" class="sub-tabcontent">
-          <div id="histria-wiki-fetching" style="border: 1px solid black;">
-            Loading results...
+        <div id="histria-wiki" class="sub-tabcontent" style="display: none">
+          <div id="histria-wiki-fetching">
+            <div class="loading">
+              <img src="./assets/images/fading_circles.gif" alt="Fetching results...">
+            </div>
           </div>
         </div>
         <div id="histria-map" class="sub-tabcontent" style="display: none">
@@ -199,9 +201,9 @@
           <p>StreetView Histria Citadel</p>
           <div class="streetViewMap">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1666795722566!6m8!1m7!1sCAoSLEFGMVFpcE5QTjZQeUNFS0lhaHZGWExXbHhfdzI2LU91VHpaTFc3NmdzNXQy!2m2!1d44.5472221!2d28.773056!3f235.5837123811416!4f-17.290084368714417!5f0.7820865974627469"
-              width="100%"
-              height="350"
+              src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469"
+              width="600"
+              height="450"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -213,20 +215,19 @@
       <!-- ===TOMIS================================================== -->
       <!-- TOMIS Tabs Content -->
       <div id="tomis" class="tabcontent" style="display: none">
+
         <!-- horizontal tabs in a vertical tab -->
         <div class="sub-tabs">
-
-          <button class="sub-tablinks" onclick="openInfo(event, 'tomis-info')">
+          <button class="sub-tablinks"
+          onclick="openInfo(event, 'tomis-info')">
             Chronicle
           </button>
-
           <button
             id="tomis_wikipedia"
             class="sub-tablinks"
             onclick="openInfo(event, 'tomis-wiki'); fetchWiki(this.id)">
             Wikipedia
           </button>
-
           <button class="sub-tablinks" onclick="openInfo(event, 'tomis-map')">
             StreetView
           </button>
@@ -286,7 +287,7 @@
             fortifications of its own.
           </p>
           <!-- Use Wikipedia API to display extracts for the Info Page -->
-          <a
+          <!-- <a
             href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
             >Wiki API Source</a
           >
@@ -295,26 +296,33 @@
             href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
             target="_blank"
             >Histria Wiki</a
-          >
+          > -->
         </div>
         <div id="tomis-wiki" class="sub-tabcontent" style="display: none">
-          <div id="tomis-wiki-fetching" style="border: 1px solid black;">
-            Loading results...
+          <div id="tomis-wiki-fetching">
+            <div class="loading">
+              <img src="./assets/images/fading_circles.gif" alt="Fetching results...">
+            </div>
           </div>
         </div>
         <div id="tomis-map" class="sub-tabcontent" style="display: none">
-          <h3>Tomis Maps</h3>
-          <p>StreetView Tomis Citadel</p>
+          <h3>Tomis archaeological site</h3>
+          <p>Ancient Roman ruins right in front of the St Peter and Paul cathedral</p>
           <div class="streetViewMap">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1666795722566!6m8!1m7!1sCAoSLEFGMVFpcE5QTjZQeUNFS0lhaHZGWExXbHhfdzI2LU91VHpaTFc3NmdzNXQy!2m2!1d44.5472221!2d28.773056!3f235.5837123811416!4f-17.290084368714417!5f0.7820865974627469"
-              width="100%"
-              height="350"
+              src="https://www.google.com/maps/embed?pb=!4v1667908662924!6m8!1m7!1suz64s_Zc4gCvWKGrWeTGzA!2m2!1d44.17079191736811!2d28.66072606666326!3f44.06381673794906!4f-0.7972313552879484!5f1.9587109090973311"
+              width="600"
+              height="450"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+          </div>
+          <h3>Roman building with Mosaic</h3>
+          <p>StreetView Tomis Citadel</p>
+          <div class="streetViewMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1667908741895!6m8!1m7!1sCAoSLEFGMVFpcE5CMzVNRkt1R0t3MHEwWTN2ZlNkcUhjQzNqRDlHV0Z1VW5YWERG!2m2!1d44.1731667!2d28.6583358!3f350.4347997708205!4f-11.345926381437692!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -324,20 +332,18 @@
         <div class="sub-tabs">
           <button
             class="sub-tablinks"
-            onclick="openInfo(event, 'callatis-info')"
-          >
+            onclick="openInfo(event, 'callatis-info')">
             Chronicle
           </button>
           <button
-          id="callatis_wikipedia"
+            id="callatis_wikipedia"
             class="sub-tablinks"
             onclick="openInfo(event, 'callatis-wiki'); fetchWiki(this.id)">
             Wikipedia
           </button>
           <button
             class="sub-tablinks"
-            onclick="openInfo(event, 'callatis-map')"
-          >
+            onclick="openInfo(event, 'callatis-map')">
             StreetView
           </button>
         </div>
@@ -437,8 +443,6 @@
             Callatis and they tell us very little about the people who lived
             here.
           </p>
-          <!-- Use Wikipedia API to display extracts for the Info Page -->
-          <a
             href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
             >Wiki API Source</a
           >
@@ -447,11 +451,13 @@
             href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
             target="_blank"
             >Histria Wiki</a
-          >
+          > -->
         </div>
         <div id="callatis-wiki" class="sub-tabcontent" style="display: none">
-          <div id="callatis-wiki-fetching" style="border: 1px solid black;">
-            Loading results...
+          <div id="callatis-wiki-fetching">
+            <div class="loading">
+              <img src="./assets/images/fading_circles.gif" alt="Fetching results...">
+            </div>
           </div>
         </div>
         <div id="callatis-map" class="sub-tabcontent" style="display: none">
@@ -505,6 +511,5 @@
       type="text/javascript"
       src="https://unpkg.com/default-passive-events"
     ></script>
-
   </body>
 </html>
