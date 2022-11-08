@@ -1,10 +1,10 @@
-// JavaScript Document
-let fetchedInfoResponse = "";
+// SOURCE:  https://femkreations.com/how-to-build-a-wikipedia-search-app-in-9-steps/
 
+let fetchedInfoResponse = "";
 let searchedItem = "";
 let searchingItem = "";
 
-
+// this function is called when the user clicks the selected city Wikepedia tab/button:
 function fetchWiki(id) {
 	// Getting the id of the city-button clicked:
 	searchedItem = document.getElementById(id);
