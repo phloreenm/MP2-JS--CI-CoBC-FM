@@ -1,4 +1,5 @@
 function openCity(evnt, citadelName) {
+    document.getElementById("wiki_callToAction").innerHTML = "";
     // Declare all variables
     var i, tabcontent, tablinks;
   

@@ -100,6 +100,31 @@ main {
   box-sizing: border-box;
 }
 
+.center-content {
+  text-align: center;
+}
+
+/* ARTICLES */
+article {
+  /* background-color: #fff; */
+  max-width: 1024px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+article:last-child {
+  margin-bottom: 0;
+}
+article h4 {
+  margin: 10px 0 25px 0;
+}
+article p {
+  margin-top: 16px;
+  line-height: 24px;
+}
+
+/* / ARTICLES */
+
 /* Style the tab */
 .tab {
   /* float: left; */
