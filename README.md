@@ -87,13 +87,23 @@
     DevTools failed to load source map: Could not load content for chrome-extension://gannpgaobkkhmpomoijebaigcapoeebl/bundle.min.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
   ```
   These have been solved following the steps described on [StackOverflow forum](https://stackoverflow.com/questions/61339968/error-message-devtools-failed-to-load-sourcemap-could-not-load-content-for-chr), and the cause looked to be "(...) Chrome added support for source maps." Solved by making the right settings in the DevTools->Settings->Preferences->Sources.
-- Another error
+- ```[Violation] Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952```
+  - Cause
+  - Solution
+- ``` The deviceorientation events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features ```
+  - Cause 
+  - Solution
 ---
 **BUGS**
-- When navigating through the tabs:
-  - Select City: any of the three
-  - The default sub-tab displayed is "Chronicle"
-  - If you select any of the sub-tabs, then navigate to another city, the default content is not shown anymore and must select a sub-tab to display content for the selected City.
+- navigating between the cities:
+  - Behavior:
+    - When navigating through the city tabs:
+      - Select City: any of the three
+      - The default sub-tab displayed is "Chronicle"
+      - If you select any of the sub-tabs, then navigate to another city, the default content is not shown anymore and must select a sub-tab to display content for the selected City.
+      - This bug renders no content inside the section.
+  - Solution:
+    - Added defaultInfo() function to simulate a click on the Chronicle Sub_tab button, so that each time a new city is selected, the content displayed is defaulted to the Chronicle page.
 ---
 **CREDITS**
 - Research and Information Credits
