@@ -89,6 +89,12 @@
   These have been solved following the steps described on [StackOverflow forum](https://stackoverflow.com/questions/61339968/error-message-devtools-failed-to-load-sourcemap-could-not-load-content-for-chr), and the cause looked to be "(...) Chrome added support for source maps." Solved by making the right settings in the DevTools->Settings->Preferences->Sources.
 - Another error
 ---
+**BUGS**
+- When navigating through the tabs:
+  - Select City: any of the three
+  - The default sub-tab displayed is "Chronicle"
+  - If you select any of the sub-tabs, then navigate to another city, the default content is not shown anymore and must select a sub-tab to display content for the selected City.
+---
 **CREDITS**
 - Research and Information Credits
   - [Callatis, the ancient city on the Black Sea coast](https://www.rri.ro/en_gb/callatis_the_ancient_city_on_the_black_sea_coast-2529250 )
