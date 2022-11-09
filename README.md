@@ -95,6 +95,7 @@
   - [Callatis - Ancient Village or Settlement in Romania](https://www.megalithic.co.uk/article.php?sid=37857)
   - [Tomis – the ancient metropolis](https://atlastracer.wordpress.com/articles/tomis-the-ancient-metropolis/)
   - [Ancient City Tomis](https://imperiumromanum.pl/en/article/ancient-city-tomis/)
+  - =========================================
 - Code Snippets,  APIs and tutorials:
   - [Google Maps JavaScript API Cookbook Kindle Edition](https://www.amazon.co.uk/Google-Maps-JavaScript-API-Cookbook-ebook/dp/B00HJR6RD6)
   - [Maps JavaScript API](AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4)
@@ -108,11 +109,12 @@
   - [Maps page vertical tabs code source](https://www.w3schools.com/howto/howto_js_vertical_tabs.asp)
   - [Maps page horizontal tabs code source](https://www.w3schools.com/howto/howto_js_tabs.asp)
   - [Wikipedia API search base code](https://femkreations.com/how-to-build-a-wikipedia-search-app-in-9-steps/)
-  - [Loading animation file](https://icons8.com/preloaders/en/search/loading)
   - [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+  - =========================================
 - Media credits
   - [Google Maps Icons Credits: Matthias Stasiak](https://mapicons.mapsmarker.com/author/matthias.stasiak/)
   - [Greek Column SVG Vector & PNG](https://www.svgrepo.com/svg/160058/greek-column)
   - [Ancient Columns SVG Vector & PNG](https://www.pngrepo.com/svg/321726/ancient-columns)
   - [Greek Vase SVG Vector & PNG](https://www.svgrepo.com/svg/104220/greek-vase)
+  - [Loading animation file](https://icons8.com/preloaders/en/search/loading)
 

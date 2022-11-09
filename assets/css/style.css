@@ -91,10 +91,9 @@ logo-link {
 }
 
 /* Main content */
-/* main {
-  margin-left: 0;
-  padding-left: 0;
-} */
+main {
+  padding-bottom: 1.5em;
+}
 /* ---------------------------------------------- */
 /* Maps vertical & horizontal tabs */
 * {
@@ -227,6 +226,10 @@ logo-link {
 }
 
 /* Wikipedia results styling */
+.loader {
+  display: inline-block;
+  align-content: center;
+}
 #resultsList{
 	margin-top:2.5em;
 }
@@ -252,13 +255,14 @@ logo-link {
 /* ---------------------------------------------- */
 /* Footer */
 footer {
-  flex-direction: row;
-  padding-top: 70px;
+  /* position: absolute; */
+  flex-direction: column;
+  padding-top: 1.5em;
   margin-bottom: 0;
 }
 .footer-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
