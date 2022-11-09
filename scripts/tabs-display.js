@@ -1,5 +1,9 @@
-function openCity(evnt, citadelName) {
+// Function to display content with sub-tabs butons
+function openCity(ev, citadelName) {
+  console.log("openCity function called");
+    // Empty the HTML CTA section:
     document.getElementById("wiki_callToAction").innerHTML = "";
+
     // Declare all variables
     var i, tabcontent, tablinks;
   
@@ -17,9 +21,21 @@ function openCity(evnt, citadelName) {
   
     // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(citadelName).style.display = "block";
-    evnt.currentTarget.className += " active";
-  } 
+    ev.currentTarget.className += " active";
+
+}
+
+/* Function which is called when the user clicks the selected city tab/button
+and sends a click event to the sub-tabs buttons, to default to info page
+*/
+function deafaultInfo(evt, citadel){
+  console.log("deafultInfo function called");
+  document.getElementById("sub-tab-button-info-" + citadel).click();
+    
+}
+// function to display content when sub-tabs are clicked
 function openInfo(evnt, tabSubject) {
+  console.log("openInfo function called");
     // Declare all variables
     var i, tabcontent, tablinks;
   
@@ -38,4 +54,4 @@ function openInfo(evnt, tabSubject) {
     // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(tabSubject).style.display = "block";
     evnt.currentTarget.className += " active";
-  } 
+} 

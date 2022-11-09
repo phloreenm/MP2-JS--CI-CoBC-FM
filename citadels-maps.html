@@ -132,19 +132,19 @@
         <button
           id="tab-button-histria"
           class="tablinks"
-          onclick="openCity(event, 'histria')">
+          onclick="openCity(event, 'histria'); deafaultInfo(event, 'histria')">
           Histria
         </button>
         <button
           id="tab-button-tomis"
           class="tablinks"
-          onclick="openCity(event, 'tomis')">
+          onclick="openCity(event, 'tomis'); deafaultInfo(event, 'tomis')">
           Tomis
         </button>
         <button
           id="tab-button-callatis"
           class="tablinks"
-          onclick="openCity(event, 'callatis')">
+          onclick="openCity(event, 'callatis'); deafaultInfo(event, 'callatis')">
           Callatis
         </button>
       </div>
@@ -152,6 +152,7 @@
       <div id="histria" class="tabcontent" style="display: none">
         <div class="sub-tabs">
           <button
+            id="sub-tab-button-info-histria"
             class="sub-tablinks"
             onclick="openInfo(event, 'histria-info')">
             Chronicle
@@ -233,10 +234,11 @@
         </div>
       </div>
       <!-- ===TOMIS================================================== -->
-      <!-- TOMIS Tabs Content -->
       <div id="tomis" class="tabcontent" style="display: none">
         <div class="sub-tabs">
-          <button class="sub-tablinks"
+          <button
+          id="sub-tab-button-info-tomis"
+          class="sub-tablinks"
           onclick="openInfo(event, 'tomis-info')">
             Chronicle
           </button>
@@ -358,6 +360,7 @@
       <div id="callatis" class="tabcontent" style="display: none">
         <div class="sub-tabs">
           <button
+          id="sub-tab-button-info-callatis"
             class="sub-tablinks"
             onclick="openInfo(event, 'callatis-info')">
             Chronicle

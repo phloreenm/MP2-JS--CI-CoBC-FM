@@ -39,11 +39,6 @@ Articles Link color               bt               #123456
   --text-hover-color: #4d523b;
   --text-active-color: #c1cd97;
 
-
-  /* --text-color-tabs: #c6c6c6; */
-  /* 
-  --text-color-dark: # 12232E;
-  --text-color-hover: # 007CC7; */
 }
 
 
@@ -54,10 +49,16 @@ body {
   margin: 0;
   padding: 0;
   background: var(--main-bg-color);
-  color: white;
+  color: var(--text-color);
 }
 body {
+  display: flex;
+  flex-direction: column;
   min-width: 300px;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
 }
 /* Header */
 header {
@@ -337,10 +338,12 @@ blockquote {
 /* Footer */
 footer {
   background-color: var(--foreground-article-color);
+  /* display: flex; */
   flex-direction: column;
   padding-top: 3.5em;
   margin-bottom: 0;
-}
+  margin-top: auto;
+  }
 .footer-content {
   display: flex;
   flex-direction: column;
