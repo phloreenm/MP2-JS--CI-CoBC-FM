@@ -110,6 +110,7 @@
   - [Maps page horizontal tabs code source](https://www.w3schools.com/howto/howto_js_tabs.asp)
   - [Wikipedia API search base code](https://femkreations.com/how-to-build-a-wikipedia-search-app-in-9-steps/)
   - [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+  - [CSS Variables](https://www.w3.org/TR/css-variables/#values)
   - =========================================
 - Media credits
   - [Google Maps Icons Credits: Matthias Stasiak](https://mapicons.mapsmarker.com/author/matthias.stasiak/)

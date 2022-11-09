@@ -5,14 +5,55 @@
   box-sizing: border-box;
 }
 
+/* Custom properties (variables) for custom colors */
+/********************* Colour reference chart****************
+******************************* variable **************** colour ******** 
+
+Document Background color       --main-bg-color           #12232E
+Foreground color                  bb               #abcdef
+Heading Text color                bt               #123456
+Sub-Heading Text color            bt               #123456
+Navigation Buttons Link color     bl               #123456
+Navigation Buttons Link hover     bl               #123456
+Navigation Buttons Link active    bl               #123456
+Paragraph Text color              bt               #123456
+Blackquotes Text color            bt               #123456
+Articles Background color         bt               #123456
+Articles Text color               bt               #123456
+Articles Link color               bt               #123456
+*/
+:root {
+
+  --main-bg-color: #3e546e;
+  --second-bg-color: #1874bd;
+
+  --foreground-article-color: #51463d;
+
+  --buttons-color: #97c9f1;
+  --buttons-hover-color: #9db0c7;
+  --buttons-active-color: #5a7a9f;
+
+  --text-color: #c1cd97;
+  --text-color-dark: #c1cd97;
+  --text-color-light: #8ba8c8;
+  --text-hover-color: #4d523b;
+  --text-active-color: #c1cd97;
+
+
+  /* --text-color-tabs: #c6c6c6; */
+  /* 
+  --text-color-dark: # 12232E;
+  --text-color-hover: # 007CC7; */
+}
+
+
+
 html,
 body {
   /* height: 100%; */
   margin: 0;
   padding: 0;
-  /* background: #e8cbc0; */
-  /* background: #232931; */
-  background: #215162;
+  background: var(--main-bg-color);
   color: white;
 }
 body {
@@ -20,8 +61,7 @@ body {
 }
 /* Header */
 header {
-  /* background: #0000b4; */
-  border: #006E51 1px solid;
+  /* border: #006E51 1px solid; */
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -33,54 +73,55 @@ header {
   flex-direction: column;
 }
 .navbar-dark .navbar-brand, .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
-  color: #8ed77e;
+  color: var(--text-color);
 }
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
-  color: #f9f871;
+  color: var(--text-color);
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: #34ad8b;
+  color: var(--text-color-light);
 }
 .navbar-brand{
-  /* width: 100%; */
+  color: var(--text-color);
   margin: 0;
 }
 .navbar-brand a{
-  /* margin-left: auto;
-  margin-right: auto; */
   margin: auto;
   text-align: center;
 }
 .navbar-toggler {
   width: 100%;
-  color: hsla(0,0%,100%,.55);
-  border-color: hsla(0,0%,100%,.1);
+  color: var(--text-color);
+  /* border-color: hsla(0,0%,100%,.1); */
+}
+.nav-link {
+  color: var(--text-color);
+}
+.nav-link:hover {
+  color: var(--text-hover-color);
 }
 #logo-wr {
   width: 100px;
   height: 100px;
-  /* margin: 0;
-  padding: 0; */
   display: block;
   flex-direction: column;
   flex-direction: column;
-  border: solid 1px #000;
+  /* border: solid 1px #000; */
 }
 logo-link {
   display: block;
-  /* flex-direction: column; */
 }
 #logo-wr img {
   width: 100%;
   height: 100%;
-  border: solid 1px white;
+  /* border: solid 1px white; */
   display: flex;
   flex-direction: row;
 }
 #header-title {
   font-size: 2em;
   color: aqua;
-  border: solid 1px #000;
+  /* border: solid 1px #000; */
   display: flex;
   flex-direction: column;
 }
@@ -95,28 +136,31 @@ logo-link {
   padding: 0;
 }
 
-/* Main content & elements*/
-main {
-  /* padding-bottom: 1.5em; */
-}
-
-/* ---------------------------------------------- */
-/* Maps vertical & horizontal tabs */
-
-
+/* class to center text */
 .center-content {
   text-align: center;
 }
-.wiki_callToAction {
+
+/* CTA section */
+#wiki_callToAction {
   padding: 1rem;
 }
-.wiki_callToAction h3{
+#wiki_callToAction > h3 {
+  text-align: center;
+  /* margin-top: 0.1rem; */
   margin-bottom: 0;
-  padding-top: 20px;
+  padding-top: 0.5rem;
+}
+#wiki_callToAction > p {
+  text-align: center;
+  /* margin-top: 0.1rem; */
+  margin-bottom: 0;
+  
 }
 
 /* ARTICLES */
 article {
+  background-color: var(--foreground-article-color);
   max-width: 1024px;
   padding: 20px;
   margin-bottom: 20px;
@@ -146,32 +190,23 @@ blockquote {
 
 /* Style the tab */
 .tab {
-  /* float: left; */
-  /* border: 1px solid #ccc; */
-  background-color: #f1f1f1;
+  background-color: var(--buttons-color);
   /* valori pentru desktop in media queries */
   /* width: 30%;
   height: 100%; */
   width: 100%;
-  /* margin-left: auto; */
-  margin-right: auto;
   height: 200px;
-  /* margin: 5px 10px 5px 10px; */
+  margin-right: auto;
 }
+
 .sub-tabs {
   overflow: hidden;
   display: inline-flex;
-  /* display: flex; */
   margin-left: auto;
   margin-right: auto;
   align-content: center;
   align-items: center;
-  /* float: left; */
-  /* margin-top: 25px; */
-  /* border: 1px solid #ccc; */
-  /* background-color: #f1f1f1; */
   background-color: transparent;
-
   /* valori pentru desktop in media queries */
   /* width: 30%;
   height: 100%; */
@@ -182,18 +217,21 @@ blockquote {
 /* Style the buttons that are used to open the tab content */
 .tab button {
   display: block;
-  background-color: inherit;
-  color: black;
+  background-color: var(--buttons-color);
+  /* color: black; */
+  color: var(--text-color-tabs);
   padding: 21px 16px;
   width: 100%;
   border: none;
   outline: none;
-  text-align: left;
+  /* text-align: left; */
+  text-align: center;
   cursor: pointer;
   transition: 0.3s;
 }
 .sub-tabs button {
-  background-color: rgb(145, 145, 145);
+  background-color: var(--buttons-color);
+  color: var(--text-color-tabs);
   border: none;
   outline: none;
   cursor: pointer;
@@ -209,18 +247,18 @@ blockquote {
 }
 /* Change background color of buttons on hover */
 .tab button:hover, .sub-tabs button:hover {
-  background-color: #ddd;
+  background-color: var(--buttons-hover-color);
 }
 .sub-tabs button:hover {
   /* background-color: #ddd; */
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid var(--buttons-hover-color);
 }
 /* .tab-hor button:hover {
   background-color: #ddd;
 } */
 /* Create an active/current "tab button" class */
 .tab button.active, .sub-tabs button.active {
-  background-color: #ccc;
+  background-color: var(--buttons-active-color);
 }
 /* .tab-hor button.active {
   background-color: #ccc;
@@ -253,7 +291,7 @@ blockquote {
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 } */
 .tabcontent, .sub-tabcontent {
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  animation: fadeEffect 1.2s; /* Fading effect takes 1 second */
 }
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
@@ -274,7 +312,7 @@ blockquote {
 	margin-top:2.5em;
 }
 .resultItem{
-	background: #f8f5f1;
+	background: var(--second-bg-color);
 	border-radius:3px;
   	margin: 10px 10px 10px 0;
   	padding:10px;
@@ -283,7 +321,7 @@ blockquote {
   	font-style: italic;
 }
 .resultItem:hover{
-	border-left:5px solid #443328;
+	border-left:5px solid var(--buttons-active-color);
 }
 .resultTitle{
 
@@ -295,7 +333,7 @@ blockquote {
 /* ---------------------------------------------- */
 /* Footer */
 footer {
-  /* position: absolute; */
+  background-color: var(--foreground-article-color);
   flex-direction: column;
   padding-top: 1.5em;
   margin-bottom: 0;
