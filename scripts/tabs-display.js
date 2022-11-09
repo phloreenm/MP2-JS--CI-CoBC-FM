@@ -30,7 +30,7 @@ function openCity(ev, citadelName) {
 /* Function which is called when the user clicks the selected city tab/button
 and sends a click event to the sub-tabs buttons, to default to info page
 */
-function deafaultInfo(evt, citadel){
+function defaultInfo(evt, citadel){
   // console.log("deafultInfo function called");
   document.getElementById("sub-tab-button-info-" + citadel).click();  
 }
