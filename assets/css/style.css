@@ -262,7 +262,6 @@ blockquote {
   transition: 0.3s;
 }
 .sub-tabs button {
-  
   background-color: var(--buttons-color);
   color: var(--text-color);
   border: none;
@@ -289,12 +288,13 @@ blockquote {
 .tab button.active {
   border-radius: 10px;
   margin: 0.8%;
-  
-
 }
 .tab button.active, .sub-tabs button.active {
   background-color: var(--buttons-active-color);
   color: var(--text-color-dark);
+}
+.sub-tabs button.active {
+  border-bottom: 3px solid var(--text-active-color);
 }
 
 /* Style the tab content */
@@ -441,11 +441,14 @@ Rewritten in the new level 4 syntax as: */
     margin: 1.8% 3.0% 1.8% 0;
   }
   .tab button.active {
-    margin: 1.8% 0 1.8% 3.0%;
-    border-right: var(--buttons-active-color);
+    /* margin: 1.8% 0 1.8% 3.0%; */
+    margin: 1.8% 0 1.8% 0;
+    border-right: 5px solid var(--text-active-color);
+
   }
   .tab button.active > .sub-tabs button {
     background-color: inherit;
+    /* border-bottom:  5px solid var(--text-active-color); */
   }
 
   .tabcontent {
