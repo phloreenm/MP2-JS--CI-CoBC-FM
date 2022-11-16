@@ -48,7 +48,6 @@ Articles Link color               bt               #123456
   --text-color-light: #ffffff;
   --text-hover-color: #b7ea00;
   --text-active-color: #c1cd97;
-
 }
 
 
@@ -68,6 +67,7 @@ body {
   min-height: 100vh;
 }
 main {
+  padding-top: 50px;
   width: 90%;
   max-width: 767px;
   margin-left: auto;
@@ -131,7 +131,7 @@ header {
   flex-direction: column;
   /* border: solid 1px #000; */
 }
-logo-link {
+.logo-link {
   display: block;
 }
 #logo-wr img {
