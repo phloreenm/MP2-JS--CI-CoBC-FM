@@ -64,14 +64,14 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 300px;
+  width: 100%;
   min-height: 100vh;
 }
 main {
-  max-width: 1024px;
+  width: 90%;
+  max-width: 767px;
   margin-left: auto;
   margin-right: auto;
-}
-main {
   flex-grow: 1;
 }
 /* Header */
@@ -90,7 +90,7 @@ header {
   align-content: center;
   padding: 0;
 }
-/* override Bootsrap */
+/* override Bootstrap */
 .container-fluid{
   flex-direction: column;
 }
@@ -183,7 +183,6 @@ logo-link {
 /* ARTICLES */
 article {
   background-color: var(--foreground-article-color);
-  /* min-width: 100%; */
   max-width: 1024px;
   padding: 20px;
   margin-bottom: 20px;
@@ -423,13 +422,18 @@ Rewritten in the new level 4 syntax as: */
 /*  Styles for viewports between 768px and 1024px. */
 /* @media (768px <= width <= 1023px )  { */
 @media (width >= 768px )  {
+  body {
+    min-width: 768px;
+    min-height: 100vh;
+  }
+  main {
+    min-width: 768px;
+  }
   .tab {
     background-color: transparent;
     float: left;
     width: 28%;
-    /* width: 200px; */
-    /* width: calc(tabcontent - 20%); */
-    /* min-width: 20%; */
+
     height: 200px;
   }
   .tab button {
@@ -445,7 +449,7 @@ Rewritten in the new level 4 syntax as: */
 
   .tabcontent {
     float: left;
-    /* width: calc(100% - 210px); */
+
     width: 70%;
     border-left: none;
     height: 100%;
@@ -454,10 +458,7 @@ Rewritten in the new level 4 syntax as: */
   .sub-tabcontent {
     width: 100%;
     display: none;
-    /* padding: 6px 12px; */
-    /* margin-top: 125px; */
-    /* border: 1px solid #ccc; */
-    /* border-top: none; */
+
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
   }
   .sub-tabs button {
@@ -472,7 +473,17 @@ Rewritten in the new level 4 syntax as: */
   .footer-content {
     flex-direction: row;
 }
+}
 
+@media (width >= 976px )  {
+  body {
+    min-width: 976px;
+    min-height: 100vh;
+  }
+  main {
+    min-width: 976px;
+  }
+}
   /* Styles for viewports with a width of 1024 pixels or greater.
 @media (width >= 1024px) {
  
