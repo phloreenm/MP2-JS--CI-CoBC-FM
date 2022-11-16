@@ -131,19 +131,19 @@
       <div class="tab">
         <button
           id="tab-button-histria"
-          class="tablinks"
+          class="tablinks blue-tab"
           onclick="openCity(event, 'histria'); defaultInfo(event, 'histria')">
           Histria
         </button>
         <button
           id="tab-button-tomis"
-          class="tablinks"
+          class="tablinks yellow-tab"
           onclick="openCity(event, 'tomis'); defaultInfo(event, 'tomis')">
           Tomis
         </button>
         <button
           id="tab-button-callatis"
-          class="tablinks"
+          class="tablinks red-tab"
           onclick="openCity(event, 'callatis'); defaultInfo(event, 'callatis')">
           Callatis
         </button>
@@ -205,33 +205,65 @@
           </div>
         </div>
 
-        <div id="histria-map" class="sub-tabcontent" style="display: none">
-          <article class="streetViewMap">
-            <h2 class="center-content">Histria Maps</h2>
-             <h4 class="center-content">StreetView Histria Citadel</h4> 
-            <p>
-              <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469"
-              min-width="300"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            </p><h4 class="center-content">StreetView another view</h4> <p>
-              <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469"
-              min-width="300"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            </p>     
+        <div id="histria-map" class="sub-tabcontent" style="display: none;">
+          <article>
+            <h2 class="center-content"></h2>
+            <div class="art-wr">
+              <h4 class="center-content">Short History</h4> 
+              <p>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe></p>
+              <p></iframe>
+                <h4 class="center-content">StreetView another view</h4> <p>
+                  <iframe
+                  src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe></p>
+              <p>From the 1st to 3rd centuries AD it was under Roman rule.</p>
+              <p>Invasions during the 7th century AD rendered it
+              indefensible, and the city was abandoned.</p>
+              <p>In antiquity, it also bore
+              the names Istropolis, Istriopolis, and Histriopolis (Ἰστρόπολις,
+              Ἰστρία πόλις).</p>
+              <p>
+              Histriopolis was a fort in the Roman province of Moesia. As Tabula
+              Peutingeriana shows it is situated between Tomis and Ad Stoma; 11
+              miles from Tomis and 9 miles from Ad Stoma.
+              </p> 
+            </div>    
           </article>
         </div>
+        <!-- <div id="histria-map" class="sub-tabcontent" style="display: none">
+          <div class="streetViewMap">
+            <h2 class="center-content">Histria Maps</h2>
+            <h4 class="center-content">StreetView Histria Citadel</h4> 
+            
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <h4 class="center-content">StreetView another view</h4> <p>
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+                
+          </div>
+        </div> -->
       </div>
       <!-- ===TOMIS================================================== -->
       <div id="tomis" class="tabcontent" style="display: none">
@@ -377,7 +409,6 @@
             StreetView
           </button>
         </div>
-
         <div id="callatis-info" class="sub-tabcontent" style="active">
           <article>
             <h2 class="center-content"></h2>
@@ -544,7 +575,7 @@
     <footer>
       <div class="footer-content">
         <div class="footer-section about">
-          <h1 class="logo-text">FOOTER AREA</h1>
+          <!-- <h1 class="logo-text">FOOTER AREA</h1> -->
           <h1 class="logo-text">Greek Ancient Cities</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam

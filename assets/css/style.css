@@ -1,3 +1,9 @@
+/* Mobile First style for screen sizes with viewports between 768px and 1024px
+@media (300px <= width <= 767px )  {...}
+*/
+/* Min width allowed is 300px */
+
+
 /* all document */
 *,
 *::before,
@@ -33,14 +39,17 @@ Articles Link color               bt               #123456
   --buttons-hover-color: #9db0c7;
   --buttons-active-color: #5a7a9f;
 
+  --tabs-color-blue: blue;
+  --tabs-color-yellow: yellow;
+  --tabs-color-red: red;
+
   --text-color: #c1cd97;
-  --text-color-dark: #c1cd97;
-  --text-color-light: #8ba8c8;
-  --text-hover-color: #4d523b;
+  --text-color-dark: #000000;
+  --text-color-light: #ffffff;
+  --text-hover-color: #b7ea00;
   --text-active-color: #c1cd97;
 
 }
-
 
 
 html,
@@ -58,23 +67,35 @@ body {
   min-height: 100vh;
 }
 main {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main {
   flex-grow: 1;
 }
 /* Header */
 header {
-  /* border: #006E51 1px solid; */
   align-items: center;
   justify-content: space-between;
   width: 100%;
   margin: 0;
-  /* height: 200px; */
+  box-shadow: 0 0 12px 0 rgb(0 0 0 / 7%), 0 4px 4px rgb(0 0 0 / 5%);
+}
+.navbar {
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  padding: 0;
 }
 /* override Bootsrap */
 .container-fluid{
   flex-direction: column;
 }
 .navbar-dark .navbar-brand, .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
-  color: var(--text-color);
+  color: var(--text-hover-color);
 }
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
   color: var(--text-color);
@@ -162,6 +183,7 @@ logo-link {
 /* ARTICLES */
 article {
   background-color: var(--foreground-article-color);
+  /* min-width: 100%; */
   max-width: 1024px;
   padding: 20px;
   margin-bottom: 20px;
@@ -180,8 +202,9 @@ article p {
   padding: 10px 10px 10px 10px;
 }
 .art-wr {
-  background-color: rgba(221, 221, 221, 0.315);
-border-radius: 5px;
+  /* background-color: rgba(221, 221, 221, 0.315); */
+  background-color: var(--foreground-article-color);
+  border-radius: 5px;
 }
 blockquote {
   font-size: 0.9em;
@@ -189,12 +212,20 @@ blockquote {
   padding: 5px 10px 5px 20px;
 }
 
+/* TABS colors */
+.blue-tab {
+  background-color: var(--tabs-color-blue) !important;
+}
+.yellow-tab {
+  background-color: var(--tabs-color-yellow) !important;
+}
+.red-tab {
+  background-color: var(--tabs-color-red) !important;
+}
 /* Style the tab */
 .tab {
-  background-color: var(--buttons-color);
-  /* valori pentru desktop in media queries */
-  /* width: 30%;
-  height: 100%; */
+  background-color: transparent;
+  /* background-color: var(--buttons-color); */
   width: 100%;
   height: 200px;
   margin-right: auto;
@@ -208,9 +239,7 @@ blockquote {
   align-content: center;
   align-items: center;
   background-color: transparent;
-  /* valori pentru desktop in media queries */
-  /* width: 30%;
-  height: 100%; */
+
   width: 100%;
 }
 
@@ -219,13 +248,16 @@ blockquote {
 .tab button {
   display: block;
   background-color: var(--buttons-color);
-  /* color: black; */
-  color: var(--text-color);
+  opacity: 0.7;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8), 0px 0px 2px  rgba(0,0,0,1);
+  color: var(--text-color-light);
+  letter-spacing: .2rem;
   padding: 21px 16px;
   width: 100%;
   border: none;
+  border-radius: 5px;
+  margin: 0.5%;
   outline: none;
-  /* text-align: left; */
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
@@ -239,11 +271,9 @@ blockquote {
   padding: 14px 16px;
   margin: 0.5%;
   transition: 0.3s;
-  /* width: 30%; */
   width: 100%;
   height: 100%;
   font-size: 0.8em;
-  /* min-height: 60px; */
   border-radius: 8px;
 }
 /* Change background color of buttons on hover */
@@ -254,43 +284,40 @@ blockquote {
   /* background-color: #ddd; */
   border-bottom: 3px solid var(--buttons-hover-color);
 }
-/* .tab-hor button:hover {
-  background-color: #ddd;
-} */
+
 /* Create an active/current "tab button" class */
+.tab button.active {
+  border-radius: 10px;
+  margin: 0.8%;
+  
+
+}
 .tab button.active, .sub-tabs button.active {
   background-color: var(--buttons-active-color);
+  color: var(--text-color-dark);
 }
-/* .tab-hor button.active {
-  background-color: #ccc;
-} */
+
 /* Style the tab content */
 .tabcontent {
   float: left;
   margin-top: 30px;
   padding: 0px 12px 0px 12px;
-  /* valoare pentru desktop view */
-  /* width: 70%; */
   width: 100%;
   border-left: none;
   height: 100%;
-  /* min-height: 100%; */
 }
 
 /* not used!!!!!!! */
-.tabcontent-hor {
+/* .tabcontent-hor {
   display: none;
   padding: 6px 12px;
   margin-top: 125px;
   border: 1px solid #ccc;
   border-top: none;
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
+} */
 
 /* Fade in Tabs */
-/* .tabcontent {
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
-} */
 .tabcontent, .sub-tabcontent {
   animation: fadeEffect 1.2s; /* Fading effect takes 1 second */
 }
@@ -303,6 +330,13 @@ blockquote {
     opacity: 1;
   }
 }
+
+/* Maps */
+.streetViewMap iframe {
+  width: calc(100% - 10px);
+  height: 400px;
+}
+
 
 /* Wikipedia results styling */
 .loader {
@@ -337,12 +371,13 @@ blockquote {
 /* ---------------------------------------------- */
 /* Footer */
 footer {
-  background-color: var(--foreground-article-color);
+  /* background-color: var(--foreground-article-color); */
   /* display: flex; */
   flex-direction: column;
-  padding-top: 3.5em;
+  padding-top: 1.5em;
   margin-bottom: 0;
   margin-top: auto;
+  box-shadow: 4px 4px 0 rgb(0 0 0 / 5%), 0 0 12px 4px rgb(0 0 0 / 7%);
   }
 .footer-content {
   display: flex;
@@ -368,3 +403,77 @@ footer {
 }
 
 /* Media queries */
+
+/* Boostrap default breakpoint:
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+*/
+
+
+/* Old style media queries */
+/* @media (min-width: 400px) and (max-width: 600px) {
+  ...
+}
+Support: https://caniuse.com/css-media-range-syntax
+Rewritten in the new level 4 syntax as: */
+
+/*  Styles for viewports between 768px and 1024px. */
+/* @media (768px <= width <= 1023px )  { */
+@media (width >= 768px )  {
+  .tab {
+    background-color: transparent;
+    float: left;
+    width: 28%;
+    /* width: 200px; */
+    /* width: calc(tabcontent - 20%); */
+    /* min-width: 20%; */
+    height: 200px;
+  }
+  .tab button {
+    margin: 1.8% 3.0% 1.8% 0;
+  }
+  .tab button.active {
+    margin: 1.8% 0 1.8% 3.0%;
+    border-right: var(--buttons-active-color);
+  }
+  .tab button.active > .sub-tabs button {
+    background-color: inherit;
+  }
+
+  .tabcontent {
+    float: left;
+    /* width: calc(100% - 210px); */
+    width: 70%;
+    border-left: none;
+    height: 100%;
+    margin: 0;
+  }
+  .sub-tabcontent {
+    width: 100%;
+    display: none;
+    /* padding: 6px 12px; */
+    /* margin-top: 125px; */
+    /* border: 1px solid #ccc; */
+    /* border-top: none; */
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  .sub-tabs button {
+    padding: 14px 16px;
+    margin: 0 0.5% 0.5% 0;;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9em;
+    border-radius: 5px;
+  }
+
+  .footer-content {
+    flex-direction: row;
+}
+
+  /* Styles for viewports with a width of 1024 pixels or greater.
+@media (width >= 1024px) {
+ 
+} */
