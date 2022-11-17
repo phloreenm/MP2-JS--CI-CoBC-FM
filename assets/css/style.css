@@ -3,7 +3,6 @@
 */
 /* Min width allowed is 300px */
 
-
 /* all document */
 *,
 *::before,
@@ -29,7 +28,6 @@ Articles Text color               bt               #123456
 Articles Link color               bt               #123456
 */
 :root {
-
   --main-bg-color: #3e546e;
   --second-bg-color: #1874bd;
 
@@ -49,7 +47,6 @@ Articles Link color               bt               #123456
   --text-hover-color: #b7ea00;
   --text-active-color: #c1cd97;
 }
-
 
 html,
 body {
@@ -75,6 +72,12 @@ main {
   flex-grow: 1;
   padding-bottom: 40px;
 }
+a {
+  color: var(--text-active-color);
+}
+a:hover {
+  color: var(--text-hover-color);
+}
 /* Header */
 header {
   align-items: center;
@@ -91,24 +94,27 @@ header {
   align-content: center;
   padding: 0;
 }
-/* override Bootstrap */
-.container-fluid{
+/* override Bootstrap defaults*/
+.container-fluid {
   flex-direction: column;
 }
-.navbar-dark .navbar-brand, .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
-  color: var(--text-hover-color);
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand:hover {
+  color: var(--text-active-color);
 }
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link {
   color: var(--text-color);
 }
 .navbar-dark .navbar-nav .nav-link {
   color: var(--text-color-light);
 }
-.navbar-brand{
+.navbar-brand {
   color: var(--text-color);
   margin: 0;
 }
-.navbar-brand a{
+.navbar-brand a {
   margin: auto;
   text-align: center;
 }
@@ -162,6 +168,7 @@ header {
 /* class to center text */
 .center-content {
   text-align: center;
+  padding: 10px;
 }
 
 /* CTA section */
@@ -178,14 +185,12 @@ header {
   text-align: center;
   /* margin-top: 0.1rem; */
   margin-bottom: 0;
-  
 }
 
 /* ARTICLES */
 article {
   background-color: var(--foreground-article-color);
   max-width: 1024px;
-  /* padding: 20px 0 20px 0 ; */
   margin-bottom: 20px;
   border-radius: 5px;
 }
@@ -197,14 +202,15 @@ article h4 {
   padding-top: 15px;
 }
 article p {
-  margin-top: 16px;
   line-height: 24px;
-  padding: 10px 10px 10px 10px;
+  padding:  0 10px 0 10px;
+  text-indent: 20px;
 }
+
 .art-wr {
-  /* background-color: rgba(221, 221, 221, 0.315); */
   background-color: var(--foreground-article-color);
   border-radius: 5px;
+  margin-top: 15px;
 }
 blockquote {
   font-size: 0.9em;
@@ -242,15 +248,14 @@ blockquote {
   width: 100%;
 }
 
-
 /* Style the buttons that are used to open the tab content */
 .tab button {
   display: block;
   background-color: var(--buttons-color);
   opacity: 0.7;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.8), 0px 0px 2px  rgba(0,0,0,1);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8), 0px 0px 2px rgba(0, 0, 0, 1);
   color: var(--text-color-light);
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   padding: 21px 16px;
   width: 100%;
   border: none;
@@ -276,7 +281,8 @@ blockquote {
   border-radius: 8px;
 }
 /* Change background color of buttons on hover */
-.tab button:hover, .sub-tabs button:hover {
+.tab button:hover,
+.sub-tabs button:hover {
   background-color: var(--buttons-hover-color);
 }
 .sub-tabs button:hover {
@@ -289,7 +295,8 @@ blockquote {
   border-radius: 10px;
   margin: 0.8%;
 }
-.tab button.active, .sub-tabs button.active {
+.tab button.active,
+.sub-tabs button.active {
   background-color: var(--buttons-active-color);
   color: var(--text-color-dark);
 }
@@ -307,8 +314,7 @@ blockquote {
   height: 100%;
 }
 
-
- /* .sub-tabcontent{
+/* .sub-tabcontent{
   display: none;
   padding: 6px 12px;
   margin-top: 125px;
@@ -318,7 +324,8 @@ blockquote {
 }  */
 
 /* Fade in Tabs */
-.tabcontent, .sub-tabcontent {
+.tabcontent,
+.sub-tabcontent {
   animation: fadeEffect 1.2s; /* Fading effect takes 1 second */
 }
 /* Go from zero to full opacity */
@@ -337,35 +344,34 @@ blockquote {
   height: 400px;
 }
 
-
 /* Wikipedia results styling */
 .loader {
   display: inline-block;
   align-content: center;
 }
-#resultsList{
-	margin-top:2.5em;
+#resultsList {
+  margin-top: 2.5em;
 }
-.resultItem{
-	background: var(--foreground-article-color);
-	border-radius:3px;
+.resultItem {
+  background: var(--foreground-article-color);
+  border-radius: 3px;
   margin: 10px 10px 10px 0;
-  padding:10px;
+  padding: 10px;
   text-align: left;
   white-space: normal;
   font-style: italic;
 }
-.resultItem:hover{
-	border-left:5px solid var(--buttons-active-color);
+.resultItem:hover {
+  border-left: 5px solid var(--buttons-active-color);
 }
-.resultTitle a{
+.resultTitle a {
   color: var(--text-color);
 }
-.resultTitle a:hover{
+.resultTitle a:hover {
   color: var(--text-hover-color);
 }
-.resultSnippet a{
-	color:var(--text-color);
+.resultSnippet a {
+  color: var(--text-color);
 }
 
 /* ---------------------------------------------- */
@@ -378,7 +384,7 @@ footer {
   margin-bottom: 0;
   margin-top: auto;
   box-shadow: 4px 4px 0 rgb(0 0 0 / 5%), 0 0 12px 4px rgb(0 0 0 / 7%);
-  }
+}
 .footer-content {
   display: flex;
   flex-direction: column;
@@ -388,13 +394,12 @@ footer {
   height: 100%;
 }
 
-
 /* 
  * map sizes
  */
 #map_1 {
   /* max-width: 700px; */
-  max-width:90%;
+  max-width: 90%;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -412,7 +417,6 @@ footer {
     --breakpoint-xl: 1200px;
 */
 
-
 /* Old style media queries */
 /* @media (min-width: 400px) and (max-width: 600px) {
   ...
@@ -422,7 +426,7 @@ Rewritten in the new level 4 syntax as: */
 
 /*  Styles for viewports between 768px and 1024px. */
 /* @media (768px <= width <= 1023px )  { */
-@media (width >= 768px )  {
+@media (width >= 768px) {
   body {
     min-width: 768px;
     min-height: 100vh;
@@ -438,13 +442,12 @@ Rewritten in the new level 4 syntax as: */
     height: 200px;
   }
   .tab button {
-    margin: 1.8% 3.0% 1.8% 0;
+    margin: 1.8% 3% 1.8% 0;
   }
   .tab button.active {
     /* margin: 1.8% 0 1.8% 3.0%; */
     margin: 1.8% 0 1.8% 0;
     border-right: 5px solid var(--text-active-color);
-
   }
   .tab button.active > .sub-tabs button {
     background-color: inherit;
@@ -466,19 +469,19 @@ Rewritten in the new level 4 syntax as: */
   }
   .sub-tabs button {
     padding: 14px 16px;
-    margin: 0 0.5% 0.5% 0;;
+    margin: 0 0.5% 0.5% 0;
     width: 100%;
     height: 100%;
-    font-size: 1.0em;
+    font-size: 1em;
     border-radius: 5px;
   }
 
   .footer-content {
     flex-direction: row;
-}
+  }
 }
 
-@media (width >= 976px )  {
+@media (width >= 976px) {
   body {
     min-width: 976px;
     min-height: 100vh;
@@ -487,7 +490,7 @@ Rewritten in the new level 4 syntax as: */
     min-width: 976px;
   }
 }
-  /* Styles for viewports with a width of 1024 pixels or greater.
+/* Styles for viewports with a width of 1024 pixels or greater.
 @media (width >= 1024px) {
  
 } */

@@ -51,7 +51,7 @@ function fetchWikiResults(x){
 // function to print the results on the wikipedia tab:
 function printResultsOnPage(myArray){
 	fetchedInfoResponse.innerHTML = " ";
-	fetchedInfoResponse.insertAdjacentHTML('beforeend', `<h2>Results for \"${searchingItem}\" </h2>`);
+	fetchedInfoResponse.insertAdjacentHTML('beforeend', `<h4 class="center-content" style="padding-top:15px;">Wikipedia articles about \"${searchingItem}\" </h4>`);
 	myArray.forEach(function(item){
 		let itemTitle = item.title;
 		let itemSnippet = item.snippet;

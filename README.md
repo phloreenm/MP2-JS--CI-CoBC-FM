@@ -106,11 +106,23 @@
     - Added defaultInfo() function to simulate a click on the Chronicle Sub_tab button, so that each time a new city is selected, the content displayed is defaulted to the Chronicle page.
 ---
 **CREDITS**
-- Research and Information Credits
-  - [Callatis, the ancient city on the Black Sea coast](https://www.rri.ro/en_gb/callatis_the_ancient_city_on_the_black_sea_coast-2529250 )
-  - [Callatis - Ancient Village or Settlement in Romania](https://www.megalithic.co.uk/article.php?sid=37857)
-  - [Tomis – the ancient metropolis](https://atlastracer.wordpress.com/articles/tomis-the-ancient-metropolis/)
-  - [Ancient City Tomis](https://imperiumromanum.pl/en/article/ancient-city-tomis/)
+- Research, Information and Sources Credits
+  - Histria
+    - [Histria - Wikipedia](https://en.wikipedia.org/wiki/Histria_(ancient_city))
+    - [Cetati din Dobrogea - Histria](https://sites.google.com/site/cetatidindobrogea/histria)
+    - [Olkas Project - Histria](http://www.olkas.net/lemmata/24_Histria)
+  - Tomis
+    - [Tomis – the ancient metropolis](https://atlastracer.wordpress.com/articles/tomis-the-ancient-metropolis/)
+    - [Ancient City Tomis](https://imperiumromanum.pl/en/article/ancient-city-tomis/)
+    - [Cetati din Dobrogea - Tomis](https://sites.google.com/site/cetatidindobrogea/tomis)
+    - [Constanta - Wikipedia](https://en.wikipedia.org/wiki/Constan%C8%9Ba)
+    - [Olkas Project - Tomis](http://www.olkas.net/lemmata/8_Tomis)
+  - Callatis
+    - [Callatis, the ancient city on the Black Sea coast](https://www.rri.ro/en_gb/callatis_the_ancient_city_on_the_black_sea_coast-2529250 )
+    - [Callatis - Ancient Village or Settlement in Romania](https://www.megalithic.co.uk/article.php?sid=37857)
+    - [Cetati din Dobrogea - Callatis](https://sites.google.com/site/cetatidindobrogea/callatis)
+    
+  
   - =========================================
 - Code Snippets,  APIs and tutorials:
   - [Google Maps JavaScript API Cookbook Kindle Edition](https://www.amazon.co.uk/Google-Maps-JavaScript-API-Cookbook-ebook/dp/B00HJR6RD6)
