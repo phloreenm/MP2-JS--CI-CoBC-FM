@@ -31,7 +31,8 @@ Articles Link color               bt               #123456
   --main-bg-color: #3e546e;
   --second-bg-color: #1874bd;
 
-  --foreground-article-color: #51463d;
+  /* --foreground-article-color: #51463d; */
+  --foreground-article-color: rgba(81, 70, 61, 0.4);
 
   --buttons-color: #97c9f1;
   --buttons-hover-color: #9db0c7;
@@ -121,7 +122,6 @@ header {
 .navbar-toggler {
   width: 100%;
   color: var(--text-color);
-  /* border-color: hsla(0,0%,100%,.1); */
 }
 .nav-link {
   color: var(--text-color);
@@ -135,7 +135,6 @@ header {
   display: block;
   flex-direction: column;
   flex-direction: column;
-  /* border: solid 1px #000; */
 }
 .logo-link {
   display: block;
@@ -143,14 +142,12 @@ header {
 #logo-wr img {
   width: 100%;
   height: 100%;
-  /* border: solid 1px white; */
   display: flex;
   flex-direction: row;
 }
 #header-title {
   font-size: 2em;
   color: aqua;
-  /* border: solid 1px #000; */
   display: flex;
   flex-direction: column;
 }
@@ -168,7 +165,13 @@ header {
 /* class to center text */
 .center-content {
   text-align: center;
-  padding: 10px;
+  margin: 30px 0 0 0;
+  padding-top: 15px;
+}
+.center-p {
+  font-size: small;
+  text-align: center;
+  margin: 0;
 }
 
 /* CTA section */
@@ -177,19 +180,17 @@ header {
 }
 #wiki_callToAction > h3 {
   text-align: center;
-  /* margin-top: 0.1rem; */
   margin-bottom: 0;
   padding-top: 0.5rem;
 }
 #wiki_callToAction > p {
   text-align: center;
-  /* margin-top: 0.1rem; */
   margin-bottom: 0;
 }
 
 /* ARTICLES */
 article {
-  background-color: var(--foreground-article-color);
+  /* background-color: var(--foreground-article-color); */
   max-width: 1024px;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -197,7 +198,12 @@ article {
 article:last-child {
   margin-bottom: 0;
 }
-article h4 {
+.article-hdr {
+  text-align: center;
+  margin: 30px 0 30px 0;
+  padding: 15px;
+}
+article h2 {
   margin: 30px 0 0px 0;
   padding-top: 15px;
 }
@@ -212,6 +218,7 @@ article p {
   border-radius: 5px;
   margin-top: 15px;
 }
+
 blockquote {
   font-size: 0.9em;
   font-style: italic;
@@ -231,7 +238,6 @@ blockquote {
 /* Style the tab */
 .tab {
   background-color: transparent;
-  /* background-color: var(--buttons-color); */
   width: 100%;
   height: 200px;
   margin-right: auto;
@@ -308,7 +314,6 @@ blockquote {
 .tabcontent {
   float: left;
   margin-top: 30px;
-  /* padding: 0px 12px 0px 12px; */
   width: 100%;
   border-left: none;
   height: 100%;
@@ -339,9 +344,39 @@ blockquote {
 }
 
 /* Maps */
-.streetViewMap iframe {
-  width: calc(100% - 10px);
-  height: 400px;
+.maps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+#map_1 {
+  width: 100%;
+  height: 350px;
+  border: 1px solid var(--foreground-article-color);
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.streetViewMap {
+  width: 100%;
+  height: 300px;
+  border: 1px solid var(--foreground-article-color);
+  /* border-radius: 5px; */
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+iframe {
+  /* width: calc(100% - 10px); */
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  border-radius: 5px;
 }
 
 /* Wikipedia results styling */
