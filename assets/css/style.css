@@ -59,15 +59,15 @@ Articles Link color               bt               #123456
   --buttons-hover-color: #9db0c7;
   --buttons-active-color: #a4a484;
 
-  --tabs-color-blue: blue;
+  /* --tabs-color-blue: blue;
   --tabs-color-yellow: yellow;  
-  --tabs-color-red: red;
+  --tabs-color-red: red; */
 
   --text-color: #3e3422;
   --text-color-dark: #2c2519;
   --text-color-light: #dfbd80;
-  --text-hover-color: #dc443c;
-  --text-active-color: #dc443c;
+  --text-hover-color: #dcd93c;
+  --text-active-color: #a7dc3c;
 }
 
 html,
@@ -386,7 +386,7 @@ blockquote {
 .streetViewMap {
   width: 100%;
   height: 300px;
-  border: 1px solid var(--foreground-article-color);
+  /* border: 1px solid var(--foreground-article-color); */
   /* border-radius: 5px; */
   margin: 0 auto;
   margin-bottom: 20px;
