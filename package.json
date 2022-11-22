@@ -1,0 +1,26 @@
+{
+  "name": "mp2-js--ci-cobc-fm",
+  "version": "1.0.0",
+  "description": "1.  [**About the site**](#about-the-site)\r     * [**Link to live website**](#link-to-live-website-is-here)\r     * [**Link to GitHub repository**](#link-to-github-repo-is-here)\r 1.  [**UX Design - the Five Plans method**](#uxd)\r     * [**1.Strategy plan**](#stratetgy)\r         * [Planning Stage](#planning-stage)\r         * [User Stories](#user-stories)\r         * [Site Objectives](#site-objectives)\r         * [Design Goals](#design-goals)\r     * [**2.Scope plan**](#scope)\r     * [**3.Structure plan**](#structure)\r     * [**5.Skeleton plan**](#skeleton)\r         *  [**Wireframes (wireframes.md)**](readme-files/docs/wireframes.md)\r     <!-- * [**6. Surface plan**](#surface)\r         * [**UI (User Interface)**](#ui-user-interface)\r             *  [**Site structure**](#site-structure)\r             *  [**Responsiveness**](#responsiveness)\r             *  [**Layout**](#layout)\r                 * [Header](#header)\r                 * [Main content](#main-content-section)\r                     * [Home page](#home-page)\r                     * [Menu page](#menu-page)\r                     * [Gallery page](#gallery-page)\r                     * [Contact page](#contact-page)\r                 * [Maps](#maps)\r                 * [Footer area](#footer)\r             *  [**Typography**](#fonts)\r             *  [**Colour theme**](#colours)\r             *  [**Contrast ratio (contrast.md)**](readme-files/docs/contrast.md)\r             *  [**Accessibility**](#accessibility)\r <!--1.  [**Testing (testing.md)**](readme-files/docs/testing.md)\r 1.  [**Performance**](#performance)\r 1.  [**Issues**](#issues)\r 1.  [**Deployment (deployment.md)**](readme-files/docs/deployment.md)\r 1.  [**CREDITS:**](#credits)\r     *  [**Code Snipets:**](#code-snipets)\r     *  [**Research and Information:**](#research-and-information)\r     *  [**Media**](#media)\r     *  [**Other Resources:**](#other-resources-and-tools-used)\r 1. [**Aknowledgment**](#aknowledgment) -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phloreenm/MP2-JS--CI-CoBC-FM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phloreenm/MP2-JS--CI-CoBC-FM/issues"
+  },
+  "homepage": "https://github.com/phloreenm/MP2-JS--CI-CoBC-FM#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "dependencies": {
+    "jest-environment-jsdom": "^29.3.1"
+  }
+}

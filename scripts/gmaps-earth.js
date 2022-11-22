@@ -38,3 +38,5 @@ function gMapsMap() {
         );
     }
 }
+
+module.exports = { gMapsMap };
