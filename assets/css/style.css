@@ -27,11 +27,10 @@ Articles Background color         bt               #123456
 Articles Text color               bt               #123456
 Articles Link color               bt               #123456
 */
-:root {
+/* :root {
   --main-bg-color: #3e546e;
   --second-bg-color: #1874bd;
 
-  /* --foreground-article-color: #51463d; */
   --foreground-article-color: rgba(81, 70, 61, 0.4);
 
   --buttons-color: #97c9f1;
@@ -47,6 +46,28 @@ Articles Link color               bt               #123456
   --text-color-light: #ffffff;
   --text-hover-color: #b7ea00;
   --text-active-color: #c1cd97;
+} */
+/* COLOR THEME: https://icolorpalette.com/imagepalette/color-palette-ideas-from-sky-afterglow-red-at-morning-image-11 */
+:root {
+  /* --main-bg-color: #23233b; */
+  --main-bg-color: #23233b11;
+  --second-bg-color: #1874bd;
+
+  --foreground-article-color: rgba(55, 79, 109, 0.4);
+
+  --buttons-color: #374f6d;
+  --buttons-hover-color: #9db0c7;
+  --buttons-active-color: #a4a484;
+
+  --tabs-color-blue: blue;
+  --tabs-color-yellow: yellow;  
+  --tabs-color-red: red;
+
+  --text-color: #3e3422;
+  --text-color-dark: #2c2519;
+  --text-color-light: #dfbd80;
+  --text-hover-color: #dc443c;
+  --text-active-color: #dc443c;
 }
 
 html,
