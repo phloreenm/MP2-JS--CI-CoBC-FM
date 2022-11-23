@@ -62,16 +62,21 @@
     </nav>
   </header>
   <main>
-    <h1>FORM - MAIN CONTENT</h1>
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6 center-form">
+        <div>
+          <h2 class="center-content">
+            Contact us 
+          </h2>
+          <br>
+        </div>
+        <div class="col-md-12 center-form">
           <form onsubmit="return sendMail(this);">
             <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required autocomplete="on"/>
             <!-- <input type="email" class="form-control" name="emailaddress" id="emailaddress" placeholder="Enter Email" required  autocomplete="on"/> -->
-            <input type="text" class="form-control" name="emailaddress" id="emailaddress" placeholder="Enter Email" required  autocomplete="on"/>
-            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Enter Message" required autocomplete="on"></textarea>
+            <input type="text" class="form-control" name="emailaddress" id="emailaddress" placeholder="Enter email" required  autocomplete="on"/>
+            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Enter message" required autocomplete="on"></textarea>
             <button type="submit" class="btn btn-primary center-block">Send Email</button>
           </form>
         </div>

@@ -1,3 +1,4 @@
+// Source code: https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume/blob/master/03-SendingEmailsUsingEmailJS/06-sending_emails/assets/js/sendEmail.js
 function sendMail(contactForm) {
   emailjs.send("phlopping_gmail_service", "gc-site", {
       "from_name": contactForm.name.value,
@@ -14,17 +15,3 @@ function sendMail(contactForm) {
   );
   return false;  // To block from loading a new page
 }
-// console.log("email.js loaded");
-// console.log("before sendMail() call");
-// function sendMail(contactForm) {
-//   emailjs.send("phlopping_gmail_service", "gc-site", {
-//       from_name: contactForm.name.value,
-//       from_email: contactForm.emailaddress.value,
-//       message: contactForm.message.value,
-//     })
-//     .then(function (response) {
-//       console.log("SUCCESS. Mail sent succesfully! status=%d, text=%s", response.status, response.text);
-//     }, function (err) {
-//       console.log("FAILED. error=", err);
-//     });
-// };

@@ -43,6 +43,9 @@
     *  [**Other Resources:**](#other-resources-and-tools-used)
 1. [**Aknowledgment**](#aknowledgment) -->
 
+- **About the site**
+"Scythia Minor Greek Ancient Colonies" website focuses on promoting cultural heritage tourism of ones of the most famous archaeological sites on the western shores of the Black Sea. Today, these site are located on Romania's territory, in a region called [Dobrudja](https://en.wikipedia.org/wiki/Dobruja) (Dobrogea - the area lies between the Danube river on West and the Black Sea at East).
+Dobruja boasts a rich history and many more site of archaeological significance, but I chose only three of them, as they have in common as being located close to the sea, so they were important port cities, but also economic centers.
 
 ---
 ### Live site on [GitHub Pages (custom domain)](http://phloreenm.me/MP2-JS--CI-CoBC-FM/) or [GitHub Pages 'https'](https://phloreenm.github.io/MP2-JS--CI-CoBC-FM//MP2-JS--CI-CoBC-FM/)
@@ -121,6 +124,7 @@
     - [Callatis, the ancient city on the Black Sea coast](https://www.rri.ro/en_gb/callatis_the_ancient_city_on_the_black_sea_coast-2529250 )
     - [Callatis - Ancient Village or Settlement in Romania](https://www.megalithic.co.uk/article.php?sid=37857)
     - [Cetati din Dobrogea - Callatis](https://sites.google.com/site/cetatidindobrogea/callatis)
+    - [Callatis, the ancient city on the Black Sea coast](https://www.rri.ro/en_gb/callatis_the_ancient_city_on_the_black_sea_coast-2529250)
     
   
   - =========================================
@@ -140,6 +144,7 @@
   - [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
   - [CSS Variables](https://www.w3.org/TR/css-variables/#values)
   - [EmailJS API](https://www.emailjs.com)
+  - [Code Institute EmailJS implementation](https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume/blob/master/03-SendingEmailsUsingEmailJS/06-sending_emails/assets/js/sendEmail.js)
   - =========================================
 - Media credits
   - [Google Maps Icons Credits: Matthias Stasiak](https://mapicons.mapsmarker.com/author/matthias.stasiak/)
