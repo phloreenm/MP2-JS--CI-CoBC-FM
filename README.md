@@ -44,7 +44,7 @@
 1. [**Aknowledgment**](#aknowledgment) -->
 
 - **About the site**
-"Scythia Minor Greek Ancient Colonies" website focuses on promoting cultural heritage tourism of ones of the most famous archaeological sites on the western shores of the Black Sea. Today, these site are located on Romania's territory, in a region called [Dobrudja](https://en.wikipedia.org/wiki/Dobruja) (Dobrogea - the area lies between the Danube river on West and the Black Sea at East).
+"Scythia Minor Greek Ancient Colonies" website focuses on promoting cultural heritage tourism of ones of the most famous archaeological sites on the western shores of the Black Sea. Today, these site are located on Romania's territory, in a region called [Dobrudja](https://en.wikipedia.org/wiki/Dobruja) (Dobrogea - the area lies between the Danube river on West and the Black Sea at East, part of historical Thrace).
 Dobruja boasts a rich history and many more site of archaeological significance, but I chose only three of them, as they have in common as being located close to the sea, so they were important port cities, but also economic centers.
 
 ---
@@ -152,4 +152,7 @@ Dobruja boasts a rich history and many more site of archaeological significance,
   - [Ancient Columns SVG Vector & PNG](https://www.pngrepo.com/svg/321726/ancient-columns)
   - [Greek Vase SVG Vector & PNG](https://www.svgrepo.com/svg/104220/greek-vase)
   - [Loading animation file](https://icons8.com/preloaders/en/search/loading)
+  - [Ancient Coinage of Kallatis, Thrace](https://www.wildwinds.com/coins/greece/thrace/kallatis/i.html)
+  - [Ancient Coinage of Istros, Thrace](https://www.wildwinds.com/coins/greece/thrace/istros/i.html)
+  - [Ancient Coinage of Tomis, Thrace ](https://www.wildwinds.com/coins/greece/thrace/tomis/i.html)
 

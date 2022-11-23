@@ -189,6 +189,11 @@ header {
   margin: 30px 0 0 0;
   padding-top: 15px;
 }
+.heading-alignment {
+  text-align: center;
+  /* margin: 30px 0 30px 0; */
+  padding: 15px 0 15px 0;
+}
 .center-p {
   font-size: small;
   text-align: center;
@@ -207,6 +212,24 @@ header {
 #wiki_callToAction > p {
   text-align: center;
   margin-bottom: 0;
+}
+
+/* Figure elements */
+/* figure {
+  align-content: center;
+  align-items: center;
+} */
+figure > img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+}
+figure > figcaption {
+  text-align: center;
+  font-size: small;
+  margin: 0;
+  padding: 0;
+
 }
 
 /* ARTICLES */
@@ -230,7 +253,7 @@ article h2 {
 }
 article p {
   line-height: 24px;
-  padding:  0 10px 0 10px;
+  padding: 0 10px 0 10px;
   text-indent: 20px;
 }
 
