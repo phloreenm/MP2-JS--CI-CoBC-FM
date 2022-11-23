@@ -56,3 +56,4 @@ function openInfo(evnt, tabSubject) {
     document.getElementById(tabSubject).style.display = "block";
     evnt.currentTarget.className += " active";
 } 
+document.getElementsByClassName("defaultOpenedTab")[0].click();

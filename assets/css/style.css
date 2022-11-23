@@ -229,7 +229,49 @@ figure > figcaption {
   font-size: small;
   margin: 0;
   padding: 0;
+}
+.gal-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  justify-content: center;
+
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  align-items: center;
+}
+.gal-flex > figure {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  /* padding: 10px; */
+  /* border: solid 10px red; */
+  text-align: center;
+  /* height: 300px; */
+  /* display: flex; */
+  align-items: center;
+  box-sizing: content-box;
+}
+.gal-flex > figure > img {
+  margin: auto;
+  width: 350px;
+  min-width: 250px;
+  max-height: 100%;
 }
 
 /* ARTICLES */
