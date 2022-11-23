@@ -22,18 +22,8 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>
   <script type="text/javascript">
-    // const PUBLIC_KEY = '8XKDNSzlw_svug1Gk';
     (function () {
       emailjs.init("8XKDNSzlw_svug1Gk");
-      emailjs.send("phlopping_gmail_service", "gc-site", {
-        name: "Ioana",
-        notes: "Check this out!"
-      })
-        .then(function (response) {
-          console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-        }, function (err) {
-          console.log("FAILED. error=", err);
-        });
     })();
   </script>
 </head>
@@ -76,29 +66,17 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <form>
-
-            <label for="name">Name</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required />
-            <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required />
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Enter Subject" required />
-            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Enter Message" required></textarea>
+        <div class="col-md-6 center-form">
+          <form onsubmit="return sendMail(this);">
+            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required autocomplete="on"/>
+            <!-- <input type="email" class="form-control" name="emailaddress" id="emailaddress" placeholder="Enter Email" required  autocomplete="on"/> -->
+            <input type="text" class="form-control" name="emailaddress" id="emailaddress" placeholder="Enter Email" required  autocomplete="on"/>
+            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Enter Message" required autocomplete="on"></textarea>
             <button type="submit" class="btn btn-primary center-block">Send Email</button>
           </form>
         </div>
       </div>
     </div>
-
-
-    <!-- <div class="form-inner">
-          <h1>Contact us</h1>
-          <input type="text" placeholder="Username">
-          <input type="email" placeholder="Email">
-          <textarea placeholder="Message..." rows="5"></textarea>
-          <button type="submit" href="/">Submit</button>
-        </div> -->
-
 
   </main>
   <!-- ===================================================== -->
@@ -132,8 +110,8 @@
   </footer>
   <!-- SCRIPTS -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
-  <script type="text/javascript" src="./scripts/tabs-display.js"></script>
-  <script type="text/javascript" src=""></script>
+  <!-- <script type="text/javascript" src="./scripts/tabs-display.js"></script> -->
+  <script type="text/javascript" src="./scripts/email-js.js"></script>
 
 
   <!-- <script type="text/javascript" src="./scripts/gmaps-earth.js"></script> -->
