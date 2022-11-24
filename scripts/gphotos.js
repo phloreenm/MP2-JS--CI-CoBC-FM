@@ -1,3 +1,4 @@
+// TABs display:
 // Code snippet from https://www.w3schools.com/howto/howto_js_full_page_tabs.asp
 function openGalleryContent(pageName, elmnt, color) {
     var i, tabcontent, tablinks;
@@ -15,3 +16,15 @@ function openGalleryContent(pageName, elmnt, color) {
 
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
+
+  // Fetch Google Place Photos API:
+  function fetchGPhotos(cityName) {
+    console.log("gPhotos function called: " + cityName);
+    // Declare variables:
+
+
+
+
+
+
+  }

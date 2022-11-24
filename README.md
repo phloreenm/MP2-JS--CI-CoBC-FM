@@ -82,6 +82,7 @@ Dobruja boasts a rich history and many more site of archaeological significance,
 - The displayed map uses a custom icon ("temple_ruins.png"), hosted locally.
 
 **ISSUES**
+Issues and errors 
 - ```
       DevTools failed to load source map: Could not load content for chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/browser-polyfill.js.map: System error: net::ERR_FILE_NOT_FOUND
       DevTools failed to load source map: Could not load content for chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/editor/config.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
@@ -96,6 +97,9 @@ Dobruja boasts a rich history and many more site of archaeological significance,
 - ``` The deviceorientation events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features ```
   - Cause 
   - Solution
+- Using hard-coded API-KEYs from Google API 
+  - Issue: couldn't find a solution to save environment variables to a file and use this file to store the variables everywhere (VSCode IDE, GitPod environment, GitHub & GitHub pages)
+  - Solution: hard coded the API-KEYs and later create environment variables in each running environment separately. Not ideally, but is working on GitHub (An emerging issue is that if you deploy the site to Netlify, you must create environment variables again).
 ---
 **BUGS**
 - navigating between the cities:
@@ -140,6 +144,8 @@ Dobruja boasts a rich history and many more site of archaeological significance,
   - [google-maps-js-api-v3-simple-multiple-marker-example](https://www.anycodings.com/1questions/3879/google-maps-js-api-v3-simple-multiple-marker-example)
   - [Maps page vertical tabs code source](https://www.w3schools.com/howto/howto_js_vertical_tabs.asp)
   - [Maps page horizontal tabs code source](https://www.w3schools.com/howto/howto_js_tabs.asp)
+  - [Google Places API  - Place Photos](https://developers.google.com/maps/documentation/places/web-service/photos)
+  - [How TO - Full Page Tabs](https://www.w3schools.com/howto/howto_js_full_page_tabs.asp)
   - [Wikipedia API search base code](https://femkreations.com/how-to-build-a-wikipedia-search-app-in-9-steps/)
   - [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
   - [CSS Variables](https://www.w3.org/TR/css-variables/#values)

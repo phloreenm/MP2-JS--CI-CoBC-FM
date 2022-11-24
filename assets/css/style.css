@@ -88,6 +88,8 @@ body {
 main {
   padding-top: 50px;
   width: 90%;
+  /* min-height: calc(100vh - 80px); */
+  min-height: calc(90vh - 130px);
   max-width: 767px;
   margin-left: auto;
   margin-right: auto;
@@ -198,6 +200,7 @@ header {
   font-size: small;
   text-align: center;
   margin: 0;
+  letter-spacing: .1rem;
 }
 
 /* CTA section */
@@ -235,7 +238,7 @@ figure > figcaption {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
+  /* display: flex; */
 
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;

@@ -104,9 +104,10 @@
     </nav>
   </header>
   <main>
-    <button class="tablnk" onclick="openGalleryContent('Histria', this, 'red')" id="defaultOpen">Histria</button>
-    <button class="tablnk" onclick="openGalleryContent('Tomis', this, 'green')">Tomis</button>
-    <button class="tablnk" onclick="openGalleryContent('Callatis', this, 'blue')">Callatis</button>
+    <!-- Tabs base code source: https://www.w3schools.com/howto/howto_js_full_page_tabs.asp -->
+    <button class="tablnk" onclick="openGalleryContent('Histria', this, 'red'); fetchGPhotos('Histria');" id="defaultOpen">Histria</button>
+    <button class="tablnk" onclick="openGalleryContent('Tomis', this, 'green'); fetchGPhotos('Tomis');">Tomis</button>
+    <button class="tablnk" onclick="openGalleryContent('Callatis', this, 'blue'); fetchGPhotos('Callatis');">Callatis</button>
 
     <div id="Histria" class="tabcnt">
       <div class="art-wr">
