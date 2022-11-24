@@ -19,6 +19,7 @@ function openGalleryContent(pageName, elmnt, color) {
 
   // Fetch Google Place Photos API:
   function fetchGPhotos(cityName) {
+    // to be implmented
     console.log("gPhotos function called: " + cityName);
     // Declare variables:
 

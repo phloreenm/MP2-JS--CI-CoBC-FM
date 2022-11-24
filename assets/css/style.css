@@ -48,26 +48,41 @@ Articles Link color               bt               #123456
   --text-active-color: #c1cd97;
 } */
 /* COLOR THEME: https://icolorpalette.com/imagepalette/color-palette-ideas-from-sky-afterglow-red-at-morning-image-11 */
-:root {
-  /* --main-bg-color: #23233b; */
+/* :root {
   --main-bg-color: #23233b11;
   --second-bg-color: #1874bd;
-
   --foreground-article-color: rgba(55, 79, 109, 0.4);
-
   --buttons-color: #374f6d;
   --buttons-hover-color: #9db0c7;
   --buttons-active-color: #a4a484;
-
-  /* --tabs-color-blue: blue;
-  --tabs-color-yellow: yellow;  
-  --tabs-color-red: red; */
-
   --text-color: #3e3422;
   --text-color-dark: #2c2519;
   --text-color-light: #dfbd80;
   --text-hover-color: #dcd93c;
   --text-active-color: #a7dc3c;
+} */
+
+:root {
+  /* base color: #097DDB */
+  --main-bg-color: rgba(9, 125, 219, 0.2); 
+  --second-bg-color: #379BEB;
+
+  /* --foreground-article-color: rgba(55, 79, 109, 0.4); */
+  /* --foreground-article-color: rgba(158, 33, 28, 0.4); */
+  --foreground-article-color: rgba(138, 196, 245, 0.4);
+
+  --buttons-color: rgba(163, 72, 69, 0.6);
+  --buttons-hover-color: #F00900;
+  --buttons-active-color: #A34845;
+
+  --text-color: #EBF411;
+  --text-color-dark: #515405;
+  --text-color-light: #f6ff00;
+  --text-hover-color: #a32300;
+  --text-active-color: #a7dc3c;
+  --link-color: #e5fad6;
+  --link-hover-color: #fa0404;
+
 }
 
 html,
@@ -97,10 +112,10 @@ main {
   padding-bottom: 40px;
 }
 a {
-  color: var(--text-active-color);
+  color: var(--link-color);
 }
 a:hover {
-  color: var(--text-hover-color);
+  color: var(--link-hover-color);
 }
 /* Header */
 header {
