@@ -5,10 +5,10 @@ function gMapsMap() {
         ["Ancient Histria Citadel", 44.546676, 28.773069, 2],
         ["Calatis", 43.814692, 28.586530, 3],
     ];
-
+    var dobrogea = new google.maps.LatLng(44.19, 28.56);
     var map = new google.maps.Map(document.getElementById("map_1"), {
         zoom: 8,
-        center: new google.maps.LatLng(44.19, 28.56),
+        center: dobrogea,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
     });
 

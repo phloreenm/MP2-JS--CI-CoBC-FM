@@ -194,8 +194,19 @@ header {
   width: 100%;
   color: var(--text-color);
 }
+.navbar-collapse {
+  text-align: center;
+  width: 100%;
+}
 .nav-link {
   color: var(--link-color);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+.nav-item {
+  width: 100%;
 }
 .nav-link:hover {
   color: var(--link-hover-color);
@@ -273,7 +284,8 @@ header {
 figure > img {
   display: block;
   margin: 0 auto;
-  padding: 10px 0 10px 0;
+  padding: 10px 10px 10px 10px;
+  max-width: 100%;
 }
 figure > figcaption {
   text-align: center;
@@ -281,12 +293,12 @@ figure > figcaption {
   margin: 0;
   padding: 0;
 }
-.gal-flex {
+/* .gal-flex {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  /* display: flex; */
+  display: flex;
 
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
@@ -303,26 +315,63 @@ figure > figcaption {
   -moz-box-align: center;
   box-align: center;
   align-items: center;
-}
-.gal-flex > figure {
+} */
+/* .gal-flex > figure {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
-  /* padding: 10px; */
-  /* border: solid 10px red; */
+  padding: 10px;
+  border: solid 10px red;
   text-align: center;
-  /* height: 300px; */
-  /* display: flex; */
+  height: 300px;
+  display: flex;
   align-items: center;
   box-sizing: content-box;
-}
-.gal-flex > figure > img {
+} */
+/* .gal-flex > figure > img {
   margin: auto;
   width: 350px;
   min-width: 250px;
   max-height: 100%;
+} */
+/* Gallery Tabs */
+.tablnk {
+  background-color: rgba(9, 125, 219, 0.8);
+  color: var(--text-color);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.3%;
+}
+
+.tablnk:hover {
+  background-color:rgba(9, 125, 219, 0.7);
+}
+.tablnk:active {
+  background-color:rgba(64, 160, 238, 0.9);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcnt {
+  color: var(--text-color);
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Histria {
+  background-color: rgba(36, 35, 49, 0.7);
+}
+#Tomis {
+  background-color: rgba(36, 35, 49, 0.7);
+}
+#Callatis {
+  background-color: rgba(36, 35, 49, 0.7);
 }
 
 /* ARTICLES */
@@ -362,24 +411,11 @@ blockquote {
   padding: 5px 10px 5px 20px;
 }
 
-/* TABS colors */
-/* .blue-tab {
-  background-color: var(--tabs-color-blue) !important;
-}
-.yellow-tab {
-  background-color: var(--tabs-color-yellow) !important;
-}
-.red-tab {
-  background-color: var(--tabs-color-red) !important;
-} */
-/* Style the tab */
-.tab {
-  /* background-color: transparent; */
-  /* background-color: var(--accent-color); */
+/* .tab {
   width: 100%;
   height: 200px;
   margin-right: auto;
-}
+} */
 
 .sub-tabs {
   overflow: hidden;
@@ -388,12 +424,11 @@ blockquote {
   margin-right: auto;
   align-content: center;
   align-items: center;
-  /* background-color: transparent; */
   width: 100%;
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab button {
+/* .tab button {
   display: block;
   background-color: var(--cta-color);
   opacity: 0.7;
@@ -409,7 +444,7 @@ blockquote {
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
-}
+} */
 .sub-tabs button {
   background-color: var(--cta-color);
   color: var(--text-color);
@@ -426,6 +461,7 @@ blockquote {
 }
 /* Change background color of buttons on hover */
 .tab button:hover,
+.tablnk button:hover,
 .sub-tabs button:hover {
   background-color: var(--link-hover-color);
 }
@@ -440,11 +476,13 @@ blockquote {
   margin: 0.8%;
 }
 .tab button.active,
+.tablnk button.active,
 .sub-tabs button.active {
   background-color: var(--link-active-color);
   color: var(--text-color);
 }
-.sub-tabs button.active {
+.sub-tabs button.active,
+.tablnk button.active {
   border-bottom: 3px solid var(--link-active-color);
 }
 
@@ -453,18 +491,18 @@ blockquote {
   float: left;
   margin-top: 30px;
   width: 100%;
-  border-left: none;
+  /* border-left: none; */
   height: 100%;
 }
 
-/* .sub-tabcontent{
+.sub-tabcontent{
   display: none;
-  padding: 6px 12px;
-  margin-top: 125px;
-  border: 1px solid #ccc;
-  border-top: none;
-  animation: fadeEffect 1s; /* Fading effect takes 1 second 
-}  */
+  /* padding: 6px 12px; */
+  /* margin-top: 125px; */
+  /* border: 1px solid #ccc; */
+  /* border-top: none; */
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+} 
 
 /* Fade in Tabs */
 .tabcontent,
@@ -605,6 +643,19 @@ Rewritten in the new level 4 syntax as: */
   main {
     min-width: 768px;
   }
+  
+  .navbar-nav {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .nav-link.active {
+    text-decoration-line: underline;
+    background-color: rgba(255, 255, 0, 0.2);
+    border-radius: 5px;
+  }
+
   .tab {
     background-color: transparent;
     float: left;
@@ -627,11 +678,11 @@ Rewritten in the new level 4 syntax as: */
 
   .tabcontent {
     float: left;
-    padding: 0px 12px 0px 12px;
-    width: 70%;
+    /* padding: 0px 12px 0px 12px; */
+    width: 100%;
     border-left: none;
     height: 100%;
-    margin: 0;
+    /* margin: 10px 10px 10px 10px; */
   }
   .sub-tabcontent {
     width: 100%;

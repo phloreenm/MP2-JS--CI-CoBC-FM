@@ -40,14 +40,14 @@
               <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="citadels-maps.html">Wiki & Maps</a>
+              <a class="nav-link active" aria-current="page" href="citadels-maps.html">Cities</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item"><a class="nav-link disabled">Disabled</a></li> -->
           </ul>
         </div>
@@ -63,8 +63,8 @@
       </p>
     </div>
     <!-- ===VERTICAL TABS================================================== -->
-    <div class="tab">
-      <!-- Add "defaultOpenedTab" to a button class to to mark it as default opening tab, without using the CTA section -->
+    <!-- <div class="tab">
+      Add "defaultOpenedTab" to a button class to to mark it as default opening tab, without using the CTA section
       <button id="tab-button-histria" class="tablinks" onclick="openCity(event, 'histria'); defaultInfo(event, 'histria')">
         Histria
       </button>
@@ -74,7 +74,11 @@
       <button id="tab-button-callatis" class="tablinks" onclick="openCity(event, 'callatis'); defaultInfo(event, 'callatis')">
         Callatis
       </button>
-    </div>
+    </div> -->
+
+    <button id="tab-button-histria" class="tablnk" onclick="openCity(event, 'histria'); defaultInfo(event, 'histria')" id="defaultOpen">Histria</button>
+    <button id="tab-button-tomis" class="tablnk" onclick="openCity(event, 'tomis'); defaultInfo(event, 'tomis')">Tomis</button>
+    <button id="tab-button-callatis"  class="tablnk" onclick="openCity(event, 'callatis'); defaultInfo(event, 'callatis')">Callatis</button>
     <!-- ===HISTRIA================================================== -->
     <div id="histria" class="tabcontent" style="display: none">
       <div class="sub-tabs">
@@ -84,7 +88,7 @@
         <button id="histria_wikipedia" class="sub-tablinks" onclick="openInfo(event, 'histria-wiki'); fetchWiki(this.id)">
           Wikipedia
         </button>
-        <button class="sub-tablinks" onclick="openInfo(event, 'histria-map')">
+        <button id="tab-button-callatis" class="sub-tablinks" onclick="openInfo(event, 'histria-map')">
           StreetView
         </button>
       </div>
@@ -566,10 +570,10 @@
           <div class="art-wr">
             <h4 class="center-content">Visiting</h4>
             <p>Callatis Archaeological Museum is an exhibition of local history from the oldest estabiliment times of the city.</p </div>
-            
-              <h5 class="center-content">Sources</h5>
-              <a href="http://www.olkas.net/lemmata/42_Mangalia" target="_blank" rel="noopener noreferrer" title="Olkas Project">Olkas Project - Mangalia</a>
-            </div>
+
+            <h5 class="center-content">Sources</h5>
+            <a href="http://www.olkas.net/lemmata/42_Mangalia" target="_blank" rel="noopener noreferrer" title="Olkas Project">Olkas Project - Mangalia</a>
+          </div>
         </article>
       </div>
       <div id="callatis-wiki" class="sub-tabcontent" style="display: none">
