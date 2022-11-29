@@ -5,7 +5,9 @@ and https://www.w3schools.com/howto/howto_js_tabs.asp
 function openCity(ev, citadelName) {
   // console.log("openCity function called");
   // Empty the HTML CTA section:
-  document.getElementById("wiki_callToAction").innerHTML = "";
+  // document.getElementById("wiki_callToAction").innerHTML = "";
+  document.getElementById("wiki_callToAction").style.display = "none";
+
 
   // Declare all variables
   var i, tabcontent, tablnks;
