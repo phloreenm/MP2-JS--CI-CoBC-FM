@@ -53,9 +53,11 @@ Dobruja boasts a rich history and many more site of archaeological significance,
 
 ---
 **UX Design - the Five Plans method**
-- Call to action:
+- Call To Action:
   - When to MAIN element's content would not fill an entire page, the FOOTER would be displayed only 10vh at the bottom of the page, to make the user curios to scroll down to it.
   - Cities page doesn't load the tabs' content unless the user clicks any of the three Cities' tabs. Only then the content is being displayed (the Chronicle sub-tabs' content) or loaded dynamically (Wikipedia searching API and Google Maps embedded maps).
+- Color theme used:
+  - [Color theme generated at coolors.co](https://coolors.co/242331-0075c4-efa00b-fbfefb-c33c54)
 ---
 - **User needs**
     - **User Stories**
@@ -159,6 +161,7 @@ Dobruja boasts a rich history and many more site of archaeological significance,
   - [CSS Variables](https://www.w3.org/TR/css-variables/#values)
   - [EmailJS API](https://www.emailjs.com)
   - [Code Institute EmailJS implementation](https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume/blob/master/03-SendingEmailsUsingEmailJS/06-sending_emails/assets/js/sendEmail.js)
+  - [Simple CSS Button Hover Effects](https://www.sliderrevolution.com/resources/css-button-hover-effects/)
   - =========================================
 - Media credits
   - [Google Maps Icons Credits: Matthias Stasiak](https://mapicons.mapsmarker.com/author/matthias.stasiak/)
