@@ -52,6 +52,11 @@ Dobruja boasts a rich history and many more site of archaeological significance,
 ### Link to this GitHub repository [here](https://github.com/phloreenm/MP2-JS--CI-CoBC-FM)  
 
 ---
+**UX Design - the Five Plans method**
+- Call to action:
+  - When to MAIN element's content would not fill an entire page, the FOOTER would be displayed only 10vh at the bottom of the page, to make the user curios to scroll down to it.
+  - Cities page doesn't load the tabs' content unless the user clicks any of the three Cities' tabs. Only then the content is being displayed (the Chronicle sub-tabs' content) or loaded dynamically (Wikipedia searching API and Google Maps embedded maps).
+---
 - **User needs**
     - **User Stories**
         -  A first-time visitor, or a **prospective visitor** (|| turist), may have the following user stories:
@@ -132,7 +137,7 @@ Dobruja boasts a rich history and many more site of archaeological significance,
     - [Callatis - Ancient Village or Settlement in Romania](https://www.megalithic.co.uk/article.php?sid=37857)
     - [Cetati din Dobrogea - Callatis](https://sites.google.com/site/cetatidindobrogea/callatis)
     - [Callatis, the ancient city on the Black Sea coast](https://www.rri.ro/en_gb/callatis_the_ancient_city_on_the_black_sea_coast-2529250)
-    
+- [Text correction and suggestion by Grammar Coach](https://www.grammarcoach.com)
   
   - =========================================
 - Code Snippets,  APIs and tutorials:
