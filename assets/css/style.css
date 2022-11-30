@@ -186,13 +186,13 @@ a:active {
   /* top: 10px; */
   bottom: 5px;
   right: -5px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .cta-color:hover {
   opacity: 0.9;
+  color: var(--complimentary-color);
   padding-right: 44px;
   padding-left: 8px;
-  color: var(--complimentary-color);
   /* transition: 0.3s; */
 }
 .cta-color:hover:after {
@@ -572,8 +572,55 @@ blockquote {
     opacity: 1;
   }
 }
+/* -----------------Contact-------------------- */
+/* Base css source: https://codepen.io/sakara/pen/DqobXW */
+input {
+  /* width: 250px;
+  padding: 5px;
+  border: solid 1px #CCC;
+  outline: none;
+  border-radius: 7px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-right-color: #EEE;
+  border-bottom-color: #EEE; */
+  color: #006595;
+}
 
-/* Maps */
+.form-item {
+  position: relative;
+  padding: 0.5% 0 0.5% 0;
+}
+
+/* show hints when hover/focus the input */
+.form-item:hover .hint,
+input:focus ~ div{
+  opacity: 1;
+}
+
+/* hidden by default */
+.hint {
+  content: "asd";
+  opacity: 0;
+  background: transparent;
+  position: absolute;
+  top: 5px;
+  left: 110px;
+  /* height: 2.3rem; */
+  padding: 0.5% 0 0.5% 0;
+  /* border: solid 1px #CCC; */
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--dominant-color);
+  border-radius:0 7px 7px 0;
+  transition: opacity 0.3s;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+#contact-form > button {
+  top: 12px;
+}
+
+
+/* -----------------Maps-------------------- */
 .maps {
   display: flex;
   flex-direction: row;
