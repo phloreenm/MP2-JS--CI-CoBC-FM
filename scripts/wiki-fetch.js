@@ -17,56 +17,60 @@ function fetchWiki(id) {
 }
 
 // This function fetches the results from the Wikipedia API:
-function fetchWikiResults(x){
+function fetchWikiResults(x) {
 	// let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${x}`;
 	let url = "https://en.wikipedia.org/w/api.php?" +
-        new URLSearchParams({
-            "action": "query",
-            "list": "search",
-            "prop": "info",
-            "inprop": "url",
-            "utf8": "",
-            "format": "json",
-            "origin": "*",
-            "srlimit": "7",
-            "srsearch": `${searchingItem}`
-        });
-// fetching the response from the API:
+		new URLSearchParams({
+			"action": "query",
+			"list": "search",
+			"prop": "info",
+			"inprop": "url",
+			"utf8": "",
+			"format": "json",
+			"origin": "*",
+			"srlimit": "7",
+			"srsearch": `${searchingItem}`
+		});
+	// fetching the response from the API:
 	fetch(url)
-		.then(function(response) {
+		.then(function (response) {
 			// getting the response data in JSON format
-    		return (response.json());
-  		})
-  		.then(function(data){
+			return (response.json());
+		})
+		.then(function (data) {
 			// saving the query objects in an array:
-  			let resultsArray = data.query.search;
+			let resultsArray = data.query.search;
 			// calling the printResultsOnPage function, passing the array as a parameter:
 			printResultsOnPage(resultsArray);
-  		})
-  		.catch(function () {
-   			console.log('An error occured');
+		})
+		.catch(function () {
+			console.log('An error occured');
 		});
 }
 
+function capitalLetter(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
 // function to print the results on the wikipedia tab:
-function printResultsOnPage(myArray){
+function printResultsOnPage(myArray) {
 	fetchedInfoResponse.innerHTML = " ";
-	fetchedInfoResponse.insertAdjacentHTML('beforeend', `<h4 class="center-content" style="padding-top:15px;">Wikipedia articles about \"${searchingItem}\" </h4>`);
-	myArray.forEach(function(item){
+	fetchedInfoResponse.insertAdjacentHTML('beforeend', `<h4 class="center-content" style="padding-top:15px;">Wikipedia articles related to \"${capitalLetter(searchingItem)}\" </h4>`);
+	myArray.forEach(function (item) {
 		let itemTitle = item.title;
 		let itemSnippet = item.snippet;
 		let itemUrl = encodeURI(`https://en.wikipedia.org/wiki/${item.title}`);
-		
+
 		fetchedInfoResponse.insertAdjacentHTML('beforeend',
-      	`<div class="resultItem">
+			`<div class="resultItem">
          <h3 class="resultTitle">
-          <a href="${itemUrl}" target="_blank" rel="noopener">${itemTitle}</a>
+          <a href="${itemUrl}" target="_blank" rel="noopener" title="Click to open Wikipedia article about ${item.title}">${itemTitle}</a>
          </h3>
-         <p class="resultSnippet"><a href="${itemUrl}"  target="_blank" rel="noopener">
+         <p class="resultSnippet"><a href="${itemUrl}"  target="_blank" rel="noopener" title="Click to open Wikipedia article about ${capitalLetter(searchingItem)} in a new tab">
          ${itemSnippet}</a></p>
         </div>`
-    	);
+		);
 
 	})
-
 }
+
