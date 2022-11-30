@@ -69,23 +69,32 @@ Articles Link color               bt               #123456
 :root {
   /* ---COLOR THEME----------------- */
   /* DOMINANT color:*/
-  --dominant-color: rgba(36, 35, 49, 1);
+  --dominant-color: rgb(36, 35, 49);
 
   /* COMPLEMENTARY color: */
-  --complimentary-color: #0075c4;
+  --complimentary-color: rgb(0, 117, 196);
 
   /* ACCENT color:  */
-  --accent-color: #efa00b;
+  /* --accent-color: #efa00b; */
+  --accent-color: rgb(239, 160, 11);
 
   /* Call-To-Action color:  */
-  --cta-color: #c33c54;
+  /* --cta-color: #c33c54; */
+  --cta-color: rgb(195, 60, 84);
 
   /* Text colors:  */
-  --text-color: #fbfefb;
+  /* --text-color: #fbfefb; */
+  --text-color: rgb(251, 254, 251);
   /* --link-color: #097ddb; */
-  --link-color: #fbfefb;
-  --link-hover-color: #c33c54;
-  --link-active-color: #efa00b;
+  /* --link-color: #fbfefb; */
+  --link-color: rgb(251, 254, 251);
+  /* --link-hover-color: #c33c54; */
+  --link-hover-color: rgb(195, 60, 84);
+  /* --link-active-color: #efa00b; */
+  --link-active-color: rgb(239, 160, 11);
+  /* special color themes */
+  --articles-bg-blue-color: rgba(9, 125, 219, 0.09);
+  --articles-bg-dark-color: rgba(36, 35, 49, 0.09);
 
   /* ---FONTS----------------- */
   /* Paragraphs and Greek: font-family: 'GFS Didot', serif; */
@@ -114,12 +123,15 @@ body {
   color: var(--text-color);
 }
 body {
-  background-color: var();
+  /* background-color: var(); */
   display: flex;
   flex-direction: column;
   min-width: 300px;
   width: 100%;
   min-height: 100vh;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent-color);
 }
 main {
   padding-top: 50px;
@@ -151,22 +163,22 @@ a:active {
 }
 /* CTA Custom Button CSS Button Hover effect code snnipet (https://www.sliderrevolution.com/resources/css-button-hover-effects/) */
 .cta-color {
+  opacity: 0.7;
   color: var(--dominant-color);
   background-color: var(--accent-color) !important;
-  border-radius: 4px;
-  border: none;
-  text-align: center;
-  font-size: 26px;
-  transition: all 0.5s;
-  cursor: pointer;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-}
-.cta-color {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  /* font-size: 24px; */
+  font-size: 1.7rem;
+  transition: all 0.5s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
+
 .cta-color:after {
   content: "»";
   position: absolute;
@@ -177,9 +189,10 @@ a:active {
   transition: 0.5s;
 }
 .cta-color:hover {
+  opacity: 0.9;
   padding-right: 44px;
   padding-left: 8px;
-  color: var(--cta-color);
+  color: var(--complimentary-color);
   /* transition: 0.3s; */
 }
 .cta-color:hover:after {
@@ -262,16 +275,16 @@ header {
 }
 .nav-link.active {
   opacity: 1;
-  box-shadow: 10px 10px 50px var(--complimentary-color) inset,
-    0 0 0 var(--accent-color);
+  -webkit-box-shadow: 20px 70px 50px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
+  -moz-box-shadow: 20px 70px 50px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
+  box-shadow: 20px 70px 50px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
 }
 .nav-link:hover {
   opacity: 0.9;
   color: var(--link-hover-color);
-  /* -webkit-
-  -moz- */
-  box-shadow: 20px 70px 20px var(--complimentary-color) inset,
-    0 1px 0 var(--accent-color);
+  -webkit-box-shadow: 70px 70px 70px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
+  -moz-box-shadow: 70px 70px 70px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
+  box-shadow: 70px 70px 70px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
   border: none;
   border-radius: 4px;
   transition: 0.3s;
@@ -358,11 +371,6 @@ header {
   margin-bottom: 0;
 }
 
-/* Figure elements */
-/* figure {
-  align-content: center;
-  align-items: center;
-} */
 figure > img {
   display: block;
   margin: 0 auto;
@@ -402,7 +410,8 @@ article p {
 }
 
 .art-wr {
-  background-color: var(--complimentary-color);
+  /* background-color: rgba(var(--complimentary-color), 0.9); */
+  background-color: var(--articles-bg-blue-color);
   border-radius: 5px;
   margin-top: 15px;
 }
@@ -415,11 +424,6 @@ blockquote {
 
 /* ---TABs------------------------------------------------ */
 /* Style the buttons that are used to open the tab content */
-/* .tab {
-  width: 100%;
-  height: 200px;
-  margin-right: auto;
-} */
 
 .sub-tabs {
   overflow: hidden;
@@ -430,29 +434,43 @@ blockquote {
   align-items: center;
   width: 100%;
 }
-
+#cities-buttons {
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
 .tablnk {
   opacity: 0.7;
   background-color: rgba(9, 125, 219, 0.9);
-  /* box-shadow: 10px 10px 50px var(--complimentary-color) inset, 0 0 0 var(--accent-color); */
+  box-shadow: 10px 10px 50px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
   color: var(--text-color);
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  /* font-size: 17px; */
+  /* 
   width: 33.3%;
+   */
+  padding: 14px 16px;
+  margin: 0 0.5% 0.5% 0.5%;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  font-size: 0.9rem;
+  border-radius: 5px;
 }
-
 /* .tablnk button:hover, */
 .tablnk:hover {
   opacity: 0.9;
-  background-color: rgba(9, 125, 219, 0.9);
-  box-shadow: 20px 70px 20px var(--complimentary-color) inset,
-  0 1px 0 var(--accent-color);
-  font-size: 1.1rem;
-  /* transition: all 300ms ease-in-out; */
+  /* background-color: rgba(9, 125, 219, 0.9); */
+  background-color: var(--link-hover-color);
+  -webkit-box-shadow: 20px 70px 20px var(--complimentary-color) inset, 0 0 0 var(--complimentary-color);
+  -moz-box-shadow: 20px 70px 20px var(--complimentary-color) inset, 0 0 0 var(--complimentary-color);
+  box-shadow: 20px 70px 20px var(--complimentary-color) inset, 0 0 0 var(--complimentary-color);
+  font-size: 1.15rem;
   transition: 0.3s;
 }
 /* .tablnk button:active, */
@@ -460,11 +478,14 @@ blockquote {
   opacity: 1;
   font-size: 1.1rem;
   padding: 12px 16px;
-  /* background-color: rgba(64, 160, 238, 1); */
-  box-shadow: 10px 10px 50px var(--complimentary-color) inset,
-    0 0 0 var(--accent-color);
-  border-bottom: 1px solid var(--link-active-color);
+  -webkit-box-shadow: 10px 10px 50px var(--complimentary-color) inset, 0 0 0 var(--dominant-color);
+  -moz-box-shadow: 10px 10px 50px var(--complimentary-color) inset, 0 0 0 var(--dominant-color);
+  box-shadow: 10px 10px 50px var(--complimentary-color) inset, 0 0 0 var(--dominant-color);
+  border-bottom: 1px solid var(--cta-color);
+  background-color: var(--articles-bg-blue-color);
+  box-shadow: 10px 50px 50px var(--complimentary-color) inset, 0 0 20px var(--articles-bg-dark-color);
   transition: 0.3s;
+  color: var(--accent-color);
 }
 /* .sub-tabs button.active {
   background-color: var(--link-active-color);
@@ -490,15 +511,16 @@ blockquote {
   background-color: rgba(36, 35, 49, 0.7);
 } */
 .sub-tabs button {
-  background-color: var(--cta-color);
-  box-shadow: 10px 10px 50px var(--complimentary-color) inset,
-      0 0 0 var(--accent-color);
+  opacity: 0.7;
+  /* background-color: rgba(var(--complimentary-color), 1); */
+  background-color: var(--articles-bg-blue-color);
+  box-shadow: 10px 50px 50px var(--complimentary-color) inset, 0 0 20px var(--articles-bg-dark-color);
   color: var(--text-color);
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 10px;
-  margin: 0.5%;
+  margin: 0 0.5% 0.5% 0.5%;
   transition: 0.3s;
   width: 100%;
   height: 100%;
@@ -507,56 +529,32 @@ blockquote {
 }
 
 /* Change background color of buttons on hover */
-/* .tab button:hover, */
-/* .tablnk button:hover, */
+
 .sub-tablinks:hover,
 .sub-tabs button:hover {
   background-color: var(--link-hover-color);
   transition: 0.3s;
   font-size: 1.15rem;
 }
-/* .tablnk button:hover {
-  border-bottom: 3px solid var(--link-hover-color);
-  transition: 0.3s;
-} */
-/* .sub-tabs button:hover {
-  border-bottom: 3px solid var(--link-hover-color);
-  transition: 0.3s;
-} */
 
-/* Create an active/current "tab button" class */
-/* .tab button.active {
-  border-radius: 10px;
-  margin: 0.8%;
-} */
-
-/* .tablnk button.active, */
 .sub-tabs button.active {
-  background-color: var(--link-active-color);
-  color: var(--text-color);
-  /* border-bottom: 3px solid var(--link-active-color); */
+  opacity: 1;
+  background-color: var(--articles-bg-blue-color);
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--cta-color);
   font-size: 1rem;
 }
-/* .sub-tabs button.active,
-.tablnk button.active {
-  border-bottom: 3px solid var(--link-active-color);
-} */
 
 /* Style the tab content */
 .tabcontent {
   float: left;
   margin-top: 30px;
   width: 100%;
-  /* border-left: none; */
   height: 100%;
 }
 
 .sub-tabcontent {
   display: none;
-  /* padding: 6px 12px; */
-  /* margin-top: 125px; */
-  /* border: 1px solid #ccc; */
-  /* border-top: none; */
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
@@ -618,7 +616,7 @@ iframe {
   margin-top: 2.5em;
 }
 .resultItem {
-  background: var(--complimentary-color);
+  background: var(--articles-bg-blue-color);
   border-radius: 3px;
   margin: 10px 10px 10px 0;
   padding: 10px;
@@ -627,7 +625,7 @@ iframe {
   font-style: italic;
 }
 .resultItem:hover {
-  border-left: 5px solid var(--cta-color);
+  border-left: 3px solid var(--cta-color);
 }
 .resultTitle a {
   color: var(--accent-color);
@@ -635,6 +633,7 @@ iframe {
 .resultTitle a:hover {
   color: var(--cta-color);
   transition: 0.3s;
+  font-size: 1.9rem;
 }
 .resultSnippet a {
   color: var(--text-color);
@@ -744,18 +743,14 @@ Rewritten in the new level 4 syntax as: */
   }
   .sub-tabs button {
     padding: 14px 16px;
-    margin: 0 0.5% 0.5% 0;
     width: 100%;
     height: 100%;
     font-size: 1rem;
     border-radius: 5px;
-    /* box-shadow: 10px 10px 50px var(--complimentary-color) inset,
-      0 0 0 var(--accent-color); */
+
   }
+  .tablnk.active,
   .sub-tabs button.active {
-    background-color: var(--link-active-color);
-    color: var(--text-color);
-    /* border-bottom: 3px solid var(--link-active-color); */
     font-size: 1.1rem;
   }
 
