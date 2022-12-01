@@ -89,7 +89,7 @@ Articles Link color               bt               #123456
   /* --link-color: #fbfefb; */
   --link-color: rgb(251, 254, 251);
   /* --link-hover-color: #c33c54; */
-  --link-hover-color: rgb(195, 60, 84);
+  --link-hover-color: rgb(245, 102, 128);
   /* --link-active-color: #efa00b; */
   --link-active-color: rgb(239, 160, 11);
   /* special color themes */
@@ -117,6 +117,8 @@ body {
   font-family: var(--paragraph-font);
   font-size: min(max(16px, 4vw), 18px);
   font-weight: 400;
+  text-align: justify;
+  text-justify: inter-word;
   margin: 0;
   padding: 0;
   background-color: rgba(36, 35, 49, 0.88);
@@ -130,7 +132,12 @@ body {
   width: 100%;
   min-height: 100vh;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--accent-color);
 }
 main {
@@ -275,16 +282,22 @@ header {
 }
 .nav-link.active {
   opacity: 1;
-  -webkit-box-shadow: 20px 70px 50px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
-  -moz-box-shadow: 20px 70px 50px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
-  box-shadow: 20px 70px 50px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
+  -webkit-box-shadow: 20px 70px 50px var(--complimentary-color) inset,
+    0 0 0 var(--accent-color);
+  -moz-box-shadow: 20px 70px 50px var(--complimentary-color) inset,
+    0 0 0 var(--accent-color);
+  box-shadow: 20px 70px 50px var(--complimentary-color) inset,
+    0 0 0 var(--accent-color);
 }
 .nav-link:hover {
   opacity: 0.9;
   color: var(--link-hover-color);
-  -webkit-box-shadow: 70px 70px 70px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
-  -moz-box-shadow: 70px 70px 70px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
-  box-shadow: 70px 70px 70px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
+  -webkit-box-shadow: 70px 70px 70px var(--complimentary-color) inset,
+    0 0 0 var(--accent-color);
+  -moz-box-shadow: 70px 70px 70px var(--complimentary-color) inset,
+    0 0 0 var(--accent-color);
+  box-shadow: 70px 70px 70px var(--complimentary-color) inset,
+    0 0 0 var(--accent-color);
   border: none;
   border-radius: 4px;
   transition: 0.3s;
@@ -347,14 +360,41 @@ header {
   letter-spacing: 0.1rem;
 }
 .loading {
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;\t\greek-google-web-fonts\34300
   align-items: center;
   padding: 2rem 0;
   width: 100%;
   height: 100%;
   background-color: transparent;
+}
+.fa-xmark {
+  color: var(--accent-color);
+}
+.backToTop {
+  
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  font-size: small;
+  padding: 0.2rem 0.5rem;
+  opacity: 0.9;
+  text-decoration: none;
+  /* background-color: rgba(9, 125, 219, 0.9); */
+  box-shadow: 10px 10px 50px var(--complimentary-color) inset,
+    0 0 0 var(--accent-color);
+  color: var(--text-color);
+  border-radius: 5px;
+
+}
+.backToTop:hover {
+  opacity: 1;
+  background-color: #552f1e;
+  color: #ece7e1;
+  border: 1px solid transparent;
+  
 }
 /* ---CTA section------------------------------------------------ */
 #wiki_callToAction {
@@ -445,7 +485,8 @@ blockquote {
 .tablnk {
   opacity: 0.7;
   background-color: rgba(9, 125, 219, 0.9);
-  box-shadow: 10px 10px 50px var(--complimentary-color) inset, 0 0 0 var(--accent-color);
+  box-shadow: 10px 10px 50px var(--complimentary-color) inset,
+    0 0 0 var(--accent-color);
   color: var(--text-color);
   float: left;
   border: none;
@@ -467,9 +508,12 @@ blockquote {
   opacity: 0.9;
   /* background-color: rgba(9, 125, 219, 0.9); */
   background-color: var(--link-hover-color);
-  -webkit-box-shadow: 20px 70px 20px var(--complimentary-color) inset, 0 0 0 var(--complimentary-color);
-  -moz-box-shadow: 20px 70px 20px var(--complimentary-color) inset, 0 0 0 var(--complimentary-color);
-  box-shadow: 20px 70px 20px var(--complimentary-color) inset, 0 0 0 var(--complimentary-color);
+  -webkit-box-shadow: 20px 70px 20px var(--complimentary-color) inset,
+    0 0 0 var(--complimentary-color);
+  -moz-box-shadow: 20px 70px 20px var(--complimentary-color) inset,
+    0 0 0 var(--complimentary-color);
+  box-shadow: 20px 70px 20px var(--complimentary-color) inset,
+    0 0 0 var(--complimentary-color);
   font-size: 1.15rem;
   transition: 0.3s;
 }
@@ -478,12 +522,16 @@ blockquote {
   opacity: 1;
   font-size: 1.1rem;
   padding: 12px 16px;
-  -webkit-box-shadow: 10px 10px 50px var(--complimentary-color) inset, 0 0 0 var(--dominant-color);
-  -moz-box-shadow: 10px 10px 50px var(--complimentary-color) inset, 0 0 0 var(--dominant-color);
-  box-shadow: 10px 10px 50px var(--complimentary-color) inset, 0 0 0 var(--dominant-color);
+  -webkit-box-shadow: 10px 10px 50px var(--complimentary-color) inset,
+    0 0 0 var(--dominant-color);
+  -moz-box-shadow: 10px 10px 50px var(--complimentary-color) inset,
+    0 0 0 var(--dominant-color);
+  box-shadow: 10px 10px 50px var(--complimentary-color) inset,
+    0 0 0 var(--dominant-color);
   border-bottom: 1px solid var(--cta-color);
   background-color: var(--articles-bg-blue-color);
-  box-shadow: 10px 50px 50px var(--complimentary-color) inset, 0 0 20px var(--articles-bg-dark-color);
+  box-shadow: 10px 50px 50px var(--complimentary-color) inset,
+    0 0 20px var(--articles-bg-dark-color);
   transition: 0.3s;
   color: var(--accent-color);
 }
@@ -514,7 +562,8 @@ blockquote {
   opacity: 0.7;
   /* background-color: rgba(var(--complimentary-color), 1); */
   background-color: var(--articles-bg-blue-color);
-  box-shadow: 10px 50px 50px var(--complimentary-color) inset, 0 0 20px var(--articles-bg-dark-color);
+  box-shadow: 10px 50px 50px var(--complimentary-color) inset,
+    0 0 20px var(--articles-bg-dark-color);
   color: var(--text-color);
   border: none;
   outline: none;
@@ -593,7 +642,7 @@ input {
 
 /* show hints when hover/focus the input */
 .form-item:hover .hint,
-input:focus ~ div{
+input:focus ~ div {
   opacity: 1;
 }
 
@@ -605,20 +654,17 @@ input:focus ~ div{
   position: absolute;
   top: 5px;
   left: 110px;
-  /* height: 2.3rem; */
   padding: 0.5% 0 0.5% 0;
-  /* border: solid 1px #CCC; */
   font-size: 16px;
   font-weight: bold;
   color: var(--dominant-color);
-  border-radius:0 7px 7px 0;
+  border-radius: 0 7px 7px 0;
   transition: opacity 0.3s;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
 #contact-form > button {
   top: 12px;
 }
-
 
 /* -----------------Maps-------------------- */
 .maps {
@@ -697,14 +743,14 @@ footer {
   margin-top: auto;
   box-shadow: 4px 4px 0 rgb(0 0 0 / 5%), 0 0 12px 4px rgb(0 0 0 / 7%);
 }
-.footer-content {
+/* .footer-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   height: 100%;
-}
+} */
 
 /* 
  * map sizes
@@ -794,15 +840,16 @@ Rewritten in the new level 4 syntax as: */
     height: 100%;
     font-size: 1rem;
     border-radius: 5px;
-
   }
   .tablnk.active,
   .sub-tabs button.active {
     font-size: 1.1rem;
   }
 
-  .footer-content {
-    flex-direction: row;
+  .foo-cont {
+    margin: 0 auto 0 auto;
+    width: 100%;
+    max-width: 767px;
   }
 }
 
