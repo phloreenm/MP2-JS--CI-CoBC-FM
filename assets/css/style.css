@@ -396,6 +396,9 @@ header {
   border: 1px solid transparent;
   
 }
+.sources-links > a {
+  font-size: small;
+}
 /* ---CTA section------------------------------------------------ */
 #wiki_callToAction {
   padding: 1rem;

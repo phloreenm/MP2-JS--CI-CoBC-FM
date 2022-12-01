@@ -22,6 +22,7 @@
 </head>
 
 <body>
+  <a id="top"></a>
   <header>
     <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark"> -->
     <nav class="navbar navbar-expand-md">
@@ -159,13 +160,16 @@
             <h4 class="center-content">Today</h4>
             <p>Today, the archeological site offers ruins of religious temples, plus a museum exploring the area’s history. <a href="https://earth.google.com/web/@44.95766527,27.22213334,-14.46193334a,948237.26943612d,35y,0h,0t,0r/data=CjESLxIgNTZmZTA1OWViNWRmMTFlOGJiYzIxMTA1ZDRjODBmZjMiC2djc19pdGluXzI0">(Source)</a></p>
           </div>
-          <div>
+          <div class="sources-links">
             <h5 class="center-content">Sources</h5>
             <a href="https://en.wikipedia.org/wiki/Histria_(ancient_city)" target="_blank" rel="noopener noreferrer" title="Histria - Wikipedia">Histria - Wikipedia</a>
             <a href="https://sites.google.com/site/cetatidindobrogea/histria" target="_blank" rel="noopener noreferrer" title="Cetati din Dobrogea - Histria">Cetati din Dobrogea - Histria</a>
             <a href="http://www.olkas.net/lemmata/24_Histria" target="_blank" rel="noopener noreferrer" title="Olkas Project - Histria">Olkas Project - Histria</a>
           </div>
-
+          <div>
+            <a href="#top" class="backToTop">
+              <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
+          </div>
         </article>
       </div>
 
@@ -202,6 +206,10 @@
               <iframe src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
             </div>
           </div>
+      </div>
+      <div>
+        <a href="#top" class="backToTop">
+          <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
       </div>
       </article>
     </div>
@@ -329,31 +337,28 @@
               earliest known usage of this name was in 950.</p>
 
           </div>
-          <div>
+          <div class="sources-links">
             <h4 class="center-content">Sources</h4>
             <a href="https://en.wikipedia.org/wiki/Constan%C8%9Ba" target="_blank" rel="noopener noreferrer" title="Wikipedia - Constanta">Wikipedia - Constanta</a>
             <a href="https://imperiumromanum.pl/en/article/ancient-city-tomis/" target="_blank" rel="noopener noreferrer" title="Imperium Romanum">Imperium Romanum</a>
             <a href="https://www.britannica.com/place/Constanta-Romania" target="_blank" rel="noopener noreferrer" title="Britannica">Britannica</a>
             <a href="http://www.olkas.net/lemmata/8_Tomis" target="_blank" rel="noopener noreferrer" title="Olkas Project">Olkas Project - Tomis</a>
           </div>
+          <div>
+            <a href="#top" class="backToTop">
+              <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
+          </div>
         </article>
-        <!-- Use Wikipedia API to display extracts for the Info Page -->
-        <!-- <a
-            href="https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow"
-            >Wiki API Source</a
-          >
-          <br />
-          <a
-            href="https://en.wikipedia.org/wiki/Histria_(ancient_city)"
-            target="_blank"
-            >Histria Wiki</a
-          > -->
       </div>
       <div id="tomis-wiki" class="sub-tabcontent" style="display: none">
         <div id="tomis-wiki-fetching">
           <div class="loading">
             <img src="./assets/images/fading_circles.gif" alt="Fetching results...">
           </div>
+        </div>
+        <div>
+          <a href="#top" class="backToTop">
+            <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
         </div>
       </div>
       <div id="tomis-map" class="sub-tabcontent" style="display: none">
@@ -386,10 +391,12 @@
               </div>
             </div>
           </div>
+          <div>
+            <a href="#top" class="backToTop">
+              <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
+          </div>
+        </article>
       </div>
-    </div>
-    </article>
-    </div>
     </div>
     <!-- ===CALLATIS================================================== -->
     <!-- CALLATIS Tabs Content -->
@@ -400,7 +407,7 @@
         </button>
         <button id="callatis_wikipedia" class="sub-tablinks" onclick="openInfo(event, 'callatis-wiki'); fetchWiki(this.id)">
           Wikipedia
-        </button> 
+        </button>
         <button class="sub-tablinks" onclick="openInfo(event, 'callatis-map')">
           StreetView
         </button>
@@ -575,6 +582,10 @@
             <h5 class="center-content">Sources</h5>
             <a href="http://www.olkas.net/lemmata/42_Mangalia" target="_blank" rel="noopener noreferrer" title="Olkas Project">Olkas Project - Mangalia</a>
           </div>
+          <div>
+            <a href="#top" class="backToTop">
+              <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
+          </div>
         </article>
       </div>
       <div id="callatis-wiki" class="sub-tabcontent" style="display: none">
@@ -582,6 +593,10 @@
           <div class="loading">
             <img src="./assets/images/fading_circles.gif" alt="Fetching results...">
           </div>
+        </div>
+        <div>
+          <a href="#top" class="backToTop">
+            <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
         </div>
       </div>
       <div id="callatis-map" class="sub-tabcontent" style="display: none">
@@ -606,76 +621,80 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d301.53204336914325!2d28.58301114923784!3d43.815120941913854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8807e053af0990a2!2sCetatea%20Callatis%20-%20ruinele%20coltului%20nord-vestic!5e1!3m2!1sen!2suk!4v1668784531472!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
+        <div>
+          <a href="#top" class="backToTop">
+            <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
+        </div>
       </div>
   </main>
   <!-- ===================================================== -->
   <!-- FOOTER AREA -->
   <footer>
     <!-- <div class="foo-cont"> -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="footer-section">
-              <h1 class="heading-alignment" style="font-size: medium;">Fair Usage</h1>
-              <p  style="font-size: medium; text-align: justify;
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-section">
+            <h1 class="heading-alignment" style="font-size: medium;">Fair Usage</h1>
+            <p style="font-size: medium; text-align: justify;
               text-justify: inter-word;">
-                Resources used on this website have been gathered from different sources, and they have been credited in the documentation of the <a href="https://github.com/phloreenm/mp2-js--ci-cobc-fm" target="_blank">GitHub repository</a> of this project.
-Under the laws of fair usage, this website is purely educational and non-commercial, and it is not intended to infringe on any copyright laws. 
-If you are the owner of the resources used on this website, and you wish to have them removed, please <a href="contact.html">contact me</a> . Thank you!
-              </p>
-            </div>
+              Resources used on this website have been gathered from different sources, and they have been credited in the documentation of the <a href="https://github.com/phloreenm/mp2-js--ci-cobc-fm" target="_blank">GitHub repository</a> of this project.
+              Under the laws of fair usage, this website is purely educational and non-commercial, and it is not intended to infringe on any copyright laws.
+              If you are the owner of the resources used on this website, and you wish to have them removed, please <a href="contact.html">contact me</a> . Thank you!
+            </p>
           </div>
-          <div class="col-md-12" style="text-align: center;">
-            <button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" data-toggle="modal" data-target="#myModal">
-              Disclaimer
-            </button>
-            <!-- Modal source base code: https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
-            <!--------------------- The Modal ----------------------->
-            <div class="modal fade" id="myModal">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content" style="background-color: var(--dominant-color);">
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">Website Disclaimer</h4>
-                    <!-- <button type="button" class="close" data-dismiss="modal"><span style="text-danger;">&times;</span></button> -->
-                    <button type="button" class="close" data-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    The information provided by <a href="index.html">Greek Citadels in Scythia Minor</a> ('we', 'us', or 'our') on <a href="https://github.com/phloreenm/mp2-js--ci-cobc-fm" target="_blank">Project repository</a> (the 'Site') is for general informational purposes only.
-                    All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site . UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.
-                  </div>
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">External Links Disclaimer</h4>
-                    <button type="button" class="close" data-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability, or completeness by us. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE OR ANY WEBSITE OR FEATURE LINKED IN ANY BANNER OR OTHER ADVERTISING. WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.
-                  </div>
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <div class="description-p">This disclaimer was created using Termly's <a href="https://termly.io/products/disclaimer-generator/" target="_blank">Disclaimer Generator</a></div>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
+        </div>
+        <div class="col-md-12" style="text-align: center;">
+          <button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" data-toggle="modal" data-target="#myModal">
+            Disclaimer
+          </button>
+          <!-- Modal source base code: https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+          <!--------------------- The Modal ----------------------->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content" style="background-color: var(--dominant-color);">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Website Disclaimer</h4>
+                  <!-- <button type="button" class="close" data-dismiss="modal"><span style="text-danger;">&times;</span></button> -->
+                  <button type="button" class="close" data-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  The information provided by <a href="index.html">Greek Citadels in Scythia Minor</a> ('we', 'us', or 'our') on <a href="https://github.com/phloreenm/mp2-js--ci-cobc-fm" target="_blank">Project repository</a> (the 'Site') is for general informational purposes only.
+                  All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site . UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.
+                </div>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">External Links Disclaimer</h4>
+                  <button type="button" class="close" data-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability, or completeness by us. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE OR ANY WEBSITE OR FEATURE LINKED IN ANY BANNER OR OTHER ADVERTISING. WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <div class="description-p">This disclaimer was created using Termly's <a href="https://termly.io/products/disclaimer-generator/" target="_blank">Disclaimer Generator</a></div>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
-            <!--------------------- / The Modal ----------------------->
           </div>
-          <div class="col-md-12">
-            <div class="cr">
-              <span id="copyright" style="text-align: center">Copyright text</span>
-            </div>
+          <!--------------------- / The Modal ----------------------->
+        </div>
+        <div class="col-md-12">
+          <div class="cr">
+            <span id="copyright" style="text-align: center">Copyright text</span>
           </div>
         </div>
       </div>
+    </div>
     <!-- </div> -->
   </footer>
   <!-- SCRIPTS -->
   <script>
-    
+
   </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
   <script type="text/javascript" src="./scripts/cr.js"></script>
