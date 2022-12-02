@@ -31,40 +31,8 @@ Articles Background color         bt               #123456
 Articles Text color               bt               #123456
 Articles Link color               bt               #123456
 */
-/* :root {
-  --main-bg-color: #3e546e;
-  --second-bg-color: #1874bd;
 
-  --foreground-article-color: rgba(81, 70, 61, 0.4);
-
-  --buttons-color: #97c9f1;
-  --buttons-hover-color: #9db0c7;
-  --buttons-active-color: #5a7a9f;
-
-  --tabs-color-blue: blue;
-  --tabs-color-yellow: yellow;
-  --tabs-color-red: red;
-
-  --text-color: #c1cd97;
-  --text-color-dark: #000000;
-  --text-color-light: #ffffff;
-  --text-hover-color: #b7ea00;
-  --text-active-color: #c1cd97;
-} */
 /* COLOR THEME: https://icolorpalette.com/imagepalette/color-palette-ideas-from-sky-afterglow-red-at-morning-image-11 */
-/* :root {
-  --main-bg-color: #23233b11;
-  --second-bg-color: #1874bd;
-  --foreground-article-color: rgba(55, 79, 109, 0.4);
-  --buttons-color: #374f6d;
-  --buttons-hover-color: #9db0c7;
-  --buttons-active-color: #a4a484;
-  --text-color: #3e3422;
-  --text-color-dark: #2c2519;
-  --text-color-light: #dfbd80;
-  --text-hover-color: #dcd93c;
-  --text-active-color: #a7dc3c;
-} */
 
 :root {
   /* ---COLOR THEME----------------- */
@@ -125,7 +93,6 @@ body {
   color: var(--text-color);
 }
 body {
-  /* background-color: var(); */
   display: flex;
   flex-direction: column;
   min-width: 300px;
@@ -143,7 +110,6 @@ h6 {
 main {
   padding-top: 50px;
   width: 90%;
-  /* min-height: calc(100vh - 80px); */
   min-height: calc(90vh - 130px);
   max-width: 767px;
   margin-left: auto;
@@ -180,7 +146,6 @@ a:active {
   border-radius: 4px;
   border: none;
   text-align: center;
-  /* font-size: 24px; */
   font-size: 1.7rem;
   transition: all 0.5s;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
@@ -190,7 +155,6 @@ a:active {
   content: "»";
   position: absolute;
   opacity: 0;
-  /* top: 10px; */
   bottom: 5px;
   right: -5px;
   transition: 0.3s;
@@ -200,7 +164,6 @@ a:active {
   color: var(--complimentary-color);
   padding-right: 44px;
   padding-left: 8px;
-  /* transition: 0.3s; */
 }
 .cta-color:hover:after {
   opacity: 1;
@@ -238,7 +201,6 @@ header {
 }
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .show > .nav-link {
-  /* color: var(--text-color); */
   box-shadow: 10px 10px 40px var(--complimentary-color) inset,
     1px 1px 10px var(--cta-color);
 }
@@ -246,10 +208,6 @@ header {
   color: var(--text-color);
 }
 .navbar-brand {
-  /* font-family: var(--header-title-font); */
-  /* font-size: 20px;
-  font-size: 2.5vh;
-  font-optical-sizing: auto; */
   color: var(--text-color);
   margin: 0;
 }
@@ -339,11 +297,10 @@ header {
 .center-content {
   text-align: center;
   margin: 30px 0 0 0;
-  padding-top: 15px;
+  padding: 15px 0 10px 0;
 }
 .heading-alignment {
   text-align: center;
-  /* margin: 30px 0 30px 0; */
   padding: 15px 0 15px 0;
 }
 .center-p {
@@ -363,7 +320,7 @@ header {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;\t\greek-google-web-fonts\34300
+  justify-content: center;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
@@ -382,7 +339,6 @@ header {
   padding: 0.2rem 0.5rem;
   opacity: 0.9;
   text-decoration: none;
-  /* background-color: rgba(9, 125, 219, 0.9); */
   box-shadow: 10px 10px 50px var(--complimentary-color) inset,
     0 0 0 var(--accent-color);
   color: var(--text-color);
@@ -430,7 +386,6 @@ figure > figcaption {
 
 /* ---ARTICLES------------------------------------------------ */
 article {
-  /* background-color: var(--foreground-article-color); */
   max-width: 1024px;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -454,7 +409,6 @@ article p {
 }
 
 .art-wr {
-  /* background-color: rgba(var(--complimentary-color), 0.9); */
   background-color: var(--articles-bg-blue-color);
   border-radius: 5px;
   margin-top: 15px;
@@ -507,10 +461,8 @@ blockquote {
   font-size: 0.9rem;
   border-radius: 5px;
 }
-/* .tablnk button:hover, */
 .tablnk:hover {
   opacity: 0.9;
-  /* background-color: rgba(9, 125, 219, 0.9); */
   background-color: var(--link-hover-color);
   -webkit-box-shadow: 20px 70px 20px var(--complimentary-color) inset,
     0 0 0 var(--complimentary-color);
@@ -521,7 +473,6 @@ blockquote {
   font-size: 1.15rem;
   transition: 0.3s;
 }
-/* .tablnk button:active, */
 .tablnk.active {
   opacity: 1;
   font-size: 1.1rem;
@@ -539,11 +490,6 @@ blockquote {
   transition: 0.3s;
   color: var(--accent-color);
 }
-/* .sub-tabs button.active {
-  background-color: var(--link-active-color);
-  color: var(--text-color);
-  border-bottom: 3px solid var(--link-active-color);
-} */
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcnt {
@@ -553,18 +499,8 @@ blockquote {
   height: 100%;
 }
 
-/* #Histria {
-  background-color: rgba(36, 35, 49, 0.7);
-}
-#Tomis {
-  background-color: rgba(36, 35, 49, 0.7);
-}
-#Callatis {
-  background-color: rgba(36, 35, 49, 0.7);
-} */
 .sub-tabs button {
   opacity: 0.7;
-  /* background-color: rgba(var(--complimentary-color), 1); */
   background-color: var(--articles-bg-blue-color);
   box-shadow: 10px 50px 50px var(--complimentary-color) inset,
     0 0 20px var(--articles-bg-dark-color);
@@ -582,7 +518,6 @@ blockquote {
 }
 
 /* Change background color of buttons on hover */
-
 .sub-tablinks:hover,
 .sub-tabs button:hover {
   background-color: var(--link-hover-color);
@@ -628,14 +563,6 @@ blockquote {
 /* -----------------Contact-------------------- */
 /* Base css source: https://codepen.io/sakara/pen/DqobXW */
 input {
-  /* width: 250px;
-  padding: 5px;
-  border: solid 1px #CCC;
-  outline: none;
-  border-radius: 7px;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
-  border-right-color: #EEE;
-  border-bottom-color: #EEE; */
   color: #006595;
 }
 
@@ -697,7 +624,6 @@ input:focus ~ div {
   padding: 10px;
 }
 iframe {
-  /* width: calc(100% - 10px); */
   width: 100%;
   height: 100%;
   align-content: center;
@@ -747,26 +673,17 @@ footer {
   margin-top: auto;
   box-shadow: 4px 4px 0 rgb(0 0 0 / 5%), 0 0 12px 4px rgb(0 0 0 / 7%);
 }
-/* .footer-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  height: 100%;
-} */
+
 
 /* 
  * map sizes
  */
 #map_1 {
-  /* max-width: 700px; */
   max-width: 90%;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  /* padding: 10px; */
-  /* border: solid 1px black; */
+
 }
 
 /* Media queries */
@@ -804,35 +721,10 @@ Rewritten in the new level 4 syntax as: */
   }
 
   .nav-link.active {
-    /* text-decoration-line: underline; */
-    /* background-color: rgba(255, 255, 0, 0.2); */
     border-radius: 5px;
   }
 
-  /* .tab {
-    background-color: transparent;
-    float: left;
-    width: 28%;
-
-    height: 200px;
-  } */
-  /* .tab button {
-    margin: 1.8% 3% 1.8% 0;
-  } */
-  /* .tab button.active {
-    margin: 1.8% 0 1.8% 0;
-  } */
-  /* .tab button.active > .sub-tabs button {
-    background-color: inherit;
-    border-bottom:  5px solid var(--text-active-color);
-  } */
-
-  /* .tabcontent {
-    float: left;
-    width: 100%;
-    border-left: none;
-    height: 100%;
-  } */
+  
   .sub-tabcontent {
     width: 100%;
     display: none;
