@@ -207,12 +207,14 @@ header {
 .navbar-dark .navbar-nav .nav-link {
   color: var(--text-color);
 }
+
 .navbar-brand {
-  color: var(--text-color);
+  /* color: var(--text-color); */
   font-size: min(max(18px, 4vw), 32px);
   margin: 0;
 }
 .navbar-brand a {
+  color: var(--link-color);
   margin: auto;
   text-align: center;
 }
@@ -224,19 +226,23 @@ header {
   text-align: center;
   width: 100%;
 }
-/* Three Simple CSS Button Hover Effects: https://www.sliderrevolution.com/resources/css-button-hover-effects/ */
-
+.logo-img-filtering {
+  height: 6rem;
+  filter: opacity(0.5) drop-shadow(0 0 0 var(--text-color));
+  margin-top: 0.7rem;
+}
 .nav-link {
   opacity: 0.5;
   color: var(--link-color);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  font-size: min(max(16px, 6vw), 20px);
   text-transform: uppercase;
 }
 .nav-item {
+  min-width: 150px;
   width: 100%;
-  /* margin-left: 0.5rem; */
   opacity: 0.8;
 }
 .nav-link.active {
@@ -318,7 +324,6 @@ header {
   letter-spacing: 0.1rem;
 }
 .loading {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -332,7 +337,6 @@ header {
   color: var(--accent-color);
 }
 .backToTop {
-  
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -344,14 +348,12 @@ header {
     0 0 0 var(--accent-color);
   color: var(--text-color);
   border-radius: 5px;
-
 }
 .backToTop:hover {
   opacity: 1;
   background-color: #552f1e;
   color: #ece7e1;
   border: 1px solid transparent;
-  
 }
 .sources-links > a {
   font-size: small;
@@ -448,7 +450,7 @@ blockquote {
   background-color: var(--articles-bg-blue-color);
   /* box-shadow: 10px 10px 50px var(--complimentary-color) inset,
     0 0 0 var(--accent-color); */
-    box-shadow: 10px 50px 50px var(--complimentary-color) inset,
+  box-shadow: 10px 50px 50px var(--complimentary-color) inset,
     0 0 20px var(--articles-bg-dark-color);
   color: var(--text-color);
   float: left;
@@ -467,12 +469,12 @@ blockquote {
   font-size: 1.15rem;
   color: var(--link-color);
   background-color: var(--complimentary-color);
-  
+
   -webkit-box-shadow: 20px 70px 20px var(--complimentary-color) inset,
     0 0 0 var(--complimentary-color);
   -moz-box-shadow: 20px 70px 20px var(--complimentary-color) inset,
     0 0 0 var(--complimentary-color);
-   box-shadow: 20px 70px 20px var(--complimentary-color) inset,
+  box-shadow: 20px 70px 20px var(--complimentary-color) inset,
     0 0 0 var(--complimentary-color);
   transition: 0.3s;
 }
@@ -487,9 +489,9 @@ blockquote {
     0 0 0 var(--dominant-color);
   box-shadow: 10px 10px 50px var(--complimentary-color) inset,
     0 0 0 var(--dominant-color); */
-    background-color: var(--articles-bg-blue-color);
-    color: var(--accent-color);
-    border-bottom: 1px solid var(--cta-color);
+  background-color: var(--articles-bg-blue-color);
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--cta-color);
   transition: 0.3s;
   color: var(--accent-color);
 }
@@ -535,7 +537,6 @@ blockquote {
   color: var(--accent-color);
   border-bottom: 1px solid var(--cta-color);
   transition: 0.3s;
-  
 }
 
 /* Style the tab content */
@@ -679,7 +680,6 @@ footer {
   box-shadow: 4px 4px 0 rgb(0 0 0 / 5%), 0 0 12px 4px rgb(0 0 0 / 7%);
 }
 
-
 /* 
  * map sizes
  */
@@ -688,7 +688,6 @@ footer {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 /* Media queries */
@@ -720,7 +719,7 @@ Rewritten in the new level 4 syntax as: */
   }
 
   .navbar-nav {
-    max-width: 65%;
+    
     margin-left: auto;
     margin-right: auto;
   }
@@ -729,7 +728,6 @@ Rewritten in the new level 4 syntax as: */
     border-radius: 5px;
   }
 
-  
   .sub-tabcontent {
     width: 100%;
     display: none;
@@ -761,6 +759,9 @@ Rewritten in the new level 4 syntax as: */
   }
   main {
     min-width: 976px;
+  }
+  .navbar-nav {
+
   }
 }
 /* Styles for viewports with a width of 1024 pixels or greater.
