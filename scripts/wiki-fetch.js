@@ -72,5 +72,9 @@ function printResultsOnPage(myArray) {
 		);
 
 	})
+	fetchedInfoResponse.insertAdjacentHTML('beforeend',`<div class="btp-wr">
+	<a href="#top" class="backToTop">
+	  <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
+</div>`);
 }
 
