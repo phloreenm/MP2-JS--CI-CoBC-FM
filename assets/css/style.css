@@ -83,7 +83,7 @@ html,
 body {
   /* height: 100%; */
   font-family: var(--paragraph-font);
-  font-size: min(max(16px, 4vw), 18px);
+  font-size: min(max(15px, 4vw), 18px);
   font-weight: 400;
   text-align: justify;
   text-justify: inter-word;
@@ -209,6 +209,7 @@ header {
 }
 .navbar-brand {
   color: var(--text-color);
+  font-size: min(max(18px, 4vw), 32px);
   margin: 0;
 }
 .navbar-brand a {
