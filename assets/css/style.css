@@ -340,9 +340,6 @@ header {
   text-align: center;
 }
 .backToTop {
-  /* margin-left: auto;
-  margin-right: auto;
-  justify-content: center; */
   font-size: small;
   padding: 0.2rem 0.5rem;
   opacity: 0.9;
@@ -418,6 +415,7 @@ article p {
   background-color: var(--articles-bg-blue-color);
   border-radius: 5px;
   margin-top: 15px;
+  padding-bottom: 0.8rem;;
 }
 
 blockquote {
