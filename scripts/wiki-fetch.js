@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // SOURCE:  https://femkreations.com/how-to-build-a-wikipedia-search-app-in-9-steps/
 
 let fetchedInfoResponse = "";
@@ -71,7 +72,7 @@ function printResultsOnPage(myArray) {
         </div>`
 		);
 
-	})
+	});
 	fetchedInfoResponse.insertAdjacentHTML('beforeend',`<div class="btp-wr">
 	<a href="#top" class="backToTop">
 	  <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>

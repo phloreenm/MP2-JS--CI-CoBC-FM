@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // Source code: https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume/blob/master/03-SendingEmailsUsingEmailJS/06-sending_emails/assets/js/sendEmail.js
 function sendMail(contactForm) {
     emailjs.send("phlopping_gmail_service", "gc-site", {
@@ -15,7 +16,7 @@ function sendMail(contactForm) {
                 console.log("Email failed to send");
                 console.log("FAILED", error);
             }
-        )
+        );
     // To block from loading a new page
     return false;
 }

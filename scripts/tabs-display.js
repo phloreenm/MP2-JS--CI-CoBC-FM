@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 /* Base code sourced from: https://www.w3schools.com/howto/howto_js_vertical_tabs.asp
 and https://www.w3schools.com/howto/howto_js_tabs.asp
 */

@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // SOURCE: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript
 function gMapsMap() {
     var locations = [
