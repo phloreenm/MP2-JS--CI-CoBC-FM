@@ -574,41 +574,11 @@ blockquote {
   }
 }
 /* -----------------Contact-------------------- */
-/* Base css source: https://codepen.io/sakara/pen/DqobXW */
-input {
-  color: #006595;
-}
 
 .form-item {
   position: relative;
   padding: 0.5% 0 0.5% 0;
-}
-
-/* show hints when hover/focus the input */
-.form-item:hover .hint,
-input:focus ~ div {
-  opacity: 1;
-}
-
-/* hidden by default */
-.hint {
-  content: "asd";
-  opacity: 0;
-  background: transparent;
-  position: absolute;
-  top: 5px;
-  left: 110px;
-  padding: 0.5% 0 0.5% 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--dominant-color);
-  border-radius: 0 7px 7px 0;
-  transition: opacity 0.3s;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
-}
-#contact-form > button {
-  top: 12px;
-}
+} 
 
 /* -----------------Maps-------------------- */
 .maps {
