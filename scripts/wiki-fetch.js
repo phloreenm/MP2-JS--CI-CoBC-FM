@@ -55,7 +55,7 @@ function capitalLetter(word) {
 // function to print the results on the wikipedia tab:
 function printResultsOnPage(myArray) {
 	fetchedInfoResponse.innerHTML = " ";
-	fetchedInfoResponse.insertAdjacentHTML('beforeend', `<h4 class="center-content" style="padding-top:15px;">Wikipedia articles related to \"${capitalLetter(searchingItem)}\" </h4>`);
+	fetchedInfoResponse.insertAdjacentHTML('beforeend', `<div class="art-wr"><h2 class="heading-alignment">Wikipedia articles related to \"${capitalLetter(searchingItem)}\" </h2></div>`);
 	myArray.forEach(function (item) {
 		let itemTitle = item.title;
 		let itemSnippet = item.snippet;
