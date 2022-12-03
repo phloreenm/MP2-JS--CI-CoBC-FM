@@ -265,6 +265,13 @@ header {
     margin-top: 0.7rem;
 }
 
+.nav-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+}
+
 .nav-link {
     opacity: 0.5;
     color: var(--link-color);
