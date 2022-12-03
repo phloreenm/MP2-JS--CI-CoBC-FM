@@ -87,7 +87,19 @@ Dobruja boasts a rich history and many more site of archaeological significance,
 
 **Maps**
 - The displayed map uses a custom icon ("temple_ruins.png"), hosted locally.
-
+**Features**
+- Implemented:
+  - APIs:
+    - Google Maps Markers
+    - EmailJS
+    - Wikipedia article search and display
+  - Embedded:
+    - Google Fonts
+    - FontAwesome
+    - 
+- To be implemented:
+  - The APIs need an internet connection to work. If the connection is down, some APIs won't work. Unless you refresh the page, the page would not load the content. Therefore a script to check if `window.navigator.onLine` is `true` - which means the connection is up and the API will run correctly. Otherwise, if is `false`, there must be a way to retry the request few times more and if the connection is still down, an alert would ask the user to check the connection and retry to refresh the page.
+  - Another page, named Gallery, to display images using the Google Places Photos API: when one of the cities' tab is presset, the backend will search on Google Places Details about the location, but only fetch a limited number of picture references returned in the Details object. Using those refrences and Google Photos
 **ISSUES**
 - Issues and errors 
   - Chrome added support for source maps:
