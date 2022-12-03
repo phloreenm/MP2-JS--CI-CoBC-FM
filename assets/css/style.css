@@ -764,11 +764,10 @@ footer {
 }
 
 
-}
-
 /* 
  * map sizes
  */
+
 #map_1 {
     max-width: 90%;
     height: 400px;
@@ -776,7 +775,9 @@ footer {
     margin-right: auto;
 }
 
+
 /* Media queries */
+
 
 /* Boostrap default breakpoint:
     --breakpoint-xs: 0;
@@ -786,7 +787,9 @@ footer {
     --breakpoint-xl: 1200px;
 */
 
+
 /* Old style media queries */
+
 
 /* @media (min-width: 400px) and (max-width: 600px) {
   ...
@@ -794,35 +797,33 @@ footer {
 Support: https://caniuse.com/css-media-range-syntax
 Rewritten in the new level 4 syntax as: */
 
+
 /*  Styles for viewports between 768px and 1024px. */
 
+
 /* @media (768px <= width <= 1023px )  { */
+
 @media (width>=768px) {
     body {
         min-width: 768px;
         min-height: 100vh;
     }
-    
     main {
         min-width: 768px;
     }
-    
     .navbar-nav {
         margin-left: auto;
         margin-right: auto;
     }
-    
     .nav-link.active {
         border-radius: 5px;
     }
-    
     .sub-tabcontent {
         width: 100%;
         display: none;
         animation: fadeEffect 1s;
         /* Fading effect takes 1 second */
     }
-    
     .sub-tabs button {
         padding: 14px 16px;
         width: 100%;
@@ -830,30 +831,28 @@ Rewritten in the new level 4 syntax as: */
         font-size: 1rem;
         border-radius: 5px;
     }
-    
     .tablnk.active,
     .sub-tabs button.active {
         font-size: 1.1rem;
     }
-    
     .foo-cont {
         margin: 0 auto 0 auto;
         width: 100%;
         max-width: 767px;
     }
 }
+
 @media (width>=976px) {
     body {
         min-width: 976px;
         min-height: 100vh;
     }
-    
     main {
         min-width: 976px;
     }
-    
     .navbar-nav {}
 }
+
 
 /* Styles for viewports with a width of 1024 pixels or greater.
 @media (width >= 1024px) {
