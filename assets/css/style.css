@@ -265,13 +265,6 @@ header {
     margin-top: 0.7rem;
 }
 
-.nav-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    justify-items: center;
-}
-
 .nav-link {
     opacity: 0.5;
     color: var(--link-color);
@@ -811,6 +804,21 @@ Rewritten in the new level 4 syntax as: */
     main {
         min-width: 768px;
     }
+    .nav-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-items: center;
+    }
+    .nav-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        padding: 0;
+        margin: 0 0 0.5% 0.5%;
+    }    
     .navbar-nav {
         margin-left: auto;
         margin-right: auto;
