@@ -411,6 +411,12 @@ header {
     padding: 0.2rem 0.5rem;
 }
 
+.fa-icons {
+    visibility: visible;
+}
+.tab-name {
+    visibility: hidden;
+}
 
 /* ---CTA section------------------------------------------------ */
 
@@ -826,9 +832,17 @@ Rewritten in the new level 4 syntax as: */
     .nav-link.active {
         border-radius: 5px;
     }
+    .fa-icons {
+        /* display: none; */
+        visibility: hidden;
+    }
+    .tab-name {
+        /* display: none; */
+        visibility: visible;
+    }
     .sub-tabcontent {
         width: 100%;
-        display: none;
+        display: inline;
         animation: fadeEffect 1s;
         /* Fading effect takes 1 second */
     }
