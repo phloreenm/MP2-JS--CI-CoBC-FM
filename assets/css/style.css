@@ -411,13 +411,6 @@ header {
     padding: 0.2rem 0.5rem;
 }
 
-.fa-icons {
-    visibility: visible;
-}
-.tab-name {
-    visibility: hidden;
-}
-
 /* ---CTA section------------------------------------------------ */
 
 #wiki_callToAction {
@@ -810,20 +803,11 @@ Rewritten in the new level 4 syntax as: */
     main {
         min-width: 768px;
     }
-    /* .nav-ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        justify-items: center;
-    } */
+  
     .nav-item {
-        /* display: flex;
-        flex-direction: row; */
-        /* justify-content: space-around;
-        justify-items: center;
-        align-items: center; */
+       
         padding: 0;
-        margin: 0 0.5%;
+        /* margin: 0 0.5%; */
     }    
     .navbar-nav {
         margin-left: auto;
@@ -831,14 +815,6 @@ Rewritten in the new level 4 syntax as: */
     }
     .nav-link.active {
         border-radius: 5px;
-    }
-    .fa-icons {
-        /* display: none; */
-        visibility: hidden;
-    }
-    .tab-name {
-        /* display: none; */
-        visibility: visible;
     }
     .sub-tabcontent {
         width: 100%;
@@ -872,11 +848,4 @@ Rewritten in the new level 4 syntax as: */
     main {
         min-width: 976px;
     }
-    .navbar-nav {}
 }
-
-
-/* Styles for viewports with a width of 1024 pixels or greater.
-@media (width >= 1024px) {
- 
-} */
