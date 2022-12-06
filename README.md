@@ -1,5 +1,9 @@
 
 
+![GitHub contributors](https://img.shields.io/github/contributors/phloreenm/MP2-JS--CI-CoBC-FM)
+![GitHub last commit](https://img.shields.io/github/last-commit/phloreenm/MP2-JS--CI-CoBC-FM)
+![GitHub language count](https://img.shields.io/github/languages/count/phloreenm/MP2-JS--CI-CoBC-FM)
+![GitHub top language](https://img.shields.io/github/languages/top/phloreenm/MP2-JS--CI-CoBC-FM)
 
 # **Table of Contents**
 1.  [**About the site**](#about-the-site)
@@ -15,7 +19,7 @@
     * [**3.Structure plan**](#structure)
     * [**5.Skeleton plan**](#skeleton)
         *  [**Wireframes (wireframes.md)**](readme-files/docs/wireframes.md)
-    <!-- * [**6. Surface plan**](#surface)
+    * [**6. Surface plan**](#surface)
         * [**UI (User Interface)**](#ui-user-interface)
             *  [**Site structure**](#site-structure)
             *  [**Responsiveness**](#responsiveness)
@@ -32,25 +36,29 @@
             *  [**Colour theme**](#colours)
             *  [**Contrast ratio (contrast.md)**](readme-files/docs/contrast.md)
             *  [**Accessibility**](#accessibility)
-<!--1.  [**Testing (testing.md)**](readme-files/docs/testing.md)
-1.  [**Performance**](#performance)
-1.  [**Issues**](#issues)
-1.  [**Deployment (deployment.md)**](readme-files/docs/deployment.md)
-1.  [**CREDITS:**](#credits)
+2.  [**Testing (testing.md)**](readme-files/docs/testing.md)
+3.  [**Performance**](#performance)
+4.  [**Issues**](#issues)
+5.  [**Deployment (deployment.md)**](readme-files/docs/deployment.md)
+6.  [**CREDITS:**](#credits)
     *  [**Code Snipets:**](#code-snipets)
     *  [**Research and Information:**](#research-and-information)
     *  [**Media**](#media)
     *  [**Other Resources:**](#other-resources-and-tools-used)
-1. [**Aknowledgment**](#aknowledgment) -->
+7. [**Aknowledgment**](#aknowledgment)
 
 - **About the site**
-"Scythia Minor Greek Ancient Colonies" website focuses on promoting cultural heritage tourism of ones of the most famous archaeological sites on the western shores of the Black Sea. Today, these site are located on Romania's territory, in a region called [Dobrudja](https://en.wikipedia.org/wiki/Dobruja) (Dobrogea - the area lies between the Danube river on West and the Black Sea at East, part of historical Thrace).
+"Scythia Minor Greek Ancient Colonies" website focuses on promoting cultural heritage tourism of ones of the most famous archaeological sites on the western shores of the Black Sea. Today, these site are located on Romanian territory, in a region called [Dobrudja](https://en.wikipedia.org/wiki/Dobruja) (Dobrogea - the area lies between the Danube river on West and the Black Sea at East, part of historical Thrace).
 Dobruja boasts a rich history and many more site of archaeological significance, but I chose only three of them, as they have in common as being located close to the sea, so they were important port cities, but also economic centers.
 
 ---
-### Live site on [GitHub Pages (custom domain)](http://phloreenm.me/MP2-JS--CI-CoBC-FM/) or [GitHub Pages 'https'](https://phloreenm.github.io/MP2-JS--CI-CoBC-FM//MP2-JS--CI-CoBC-FM/)
+### Live site on 
+  - [GitHub Pages (custom domain)](http://phloreenm.me/MP2-JS--CI-CoBC-FM/) 
+  - or [GitHub Pages 'https'](https://phloreenm.github.io/MP2-JS--CI-CoBC-FM//MP2-JS--CI-CoBC-FM/)
 ### Link to this GitHub repository [here](https://github.com/phloreenm/MP2-JS--CI-CoBC-FM)  
 
+---
+The structure of this documentation is spread along more *.md files linked in this Readme.md Reading a large document becomes more difficult d.p. with the complexity, so sections as Wireframes, Contrast testing, Testing, Deployment have their own separate document. These are are all linked in following chapters.
 ---
 **UX Design - the Five Plans method**
 - Call To Action:
@@ -177,6 +185,7 @@ Dobruja boasts a rich history and many more site of archaeological significance,
   - [CodePen - Input Hints](https://codepen.io/sakara/pen/DqobXW)
   - [Footer Bootstrap Modal](https://www.w3schools.com/bootstrap4/bootstrap_modal.asp)
   - [Disclaimer content created using Termly's Disclaimer Generator](https://app.termly.io/dashboard/website/18551745-dea9-4e7d-998b-865844d9b2e6/disclaimer)
+  - [README.md base template content structure](https://github.com/phloreenm/MP1-CultureCoffee-CI-CoBC-FM/tree/main#link-to-live-website-is-here)
   - =========================================
 - Media credits
   - [Google Maps Icons Credits: Matthias Stasiak](https://mapicons.mapsmarker.com/author/matthias.stasiak/)
@@ -187,5 +196,5 @@ Dobruja boasts a rich history and many more site of archaeological significance,
   - [Ancient Coinage of Kallatis, Thrace](https://www.wildwinds.com/coins/greece/thrace/kallatis/i.html)
   - [Ancient Coinage of Istros, Thrace](https://www.wildwinds.com/coins/greece/thrace/istros/i.html)
   - [Ancient Coinage of Tomis, Thrace ](https://www.wildwinds.com/coins/greece/thrace/tomis/i.html)
-  - -[](https://www.fontspace.com/gelio-font-f11521)
+  - [Font Gelio](https://www.fontspace.com/gelio-font-f11521)
 

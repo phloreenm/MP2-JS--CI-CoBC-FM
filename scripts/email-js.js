@@ -9,14 +9,14 @@ function sendMail(contactForm) {
         })
         .then(
             function(response) {
-                console.log("SUCCESS", response);
-                console.log('Email sent successfully! response.status: ', response.status);
+                // console.log("SUCCESS", response);
+                // console.log('Email sent successfully! response.status: ', response.status);
                 redirectPage();
             },
             function(error) {
-                console.log("Email failed to send");
-                console.log("FAILED", error);
-                window.location.href = "contact.html";
+                // console.log("Email failed to send");
+                // console.log("FAILED", error);
+                // window.location.href = "contact.html";
                 alert("Email couldn't be sent. Please check your internet connection and try again!");
             }
         );
