@@ -30,43 +30,58 @@
                     * [Menu page](#menu-page)
                     * [Gallery page](#gallery-page)
                     * [Contact page](#contact-page)
-                * [Maps](#maps)
                 * [Footer area](#footer)
             *  [**Typography**](#fonts)
             *  [**Colour theme**](#colours)
             *  [**Contrast ratio (contrast.md)**](readme-files/docs/contrast.md)
             *  [**Accessibility**](#accessibility)
-2.  [**Testing (testing.md)**](readme-files/docs/testing.md)
-3.  [**Performance**](#performance)
-4.  [**Issues**](#issues)
-5.  [**Deployment (deployment.md)**](readme-files/docs/deployment.md)
-6.  [**CREDITS:**](#credits)
+1.  [**Testing (testing.md)**](readme-files/docs/testing.md)
+1.  [**Performance**](#performance)
+1.  [**Issues**](#issues)
+1.  [**Deployment (deployment.md)**](readme-files/docs/deployment.md)
+1.  [**CREDITS:**](#credits)
     *  [**Code Snipets:**](#code-snipets)
     *  [**Research and Information:**](#research-and-information)
     *  [**Media**](#media)
     *  [**Other Resources:**](#other-resources-and-tools-used)
-7. [**Aknowledgment**](#aknowledgment)
+1. [**Aknowledgment**](#aknowledgment)
+---
 
-- **About the site**
-"Scythia Minor Greek Ancient Colonies" website focuses on promoting cultural heritage tourism of ones of the most famous archaeological sites on the western shores of the Black Sea. Today, these site are located on Romanian territory, in a region called [Dobrudja](https://en.wikipedia.org/wiki/Dobruja) (Dobrogea - the area lies between the Danube river on West and the Black Sea at East, part of historical Thrace).
-Dobruja boasts a rich history and many more site of archaeological significance, but I chose only three of them, as they have in common as being located close to the sea, so they were important port cities, but also economic centers.
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
 
 ---
+
 ### Live site on 
   - [GitHub Pages (custom domain)](http://phloreenm.me/MP2-JS--CI-CoBC-FM/) 
   - or [GitHub Pages 'https'](https://phloreenm.github.io/MP2-JS--CI-CoBC-FM//MP2-JS--CI-CoBC-FM/)
 ### Link to this GitHub repository [here](https://github.com/phloreenm/MP2-JS--CI-CoBC-FM)  
+The structure of this documentatiois spread along more *.md files linked in this Readme.md Reading a large document becomes more difficult d.p. with the complexity, so sections as Wireframes, Contrast tn esting, Testing, Deployment have their own separate document. These are are all linked in following chapters.
 
 ---
-The structure of this documentation is spread along more *.md files linked in this Readme.md Reading a large document becomes more difficult d.p. with the complexity, so sections as Wireframes, Contrast testing, Testing, Deployment have their own separate document. These are are all linked in following chapters.
----
-**UX Design - the Five Plans method**
-- Call To Action:
-  - When to MAIN element's content would not fill an entire page, the FOOTER would be displayed only 10vh at the bottom of the page, to make the user curios to scroll down to it.
-  - Cities page doesn't load the tabs' content unless the user clicks any of the three Cities' tabs. Only then the content is being displayed (the Chronicle sub-tabs' content) or loaded dynamically (Wikipedia searching API and Google Maps embedded maps).
-- Color theme used:
-  - [Color theme generated at coolors.co](https://coolors.co/242331-0075c4-efa00b-fbfefb-c33c54)
----
+**About the site**
+- "Scythia Minor Greek Ancient Colonies" website focuses on promoting cultural heritage tourism of ones of the most famous archaeological sites on the western shores of the Black Sea. Today, these site are located on Romanian territory, in a region called Dobrudja (Dobrogea - the area lies between the Danube river on West and the Black Sea at East, part of historical Thrace). Dobruja boasts a rich history and many more site of archaeological significance, but I chose only three of them, as they have in common as being located close to the sea, so they were important port cities, but also economic centers.
+# **UX (User Experience)**
+## **UX Design**
+The User Experience design was shaped using the theory of the Five Elements of UX.
+# **Strategy**
+- **Website objective**
+  - **Planning Stage**
+    - The purpose of this website is to make known some general information to a specific audience. More specifically, tourists travelling or planning to visit Dobrogea would be guided to visit three of the most prominent archaeological locations with connections to ancient Greek colonist.
+    - **Site Objectives** 
+      - Promote local historical heritage by presenting:
+        -  short chronological information
+        -  Wikipedia related links to articles
+        -  Google Maps:
+           - Street View about three archaeological site.
+    - **Design Goals**
+      - Responsive design on mobile, tablet or larger screen devices
+      - Accessible design
+      - Site structure to be intuitive and easy to navigate
+      - Homogenous layout design across all the pages
 - **User needs**
     - **User Stories**
         -  A first-time visitor, or a **prospective visitor** (|| turist), may have the following user stories:
@@ -87,10 +102,132 @@ The structure of this documentation is spread along more *.md files linked in th
             |                   | promote local archaeological sites | develop local turism  |            
             |                   | provide various information | raise the visitors interest to stay on the page  |            
             |                   | come up with photos, maps | inform in more detail about the archaeological sites |            
-            <!-- |                   | provide an organized browsing experience | raise the visitors interest  |             -->
-       
 
 ---
+# **Scope**
+- Functional specifications:
+    - A user should be able achieve its goals by visiting the site's sections.
+    - An user may understand site's structure by accessing the navigation menu bar.
+    - In case website page address is typed wrong, the server displays the 404 error in a dedicated page.
+    - A follow-up status its sent email is displayed.
+    - Pages are responsive on different devices from small to larger screens.
+    - Website's layout and technologies used (Google MAPS API, EmailJS API) are functioning and are rendered well on most popular browsers.
+- Content requirements:
+    - The information provided to user needs are accomplished through:
+        - Browsing Navigation Menu
+        - Written text
+        - Embedded Google Maps
+        - Icons (from FontAwasome)
+        - Internal links
+        - External links to other sites or services:
+            - Information sources
+            - Wikipedia articles
+    - Information guides the user to actual existing entities (archaeological site, pictures, maps).
+    - Call To Action elements are present on the page, to guide the user to take action:
+      - Cities page - SELECT CITY is highlighted and it disappears when a City's tab is selected.
+      - Send Email - the user is guided to fill in the form and click the SEND button.
+      - Footer: the user is guided to scroll down to the bottom of the page.
+      - 
+---
+# **Structure**
+- Information architecture:
+    - 1. Elements available on all pages of the website:
+        - Header and Footer:
+          - have the same content on all pages.
+          - offer quick access to different type of information or ease of the navigation.
+    - 2. Features grouped by type of information provided:
+- Design options:  
+    - HOW:
+        - landing page offers a brief introduction to the website's purpose and content.
+        - Cities page contains tabs with information (static and dynamically fetched) for each of the three cities:
+          - Chronicle (static page) - a brief chronological information about the city
+          - Wikipedia articles (dynamically displayed) - fetched links to Wikipedia articles about the city
+          - Maps (dynamically displayed) - embedded Google Maps with Street View for each city
+        - the user may send an enquiry using the Contact page.
+    - WHERE:
+        - **Structure and flow (user journey) map**
+       
+    <p align="center">The flow of an user visiting the website is represented in the following diagram:<br>
+        <img src="readme-files/readme-images/website-flow.jpg" alt="User's journey" width="90%">
+    </p>
+  
+---
+# **Skeleton**
+The skeleton plane is represented by the wireframe sketches and they're are located in [wireframes.md](readme-files/docs/wireframes.md) file.
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
+
+---
+# **Surface**
+# **UI (User Interface)**
+
+## **Site structure**
+- The site map is represented by the following pages list:
+  - [Home](index.html)
+  - [Cities](citadels-maps.html)
+  - [Contact](contact.html)
+  - [404](404.html)
+  - [Form Confirmation](formconfirmation.html)
+- Site's structure is reflected by the navigation menu bar, which is available on every page. 
+  - The navigation menu bar is located on the top of the page, below the logo and the title of the site and it contains the following links:
+    - Home - landing page
+    - Cities - page with tabs and sub-tabs for each city
+    - Contact - page with a form to send an email
+- Just before the footer section, when there is more content in main section, there is a "Back to top" button, which is available on every page. It's purpose is to ease the navigation to the top of the page.
+- The footer section also repeats on all pages. It's composed of:
+  - Social media links
+  - Fair usage policy
+  - Call to action button:
+    - Disclaimer button:
+      - Website Disclaimer
+      - External Links Disclaimer
+  - Copyright Notice with a link to the GitHub repository of this project.
+
+
+<p align="center">The following diagram represents this structure<br>
+    <img src="readme-files/readme-images/site-structure-diagram-upd.jpg" alt="Site's structure" width="90%">
+</p>
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
+
+
+- Call To Action:
+  - When to MAIN element's content would not fill an entire page, the FOOTER would be displayed only 10vh at the bottom of the page, to drive  the user to scroll down to the bottom.
+  - Cities page doesn't load the tabs' content, unless the user clicks any of the three Cities' tabs. There is a highlighted message to guide the user to select any City's tab. Only then the sub-tabs' content is being displayed (the Chronicle sub-tabs' content) or loaded dynamically (Wikipedia searching API and Google Maps embedded maps).
+- Color theme used:
+  - [Color theme generated at coolors.co](https://coolors.co/242331-0075c4-efa00b-fbfefb-c33c54)
+  - Colors:
+    - Main colors used:
+      - Dominant Color: #242331 / rgb(36, 35, 49)
+      - Complimentary Color: #0075C4 / rgb(0, 117, 196)
+      - Accent color & Active Links: #EFA00B / rgb(239, 160, 11)
+      - Text color: #FBFEFB /  rgb(251, 254, 251)
+      - Link hover color: #C33C54 / rgb(245, 102, 128)
+    - Derivates from main color:
+      - Articles background color: rgb(9, 125, 219)
+      - Articles darker background color: rgb(36, 35, 49)
+      - Other hues and combinations of the main colors.
+      - Inset box-shadows using the accent color
+- Fonts:
+  - Type: serif:
+    - Main paragraphs and header title font: "GFS Didot"
+    - Headings and Sub-headings font: "Merriweather"
+  - Sizing: the header and some headings use an adaptive font style, depending of the width of the screen.
+    - Default font-size and font-weight: from 15px to 18px / 400 font-weight.
+    - Header size and weight: from 18px to 36px / 700 font-weight.
+    - Navigation links: 16px to 20px, default weight.
+    - Paragraphs: used "small", "medium" font-sizes
+    - To attain some hover effect, or active buttons, the selected elements would change the font size from 0.9rems to 1rem or more.
+---
+
 
 
 **Maps**
@@ -159,9 +296,8 @@ The structure of this documentation is spread along more *.md files linked in th
     - [Callatis - Ancient Village or Settlement in Romania](https://www.megalithic.co.uk/article.php?sid=37857)
     - [Cetati din Dobrogea - Callatis](https://sites.google.com/site/cetatidindobrogea/callatis)
     - [Callatis, the ancient city on the Black Sea coast](https://www.rri.ro/en_gb/callatis_the_ancient_city_on_the_black_sea_coast-2529250)
-- [Text correction and suggestion by Grammar Coach](https://www.grammarcoach.com)
-  
-  - =========================================
+  - [Text correction and suggestion by Grammar Coach](https://www.grammarcoach.com)
+  - [The Elements of User Experience, Second Edition: User-Centered Design for the Web and Beyond - Jesse James Garrett](https://learning.oreilly.com/library/view/the-elements-of/9780321688651/)
 - Code Snippets,  APIs and tutorials:
   - [Google Maps JavaScript API Cookbook Kindle Edition](https://www.amazon.co.uk/Google-Maps-JavaScript-API-Cookbook-ebook/dp/B00HJR6RD6)
   - [Maps JavaScript API](AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4)
