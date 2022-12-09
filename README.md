@@ -197,7 +197,7 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
     <a href="#table-of-contents">Return to Table of Contents</a>
 </p>
 <br>
-
+==============================================================================================================
 
 - Call To Action:
   - When to MAIN element's content would not fill an entire page, the FOOTER would be displayed only 10vh at the bottom of the page, to drive  the user to scroll down to the bottom.
