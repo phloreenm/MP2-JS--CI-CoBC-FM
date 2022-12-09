@@ -124,10 +124,9 @@ The User Experience design was shaped using the theory of the Five Elements of U
             - Wikipedia articles
     - Information guides the user to actual existing entities (archaeological site, pictures, maps).
     - Call To Action elements are present on the page, to guide the user to take action:
-      - Cities page - SELECT CITY is highlighted and it disappears when a City's tab is selected.
+      - Select cities sub-page - SELECT CITY is highlighted and it disappears when a City's tab is selected.
       - Send Email - the user is guided to fill in the form and click the SEND button.
-      - Footer: the user is guided to scroll down to the bottom of the page.
-      - 
+      - Footer: on a page with less content, to footer is only visible 10vh at the bottom. This way the user is aware that he might find further content to scroll down to the bottom of the page.
 ---
 # **Structure**
 - Information architecture:
@@ -138,17 +137,17 @@ The User Experience design was shaped using the theory of the Five Elements of U
     - 2. Features grouped by type of information provided:
 - Design options:  
     - HOW:
-        - landing page offers a brief introduction to the website's purpose and content.
+        - Landing page presents a brief introduction to the website's subject and the content.
         - Cities page contains tabs with information (static and dynamically fetched) for each of the three cities:
           - Chronicle (static page) - a brief chronological information about the city
           - Wikipedia articles (dynamically displayed) - fetched links to Wikipedia articles about the city
           - Maps (dynamically displayed) - embedded Google Maps with Street View for each city
-        - the user may send an enquiry using the Contact page.
+        - Contact page - the user may send an enquiry using the email form.
     - WHERE:
         - **Structure and flow (user journey) map**
        
     <p align="center">The flow of an user visiting the website is represented in the following diagram:<br>
-        <img src="readme-files/readme-images/website-flow.jpg" alt="User's journey" width="90%">
+        <img src="readme-files/readme-images/flow.jpg" alt="User's journey" width="90%">
     </p>
   
 ---
