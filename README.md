@@ -318,6 +318,7 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
   - [Code Institute EmailJS implementation](https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume/blob/master/03-SendingEmailsUsingEmailJS/06-sending_emails/assets/js/sendEmail.js)
   - [Simple CSS Button Hover Effects](https://www.sliderrevolution.com/resources/css-button-hover-effects/)
   - [CodePen - Input Hints](https://codepen.io/sakara/pen/DqobXW)
+  - [Material Design for Bootstrap - Navigation menu](https://mdbootstrap.com/)
   - [Footer Bootstrap Modal](https://www.w3schools.com/bootstrap4/bootstrap_modal.asp)
   - [Disclaimer content created using Termly's Disclaimer Generator](https://app.termly.io/dashboard/website/18551745-dea9-4e7d-998b-865844d9b2e6/disclaimer)
   - [README.md base template content structure](https://github.com/phloreenm/MP1-CultureCoffee-CI-CoBC-FM/tree/main#link-to-live-website-is-here)
