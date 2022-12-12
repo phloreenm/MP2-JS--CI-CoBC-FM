@@ -27,7 +27,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             emailjs.init("8XKDNSzlw_svug1Gk");
         })();
     </script>
@@ -44,8 +44,8 @@
                 </a>
                 <a class="navbar-brand" href="index.html">Greek colonies in Scythia Minor</a>
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Navigation menu">
-          <i class="fas fa-bars"></i>
-        </button>
+                    <i class="fas fa-bars"></i>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
                     <ul class="navbar-nav mx-auto">
@@ -64,33 +64,35 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="row">
-                <div>
-                    <h2 class="center-content">
-                        Contact us
-                    </h2>
-                    <p class="description-p">If you have any suggestions, questions, collaboration offers, or partnership suggestions, please complete the form</p>
-                    <br>
-                </div>
-                <div class="col-md-12 center-form">
-                    <form id="contact-form" onsubmit="return sendMail(this);" method="post">
-                        <div class="form-item">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Name" required autocomplete="on" />
-                            <!-- <div class="hint">Enter full name</div> -->
-                        </div>
-                        <div class="form-item">
-                            <input type="email" class="form-control" name="emailaddress" id="emailaddress" placeholder="Email" required autocomplete="on" />
-                            <!-- <div class="hint">Enter your e-mail</div> -->
-                        </div>
-                        <div class="form-item">
-                            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Message" required autocomplete="on"></textarea>
-                            <!-- <div class="hint error">Enter your message</div> -->
-                        </div>
-                        <div class="form-item">
-                            <button type="submit" class="btn-block cta-color">Send Email</button>
-                        </div>
-                    </form>
+        <div class="art-wr">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <h2 class="center-content">
+                            Contact us
+                        </h2>
+                        <p class="description-p">If you have any suggestions, questions, collaboration offers, or partnership suggestions, please complete the form</p>
+                        <br>
+                    </div>
+                    <div class="col-md-12 center-form">
+                        <form id="contact-form" onsubmit="return sendMail(this);" method="post">
+                            <div class="form-item">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Name" required autocomplete="on" />
+                                <!-- <div class="hint">Enter full name</div> -->
+                            </div>
+                            <div class="form-item">
+                                <input type="email" class="form-control" name="emailaddress" id="emailaddress" placeholder="Email" required autocomplete="on" />
+                                <!-- <div class="hint">Enter your e-mail</div> -->
+                            </div>
+                            <div class="form-item">
+                                <textarea class="form-control" name="message" id="message" rows="3" placeholder="Message" required autocomplete="on"></textarea>
+                                <!-- <div class="hint error">Enter your message</div> -->
+                            </div>
+                            <div class="form-item">
+                                <button type="submit" class="btn-block cta-color">Send Email</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,15 +127,15 @@
                         <h1 class="heading-alignment" style="font-size: medium;">Fair Usage</h1>
                         <p style="font-size: medium; text-align: justify;
               text-justify: inter-word;">
-                            Resources used on this website have been gathered from different sources, and they have been credited in the documentation of the <a href="https://github.com/phloreenm/mp2-js--ci-cobc-fm" target="_blank">GitHub repository</a>                            of this project. Under the laws of fair usage, this website is purely educational and non-commercial, and it is not intended to infringe on any copyright laws. If you are the owner of the resources used on this website, and
+                            Resources used on this website have been gathered from different sources, and they have been credited in the documentation of the <a href="https://github.com/phloreenm/mp2-js--ci-cobc-fm" target="_blank">GitHub repository</a> of this project. Under the laws of fair usage, this website is purely educational and non-commercial, and it is not intended to infringe on any copyright laws. If you are the owner of the resources used on this website, and
                             you wish to have them removed, please <a href="contact.html">contact me</a> . Thank you!
                         </p>
                     </div>
                 </div>
                 <div class="col-md-12" style="text-align: center;">
                     <button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" data-toggle="modal" data-target="#myModal">
-            Disclaimer
-          </button>
+                        Disclaimer
+                    </button>
                     <!-- Modal source base code: https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
                     <!--------------------- The Modal ----------------------->
                     <div class="modal fade" id="myModal">
