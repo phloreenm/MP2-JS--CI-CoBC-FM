@@ -411,6 +411,7 @@ header {
     padding: 0.2rem 0.5rem;
 }
 
+
 /* ---CTA section------------------------------------------------ */
 
 #wiki_callToAction {
@@ -527,7 +528,7 @@ blockquote {
 }
 
 .tablnk:hover {
-    opacity: 0.7;
+    opacity: 0.9;
     font-size: 1.15rem;
     color: var(--link-color);
     background-color: var(--complimentary-color);
@@ -801,11 +802,10 @@ Rewritten in the new level 4 syntax as: */
     main {
         min-width: 768px;
     }
-  
     .nav-item {
         padding: 0;
         margin: 0 0.5%;
-    }    
+    }
     .navbar-nav {
         margin-left: auto;
         margin-right: auto;
