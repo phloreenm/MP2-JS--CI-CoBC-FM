@@ -303,6 +303,7 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
 - Code Snippets,  APIs and tutorials:
   - [Google Maps JavaScript API Cookbook Kindle Edition](https://www.amazon.co.uk/Google-Maps-JavaScript-API-Cookbook-ebook/dp/B00HJR6RD6)
   - [Maps JavaScript API](AIzaSyANGGOhK4itFoIlNp1F5Du-0ySik3HTbk4)
+  - [Script to suppress violations that Google Maps JavaScript API generates](https://www.telerik.com/forums/many-warnings-added-non-passive-event-listener-are-throwed)
   - [Custom Markers](https://developers.google.com/maps/documentation/javascript/custom-markers#maps_custom_markers-javascript)
   - [Google Earth/Maps Icons](https://kml4earth.appspot.com/icons.html)
   - [Monuments & Structures map markers](https://mapicons.mapsmarker.com/category/markers/tourism/monuments-structures/)

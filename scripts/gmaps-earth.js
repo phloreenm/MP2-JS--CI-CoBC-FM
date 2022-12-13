@@ -18,7 +18,7 @@ function gMapsMap() {
     var infowindow = new google.maps.InfoWindow();
 
     var marker, i;
-   
+//    Marker icon
     var citadelIcon = "../assets/images/temple_ruins.png";
 
 
@@ -35,7 +35,6 @@ function gMapsMap() {
             (function (marker, i) {
                 return function () {
                     infowindow.setContent(locations[i][0]);
-                    console.log('Info: ' + locations[i][0]);
                     infowindow.open(map, marker);
                 };
             })(marker, i)
