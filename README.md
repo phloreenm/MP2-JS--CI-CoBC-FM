@@ -259,8 +259,11 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
 - Console warnings - These are warning which I couldn't solve yet, since my time is very limited. These are mainly caused by 3rd party APIs.
   - Non-passive event listener
     - ```[Violation] Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952```
-    - Cause
-    - Solution
+    - Cause:
+      - 'Passive event listeners are a new feature in the DOM spec that enable developers to opt-in to better scroll performance by eliminating the need for scrolling to block on touch and wheel event listeners. Developers can annotate touch and wheel listeners with {passive: true} to indicate that they will never invoke preventDefault. This feature shipped in Chrome 51, Firefox 49 and landed in WebKit.' [Source](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md)
+      - Issue discussed [here](https://issuetracker.google.com/issues/63211698?pli=1). It looks Google Maps JavaScript API version 3 generates these warnings. Google Chrome is warning about violations that Google Maps JavaScript API generates [Source](https://stackoverflow.com/questions/39152877/consider-marking-event-handler-as-passive-to-make-the-page-more-responsive)
+    - Solution:
+      - the process to solve this issue is described [here](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md). Since the error come from the Google Maps JavaScript API 3, I couldn't find a way to solve this issue.
   - Device orientation events are blocked by permissions policy:
     - ``` The deviceorientation events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features ```
     - Cause 
