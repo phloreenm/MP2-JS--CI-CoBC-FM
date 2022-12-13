@@ -1,24 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400&display=swap");
 
-/* font-family: 'GFS Didot', serif; */
-
-
-/* font-family: 'Merriweather', serif; */
-
-
-/* font-family: 'Roboto', sans-serif; */
-
-
-/* Mobile First style for screen sizes with viewports between 768px and 1024px
-@media (300px <= width <= 767px )  {...}
-*/
-
-
-/* Min width allowed is 300px */
-
-
-/* all document */
-
 *,
 *::before,
 *::after {
@@ -26,27 +7,7 @@
 }
 
 
-/* Custom properties (variables) for custom colors */
-
-
-/********************* Colour reference chart****************
-******************************* variable **************** colour ******** 
-
-Document Background color       --main-bg-color           #12232E
-Foreground color                  bb               #abcdef
-Heading Text color                bt               #123456
-Sub-Heading Text color            bt               #123456
-Navigation Buttons Link color     bl               #123456
-Navigation Buttons Link hover     bl               #123456
-Navigation Buttons Link active    bl               #123456
-Paragraph Text color              bt               #123456
-Blackquotes Text color            bt               #123456
-Articles Background color         bt               #123456
-Articles Text color               bt               #123456
-Articles Link color               bt               #123456
-*/
-
-
+/
 /* COLOR THEME: https://icolorpalette.com/imagepalette/color-palette-ideas-from-sky-afterglow-red-at-morning-image-11 */
 
 :root {
@@ -152,48 +113,8 @@ a:active {
 }
 
 
-/* CTA Custom Button CSS Button Hover effect code snnipet (https://www.sliderrevolution.com/resources/css-button-hover-effects/) */
 
-.cta-color {
-    opacity: 0.7;
-    color: var(--dominant-color);
-    background-color: var(--accent-color) !important;
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    border-radius: 4px;
-    border: none;
-    text-align: center;
-    font-size: 1.7rem;
-    transition: all 0.5s;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-}
-
-.cta-color:after {
-    content: "»";
-    position: absolute;
-    opacity: 0;
-    bottom: 5px;
-    right: -5px;
-    transition: 0.3s;
-}
-
-.cta-color:hover {
-    opacity: 0.9;
-    color: var(--complimentary-color);
-    padding-right: 44px;
-    padding-left: 8px;
-}
-
-.cta-color:hover:after {
-    opacity: 1;
-    right: 10px;
-}
-
-
-/* Header */
-
+/* HEADER */
 header {
     font-family: var(--header-title-font);
     font-size: min(max(20px, 4vw), 36px);
@@ -216,8 +137,7 @@ header {
 }
 
 
-/* override Bootstrap defaults*/
-
+/* Override Bootstrap defaults*/
 .container-fluid {
     flex-direction: column;
 }
@@ -238,7 +158,6 @@ header {
 }
 
 .navbar-brand {
-    /* color: var(--text-color); */
     font-size: min(max(18px, 4vw), 32px);
     margin: 0;
 }
@@ -269,8 +188,6 @@ header {
     opacity: 0.5;
     color: var(--link-color);
     width: 100%;
-    /* margin-left: auto;
-    margin-right: auto; */
     font-size: min(max(16px, 6vw), 20px);
     text-transform: uppercase;
 }
@@ -335,9 +252,7 @@ header {
     padding: 0;
 }
 
-
 /* special classes to style different elements*/
-
 .center-content {
     text-align: center;
     margin: 30px 0 0 0;
@@ -382,7 +297,6 @@ header {
 .btp-wr {
     text-align: center;
     margin-top: 30px;
-    ;
 }
 
 .backToTop {
@@ -411,9 +325,9 @@ header {
     padding: 0.2rem 0.5rem;
 }
 
+/* Override Google Maps infowindow text color */
 .gm-style-iw-d > * {
     color: #552f1e;
-    text-transform: capitalize !important;
 }
 
 /* ---CTA section------------------------------------------------ */
@@ -425,7 +339,7 @@ header {
     margin: 15px 0.5% 0.5% 0.5%;
 }
 
-#wiki_callToAction>h3 {
+#wiki_callToAction > h3 {
     text-align: center;
     margin-bottom: 0;
     padding-top: 0.5rem;
@@ -436,14 +350,53 @@ header {
     margin-bottom: 0;
 }
 
-figure>img {
+/* CTA Custom Button CSS Button Hover effect code snnipet (https://www.sliderrevolution.com/resources/css-button-hover-effects/) */
+.cta-color {
+    opacity: 0.7;
+    color: var(--dominant-color);
+    background-color: var(--accent-color) !important;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    font-size: 1.7rem;
+    transition: all 0.5s;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+.cta-color:after {
+    content: "»";
+    position: absolute;
+    opacity: 0;
+    bottom: 5px;
+    right: -5px;
+    transition: 0.3s;
+}
+
+.cta-color:hover {
+    opacity: 0.9;
+    color: var(--complimentary-color);
+    padding-right: 44px;
+    padding-left: 8px;
+}
+
+.cta-color:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+/* Figure elements */
+figure > img {
     display: block;
     margin: 0 auto;
     padding: 10px 10px 10px 10px;
     max-width: 100%;
 }
 
-figure>figcaption {
+figure > figcaption {
     text-align: center;
     font-size: small;
     margin: 0;
@@ -487,9 +440,6 @@ blockquote {
     font-style: italic;
     padding: 5px 10px 5px 20px;
 }
-
-
-/* ---TABs------------------------------------------------ */
 
 
 /* Style the buttons that are used to open the tab content */
@@ -547,12 +497,7 @@ blockquote {
     font-size: 1.1rem;
     padding: 12px 16px;
     text-transform: uppercase;
-    /* -webkit-box-shadow: 10px 10px 50px var(--complimentary-color) inset,
-    10px 10px 50px var(--accent-color);
-  -moz-box-shadow: 10px 10px 50px var(--complimentary-color) inset,
-    0 0 0 var(--dominant-color);
-  box-shadow: 10px 10px 50px var(--complimentary-color) inset,
-    0 0 0 var(--dominant-color); */
+   
     background-color: var(--articles-bg-blue-color);
     color: var(--accent-color);
     border-bottom: 1px solid var(--cta-color);
@@ -562,13 +507,6 @@ blockquote {
 
 
 /* Style the tab content (and add height:100% for full page content) */
-
-.tabcnt {
-    color: var(--text-color);
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-}
 
 .sub-tabs button {
     opacity: 0.7;
@@ -587,9 +525,6 @@ blockquote {
     border-radius: 5px;
 }
 
-
-/* Change background color of buttons on hover */
-
 .sub-tablinks:hover,
 .sub-tabs button:hover {
     opacity: 0.9;
@@ -606,9 +541,7 @@ blockquote {
     transition: 0.3s;
 }
 
-
 /* Style the tab content */
-
 .tabcontent {
     float: left;
     margin-top: 30px;
@@ -619,21 +552,16 @@ blockquote {
 .sub-tabcontent {
     display: none;
     animation: fadeEffect 1s;
-    /* Fading effect takes 1 second */
 }
 
 
 /* Fade in Tabs */
-
 .tabcontent,
 .sub-tabcontent {
     animation: fadeEffect 1.2s;
-    /* Fading effect takes 1 second */
 }
 
-
 /* Go from zero to full opacity */
-
 @keyframes fadeEffect {
     from {
         opacity: 0;
@@ -643,16 +571,14 @@ blockquote {
     }
 }
 
-
-/* -----------------Contact-------------------- */
+/* -----------------CONTACT FORM-------------------- */
 
 .form-item {
     position: relative;
     padding: 0.5% 0 0.5% 0;
 }
 
-
-/* -----------------Maps-------------------- */
+/* -----------------MAPS-------------------- */
 
 .maps {
     display: flex;
@@ -665,7 +591,7 @@ blockquote {
 }
 
 #map_1 {
-    width: 100%;
+    width: 90%;
     height: 350px;
     border: 1px solid var(--accent-color);
     border-radius: 5px;
@@ -689,8 +615,7 @@ iframe {
     border-radius: 5px;
 }
 
-
-/* Wikipedia results styling */
+/* WIKIPEDIA results styling */
 
 .loader {
     display: inline-block;
@@ -728,12 +653,7 @@ iframe {
 .resultSnippet a {
     color: var(--text-color);
 }
-
-
-/* ---------------------------------------------- */
-
-
-/* Footer */
+/* ---FOOTER------------------------------------------- */
 
 footer {
     background-color: var(--dominant-color);
@@ -758,45 +678,7 @@ footer {
     transition: 0.3s;
 }
 
-
-/* 
- * map sizes
- */
-
-#map_1 {
-    max-width: 90%;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/* Media queries */
-
-
-/* Boostrap default breakpoint:
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-*/
-
-
-/* Old style media queries */
-
-
-/* @media (min-width: 400px) and (max-width: 600px) {
-  ...
-}
-Support: https://caniuse.com/css-media-range-syntax
-Rewritten in the new level 4 syntax as: */
-
-
-/*  Styles for viewports between 768px and 1024px. */
-
-
-/* @media (768px <= width <= 1023px )  { */
+/* ---Media queries------------------------------------------- */
 
 @media (width>=768px) {
     body {
@@ -821,7 +703,6 @@ Rewritten in the new level 4 syntax as: */
         width: 100%;
         display: inline;
         animation: fadeEffect 1s;
-        /* Fading effect takes 1 second */
     }
     .sub-tabs button {
         padding: 14px 16px;
