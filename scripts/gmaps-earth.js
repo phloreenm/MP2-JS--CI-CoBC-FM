@@ -1,11 +1,13 @@
 /*jshint esversion: 6 */
 // SOURCE: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript
 function gMapsMap() {
+    // markers' infos and coordinates
     var locations = [
-        ["Tomis", 44.171006, 28.661011, 1],
-        ["Ancient Histria Citadel", 44.546676, 28.773069, 2],
-        ["Calatis", 43.814692, 28.586530, 3],
+        ["Tomis", 44.171006, 28.661011, 1, '../citadels-maps.html'],
+        ["Ancient Histria Citadel", 44.546676, 28.773069, 2, '../citadels-maps.html'],
+        ["Calatis", 43.814692, 28.586530, 3,  '../citadels-maps.html'],
     ];
+    // overview map settings
     var dobrogea = new google.maps.LatLng(44.19, 28.56);
     var map = new google.maps.Map(document.getElementById("map_1"), {
         zoom: 8,
@@ -26,14 +28,25 @@ function gMapsMap() {
             map: map,
             icon: citadelIcon,
         });
-
+        // Listener - when marker is hovered is displays info window
+        google.maps.event.addListener(
+            marker,
+            "mouseover",
+            (function (marker, i) {
+                return function () {
+                    infowindow.setContent(locations[i][0]);
+                    console.log('Info: ' + locations[i][0]);
+                    infowindow.open(map, marker);
+                };
+            })(marker, i)
+        );
+        // Listener - when marker is clicked, redirect to citadels-maps.html
         google.maps.event.addListener(
             marker,
             "click",
             (function (marker, i) {
                 return function () {
-                    infowindow.setContent(locations[i][0]);
-                    infowindow.open(map, marker);
+                    window.location.href = locations[i][4];
                 };
             })(marker, i)
         );
