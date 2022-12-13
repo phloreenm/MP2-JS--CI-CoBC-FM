@@ -411,6 +411,10 @@ header {
     padding: 0.2rem 0.5rem;
 }
 
+.gm-style-iw-d > * {
+    color: #552f1e;
+    text-transform: capitalize !important;
+}
 
 /* ---CTA section------------------------------------------------ */
 
