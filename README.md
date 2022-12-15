@@ -326,7 +326,8 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
   - [Footer Bootstrap Modal](https://www.w3schools.com/bootstrap4/bootstrap_modal.asp)
   - [Disclaimer content created using Termly's Disclaimer Generator](https://app.termly.io/dashboard/website/18551745-dea9-4e7d-998b-865844d9b2e6/disclaimer)
   - [README.md base template content structure](https://github.com/phloreenm/MP1-CultureCoffee-CI-CoBC-FM/tree/main#link-to-live-website-is-here)
-  - =========================================
+  - [Use SVG viewBox for easy zooming](https://thecompetentdev.com/weeklyjstips/tips/47_svg_viewbox_zoom/)
+  - [Adding zoom and pan effects to SVG](https://onestepcode.com/zoom-pan-effect-svg/)
 - Media credits
   - [Google Maps Icons Credits: Matthias Stasiak](https://mapicons.mapsmarker.com/author/matthias.stasiak/)
   - [Greek Column SVG Vector & PNG](https://www.svgrepo.com/svg/160058/greek-column)
@@ -337,4 +338,5 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
   - [Ancient Coinage of Istros, Thrace](https://www.wildwinds.com/coins/greece/thrace/istros/i.html)
   - [Ancient Coinage of Tomis, Thrace ](https://www.wildwinds.com/coins/greece/thrace/tomis/i.html)
   - [Font Gelio](https://www.fontspace.com/gelio-font-f11521)
+  - [Dobruja (dark green) within Romania and Bulgaria (light green) both in Eastern Europe](https://en.wikipedia.org/wiki/Dobruja)
 

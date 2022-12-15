@@ -403,6 +403,65 @@ figure > figcaption {
     padding: 0;
 }
 
+.main-svg-container {
+    display: none;
+}
+
+.main-png-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:hidden;
+    position:relative;
+}
+/* .main-png-container > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+    max-width: 100%;
+
+} */
+/* .dobrudja-png {
+    background-image: url('./assets/images/dobruja_in_europe_map-554-480.png');
+    background-size: 400px 267px;
+    background-size: 600px 520px;
+    background-position: center;
+    transition: all 1s ease;
+    width:100%;
+    height:100%;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    position:relative;
+    left:0;
+    top:0;
+    transform-origin: 15% 15%;
+    -webkit-transform-origin: 15% 15%;
+} */
+.dobrudja-png {
+    background-image: url('./assets/images/dobruja_in_europe_map-554-480.png');
+    /* background-size: 400px 267px; */
+    background-size: 600px 520px;
+    background-position: center;
+    transition: all 1s ease;
+    width:100%;
+    height:100%;
+    transform: scale(1);
+    position:relative;
+    left:0;
+    top:0;
+    transform-origin: 15% 15%;
+    -webkit-transform-origin: 15% 15%;
+}
+.main-png-container:hover .dobrudja-png {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+}
 
 /* ---ARTICLES------------------------------------------------ */
 
@@ -679,6 +738,11 @@ footer {
 }
 
 /* ---Media queries------------------------------------------- */
+@media only screen and (max-device-width: 576px) {
+    .main-svg-container {
+        display: none !important;
+    }
+}
 
 @media (width>=768px) {
     body {
@@ -698,6 +762,23 @@ footer {
     }
     .nav-link.active {
         border-radius: 5px;
+    }
+    .main-svg-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .svg-container {
+        overflow: hidden !important;
+        height: 450px;
+        width: 90%;
+    }
+    .main-png-container {
+        display: none;
     }
     .sub-tabcontent {
         width: 100%;

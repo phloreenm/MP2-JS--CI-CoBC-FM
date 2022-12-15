@@ -21,3 +21,21 @@ svgElement.addEventListener("mouseout", () => {
    
     svgElement.setAttribute("viewBox", `2754 1161 ${originalWidth} ${originalHeight}`);
 });
+svgElement.addEventListener("ontouchend ", (event) => {
+    const {
+        top,
+        left,
+        width,
+        height
+    } = svgElement.getBoundingClientRect();
+
+    const eventTop = event.clientY - top;
+    const eventLeft = event.clientX - left;
+
+    svgElement.setAttribute("viewBox", `2500 2
+    000 3800 3400`)
+});
+svgElement.addEventListener("mouseout", () => {
+   
+    svgElement.setAttribute("viewBox", `2754 1161 ${originalWidth} ${originalHeight}`);
+});
