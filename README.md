@@ -268,7 +268,10 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
     - ``` The deviceorientation events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features ```
     - Cause 
     - Solution
-  
+- Google Maps API - loading map and markers failed with this error: 
+  ``` Uncaught (in promise) _.Be {message: 'gMapsMap is not a function', stack: 'Error\n    at _.Be.captureStackTrace (https://maps.…lpIUNjRBPtOZUBPjUaim1HE&callback=gMapsMap:215:255', name: 'InvalidValueError'} ```
+    - Cause: Google Maps Markers API base code has been changed and I didn't have any notification to adapt my code also. The behaviour was quite strange, as I didn't change the code at that time and couldn't relate any of my actions to the new error. 
+    - Solution: change API's link's attribute from "async" to "defer". This eliminated the error straight away and map was rendered properly.
 ---
 **BUGS**
 - navigating between the cities:
