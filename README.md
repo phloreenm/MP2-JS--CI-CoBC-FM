@@ -255,7 +255,7 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
     - Solution: These have been solved following the steps described on [StackOverflow forum](https://stackoverflow.com/questions/61339968/error-message-devtools-failed-to-load-sourcemap-could-not-load-content-for-chr), and the cause looked to be "(...) Chrome added support for source maps." Solved by making the right settings in the DevTools->Settings->Preferences->Sources.
   - Using hard-coded API-KEYs from Google API 
     - Issue: couldn't find a solution to save environment variables to a file and use this file to store the variables everywhere (VSCode IDE, GitPod environment, GitHub & GitHub pages)
-    - Solution: hard coded the API-KEYs and later create environment variables in each running environment separately. Not ideally, but is working on GitHub (An emerging issue is that if you deploy the site to Netlify, you must create environment variables again).
+    - Solution: hard coded the API-KEYs and later create environment variables in each running environment separately. Not ideally, but is working on GitHub (An emerging issue is that if you deploy the site to Netlify, for example, you must create environment variables again).
 - Console warnings - These are warning which I couldn't solve yet, since my time is very limited. These are mainly caused by 3rd party APIs.
   - Non-passive event listener
     - ```[Violation] Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952```
@@ -264,13 +264,15 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
       - Issue discussed [here](https://issuetracker.google.com/issues/63211698?pli=1). It looks Google Maps JavaScript API version 3 generates these warnings. Google Chrome is warning about violations that Google Maps JavaScript API generates [Source](https://stackoverflow.com/questions/39152877/consider-marking-event-handler-as-passive-to-make-the-page-more-responsive)
     - Solution:
       - the process to solve this issue is described [here](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md). Since the error come from the Google Maps JavaScript API 3, I couldn't find a way to solve this issue.
-  - Device orientation events are blocked by permissions policy:
+  - GoogleStreet & Google 360 warning: Device orientation events are blocked by permissions policy:
     - ``` The deviceorientation events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features ```
-    - Cause 
+    - Cause: warning 
     - Solution
+  - GoogleStreet & Google 360 warning: ``` Added non-passive event listener to a scroll-blocking <touchstart/touchmove> event. Consider marking event handler as 'passive' to make the page more responsive. See <URL> ```
+    - Cause: this warning is present on Google Maps site too and couldn't find a solution to fix it.
 - Google Maps API - loading map and markers failed with this error: 
   ``` Uncaught (in promise) _.Be {message: 'gMapsMap is not a function', stack: 'Error\n    at _.Be.captureStackTrace (https://maps.…lpIUNjRBPtOZUBPjUaim1HE&callback=gMapsMap:215:255', name: 'InvalidValueError'} ```
-    - Cause: Google Maps Markers API base code has been changed and I didn't have any notification to adapt my code also. The behaviour was quite strange, as I didn't change the code at that time and couldn't relate any of my actions to the new error. 
+    - Cause: Google Maps Markers API base code has been changed and I didn't have any notification to adapt my code also. The behavior was quite strange, as I didn't change the code at that time and couldn't relate any of my actions to the new error. 
     - Solution: change API's link's attribute from "async" to "defer". This eliminated the error straight away and map was rendered properly.
 ---
 **BUGS**
