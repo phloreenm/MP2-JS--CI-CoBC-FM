@@ -778,7 +778,7 @@ footer {
     .svg-container {
         overflow: hidden !important;
         height: 450px;
-        width: 90%;
+        /* width: 90%; */
     }
     .main-png-container {
         display: none;
