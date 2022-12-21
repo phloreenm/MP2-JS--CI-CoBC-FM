@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 /* COLOR THEME: https://icolorpalette.com/imagepalette/color-palette-ideas-from-sky-afterglow-red-at-morning-image-11 */
 
 :root {
@@ -34,9 +33,6 @@
     --articles-bg-blue-color: rgba(9, 125, 219, 0.09);
     --articles-bg-dark-color: rgba(36, 35, 49, 0.09);
     /* ---FONTS----------------- */
-    /* Paragraphs and Greek: font-family: 'GFS Didot', serif; */
-    /* Headings: font-family: 'Merriweather', serif; */
-    /* Backup: font-family: 'Roboto', sans-serif; */
     /* HEADER Title */
     --header-title-font: "GFS Didot", serif;
     /* Heading Font */
@@ -49,7 +45,6 @@
 
 html,
 body {
-    /* height: 100%; */
     font-family: var(--paragraph-font);
     font-size: min(max(15px, 4vw), 18px);
     font-weight: 400;
@@ -79,8 +74,6 @@ h6 {
 }
 
 main {
-    padding-top: 20px;
-    padding-bottom: 2rem;
     width: 90%;
     min-height: calc(80vh - 130px);
     max-width: 767px;
@@ -111,7 +104,7 @@ a:active {
 }
 
 
-/* HEADER */
+/* ----------------HEADER------------------ */
 
 header {
     font-family: var(--header-title-font);
@@ -272,6 +265,12 @@ header {
     letter-spacing: 0.1rem;
 }
 
+.align-vert {
+    position: inherit;
+    margin-top: calc(20vh - 10px) !important;
+    margin-bottom: calc(20vh - 10px) !important;
+}
+
 .description-p {
     padding: 20px 20px 20px 15px;
     font-size: medium;
@@ -411,10 +410,6 @@ figure>figcaption {
     padding: 0;
 }
 
-/* .main-svg-container {
-    display: none;
-} */
-
 .main-png-container {
     width: 90%;
     display: flex;
@@ -452,7 +447,6 @@ figure>figcaption {
     align-content: center;
         
 }
-
 
 /* ---ARTICLES------------------------------------------------ */
 
@@ -554,7 +548,6 @@ blockquote {
     color: var(--accent-color);
 }
 
-
 /* Style the tab content (and add height:100% for full page content) */
 
 .sub-tabs button {
@@ -590,7 +583,6 @@ blockquote {
     transition: 0.3s;
 }
 
-
 /* Style the tab content */
 
 .tabcontent {
@@ -613,7 +605,6 @@ blockquote {
     animation: fadeEffect 1.2s;
 }
 
-
 /* Go from zero to full opacity */
 
 @keyframes fadeEffect {
@@ -625,14 +616,12 @@ blockquote {
     }
 }
 
-
 /* -----------------CONTACT FORM-------------------- */
 
 .form-item {
     position: relative;
     padding: 0.5% 0 0.5% 0;
 }
-
 
 /* -----------------MAPS-------------------- */
 
@@ -670,7 +659,6 @@ iframe {
     align-content: center;
     border-radius: 5px;
 }
-
 
 /* WIKIPEDIA results styling */
 
@@ -710,7 +698,6 @@ iframe {
 .resultSnippet a {
     color: var(--text-color);
 }
-
 
 /* ---FOOTER------------------------------------------- */
 
@@ -773,7 +760,8 @@ footer {
         justify-content: center;
         align-items: center;
         margin-left: auto;
-        margin-right: auto;
+        /* margin-right: auto; */
+        margin-right: calc();
     }
     .svg-container {
         overflow: hidden !important;
