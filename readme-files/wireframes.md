@@ -57,8 +57,7 @@ These are the latest Wireframes, on which site's layout was built.
 ### **Cities Mobile View**
 
 <p align="center">
-    <img width="100%" src="./readme-images/wireframes/02-1-cp-mv.png
-    ">
+    <img width="100%" src="./readme-images/wireframes/02-1-cp-mv.png">
 </p>
 
 ### **Cities Tablet View**

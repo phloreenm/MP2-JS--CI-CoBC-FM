@@ -6,45 +6,27 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/phloreenm/MP2-JS--CI-CoBC-FM)
 
 # **Table of Contents**
-1.  [**About the site**](#about-the-site)
-    * [**Link to live website**](#link-to-live-website-is-here)
-    * [**Link to GitHub repository**](#link-to-github-repo-is-here)
-1.  [**UX Design - the Five Plans method**](#uxd)
-    * [**1.Strategy plan**](#stratetgy)
-        * [Planning Stage](#planning-stage)
-        * [User Stories](#user-stories)
-        * [Site Objectives](#site-objectives)
-        * [Design Goals](#design-goals)
-    * [**2.Scope plan**](#scope)
-    * [**3.Structure plan**](#structure)
-    * [**5.Skeleton plan**](#skeleton)
-        *  [**Wireframes (wireframes.md)**](readme-files/wireframes.md)
-    * [**6. Surface plan**](#surface)
-        * [**UI (User Interface)**](#ui-user-interface)
-            *  [**Site structure**](#site-structure)
-            *  [**Responsiveness**](#responsiveness)
-            *  [**Layout**](#layout)
-                * [Header](#header)
-                * [Main content](#main-content-section)
-                    * [Home page](#home-page)
-                    * [Menu page](#menu-page)
-                    * [Gallery page](#gallery-page)
-                    * [Contact page](#contact-page)
-                * [Footer area](#footer)
-            *  [**Typography**](#fonts)
-            *  [**Colour theme**](#colours)
-            *  [**Contrast ratio (contrast.md)**](readme-files/docs/contrast.md)
-            *  [**Accessibility**](#accessibility)
-2.  [**Testing (testing.md)**](readme-files/docs/testing.md)
-3.  [**Performance**](#performance)
-4.  [**Issues**](#issues)
-5.  [**Deployment (deployment.md)**](readme-files/docs/deployment.md)
-6.  [**CREDITS:**](#credits)
-    *  [**Code Snipets:**](#code-snipets)
-    *  [**Research and Information:**](#research-and-information)
-    *  [**Media**](#media)
-    *  [**Other Resources:**](#other-resources-and-tools-used)
-7. [**Aknowledgment**](#aknowledgment)
+- [**Table of Contents**](#table-of-contents)
+    - [Live site on](#live-site-on)
+    - [Link to this GitHub repository here](#link-to-this-github-repository-here)
+- [**UX (User Experience)**](#ux-user-experience)
+  - [**UX Design**](#ux-design)
+- [**Strategy**](#strategy)
+- [**Scope**](#scope)
+- [**Structure**](#structure)
+- [**Skeleton**](#skeleton)
+- [**Surface**](#surface)
+- [**UI (User Interface)**](#ui-user-interface)
+  - [**Site structure**](#site-structure)
+  - [**Responsiveness**](#responsiveness)
+  - [**Layout**](#layout)
+    - [**HEADER**](#header)
+    - [**MAIN CONTENT SECTION**](#main-content-section)
+      - [**Home page**](#home-page)
+      - [**Menu page**](#menu-page)
+      - [**Gallery page**](#gallery-page)
+      - [**Contact page**](#contact-page)
+    - [**FOOTER**](#footer)
 ---
 
 <br>
@@ -166,11 +148,13 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
 
 ## **Site structure**
 - The site map is represented by the following pages list:
-  - [Home](index.html)
-  - [Cities](citadels-maps.html)
-  - [Contact](contact.html)
-  - [404](404.html)
-  - [Form Confirmation](formconfirmation.html)
+  - Pages accessible through the navigational menu:
+    - [Home](index.html)
+    - [Cities](citadels-maps.html)
+    - [Contact](contact.html)
+  - Pages displayed only under certain conditions:
+    - [404](404.html)
+    - [Form Confirmation](formconfirmation.html)
 - Site's structure is reflected by the navigation menu bar, which is available on every page. 
   - The navigation menu bar is located on the top of the page, below the logo and the title of the site and it contains the following links:
     - Home - landing page
@@ -181,7 +165,7 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
   - Social media links
   - Fair usage policy
   - Call to action button:
-    - Disclaimer button:
+    - Disclaimer button - when clicked, it displays a modal containing the following disclaimers:
       - Website Disclaimer
       - External Links Disclaimer
   - Copyright Notice with a link to the GitHub repository of this project.
@@ -196,6 +180,198 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
     <a href="#table-of-contents">Return to Table of Contents</a>
 </p>
 <br>
+
+---
+## **Responsiveness**
+- The website is built to be responsive on different devices from small to larger screens.
+  - To fit smaller screens, the minimum width of the layout is set to 300px. 
+  - For larger screens the layout is set to up to 976px width, using other breakpoints for intermediary widths.
+- The header:
+  - Contains: 
+    - the logo, on the top;
+    - the title in the middle;
+    - the navigational menu. The navigational menu is fully displayed when screen's width is greater than 767px. When the screen width is less than 768px the navigational menu is collapsed into a hamburger menu. The hamburger menu is displayed on the top center of the page, below the title.
+- The content section is displayed as a block between the header and the footer. It contains information related to the page's subject. Main's element width is set to 90% of the body's width, it's parent element.
+- The footer is displayed on the bottom of the page. It contains:
+  - the social media links; 
+  - the disclaimer button; 
+  - the fair usage policy;
+  - the copyright notice.
+- Website's responsiveness was tested across different devices and results are available in the [testing.md](./readme-files/testing.md) file.
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
+
+---
+## **Layout**
+The general layout of the website is composed of three main areas: [Header](#header), [Content](#main-content-section) and [Footer](#footer). 
+The Header (containing the Logo and the Navigation Menu) and the Footer are common to all pages, but the Content area is different for each page.
+
+---
+### **HEADER** 
+- contains the company's logo and, depending on the device's screen width, a menu navigation bar to the top right (on larger screens) or a hamburger menu button (which opens the hidden menu - in mobile view).
+
+<p align="center">On screens up to 920px width (small screens)<br>
+    <img src="readme-files/readme-images/nav-bar-mobile-tablet-view.jpg" alt="On screens up to 920px width (small screens)" width="90%">
+</p>
+<p align="center">On screens larger than 920px width (larger screens)<br>
+    <img src="readme-files/readme-images/nav-bar-desktop-view.jpg" alt="On screens larger than 920px width" width="90%">
+</p>
+
+---
+### **MAIN CONTENT SECTION**
+- contains the page's specific subjects (like some information on Langding Page, Cafe's Menu, Pictures Callery, Contact form or the 404 page).
+- this area is limited to a `max-width: 1000px;` there is also a `padding: 0 100px;` in desktop view. Also the background-color is limited to this width and this should create a delimitation between the empty space and the actual main content.
+- in mobile view the pading is reduced to `30px` and the `width:100%`, so that more information would fit on smaller screens.
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
+
+---
+#### **Home page**
+Home page main section contains:
+- a welcoming message at the top.
+- some introductory information structured as Q&A form. This area contains some links to links on another pages. For example, the word "coffees", from the `What else can we offer you ?` question, is a link to the Coffees category from Cafe's Menu page.
+This is making navigation handy. 
+The purpose is to guide the visitor through the website's content, and describe what the company has to offer.
+
+<p align="center"><strong>Mobile and desktop view</strong>:</p>
+<p align="center">
+    <img src="readme-files/readme-images/01-2-homepage-mobileview-screenshot-h900.jpg" alt="Left - Mobile view" height="370">
+    <img src="readme-files/readme-images/01-1-homepage-desktopview-screenshot-h600.jpg" alt="Bottom - Mobile view" height="370" width="650">
+</p>
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
+
+---
+#### **Menu page**
+The menu page is structured differently that the other pages, because the main purpose is to display the Café's menu, sorted in four categories: Coffees, Dishes, Cakes and Wines. For that reason I found useful to use the grid system. The same result could be obtained with just using flexbox too, but my choice was grid for this page.
+- In mobile view the layout is formed as a single column. So the categories and their content are all displayed in one columns only.
+- On larger screens (desktop view) the container is displayed in a column: inside it, the categories in this column and the the content are displayed on two columns.
+- Bellow each category group, there is a link `Back to top`(... of the page), to help the user to jump to the main navigation bar area.
+- I chose to create another menu specific to this page only.
+    - This menu only contains internal links found on the same page, to the main categories from the list, which are: Coffees, Dishes, Cakes and Wines. 
+    - Using this menu the navigation is quicker for the user, if he's interested in a specific product and is not interested to see other items. 
+    - It is available at the bottom of the page too.
+    - Since using JS is not required for this project, I needed to find a way to change the text of a specific area, when the state changes. I found out that the `<details>` element can help.
+    So when this menu is collapsed, the user is asked to acces this menu by clicking the `▶️  Click to open quick menu links`:
+    <p align="center">Menu closed<br>
+            <img src="readme-files/readme-images/02-6-cafemenu-internal-links-menu-closed-screenshot%20.png" alt="Menu closed" width="90%">
+    </p>
+    - The user may choose to colapse the menu by clicking again `🔽 Click to close quick menu links` area.
+    <p align="center">Menu opened<br>
+            <img src="readme-files/readme-images/02-7-cafemenu-internal-links-menu-opened-screenshot%20.png" alt="Menu opened - After the user clicks, the menu opens like this" width="90%">
+    </p>
+    - You may notice that the text content changes from "open" to "close". The ▶️ and 🔽 icons display the status of the `details` element.
+    - In mobile and desktop view, this area keeps the same layout, by adapting its width to the viewport.
+    <p align="center">
+        <img src="readme-files/readme-images/02-8-cafemenu-internal-links-menu-opened-mobileview-screenshot%20.png" alt="Quick Links Menu - Mobile view" width="400">
+    </p>
+- Bellow, there is a linked text which, on click, it downloads the complete Café's menu in PDf format.
+        <p align="center">
+            <img src="readme-files/readme-images/cafesmenu-dl-pdf-link-structure.jpg" alt="Download link" width="400">
+        </p>
+    
+- The main content of this page is composed of four categories, each with a couple of cafe's menu items, grouped acordingly.
+    - Each category is delimited and begins with the header.
+    - Under the Header there are the items displayed in a column or two columns, depending on screen size.         
+    - At the end of each category there is a "Back to top" link.
+    - Just before the Footer area, there is the same Quick Menu links displayed again, to ease users's navigation.
+    <p align="center">Small screen and larger screen layout preview:<br>
+          <img src="readme-files/readme-images/cafesmenu-mb-structure.jpg" alt="mobile view" height=370">      
+         <img src="readme-files/readme-images/cafesmenu-des-structure.jpg" alt="desktop view" height="370">
+    </p>
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
+
+---
+#### **Gallery page**
+The Gallery page has only one purpose: to showoff some pictures depincting the interior design of the cafe, staff, making coffees, etc.
+- In **mobile view** there are two views: 
+    - **One column**
+            <p align="center">Mobile view: width smaller than 672px<br>
+                <img src="readme-files/readme-images/03-8-gallery-mobileview-1col-sm-img-screenshot-.jpg" alt="Mobile One column Preview" height="370">
+            </p>
+    - **Two columns**
+            <p align="center">Mobile view: width between 673 and 992px<br>
+                <img src="readme-files/readme-images/03-7-gallery-mobileview-2col-sm-img-screenshot-.jpg" alt="Mobile 2 columns Preview" height="370">
+            </p>
+- **Desktop or large screen** view: images are displayed on a single column, at high resolution:
+            <p align="center">Desktop view: width more than 992px <br>
+                <img src="readme-files/readme-images/03-5-gallery-desktopview-1col-lg-img-screenshot-.jpg" alt="Larger screens and Desktop pone column Preview" height="370">
+            </p>
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
+
+---
+#### **Contact page**
+- The Contact page is structured around a form, containing multiple fields, which the user may choose to fill. The user can make a request, ask a question, propose a recommandation, make a complain and also take part to a poll by votting his favorite coffee.
+    <p align="center">Mobile and Desktop preview<br>
+        <img src="readme-files/readme-images/04-2-contact-mobileview-screenshot.png" alt="Contact page - Mobile preview" height="370">
+        <img src="readme-files/readme-images/04-1-contact-desktopview-screenshot.png" alt="Contact page - Desktop preview" height="370">
+    </p>
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
+
+---
+### **FOOTER**
+<p align="center">Mobile and Desktop view</p>
+<p align="center">
+    <img src="readme-files/readme-images/footer-mobileview-screenshot.jpg" alt="Footer in mobile view" width="25%">
+    <img src="readme-files/readme-images/footer-desktopview-screenshot-.jpg" alt="Footer in desktop view" width="60%">
+</p>
+
+- The footer is composed three sub-areas, as follows:
+    - **ADDRESS** - contains a link with the Google Maps location of the Cafe shop. Accessing the link will offer you the posibility to ask for directions towards the shop. Depending on the device used, the behaviour differs: on mobile deviced it will open the Google Maps app and on desktop device it will open a new tab with Google Maps.
+    - **SOCIAL MEDIA LINK** - linked icons to acces the social media pages of the café shop. On hover over these icons, they grow in size to `2rem`.
+    - **CONTACT US**
+        - The EMAIL contains the `mailto:` link, so if the user want's, by pressing on the e-mail address, the default email client is opened. The `Send to` and `CC` section are prefilled with the right email destinators addresses.
+            <p align="center">Testing on a smartphone:<br>
+                <img src="readme-files/readme-images/mailto-client.jpg" alt="Client's default app opens already having destinators emails completed" height="370">
+            </p>
+        - The TEL section is also a link, which, while in mobile view, is enabled and proceeds to opening the phone number in calling screen, but if viewed on a desktop, the link is disabled. As described [here](https://www.campaignmonitor.com/blog/email-marketing/using-phone-numbers-in-html-email/):  
+        > *tel: support is great across mobile clients, it can be unreliable on the desktop and in webmail clients.*
+
+        <p align="center">Preview:</p>
+        <p align="center">
+            <img src="readme-files/readme-images/tel-open-app.jpg" alt="Press phone number opens default calling application" height="370">
+            <img src="readme-files/readme-images/tel-call-screen.jpg" alt="Calling screen on a smartphone" height="370">
+        </p>
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
+
+
+
+
+
+
+
 ==============================================================================================================
 
 - Call To Action:
