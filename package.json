@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/phloreenm/MP2-JS--CI-CoBC-FM#readme",
   "devDependencies": {
+    "eslint": "^8.30.0",
     "jest": "^29.3.1"
   },
   "dependencies": {
