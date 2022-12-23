@@ -727,7 +727,7 @@ footer {
 
 /* ---Media queries------------------------------------------- */
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
     .main-svg-container {
         display: none !important;
     }
@@ -760,7 +760,7 @@ footer {
         justify-content: center;
         align-items: center;
         margin-left: auto;
-        margin-right: calc();
+        margin-right: auto;
     }
     .svg-container {
         overflow: hidden !important;

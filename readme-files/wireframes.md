@@ -64,7 +64,7 @@ Site's wireframes were created using Balsamiq app.
     <img width="100%" src="./readme-images/wireframes/02-2-cp-tv.png">
 </p>
 
-### **Cities Desktop View**10
+### **Cities Desktop View**
 #### **Chronicle View**
 
 <p align="center">
