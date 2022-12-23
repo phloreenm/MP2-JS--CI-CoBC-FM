@@ -21,9 +21,7 @@
 
 ---
 
-Site's wireframes were made using Balsamiq app.
-Since the very first mock-up design I've made, I had to redraw the wireframes two times more. I found better ways of building the layout and also better looking elements positioning acrros the page.
-These are the latest Wireframes, on which site's layout was built.
+Site's wireframes were created using Balsamiq app.
 
 ---
 ## **Landing Page Wireframes**
@@ -66,7 +64,7 @@ These are the latest Wireframes, on which site's layout was built.
     <img width="100%" src="./readme-images/wireframes/02-2-cp-tv.png">
 </p>
 
-### **Cities Desktop View**
+### **Cities Desktop View**10
 #### **Chronicle View**
 
 <p align="center">

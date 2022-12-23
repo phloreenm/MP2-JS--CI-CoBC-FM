@@ -760,13 +760,11 @@ footer {
         justify-content: center;
         align-items: center;
         margin-left: auto;
-        /* margin-right: auto; */
         margin-right: calc();
     }
     .svg-container {
         overflow: hidden !important;
         height: 450px;
-        /* width: 90%; */
     }
     .main-png-container {
         display: none;
