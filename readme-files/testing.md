@@ -49,10 +49,11 @@ The results show the that the CSS code contains no errors "validates as CSS leve
     <img width="100%" src="./readme-images/testing/jigsay-w3-org-results.png">
 </p>
 
-There are some warnings present, but these are due to the use of the CSS variables and vendor extensions
+There are some warnings present, but these are due to the use of the CSS variables and vendor extensions.
 <p align="center">
     <img width="100%" src="./readme-images/testing/jigsay-w3-org-results-w.png">
 </p>
+
 ## **HTML Testing**
 
 
