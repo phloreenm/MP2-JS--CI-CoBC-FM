@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Three ancient Greek colonies in Scythia Minor, on the western coast of the Black Sea: Histria, Tomis and Callatis" />
+    <meta name="description" content="Three ancient Greek colonies in Scythia Minor, on the western coast of the Black Sea: Histria, Tomis and Callatis">
 
     <link rel="icon" type="image/x-icon" href="./assets/images/temple_ruins.png">
 
@@ -67,7 +67,7 @@
         <div id="histria" class="tabcontent" style="display: none">
             <div class="sub-tabs">
                 <button id="sub-tab-button-info-histria" class="sub-tablinks" onclick="openInfo(event, 'histria-info')">
-                   Chronicle
+                    Chronicle
                 </button>
                 <button id="histria_wikipedia" class="sub-tablinks" onclick="openInfo(event, 'histria-wiki'); fetchWiki(this.id)">
                     Wikipedia
@@ -162,13 +162,13 @@
             </div>
 
             <div id="histria-wiki" class="sub-tabcontent" style="display: none">
-                <article>
+                <div id="fetching-animation">
                     <div id="histria-wiki-fetching">
                         <div class="loading">
                             <img src="./assets/images/fading_circles.gif" alt="Fetching results...">
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
             <div id="histria-map" class="sub-tabcontent" style="display: none;">
                 <article>
@@ -186,16 +186,14 @@
                     <div class="art-wr">
                         <h4 class="center-content">StreetView Histria Citadel</h4>
                         <div class="streetViewMap">
-                            <iframe src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469" allowfullscreen=""
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <div class="art-wr">
                         <h4 class="center-content">StreetView another view</h4>
                         <div class="streetViewMap">
-                            <iframe src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469" allowfullscreen=""
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!4v1667908456649!6m8!1m7!1sCAoSLEFGMVFpcE5JeTgxbjBwXzYydFo1OVd0RnNPNEQxUEFaUTNERnl6QjJuVlV2!2m2!1d44.5469473!2d28.7733244!3f341.1886638743959!4f-23.58867940282174!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                         </div>
                     </div>
                     <div class="btp-wr">
@@ -317,56 +315,53 @@
                     </div>
                 </article>
             </div>
-            <div id="tomis-wiki" class="sub-tabcontent" style="display: none;">
-                <article>
-                    <div id="tomis-wiki-fetching">
+            <div id="tomis-wiki" class="sub-tabcontent" style="display: none">
+                <div id="fetching-animation">
+                    <div id="callatis-wiki-fetching">
                         <div class="loading">
                             <img src="./assets/images/fading_circles.gif" alt="Fetching results...">
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
-            <div id="tomis-map" class="sub-tabcontent" style="display: none">
-                <article>
-                    <div class="art-wr">
-                        <h2 class="heading-alignment">Tomis archaeological sites</h2>
+        </div>
+        <div id="tomis-map" class="sub-tabcontent" style="display: none">
+            <article>
+                <div class="art-wr">
+                    <h2 class="heading-alignment">Tomis archaeological sites</h2>
+                </div>
+                <div class="art-wr">
+                    <h4 class="center-content">Roman baths</h4>
+                    <div class="streetViewMap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d299.72617784162253!2d28.659077928512307!3d44.171604174687516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae5c4c2eb53bd%3A0x3fb9fd2b00836acc!2sTermele%20Romane%20sec.%20III%20-%20IV%20p.%20Chr.!5e1!3m2!1sen!2suk!4v1668784038126!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="art-wr">
+                    <h4 class="center-content">Roman building with mosaic</h4>
+                    <div class="streetViewMap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1667908741895!6m8!1m7!1sCAoSLEFGMVFpcE5CMzVNRkt1R0t3MHEwWTN2ZlNkcUhjQzNqRDlHV0Z1VW5YWERG!2m2!1d44.1731667!2d28.6583358!3f350.4347997708205!4f-11.345926381437692!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="art-wr">
-                        <h4 class="center-content">Roman baths</h4>
+                        <h4 class="center-content">Museum of National History and Archeology</h4>
                         <div class="streetViewMap">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d299.72617784162253!2d28.659077928512307!3d44.171604174687516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae5c4c2eb53bd%3A0x3fb9fd2b00836acc!2sTermele%20Romane%20sec.%20III%20-%20IV%20p.%20Chr.!5e1!3m2!1sen!2suk!4v1668784038126!5m2!1sen!2suk"
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!4v1668783882017!6m8!1m7!1sCAoSLEFGMVFpcE01eDUyOFQtZk9mVXEycHBOMmw1ZDZzeVNEOWpUaUdNNjVNVllz!2m2!1d44.17383572412444!2d28.65835893899202!3f137.60479922873805!4f-32.71141603902723!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <div class="art-wr">
-                        <h4 class="center-content">Roman building with mosaic</h4>
+                        <h4 class="center-content">Citadines residence</h4>
+                        <p class="center-p">Ancient Roman ruins right in front of the St Peter and Paul cathedral
+                        </p>
                         <div class="streetViewMap">
-                            <iframe src="https://www.google.com/maps/embed?pb=!4v1667908741895!6m8!1m7!1sCAoSLEFGMVFpcE5CMzVNRkt1R0t3MHEwWTN2ZlNkcUhjQzNqRDlHV0Z1VW5YWERG!2m2!1d44.1731667!2d28.6583358!3f350.4347997708205!4f-11.345926381437692!5f0.7820865974627469" width="600" height="450"
-                                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="art-wr">
-                            <h4 class="center-content">Museum of National History and Archeology</h4>
-                            <div class="streetViewMap">
-                                <iframe src="https://www.google.com/maps/embed?pb=!4v1668783882017!6m8!1m7!1sCAoSLEFGMVFpcE01eDUyOFQtZk9mVXEycHBOMmw1ZDZzeVNEOWpUaUdNNjVNVllz!2m2!1d44.17383572412444!2d28.65835893899202!3f137.60479922873805!4f-32.71141603902723!5f0.7820865974627469" allowfullscreen=""
-                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                        <div class="art-wr">
-                            <h4 class="center-content">Citadines residence</h4>
-                            <p class="center-p">Ancient Roman ruins right in front of the St Peter and Paul cathedral
-                            </p>
-                            <div class="streetViewMap">
-                                <iframe src="https://www.google.com/maps/embed?pb=!4v1667908662924!6m8!1m7!1suz64s_Zc4gCvWKGrWeTGzA!2m2!1d44.17079191736811!2d28.66072606666326!3f44.06381673794906!4f-0.7972313552879484!5f1.9587109090973311" width="600" height="450" style="border: 0"
-                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!4v1667908662924!6m8!1m7!1suz64s_Zc4gCvWKGrWeTGzA!2m2!1d44.17079191736811!2d28.66072606666326!3f44.06381673794906!4f-0.7972313552879484!5f1.9587109090973311" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="btp-wr">
-                        <a href="#top" class="backToTop">
-                            <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
-                    </div>
-                </article>
-            </div>
+                </div>
+                <div class="btp-wr">
+                    <a href="#top" class="backToTop">
+                        <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
+                </div>
+            </article>
+        </div>
         </div>
         <!-- ===CALLATIS================================================== -->
         <!-- CALLATIS Tabs Content -->
@@ -435,22 +430,23 @@
                         <p>It was a great economic centre, especially thanks to its harbour. Callatis was built by Greek colonists from Heraclea Pontica on the site of an older Getae settlement known as Acervatis or Cerbatis.</p>
                         <p>The inhabitants were at first a mixture of the local Getae population and the Greeks newly arrived. On the site once occupied by Callatis we find today the town of Mangalia, with a population of around 33,000 inhabitants.</p>
                         <p>Sorin Marcel Colesniuc, the curator of the Callatis Museum, which is part of the Callatis Cultural Complex, told us about what has survived to this day of the ancient city of Callatis: <br>
-                            <blockquote style="font-size: 0.9em; font-style: italic;">
-                                “First of all, we have a number of inscriptions we have dug up in Mangalia, as well as funeral stones featuring a number of ancient teachers. We also have the ancient writers in the old city of Callatis, such as Istros of Callatis, Demetrius of Callatis,
-                                Herakleides Lembos, and the philosopher Thales.</blockquote>
-                            <blockquote>In Mangalia, we found the only ancient papyrus discovered on Romanian territory. It was uncovered in 1959, and because the country didn’t have the proper conditions to preserve it, it was sent to Moscow. It was believed lost
-                                to researchers in Romania for half a century.</blockquote>
-                            <blockquote>I looked for this papyrus together with my colleague Ion Paslaru and found it after 2 years of searching, in 2011, at the Moscow Centre for Restoration and Conservation. That year we brought back to Romania this unique document.</blockquote>
-                            <blockquote>We don't know exactly what the text says, because it disintegrated when exposed to air and sun after being found. It could have been lost forever, but luckily it got to Moscow and it was preserved.</blockquote>
-                            <blockquote>Today there are 154 surviving fragments, and on the larger fragments we can make out letters in ancient Greek. We don’t have any complete word, just a few letters here and there. The papyrus dates back to the 4th century BC.”</blockquote></p>
+                        <blockquote style="font-size: 0.9em; font-style: italic;">
+                            “First of all, we have a number of inscriptions we have dug up in Mangalia, as well as funeral stones featuring a number of ancient teachers. We also have the ancient writers in the old city of Callatis, such as Istros of Callatis, Demetrius of Callatis,
+                            Herakleides Lembos, and the philosopher Thales.</blockquote>
+                        <blockquote>In Mangalia, we found the only ancient papyrus discovered on Romanian territory. It was uncovered in 1959, and because the country didn’t have the proper conditions to preserve it, it was sent to Moscow. It was believed lost
+                            to researchers in Romania for half a century.</blockquote>
+                        <blockquote>I looked for this papyrus together with my colleague Ion Paslaru and found it after 2 years of searching, in 2011, at the Moscow Centre for Restoration and Conservation. That year we brought back to Romania this unique document.</blockquote>
+                        <blockquote>We don't know exactly what the text says, because it disintegrated when exposed to air and sun after being found. It could have been lost forever, but luckily it got to Moscow and it was preserved.</blockquote>
+                        <blockquote>Today there are 154 surviving fragments, and on the larger fragments we can make out letters in ancient Greek. We don’t have any complete word, just a few letters here and there. The papyrus dates back to the 4th century BC.”</blockquote>
+                        </p>
 
                     </div>
                     <div class="art-wr">
                         <h4 class="center-content">Visiting</h4>
                         <p>We asked Sorin Marcel Colesniuc what visitors can see in the Callatis Museum:
-                            <blockquote>“The museum exhibits many architectural pieces, such as columns, capitals, architraves, friezes with metopes, cornices featuring bucrania and various ceramic vessels, the most important being the amphorae. There are also oil
-                                lamps, aqueducts, Tanagra figurines, vessels made of glass, funerary stelae, inscriptions, depictions of the gods, jewels, coins and metal objects. In front of the museum, you can see lots of architectural fragments.</blockquote>
-                            <blockquote>It is also an architectural park, as well as the sites around Mangalia. You can see the north wall of the city of Callatis and its north-western wall which has been dug up and extensively studied.</blockquote>
+                        <blockquote>“The museum exhibits many architectural pieces, such as columns, capitals, architraves, friezes with metopes, cornices featuring bucrania and various ceramic vessels, the most important being the amphorae. There are also oil
+                            lamps, aqueducts, Tanagra figurines, vessels made of glass, funerary stelae, inscriptions, depictions of the gods, jewels, coins and metal objects. In front of the museum, you can see lots of architectural fragments.</blockquote>
+                        <blockquote>It is also an architectural park, as well as the sites around Mangalia. You can see the north wall of the city of Callatis and its north-western wall which has been dug up and extensively studied.</blockquote>
                         </p>
                     </div>
                     <div class="art-wr">
@@ -458,9 +454,9 @@
                         <p>Another site worth a visit is a princely tomb located 3 km away from Mangalia, on the way to the village of Albesti.” The ancient harbour provides significant insight into the economy of the ancient city of Callatis. Unfortunately,
                             however, it lies today below the sea surface.</p>
                         <p>Sorin Marcel Colesniuc, the curator of the Callatis Museum, explains: <span style="font-size: 0.9em; font-style: italic;">“The harbour in Callatis was built in the 4th century BC. Unfortunately, the sea level went up about
-                            2 metres in the last 2,000 years, so the ports and its structures are now under the Black Sea. In the 1960s and 1970s, Constantin Scarlat did an underwater survey and drew a map of the ancient harbour. He found many architectural
-                            fragments, lots of ceramic pieces, especially shingles andwiki amphorae, and we have the map he published in 1973 in a science journal in Cluj. The map includes a few sunken ships as well. We worked with companies from Italy
-                            and Hungary which came to scan the bottom of the Black Sea in the Mangalia area, and their scanners have confirmed the presence of these ancient shipwrecks.”</span>
+                                2 metres in the last 2,000 years, so the ports and its structures are now under the Black Sea. In the 1960s and 1970s, Constantin Scarlat did an underwater survey and drew a map of the ancient harbour. He found many architectural
+                                fragments, lots of ceramic pieces, especially shingles andwiki amphorae, and we have the map he published in 1973 in a science journal in Cluj. The map includes a few sunken ships as well. We worked with companies from Italy
+                                and Hungary which came to scan the bottom of the Black Sea in the Mangalia area, and their scanners have confirmed the presence of these ancient shipwrecks.”</span>
                         </p>
                     </div>
                     <div class="art-wr">
@@ -491,13 +487,13 @@
                 </article>
             </div>
             <div id="callatis-wiki" class="sub-tabcontent" style="display: none">
-                <article>
+                <div id="fetching-animation">
                     <div id="callatis-wiki-fetching">
                         <div class="loading">
                             <img src="./assets/images/fading_circles.gif" alt="Fetching results...">
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
             <div id="callatis-map" class="sub-tabcontent" style="display: none">
                 <div class="art-wr">
@@ -506,22 +502,19 @@
                 <div class="art-wr">
                     <h4 class="center-content">Callatis ruins - aerial view</h4>
                     <div class="streetViewMap">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d559.4376749331881!2d28.582801539028864!3d43.81514657927538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8807e053af0990a2!2sCetatea%20Callatis%20-%20ruinele%20coltului%20nord-vestic!5e1!3m2!1sen!2suk!4v1668784412014!5m2!1sen!2suk"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d559.4376749331881!2d28.582801539028864!3d43.81514657927538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8807e053af0990a2!2sCetatea%20Callatis%20-%20ruinele%20coltului%20nord-vestic!5e1!3m2!1sen!2suk!4v1668784412014!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="art-wr">
                     <h4 class="center-content">Callatis ruins - aerial view</h4>
                     <div class="streetViewMap">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d603.0688830994441!2d28.586229749369497!3d43.814645999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xead9f0737fe19845!2sCetatea%20Callatis!5e1!3m2!1sen!2suk!4v1668784799236!5m2!1sen!2suk"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d603.0688830994441!2d28.586229749369497!3d43.814645999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xead9f0737fe19845!2sCetatea%20Callatis!5e1!3m2!1sen!2suk!4v1668784799236!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="art-wr">
                     <h4 class="center-content">StreetView Callatis Citadel</h4>
                     <div class="streetViewMap">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d301.53204336914325!2d28.58301114923784!3d43.815120941913854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8807e053af0990a2!2sCetatea%20Callatis%20-%20ruinele%20coltului%20nord-vestic!5e1!3m2!1sen!2suk!4v1668784531472!5m2!1sen!2suk"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d301.53204336914325!2d28.58301114923784!3d43.815120941913854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8807e053af0990a2!2sCetatea%20Callatis%20-%20ruinele%20coltului%20nord-vestic!5e1!3m2!1sen!2suk!4v1668784531472!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="btp-wr">
@@ -539,13 +532,13 @@
                 <div class="col-md-12">
                     <div class="footer-section">
                         <div class="foo-social">
-                            <a href="https://www.facebook.com/" target="_blank"  aria-label="Facebook page"  title="Facebook page">
+                            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook page" title="Facebook page">
                                 <i class="fa-brands fa-square-facebook"></i>
                             </a>
-                            <a href="https://www.instagram.com/" target="_blank"  aria-label="Instagram Page"  title="Instagram page">
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram Page" title="Instagram page">
                                 <i class="fa-brands fa-square-instagram"></i>
                             </a>
-                            <a href="https://www.twitter.com/" target="_blank"  aria-label="Twitter page"  title="Twitter page">
+                            <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter page" title="Twitter page">
                                 <i class="fa-brands fa-twitter-square"></i>
                             </a>
                         </div>
@@ -587,8 +580,7 @@
                                 <!-- Modal Header -->
                                 <div class="modal-header">
                                     <h4 class="modal-title">External Links Disclaimer</h4>
-                                    <button type="button" class="close" data-dismiss="modal" title="Click to close disclaimer window"><i
-                                            class="fa-solid fa-xmark"></i></button>
+                                    <button type="button" class="close" data-dismiss="modal" title="Click to close disclaimer window"><i class="fa-solid fa-xmark"></i></button>
                                 </div>
                                 <!-- Modal body -->
                                 <div class="modal-body">
@@ -606,7 +598,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-md-12">
                     <div class="cr">

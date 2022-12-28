@@ -299,6 +299,11 @@ header {
     margin-top: 30px;
 }
 
+.fetching-animation {
+    max-width: 1024px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
 .backToTop {
     font-size: small;
     padding: 0.2rem 0.5rem;
