@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <a id="top"></a>
+    <span id="top" tabindex="-1"></span>
     <!-- HEADER AREA -->
     <header>
         <nav class="navbar navbar-expand-md">
@@ -261,19 +261,17 @@
                         <h1 class="heading-alignment" style="font-size: medium;">Social media</h1>
                         <p style="font-size: medium; text-align: center;
                         text-justify: inter-word;">Follow us or share your opinion with us on our social networks</p>
-                        <p class="foo-social">
-                            <a href="https://www.facebook.com/" target="_blank">
+                        <div class="foo-social">
+                            <a href="https://www.facebook.com/" target="_blank"  aria-label="Facebook page"  title="Facebook page">
                                 <i class="fa-brands fa-square-facebook"></i>
                             </a>
-                            <a href="https://www.instagram.com/" target="_blank">
+                            <a href="https://www.instagram.com/" target="_blank"  aria-label="Instagram Page"  title="Instagram page">
                                 <i class="fa-brands fa-square-instagram"></i>
-
                             </a>
-                            <a href="https://www.twitter.com/" target="_blank">
+                            <a href="https://www.twitter.com/" target="_blank"  aria-label="Twitter page"  title="Twitter page">
                                 <i class="fa-brands fa-twitter-square"></i>
                             </a>
-
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -288,7 +286,7 @@
                     </div>
                 </div>
                 <div class="col-md-12" style="text-align: center;">
-                    <button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" data-toggle="modal" data-target="#myModal">
+                    <button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" data-toggle="modal" data-target="#myModal" title="Click to open further disclaimer information">
                         Disclaimer
                     </button>
                     <!-- Modal source base code: https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
@@ -299,7 +297,7 @@
                                 <!-- Modal Header -->
                                 <div class="modal-header">
                                     <h4 class="modal-title">Website Disclaimer</h4>
-                                    <button type="button" class="close" data-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                                    <button type="button" class="close" data-dismiss="modal" title="Click to close disclaimer window"><i class="fa-solid fa-xmark"></i></button>
                                 </div>
                                 <!-- Modal body -->
                                 <div class="modal-body">
@@ -312,7 +310,7 @@
                                 <!-- Modal Header -->
                                 <div class="modal-header">
                                     <h4 class="modal-title">External Links Disclaimer</h4>
-                                    <button type="button" class="close" data-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                                    <button type="button" class="close" data-dismiss="modal" title="Click to close disclaimer window"><i class="fa-solid fa-xmark"></i></button>
                                 </div>
                                 <!-- Modal body -->
                                 <div class="modal-body">
@@ -325,7 +323,7 @@
                                 <div class="modal-footer">
                                     <div class="description-p">This disclaimer was created using Termly's <a href="https://termly.io/products/disclaimer-generator/" target="_blank">Disclaimer Generator</a>
                                     </div>
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal" title="Click to close disclaimer window">Close</button>
                                 </div>
                             </div>
                         </div>

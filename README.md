@@ -27,6 +27,10 @@
       - [**Gallery page**](#gallery-page)
       - [**Contact page**](#contact-page)
     - [**FOOTER**](#footer)
+  - [**Maps**](#maps)
+  - [**ISSUES**](#issues)
+  - [**BUGS**](#bugs)
+  - [**CREDITS**](#credits)
 ---
 
 <br>
@@ -405,7 +409,7 @@ The Gallery page has only one purpose: to showoff some pictures depincting the i
 
 
 
-**Maps**
+## **Maps**
 - The displayed map uses a custom icon ("temple_ruins.png"), hosted locally.
 **Features**
 - Implemented:
@@ -420,8 +424,15 @@ The Gallery page has only one purpose: to showoff some pictures depincting the i
 - To be implemented:
   - The APIs need an internet connection to work. If the connection is down, some APIs won't work. Unless you refresh the page, the page would not load the content. Therefore a script to check if `window.navigator.onLine` is `true` - which means the connection is up and the API will run correctly. Otherwise, if is `false`, there must be a way to retry the request few times more and if the connection is still down, an alert would ask the user to check the connection and retry to refresh the page.
   - Another page, named Gallery, to display images using the Google Places Photos API: when one of the cities' tab is presset, the backend will search on Google Places Details about the location, but only fetch a limited number of picture references returned in the Details object. Using those refrences and Google Photos
-**ISSUES**
-- Issues and errors 
+  - 
+---
+## **ISSUES**
+- **Issues and bugs/errors encountered:**
+
+  - Lighthouse CEO score was affected by optimization advice: ```Links are not crawlable```:
+    - Cause: Lighthouse description: "Search engines may use `href` attributes on links to crawl websites. Ensure that the `href` attribute of anchor elements links to an appropriate destination, so that more pages of the site can be discovered." Learn more"
+    - Solution: found a solution [here](https://webmasters.stackexchange.com/questions/132481/lighthouse-says-links-are-not-crawlable-on-the-skip-to-content-link). I changed the a element to a span element, but kept the id, so that the "Back to top" button would still work, as follows: from ```<a id="top"></a>``` to ```<span id="top" tabindex="-1"></span>```.
+  
   - Chrome added support for source maps:
     -   ```DevTools failed to load source map: Could not load content for chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/browser-polyfill.js.map: System error: net::ERR_FILE_NOT_FOUND
         DevTools failed to load source map: Could not load content for chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/editor/config.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
@@ -439,7 +450,7 @@ The Gallery page has only one purpose: to showoff some pictures depincting the i
       - 'Passive event listeners are a new feature in the DOM spec that enable developers to opt-in to better scroll performance by eliminating the need for scrolling to block on touch and wheel event listeners. Developers can annotate touch and wheel listeners with {passive: true} to indicate that they will never invoke preventDefault. This feature shipped in Chrome 51, Firefox 49 and landed in WebKit.' [Source](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md)
       - Issue discussed [here](https://issuetracker.google.com/issues/63211698?pli=1). It looks Google Maps JavaScript API version 3 generates these warnings. Google Chrome is warning about violations that Google Maps JavaScript API generates [Source](https://stackoverflow.com/questions/39152877/consider-marking-event-handler-as-passive-to-make-the-page-more-responsive)
     - Solution:
-      - the process to solve this issue is described [here](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md). Since the error come from the Google Maps JavaScript API 3, I couldn't find a way to solve this issue.
+      - the  issue is discussed [here](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md). Since the error come from the Google Maps JavaScript API 3, I couldn't find a way to solve this issue.
   - GoogleStreet & Google 360 warning: Device orientation events are blocked by permissions policy:
     - ``` The deviceorientation events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features ```
     - Cause: warning 
@@ -451,7 +462,7 @@ The Gallery page has only one purpose: to showoff some pictures depincting the i
     - Cause: Google Maps Markers API base code has been changed and I didn't have any notification to adapt my code also. The behavior was quite strange, as I didn't change the code at that time and couldn't relate any of my actions to the new error. 
     - Solution: change API's link's attribute from "async" to "defer". This eliminated the error straight away and map was rendered properly.
 ---
-**BUGS**
+## **BUGS**
 - navigating between the cities:
   - Behavior:
     - When navigating through the city tabs:
@@ -462,7 +473,7 @@ The Gallery page has only one purpose: to showoff some pictures depincting the i
   - Solution:
     - Added defaultInfo() function to simulate a click on the Chronicle Sub_tab button, so that each time a new city is selected, the content displayed is defaulted to the Chronicle page.
 ---
-**CREDITS**
+## **CREDITS**
 - Research, Information and Sources Credits
   - Histria
     - [Histria - Wikipedia](https://en.wikipedia.org/wiki/Histria_(ancient_city))
