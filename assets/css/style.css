@@ -306,6 +306,7 @@ header {
 .btp-wr {
     text-align: center;
     margin-top: 30px;
+    btp-wr
 }
 
 .fetching-res {
@@ -313,6 +314,7 @@ header {
     margin-bottom: 20px;
     border-radius: 5px;
 }
+
 .backToTop {
     font-size: small;
     padding: 0.2rem 0.5rem;
