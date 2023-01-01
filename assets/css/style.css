@@ -353,7 +353,9 @@ header {
 
 #wiki_callToAction {
     padding: 1rem;
-    background-color: rgba(239, 160, 11, 0.28);
+    background-color: rgba(239, 160, 11, 0.7);
+    /* background-color: #3a2703; */
+    /* background-color: var(--cta-color); */
     border-radius: 4px;
     margin: 15px 0.5% 0.5% 0.5%;
 }
@@ -363,10 +365,14 @@ header {
     margin-bottom: 0;
     padding-top: 0.5rem;
 }
+#wiki_callToAction>h3, #wiki_callToAction>p {
+    color: var(--dominant-color);
+}
 
 #wiki_callToAction>p {
     text-align: center;
     margin-bottom: 0;
+    font-weight: 600;
 }
 
 
