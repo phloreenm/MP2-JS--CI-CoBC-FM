@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-// SOURCE:  https://femkreations.com/how-to-build-a-wikipedia-search-app-in-9-steps/
+// Base code sourced from:  https://femkreations.com/how-to-build-a-wikipedia-search-app-in-9-steps/
 
 let fetchedInfoResponse = "";
 let searchedItem = "";
@@ -44,11 +44,12 @@ function fetchWikiResults(x) {
 			// calling the printResultsOnPage function, passing the array as a parameter:
 			printResultsOnPage(resultsArray);
 		})
-		.catch(function () {
-			console.log('An error occured');
+		.catch(function (error) {
+			console.log(`An error occured while fecthing the data from the Wikipedia API for ${searchingItem.toUpperCase()}| Error: ${error}`);
 		});
 }
 
+// function to capitalize the first letter of the city name in the results list:
 function capitalLetter(word) {
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
@@ -56,7 +57,7 @@ function capitalLetter(word) {
 // function to print the results on the wikipedia tab:
 function printResultsOnPage(myArray) {
 	fetchedInfoResponse.innerHTML = " ";
-	fetchedInfoResponse.insertAdjacentHTML('beforeend', `<div class="art-wr"><h2 class="heading-alignment">Wikipedia articles related to \"${capitalLetter(searchingItem)}\" </h2></div>`);
+	fetchedInfoResponse.insertAdjacentHTML('beforeend', `<div class="art-wr"><h2 class="heading-alignment">Wikipedia articles related to "${capitalLetter(searchingItem)}" </h2></div>`);
 	myArray.forEach(function (item) {
 		let itemTitle = item.title;
 		let itemSnippet = item.snippet;

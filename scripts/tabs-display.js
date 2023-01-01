@@ -2,7 +2,7 @@
 /* Base code sourced from: https://www.w3schools.com/howto/howto_js_vertical_tabs.asp
 and https://www.w3schools.com/howto/howto_js_tabs.asp
 */
-// Function to display content with sub-tabs butons
+// Function to hide the CTA section when the user clicks the selected city tab/button
 function openCity(ev, citadelName) {
   document.getElementById("wiki_callToAction").style.display = "none";
 

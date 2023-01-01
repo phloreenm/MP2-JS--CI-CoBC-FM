@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/96ce8820ba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -160,9 +160,8 @@
                     </div>
                 </article>
             </div>
-
             <div id="histria-wiki" class="sub-tabcontent" style="display: none">
-                <div id="fetching-animation">
+                <div id="fetching-res">
                     <div id="histria-wiki-fetching">
                         <div class="loading">
                             <img src="./assets/images/fading_circles.gif" alt="Fetching results...">
@@ -202,8 +201,6 @@
                     </div>
                 </article>
             </div>
-
-
         </div>
         <!-- ===TOMIS================================================== -->
         <div id="tomis" class="tabcontent" style="display: none">
@@ -316,52 +313,51 @@
                 </article>
             </div>
             <div id="tomis-wiki" class="sub-tabcontent" style="display: none">
-                <div id="fetching-animation">
-                    <div id="callatis-wiki-fetching">
+                <div id="fetching-res">
+                    <div id="tomis-wiki-fetching">
                         <div class="loading">
                             <img src="./assets/images/fading_circles.gif" alt="Fetching results...">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="tomis-map" class="sub-tabcontent" style="display: none">
-            <article>
-                <div class="art-wr">
-                    <h2 class="heading-alignment">Tomis archaeological sites</h2>
-                </div>
-                <div class="art-wr">
-                    <h4 class="center-content">Roman baths</h4>
-                    <div class="streetViewMap">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d299.72617784162253!2d28.659077928512307!3d44.171604174687516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae5c4c2eb53bd%3A0x3fb9fd2b00836acc!2sTermele%20Romane%20sec.%20III%20-%20IV%20p.%20Chr.!5e1!3m2!1sen!2suk!4v1668784038126!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <div class="art-wr">
-                    <h4 class="center-content">Roman building with mosaic</h4>
-                    <div class="streetViewMap">
-                        <iframe src="https://www.google.com/maps/embed?pb=!4v1667908741895!6m8!1m7!1sCAoSLEFGMVFpcE5CMzVNRkt1R0t3MHEwWTN2ZlNkcUhjQzNqRDlHV0Z1VW5YWERG!2m2!1d44.1731667!2d28.6583358!3f350.4347997708205!4f-11.345926381437692!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="tomis-map" class="sub-tabcontent" style="display: none">
+                <article>
+                    <div class="art-wr">
+                        <h2 class="heading-alignment">Tomis archaeological sites</h2>
                     </div>
                     <div class="art-wr">
-                        <h4 class="center-content">Museum of National History and Archeology</h4>
+                        <h4 class="center-content">Roman baths</h4>
                         <div class="streetViewMap">
-                            <iframe src="https://www.google.com/maps/embed?pb=!4v1668783882017!6m8!1m7!1sCAoSLEFGMVFpcE01eDUyOFQtZk9mVXEycHBOMmw1ZDZzeVNEOWpUaUdNNjVNVllz!2m2!1d44.17383572412444!2d28.65835893899202!3f137.60479922873805!4f-32.71141603902723!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d299.72617784162253!2d28.659077928512307!3d44.171604174687516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae5c4c2eb53bd%3A0x3fb9fd2b00836acc!2sTermele%20Romane%20sec.%20III%20-%20IV%20p.%20Chr.!5e1!3m2!1sen!2suk!4v1668784038126!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <div class="art-wr">
-                        <h4 class="center-content">Citadines residence</h4>
-                        <p class="center-p">Ancient Roman ruins right in front of the St Peter and Paul cathedral
-                        </p>
+                        <h4 class="center-content">Roman building with mosaic</h4>
                         <div class="streetViewMap">
-                            <iframe src="https://www.google.com/maps/embed?pb=!4v1667908662924!6m8!1m7!1suz64s_Zc4gCvWKGrWeTGzA!2m2!1d44.17079191736811!2d28.66072606666326!3f44.06381673794906!4f-0.7972313552879484!5f1.9587109090973311" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!4v1667908741895!6m8!1m7!1sCAoSLEFGMVFpcE5CMzVNRkt1R0t3MHEwWTN2ZlNkcUhjQzNqRDlHV0Z1VW5YWERG!2m2!1d44.1731667!2d28.6583358!3f350.4347997708205!4f-11.345926381437692!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="art-wr">
+                            <h4 class="center-content">Museum of National History and Archeology</h4>
+                            <div class="streetViewMap">
+                                <iframe src="https://www.google.com/maps/embed?pb=!4v1668783882017!6m8!1m7!1sCAoSLEFGMVFpcE01eDUyOFQtZk9mVXEycHBOMmw1ZDZzeVNEOWpUaUdNNjVNVllz!2m2!1d44.17383572412444!2d28.65835893899202!3f137.60479922873805!4f-32.71141603902723!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="art-wr">
+                            <h4 class="center-content">Citadines residence</h4>
+                            <p class="center-p">Ancient Roman ruins right in front of the St Peter and Paul cathedral
+                            </p>
+                            <div class="streetViewMap">
+                                <iframe src="https://www.google.com/maps/embed?pb=!4v1667908662924!6m8!1m7!1suz64s_Zc4gCvWKGrWeTGzA!2m2!1d44.17079191736811!2d28.66072606666326!3f44.06381673794906!4f-0.7972313552879484!5f1.9587109090973311" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="btp-wr">
-                    <a href="#top" class="backToTop">
-                        <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
-                </div>
-            </article>
-        </div>
+                    <div class="btp-wr">
+                        <a href="#top" class="backToTop">
+                            <i class="fa-solid fa-angle-double-up"> </i>Back to top</a>
+                    </div>
+                </article>
+            </div>
         </div>
         <!-- ===CALLATIS================================================== -->
         <!-- CALLATIS Tabs Content -->
@@ -487,7 +483,7 @@
                 </article>
             </div>
             <div id="callatis-wiki" class="sub-tabcontent" style="display: none">
-                <div id="fetching-animation">
+                <div id="fetching-res">
                     <div id="callatis-wiki-fetching">
                         <div class="loading">
                             <img src="./assets/images/fading_circles.gif" alt="Fetching results...">
@@ -613,7 +609,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
     <script src="./scripts/cr.js"></script>
     <script src="./scripts/tabs-display.js"></script>
-    <script src="./scripts/wiki-fetch.js"></script>
+    <script defer src="./scripts/wiki-fetch.js"></script>
     <!-- Script to suppress violations that Google Maps JavaScript API generates  -->
     <script src="https://unpkg.com/default-passive-events"></script>
 </body>

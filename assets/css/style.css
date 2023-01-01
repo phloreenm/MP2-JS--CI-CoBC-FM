@@ -152,10 +152,11 @@ header {
 .navbar-brand {
     font-size: min(max(18px, 4vw), 32px);
     margin: 0;
+    color: var(--link-color);
 }
 
 .navbar-brand a {
-    color: var(--link-color);
+    
     margin: auto;
     text-align: center;
 }
@@ -206,6 +207,9 @@ header {
     border: none;
     border-radius: 4px;
     transition: 0.3s;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--link-active-color);
 }
 
 #logo-wr {
@@ -299,7 +303,7 @@ header {
     margin-top: 30px;
 }
 
-.fetching-animation {
+.fetching-res {
     max-width: 1024px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -679,7 +683,7 @@ iframe {
 .resultItem {
     background: var(--articles-bg-blue-color);
     border-radius: 3px;
-    margin: 10px 10px 10px 0;
+    margin: 10px 0 10px 0;
     padding: 10px;
     text-align: left;
     white-space: normal;
