@@ -379,9 +379,9 @@ header {
 /* CTA Custom Button CSS Button Hover effect code snnipet (https://www.sliderrevolution.com/resources/css-button-hover-effects/) */
 
 .cta-color {
-    opacity: 0.7;
+    opacity: 0.9;
     color: var(--dominant-color);
-    background-color: rgba(239, 160, 11, 0.7) !important;
+    background-color: rgba(239, 160, 11, 1) !important;
     cursor: pointer;
     display: inline-block;
     position: relative;
