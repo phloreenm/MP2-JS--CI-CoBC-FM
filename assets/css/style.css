@@ -154,9 +154,14 @@ header {
     margin: 0;
     color: var(--link-color);
 }
+.navbar-brand:hover {
+    font-size: min(max(19px, 4.1vw), 33px);
+    margin: 0;
+    color: var(--link-hover-color);
+}
 
 .navbar-brand a {
-    
+    color: var(--text-color);
     margin: auto;
     text-align: center;
 }
