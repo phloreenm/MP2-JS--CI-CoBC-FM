@@ -27,9 +27,7 @@
     - [**success.html**](#cities-page-results)
     - [**404.html**](#cities-page-results)
 - **JS Testing**
-    - [**Code**](#contact-mobile-view)
-- **JS Testing**
-    - [**ESLint**](#contact-mobile-view)
+    - [**ESLint**](#eslint)
 - **Accessibility Testing**
     - [**Color testing**](#contact-mobile-view)
     - [**Color testing**](#contact-mobile-view)
@@ -57,19 +55,51 @@ There are some warnings present, but these are due to the use of the CSS variabl
     <img width="100%" src="./readme-images/testing/jigsay-w3-org-results-w.png">
 </p>
 
+---
+
 ## **HTML Testing**
 - The HTML code validation has been done using the [Nu Html Checker](https://validator.w3.org/nu/).
+### **Home Page Results**
+<p align="center">
+    <img width="100%" src="./readme-images/html-validation/00-html-val.jpg">
+</p>
 
+### **Cities Page Results**
+<p align="center">
+    <img width="100%" src="./readme-images/html-validation/01-html-val.jpg">
+</p>
 
+### **Contact Page Results**
+<p align="center">
+    <img width="100%" src="./readme-images/html-validation/02-html-val.jpg">
+</p>
 
+### **Success Page Results**
+<p align="center">
+    <img width="100%" src="./readme-images/html-validation/03-html-val.jpg">
+</p>
 
+### **404 Page Results**
+<p align="center">
+    <img width="100%" src="./readme-images/html-validation/04-html-val.jpg">
+</p>
 
+<br>
+<p align="right">
+    <a href="#testing">Return to Testing.md Table of Contents</a>
+</p>
+<br>
 
+---
 
+## **JS Testing**
+### **ESLint**
+- The JS code has been tested using the [ESLint](https://eslint.org/).
 
 
 
 ---
+
 ## **Lighthouse Testing**
 ### **Home Page**
 #### **Desktop view**
