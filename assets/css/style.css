@@ -10,8 +10,10 @@
 :root {
     /* ---COLOR THEME----------------- */
     /* DOMINANT color:*/
+    /* --dominant-color: #242331; */
     --dominant-color: rgb(36, 35, 49);
     /* COMPLEMENTARY color: */
+    /* --complimentary-color: #0075c4; */
     --complimentary-color: rgb(0, 117, 196);
     /* ACCENT color:  */
     /* --accent-color: #efa00b; */
@@ -26,7 +28,7 @@
     /* --link-color: #fbfefb; */
     --link-color: rgb(251, 254, 251);
     /* --link-hover-color: #c33c54; */
-    --link-hover-color: rgb(245, 102, 128);
+    --link-hover-color: rgba(245, 102, 128, 1);
     /* --link-active-color: #efa00b; */
     --link-active-color: rgb(239, 160, 11);
     /* special color themes */
@@ -157,7 +159,7 @@ header {
 .navbar-brand:hover {
     font-size: min(max(19px, 4.1vw), 33px);
     margin: 0;
-    color: var(--link-hover-color);
+    color: var(--text-color);
 }
 
 .navbar-brand a {
@@ -306,7 +308,6 @@ header {
 .btp-wr {
     text-align: center;
     margin-top: 30px;
-    btp-wr
 }
 
 .fetching-res {
