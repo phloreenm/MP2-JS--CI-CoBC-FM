@@ -21,11 +21,11 @@
 - **CSS Testing**
     - [**Code**](#css-results)
 - **HTML Testing**
-    - [**index.html**](#home-page)
-    - [**cities.html**](#cities-page)
-    - [**contact.html**](#contact-page)
-    - [**success.html**](#cities-page)
-    - [**404.html**](#cities-page)
+    - [**index.html**](#home-page-results)
+    - [**cities.html**](#cities-page-results)
+    - [**contact.html**](#contact-page-results)
+    - [**success.html**](#cities-page-results)
+    - [**404.html**](#cities-page-results)
 - **JS Testing**
     - [**Code**](#contact-mobile-view)
 - **JS Testing**
@@ -58,7 +58,7 @@ There are some warnings present, but these are due to the use of the CSS variabl
 </p>
 
 ## **HTML Testing**
-
+- The HTML code validation has been done using the [Nu Html Checker](https://validator.w3.org/nu/).
 
 
 
@@ -82,6 +82,13 @@ There are some warnings present, but these are due to the use of the CSS variabl
     <img width="100%" src="./readme-images/lighthouse/01-index-m-res.jpg">
 </p>
 
+<br>
+<p align="right">
+    <a href="#testing">Return to Testing.md Table of Contents</a>
+</p>
+<br>
+
+---
 ### **Cities Page**
 #### **Desktop view**
 <p align="center">
@@ -92,6 +99,14 @@ There are some warnings present, but these are due to the use of the CSS variabl
 <p align="center">
     <img width="100%" src="./readme-images/lighthouse/02-cities-m-res.jpg">
 </p>
+
+<br>
+<p align="right">
+    <a href="#testing">Return to Testing.md Table of Contents</a>
+</p>
+<br>
+
+---
 
 ### **Contact Page**
 #### **Desktop view**
@@ -104,6 +119,14 @@ There are some warnings present, but these are due to the use of the CSS variabl
     <img width="100%" src="./readme-images/lighthouse/03-contact-m-res.jpg">
 </p>
 
+<br>
+<p align="right">
+    <a href="#testing">Return to Testing.md Table of Contents</a>
+</p>
+<br>
+
+---
+
 ### **Success Page**
 #### **Desktop view**
 <p align="center">
@@ -114,6 +137,14 @@ There are some warnings present, but these are due to the use of the CSS variabl
 <p align="center">
     <img width="100%" src="./readme-images/lighthouse/04-success-m-res.jpg">
 </p>
+
+<br>
+<p align="right">
+    <a href="#testing">Return to Testing.md Table of Contents</a>
+</p>
+<br>
+
+---
 
 ### **404 Page**
 #### **Desktop view**
@@ -131,9 +162,11 @@ There are some warnings present, but these are due to the use of the CSS variabl
     </p>
     <br>
 
+---
+
 ### **Conclusions**
-- The **Performance** score, especially on mobile view, is strongly affected by two main reasons:
-  - The exterior dependencies, such as the Google Fonts and the Font Awesome icons, which are not cached by the browser.  
+- The **Performance** score, especially on mobile view, is strongly affected these reasons:
+  - The exterior dependencies, such as the Google Fonts and the Font Awesome icons, together with the JavaScript libraries (Boostrap, MDBUI, jQuery)  
     <p align="center">
         <img width="100%" src="./readme-images/lighthouse/00-render-blocking-res.jpg">
     </p>
@@ -141,9 +174,9 @@ There are some warnings present, but these are due to the use of the CSS variabl
         <img width="100%" src="./readme-images/lighthouse/00-reduce-unused-css.jpg">
     </p>
   - In mobile view the Lighthouse testing is simulating slower connections that the actual ones, which is affecting the performance score.  
-    <p align="center">
+    <!-- <p align="center">
         <img width="100%" src="./readme-images/lighthouse/00-warning.jpg">
-    </p>
+    </p> -->
     <p align="center">
         <img width="100%" src="./readme-images/lighthouse/00-warning-2.jpg">
     </p>
