@@ -23,8 +23,7 @@
     - [**HEADER**](#header)
     - [**MAIN CONTENT SECTION**](#main-content-section)
       - [**Home page**](#home-page)
-      - [**Menu page**](#menu-page)
-      - [**Gallery page**](#gallery-page)
+      - [**Cities page**](#cities-page)
       - [**Contact page**](#contact-page)
     - [**FOOTER**](#footer)
   - [**Maps**](#maps)
@@ -219,17 +218,15 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 - contains the company's logo and, depending on the device's screen width, a menu navigation bar to the top right (on larger screens) or a hamburger menu button (which opens the hidden menu - in mobile view).
 
 <p align="center">On screens up to 920px width (small screens)<br>
-    <img src="readme-files/readme-images/nav-bar-mobile-tablet-view.jpg" alt="On screens up to 920px width (small screens)" width="90%">
+    <img src="readme-files/readme-images/" alt="On screens up to 920px width (small screens)" width="90%">
 </p>
 <p align="center">On screens larger than 920px width (larger screens)<br>
-    <img src="readme-files/readme-images/nav-bar-desktop-view.jpg" alt="On screens larger than 920px width" width="90%">
+    <img src="readme-files/readme-images/" alt="On screens larger than 920px width" width="90%">
 </p>
 
 ---
 ### **MAIN CONTENT SECTION**
-- contains the page's specific subjects (like some information on Langding Page, Cafe's Menu, Pictures Callery, Contact form or the 404 page).
-- this area is limited to a `max-width: 1000px;` there is also a `padding: 0 100px;` in desktop view. Also the background-color is limited to this width and this should create a delimitation between the empty space and the actual main content.
-- in mobile view the pading is reduced to `30px` and the `width:100%`, so that more information would fit on smaller screens.
+
 
 <br>
 <p align="right">
@@ -239,17 +236,24 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 
 ---
 #### **Home page**
-Home page main section contains:
-- a welcoming message at the top.
-- some introductory information structured as Q&A form. This area contains some links to links on another pages. For example, the word "coffees", from the `What else can we offer you ?` question, is a link to the Coffees category from Cafe's Menu page.
-This is making navigation handy. 
-The purpose is to guide the visitor through the website's content, and describe what the company has to offer.
-
+- The home landing page briefly describes to the visitor the scope of of the website.
 <p align="center"><strong>Mobile and desktop view</strong>:</p>
 <p align="center">
-    <img src="readme-files/readme-images/01-2-homepage-mobileview-screenshot-h900.jpg" alt="Left - Mobile view" height="370">
-    <img src="readme-files/readme-images/01-1-homepage-desktopview-screenshot-h600.jpg" alt="Bottom - Mobile view" height="370" width="650">
+    <img src="readme-files/readme-images/pages-view/00-m.png" alt="Left - Mobile view" height="600px">
+    <img src="readme-files/readme-images/pages-view/00-d.png" alt="Bottom - Mobile view" width="66%">
 </p>
+
+- It contains:
+  - An introductory story.
+  - A SVG image, which shows the location in Europe of our area of interest: Dobrudja. On mouse hover over the vectorial image the Dobrudja area is being zoomed in, for a better view. This effect is obtained by using a JS script ([svg-zoom.js](/scripts/svg-zoom.js)).
+  - Bellow that the focus goes to our three archaeological sites, Histria, Tomis and Callatis, with links to the Cities page.
+  - At the bottom of the content section there is a Google Map containing the markers with the location of the three cities. The markers use customised icons, by over-riding the default Google Maps icons.
+    - On click on each of the markers, the user is directed to the Cities page, where the information about the city is displayed.
+    - The map is rendered by using the Google Maps API v3. The scripts to display custom markers is available in the [gmaps-earth.js](/scripts/gmaps-earth.js) file.
+<p align="center">
+    <img src="readme-files/readme-images/pages-view/markers-map.png" alt="Bottom - Mobile view" width="66%">
+</p>
+
 
 <br>
 <p align="right">
@@ -258,66 +262,52 @@ The purpose is to guide the visitor through the website's content, and describe 
 <br>
 
 ---
-#### **Menu page**
-The menu page is structured differently that the other pages, because the main purpose is to display the Café's menu, sorted in four categories: Coffees, Dishes, Cakes and Wines. For that reason I found useful to use the grid system. The same result could be obtained with just using flexbox too, but my choice was grid for this page.
-- In mobile view the layout is formed as a single column. So the categories and their content are all displayed in one columns only.
-- On larger screens (desktop view) the container is displayed in a column: inside it, the categories in this column and the the content are displayed on two columns.
-- Bellow each category group, there is a link `Back to top`(... of the page), to help the user to jump to the main navigation bar area.
-- I chose to create another menu specific to this page only.
-    - This menu only contains internal links found on the same page, to the main categories from the list, which are: Coffees, Dishes, Cakes and Wines. 
-    - Using this menu the navigation is quicker for the user, if he's interested in a specific product and is not interested to see other items. 
-    - It is available at the bottom of the page too.
-    - Since using JS is not required for this project, I needed to find a way to change the text of a specific area, when the state changes. I found out that the `<details>` element can help.
-    So when this menu is collapsed, the user is asked to acces this menu by clicking the `▶️  Click to open quick menu links`:
-    <p align="center">Menu closed<br>
-            <img src="readme-files/readme-images/02-6-cafemenu-internal-links-menu-closed-screenshot%20.png" alt="Menu closed" width="90%">
-    </p>
-    - The user may choose to colapse the menu by clicking again `🔽 Click to close quick menu links` area.
-    <p align="center">Menu opened<br>
-            <img src="readme-files/readme-images/02-7-cafemenu-internal-links-menu-opened-screenshot%20.png" alt="Menu opened - After the user clicks, the menu opens like this" width="90%">
-    </p>
-    - You may notice that the text content changes from "open" to "close". The ▶️ and 🔽 icons display the status of the `details` element.
-    - In mobile and desktop view, this area keeps the same layout, by adapting its width to the viewport.
-    <p align="center">
-        <img src="readme-files/readme-images/02-8-cafemenu-internal-links-menu-opened-mobileview-screenshot%20.png" alt="Quick Links Menu - Mobile view" width="400">
-    </p>
-- Bellow, there is a linked text which, on click, it downloads the complete Café's menu in PDf format.
-        <p align="center">
-            <img src="readme-files/readme-images/cafesmenu-dl-pdf-link-structure.jpg" alt="Download link" width="400">
-        </p>
-    
-- The main content of this page is composed of four categories, each with a couple of cafe's menu items, grouped acordingly.
-    - Each category is delimited and begins with the header.
-    - Under the Header there are the items displayed in a column or two columns, depending on screen size.         
-    - At the end of each category there is a "Back to top" link.
-    - Just before the Footer area, there is the same Quick Menu links displayed again, to ease users's navigation.
-    <p align="center">Small screen and larger screen layout preview:<br>
-          <img src="readme-files/readme-images/cafesmenu-mb-structure.jpg" alt="mobile view" height=370">      
-         <img src="readme-files/readme-images/cafesmenu-des-structure.jpg" alt="desktop view" height="370">
-    </p>
-
-<br>
-<p align="right">
-    <a href="#table-of-contents">Return to Table of Contents</a>
+#### **Cities page**
+- The cities page contains information about the three cities of interest: Histria, Tomis and Callatis. Here the visitor finds the main interest content of the website.
+<p align="center">
+    <img src="readme-files/readme-images/pages-view/02.0-m.png" alt="Bottom - Mobile view" height="700px">
+    <img src="readme-files/readme-images/pages-view/02.1-d.png" alt="Bottom - Mobile view" height="700px" max-width="66%">
 </p>
-<br>
 
----
-#### **Gallery page**
-The Gallery page has only one purpose: to showoff some pictures depincting the interior design of the cafe, staff, making coffees, etc.
-- In **mobile view** there are two views: 
-    - **One column**
-            <p align="center">Mobile view: width smaller than 672px<br>
-                <img src="readme-files/readme-images/03-8-gallery-mobileview-1col-sm-img-screenshot-.jpg" alt="Mobile One column Preview" height="370">
-            </p>
-    - **Two columns**
-            <p align="center">Mobile view: width between 673 and 992px<br>
-                <img src="readme-files/readme-images/03-7-gallery-mobileview-2col-sm-img-screenshot-.jpg" alt="Mobile 2 columns Preview" height="370">
-            </p>
-- **Desktop or large screen** view: images are displayed on a single column, at high resolution:
-            <p align="center">Desktop view: width more than 992px <br>
-                <img src="readme-files/readme-images/03-5-gallery-desktopview-1col-lg-img-screenshot-.jpg" alt="Larger screens and Desktop pone column Preview" height="370">
-            </p>
+- At first rendering the page displays a call-to-action area, brightly colored, which invites the visitor to click one of the tabs bellow, which correspond to the three cities.
+<p align="center"><strong>Call to Action element, in yellow color</strong>:</p>
+<p align="center">
+    <img src="readme-files/readme-images/pages-view/cta-select-city.png" alt="Call to action element" width="66%">
+</p>
+<p align="center"><strong>After the user clicks any of the cities button, the sub-tabs buttons are displayed too</strong>:</p>
+<p align="center">
+    <img src="readme-files/readme-images/pages-view/nav-tabs-subtabs.png" alt="Tabs and Subtabs buttons" width="66%">
+</p>
+
+- When a city is selected, by default the `Chronicle` sub-tab content is displayed. 
+- The tabs and the sub-tabs buttons have hover effects applied to them, so that the user can see that they are clickable. Also all tabs have an active class attached to them dynamically, so that the user can see which tab is currently active. For the main tabs (the cities' tabs) the active class makes the buttons text all to uppercase and text grows and adds a bottom red line. For the sub-tabs the active class makes the buttons' text to grow and adds a bottom red line. These effects are obtained by using CSS and JS [script `tabs-display.js`](/scripts/tabs-display.js).
+- When the user clicks on any of the three tabs, the call-to-action area is not displayed anymore and the content area  displays a new layout composed of three main tabs (the cities' tabs) and bellow those other three subtabs, which correspond to three categories of information about the city: 
+  - <strong>Chronicle:</strong>
+    - contains a brief history of the city. the information is served chronologically.
+    - an image of a coinage of the city is displayed bellow the content's header.
+    - at the very bottom some links to external resources are displayed. They also serve as sources of the information.
+<p align="center">
+    <img src="readme-files/readme-images/pages-view/02.1.1-m.png" alt="Chronicle - Mobile view" height="700px">
+    <img src="readme-files/readme-images/pages-view/02.1.1-d.png" alt="Chronicle - Desktop view" max-width="66%">
+</p>
+
+  - <strong>Wikipedia:</strong>
+  - 
+    - When the user clicks the Wikipedia sub-tab, the content area is rendered. It contains fetched information from sending a request to Wikipedia API and reading the content of the response from the API. The information is grouped in seven links list; each have a header and a short preview of the article which the link takes to. On hover over the links there are effects applied to the links and the preview text, so that the user may know that the links are clickable.
+    - The fetching is done at the first press of the Wikipedia sub-tab button. If the user leaves the page and comes back, the content is fetched again.
+<p align="center">
+    <img src="readme-files/readme-images/pages-view/02.2.1-m.png" alt="Wikipedia - Mobile view" height="700px">
+    <img src="readme-files/readme-images/pages-view/02.2.1-d.png" alt="Wikipedia - Desktop view" height="700px" max-width="66%">
+</p>
+
+  - <strong>Maps:</strong>
+    - This section contains embedded Google Aerial View and 360 maps of the selected city:
+      - Satellite views of the archaeological site.
+      - 360 view of the archaeological site or museums dedicated to each city.
+<p align="center">
+    <img src="readme-files/readme-images/pages-view/02.3.1-m.png" alt="Maps - Mobile view" height="700px">
+    <img src="readme-files/readme-images/pages-view/02.3.1-d.png" alt="Maps - Desktop view" height="700px" max-width="66%">
+</p>
 
 <br>
 <p align="right">
@@ -327,10 +317,12 @@ The Gallery page has only one purpose: to showoff some pictures depincting the i
 
 ---
 #### **Contact page**
-- The Contact page is structured around a form, containing multiple fields, which the user may choose to fill. The user can make a request, ask a question, propose a recommandation, make a complain and also take part to a poll by votting his favorite coffee.
-    <p align="center">Mobile and Desktop preview<br>
-        <img src="readme-files/readme-images/04-2-contact-mobileview-screenshot.png" alt="Contact page - Mobile preview" height="370">
-        <img src="readme-files/readme-images/04-1-contact-desktopview-screenshot.png" alt="Contact page - Desktop preview" height="370">
+- The Contact page contains a form which offers the user the possibility to send an email message to the site's owner. 
+- The form user EmailJS API to send the email. It uses a local script and the EmailJS API to send the email. The script is available in the [email-js.js](/scripts/email-js.js) file.
+  
+    <p align="center">Mobile preview<br>
+        <img src="readme-files/readme-images/pages-view/03-m.png" alt="Cities page - Mobile preview" height="700px">
+        <img src="readme-files/readme-images/pages-view/03-d.png" alt="Cities page - Desktop preview" height="700px" max-width="66%">
     </p>
 
 <br>
@@ -340,30 +332,21 @@ The Gallery page has only one purpose: to showoff some pictures depincting the i
 <br>
 
 ---
+
 ### **FOOTER**
+- The footer is composed three sub-areas, as follows:
+    - **SOCIAL MEDIA LINK** - icons to access the social media pages of the website.
+    - **Disclaimer**
+      - Paragraphs containing a disclaimer notice
+      - Disclaimer button which, when clicked, opens a modal showing a more detailed website disclaimer.
+    - **Copyright notice**
+      - The copyright notice contains a JS generated year and a link to the GitHub repository of this project.
+
 <p align="center">Mobile and Desktop view</p>
 <p align="center">
-    <img src="readme-files/readme-images/footer-mobileview-screenshot.jpg" alt="Footer in mobile view" width="25%">
-    <img src="readme-files/readme-images/footer-desktopview-screenshot-.jpg" alt="Footer in desktop view" width="60%">
+    <img src="readme-files/readme-images/pages-view/07-foo-m.png" alt="Footer in mobile view" height="700px">
+    <img src="readme-files/readme-images/pages-view/07-foo-d.png" alt="Footer in desktop view" height="700px" max-width="66%">
 </p>
-
-- The footer is composed three sub-areas, as follows:
-    - **ADDRESS** - contains a link with the Google Maps location of the Cafe shop. Accessing the link will offer you the posibility to ask for directions towards the shop. Depending on the device used, the behaviour differs: on mobile deviced it will open the Google Maps app and on desktop device it will open a new tab with Google Maps.
-    - **SOCIAL MEDIA LINK** - linked icons to acces the social media pages of the café shop. On hover over these icons, they grow in size to `2rem`.
-    - **CONTACT US**
-        - The EMAIL contains the `mailto:` link, so if the user want's, by pressing on the e-mail address, the default email client is opened. The `Send to` and `CC` section are prefilled with the right email destinators addresses.
-            <p align="center">Testing on a smartphone:<br>
-                <img src="readme-files/readme-images/mailto-client.jpg" alt="Client's default app opens already having destinators emails completed" height="370">
-            </p>
-        - The TEL section is also a link, which, while in mobile view, is enabled and proceeds to opening the phone number in calling screen, but if viewed on a desktop, the link is disabled. As described [here](https://www.campaignmonitor.com/blog/email-marketing/using-phone-numbers-in-html-email/):  
-        > *tel: support is great across mobile clients, it can be unreliable on the desktop and in webmail clients.*
-
-        <p align="center">Preview:</p>
-        <p align="center">
-            <img src="readme-files/readme-images/tel-open-app.jpg" alt="Press phone number opens default calling application" height="370">
-            <img src="readme-files/readme-images/tel-call-screen.jpg" alt="Calling screen on a smartphone" height="370">
-        </p>
-
 <br>
 <p align="right">
     <a href="#table-of-contents">Return to Table of Contents</a>
