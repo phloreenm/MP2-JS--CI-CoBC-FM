@@ -25,7 +25,11 @@
       - [**Home page**](#home-page)
       - [**Cities page**](#cities-page)
       - [**Contact page**](#contact-page)
+      - [**Success page**](#success-page)
+      - [**404 page**](#404-page)
     - [**FOOTER**](#footer)
+  - [*Typography*\*](#typography)
+  - [\*\* Color theme\*](#-color-theme)
   - [**FEATURES**](#features)
   - [**ISSUES**](#issues)
   - [**BUGS**](#bugs)
@@ -112,7 +116,9 @@ The User Experience design was shaped using the theory of the Five Elements of U
       - Select cities sub-page - SELECT CITY is highlighted and it disappears when a City's tab is selected.
       - Send Email - the user is guided to fill in the form and click the SEND button.
       - Footer: on a page with less content, to footer is only visible 10vh at the bottom. This way the user is aware that he might find further content to scroll down to the bottom of the page.
+  
 ---
+
 # **Structure**
 - Information architecture:
     - 1. Elements available on all pages of the website:
@@ -136,6 +142,7 @@ The User Experience design was shaped using the theory of the Five Elements of U
     </p>
   
 ---
+
 # **Skeleton**
 The skeleton plane is represented by the wireframe sketches and they're are located in [wireframes.md](readme-files/docs/wireframes.md) file.
 
@@ -146,6 +153,7 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
 <br>
 
 ---
+
 # **Surface**
 # **UI (User Interface)**
 
@@ -188,18 +196,20 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
 ## **Responsiveness**
 - The website is built to be responsive on different devices from small to larger screens.
   - To fit smaller screens, the minimum width of the layout is set to 300px. 
-  - For larger screens the layout is set to up to 976px width, using other breakpoints for intermediary widths.
+  - For larger screens the content is set to up to 976px width, using other breakpoints for intermediary widths.
 - The header:
   - Contains: 
-    - the logo, on the top;
-    - the title in the middle;
-    - the navigational menu. The navigational menu is fully displayed when screen's width is greater than 767px. When the screen width is less than 768px the navigational menu is collapsed into a hamburger menu. The hamburger menu is displayed on the top center of the page, below the title.
+    - the logo, on the top - stays in the same location over all resolutions;
+    - the title in the middle, bellow the logo - changes size depending on the screen's width;
+    - the navigational menu - is fully displayed when screen's width is greater than 767px. When the screen width is less than 768px the navigational menu is collapsed into a hamburger menu. The hamburger menu is displayed on the top center of the page, below the title.
 - The content section is displayed as a block between the header and the footer. It contains information related to the page's subject. Main's element width is set to 90% of the body's width, it's parent element.
-- The footer is displayed on the bottom of the page. It contains:
-  - the social media links; 
-  - the disclaimer button; 
-  - the fair usage policy;
-  - the copyright notice.
+- The footer is displayed on the bottom of the page.
+  - It contains:
+    - the social media links; 
+    - the disclaimer button; 
+    - the fair usage policy;
+    - the copyright notice.
+  - It's layout occupy horizontally the most of all others sections, when in desktop view, to limit the vertical space taken by its content.
 - Website's responsiveness was tested across different devices and results are available in the [testing.md](./readme-files/testing.md) file.
 
 <br>
@@ -213,20 +223,29 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
 The general layout of the website is composed of three main areas: [Header](#header), [Content](#main-content-section) and [Footer](#footer). 
 The Header (containing the Logo and the Navigation Menu) and the Footer are common to all pages, but the Content area is different for each page.
 
----
 ### **HEADER** 
 - contains the company's logo and, depending on the device's screen width, a menu navigation bar to the top right (on larger screens) or a hamburger menu button (which opens the hidden menu - in mobile view).
 
-<p align="center">On screens up to 920px width (small screens)<br>
-    <img src="readme-files/readme-images/" alt="On screens up to 920px width (small screens)" width="90%">
+<p align="center">Header with logo, banner and navigation buttons in desktop view"<br>
+    <img src="readme-files/readme-images/pages-view/06-d-nav.png" alt="Header with logo, banner and navigation buttons in desktop view" width="90%">
 </p>
-<p align="center">On screens larger than 920px width (larger screens)<br>
-    <img src="readme-files/readme-images/" alt="On screens larger than 920px width" width="90%">
+<p align="center">Mobile view - navigation closed and opened<br>
+<img src="readme-files/readme-images/pages-view/06-m-nav-closed.png" alt="Mobile view - navigation opened" width="40%">
+    <img src="readme-files/readme-images/pages-view/06-m-nav-opened.png" alt="Mobile view - navigation closed" width="40%">
 </p>
 
 ---
-### **MAIN CONTENT SECTION**
 
+### **MAIN CONTENT SECTION**
+- The "main content" is the area between the header and the footer of the page and it contains the information specific to the page.
+- There are:
+  -  three accessible pages through the navigation menu:
+     - Landing page - briefly about the site.
+     - Cities page - offer information about each of the archaeological site/cities.
+     - Contact page - to send an email.
+   - two directly inaccessible pages:
+     - Success page - displayed when an email has been successfully sent.
+     - 404 page - displayed by the server when an inexistent resource is being accessed.
 
 <br>
 <p align="right">
@@ -316,6 +335,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 <br>
 
 ---
+
 #### **Contact page**
 - The Contact page contains a form which offers the user the possibility to send an email message to the site's owner. 
 - The form uses EmailJS API to send the email. It uses a local script and the EmailJS API to send the email. The script is available in the [email-js.js](/scripts/email-js.js) file.
@@ -328,6 +348,39 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 <br>
 <p align="right">
     <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
+
+---
+
+#### **Success page**
+- The Success page 
+
+    <p align="center">Mobile preview<br>
+        <img src="readme-files/readme-images/pages-view/04-m.png" alt="Cities page - Mobile preview" height="700px">
+        <img src="readme-files/readme-images/pages-view/04-d.png" alt="Cities page - Desktop preview" max-height="700px"width="66%">
+    </p>
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+<br>
+
+---
+
+#### **404 page**
+- The 404 page 
+  
+    <p align="center">Mobile preview<br>
+        <img src="readme-files/readme-images/pages-view/05-m.png" alt="404 page - Mobile preview" height="700px">
+        <img src="readme-files/readme-images/pages-view/05-d.png" alt="404 page - Desktop preview" max-height="700px" width="66%">
+    </p>
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>casual?casual?
+
 </p>
 <br>
 
@@ -353,6 +406,39 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 </p>
 <br>
 
+## *Typography**
+- Fonts:
+  - Type: serif:
+    - Main paragraphs and header title font: "GFS Didot"
+    - Headings and Sub-headings font: "Merriweather"
+  - Sizing: the header and some headings use an adaptive font style, depending of the width of the screen.
+    - Default font-size and font-weight: from 15px to 18px / 400 font-weight.
+    - Header size and weight: from 18px to 36px / 700 font-weight.
+    - Navigation links: 16px to 20px, default weight.
+    - Paragraphs: used "small", "medium" font-sizes
+    - To attain some hover effect, or active buttons, the selected elements would change the font size from 0.9rems to 1rem or more.
+## ** Color theme*
+- [Color theme generated at coolors.co](https://coolors.co/242331-0075c4-efa00b-fbfefb-c33c54)
+  <p align="center">Raisin Black   -   French Blue   -   Marigold Yellow   -   Baby Powder   -   Brick Red<br>
+    <img src="readme-files/readme-images/coolors-co-color-theme.png" alt="coolor.co color theme" width="90%">
+</p>
+
+- Colors:
+  - Main colors used:
+    - Dominant Color: #242331 / rgb(36, 35, 49) [Raisin Black].
+    - Complimentary Color: #0075C4 / rgb(0, 117, 196) [French Blue].
+    - Accent color & Active Links: #EFA00B / rgb(239, 160, 11) [Marigold Yellow].
+    - Text color: #FBFEFB /  rgb(251, 254, 251) [Baby Powder].
+    - Link hover color: #C33C54 / rgb(245, 102, 128) [Brick Red].
+  - Derivates from main color:
+    - Articles background color: rgb(9, 125, 219).
+    - Articles darker background color: rgb(36, 35, 49).
+    - Other hues and combinations of the main colors.
+    - Inset box-shadows using the accent color.
+
+---
+
+
 
 
 
@@ -364,30 +450,9 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 - Call To Action:
   - When to MAIN element's content would not fill an entire page, the FOOTER would be displayed only 10vh at the bottom of the page, to drive  the user to scroll down to the bottom.
   - Cities page doesn't load the tabs' content, unless the user clicks any of the three Cities' tabs. There is a highlighted message to guide the user to select any City's tab. Only then the sub-tabs' content is being displayed (the Chronicle sub-tabs' content) or loaded dynamically (Wikipedia searching API and Google Maps embedded maps).
-- Color theme used:
-  - [Color theme generated at coolors.co](https://coolors.co/242331-0075c4-efa00b-fbfefb-c33c54)
-  - Colors:
-    - Main colors used:
-      - Dominant Color: #242331 / rgb(36, 35, 49)
-      - Complimentary Color: #0075C4 / rgb(0, 117, 196)
-      - Accent color & Active Links: #EFA00B / rgb(239, 160, 11)
-      - Text color: #FBFEFB /  rgb(251, 254, 251)
-      - Link hover color: #C33C54 / rgb(245, 102, 128)
-    - Derivates from main color:
-      - Articles background color: rgb(9, 125, 219)
-      - Articles darker background color: rgb(36, 35, 49)
-      - Other hues and combinations of the main colors.
-      - Inset box-shadows using the accent color
-- Fonts:
-  - Type: serif:
-    - Main paragraphs and header title font: "GFS Didot"
-    - Headings and Sub-headings font: "Merriweather"
-  - Sizing: the header and some headings use an adaptive font style, depending of the width of the screen.
-    - Default font-size and font-weight: from 15px to 18px / 400 font-weight.
-    - Header size and weight: from 18px to 36px / 700 font-weight.
-    - Navigation links: 16px to 20px, default weight.
-    - Paragraphs: used "small", "medium" font-sizes
-    - To attain some hover effect, or active buttons, the selected elements would change the font size from 0.9rems to 1rem or more.
+
+
+
 ---
 
 
