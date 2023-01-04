@@ -46,7 +46,7 @@
         - [**404.html**](#404-page-console)
 - **Lighthouse Testing**
     - [**Home Page**](#lighthouse-report-home-page)
-    - [**Cities Page**](#lighthouse-report-cities-page)
+    - [**Cities Page**](#lighthouse-report-cities-page) 
     - [**Contact Page**](#lighthouse-report-contact-page)
     - [**Success Page**](#lighthouse-report-success-page)
     - [**404 Page**](#lighthouse-report-404-page)
