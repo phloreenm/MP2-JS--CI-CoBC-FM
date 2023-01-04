@@ -19,7 +19,8 @@
 
 # **TESTING**
 - During the development stages I encountered numerous errors, emerging from different reasons. The syntax errors were the easiest of all to fix. Probably the most difficult errors to fix were the ones caused by the external dependencies and APIs. One example is when the base code for the Google Maps API changed without notice (of which I was unware at least), the map and the markers were not loading anymore and the console errors were not guiding towards the actual problem. Another type of issue I had was the outdated or deprecated code. For example, the jQuery, the Material Design for Bootstrap UI and the Popper libraries were older versions and during the Lighthouse testing I got a lower score because of some security known issues of these. So upgrading these libraries to the latest versions fixed that problem, but caused some other bugs, which were fixed later.
-  
+
+- [**Development Testing**](#development-testing)
 - **CSS Testing**
     - [**CSS Code**](#css-results)
 - **HTML Testing**
@@ -66,6 +67,45 @@
       - [**WPT Conclusions**](#ccav-conclusions)
    
 
+## **Development Testing**
+- During the development, but also at the end of building this project, I have tested this website and documentation as follows:
+  - Server containers:
+    - using `python3 -m http.server` command in VSCode and GitPod.
+    - using Live Server v5.7.9 plug-in in VSCode locally.
+  - live deployed site on [Netlify Sites]([www.netlify.com](https://app.netlify.com/teams/phloreenm/sites)) free service.
+  - project's repository hosted on [GitHub](https://github.com/phloreenm/MP1-CultureCoffee-CI-CoBC-FM).
+  - DevTools from Chrome browser.
+  - browsing the website on:
+    - different **browsers**:
+      - Chrome
+      - Mozilla Firefox
+      - Opera
+      - Brave
+      - Edge
+      - Safari
+    - devices:
+      - **Desktop PC**:
+        - Monitors:
+          - 27.0 inches / 3840 x 2160 (Lenovo)
+          - 23.8 inches / 1920 x 1080 (Asus)
+          - 15.6 inches / 1920 x 1080 (MSI)
+      - **Laptops**:
+        - 12.50 inches / 1366 x 768 (Dell 5290)
+        - 13.3 inches / 1920 x 1080 (Dell 7390 2in1)
+      - **MacBook**:
+        - 13.3 inches / 2560 x 1600 (Air M1)
+      - **Tablets**:
+        - iPad Pro 11 M1
+        - iPad Mini 6
+        - Samsung Tab S8 11"
+      - **Smartphones**:
+        - Samsung S21 Ultra
+        - iPhone 13 mini
+  
+
+
+---
+## **Release Testing**
 ## **CSS Testing**
 ### **CSS results**
 
