@@ -26,7 +26,7 @@
       - [**Cities page**](#cities-page)
       - [**Contact page**](#contact-page)
     - [**FOOTER**](#footer)
-  - [**Maps**](#maps)
+  - [**FEATURES**](#features)
   - [**ISSUES**](#issues)
   - [**BUGS**](#bugs)
   - [**CREDITS**](#credits)
@@ -318,7 +318,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 ---
 #### **Contact page**
 - The Contact page contains a form which offers the user the possibility to send an email message to the site's owner. 
-- The form user EmailJS API to send the email. It uses a local script and the EmailJS API to send the email. The script is available in the [email-js.js](/scripts/email-js.js) file.
+- The form uses EmailJS API to send the email. It uses a local script and the EmailJS API to send the email. The script is available in the [email-js.js](/scripts/email-js.js) file.
   
     <p align="center">Mobile preview<br>
         <img src="readme-files/readme-images/pages-view/03-m.png" alt="Cities page - Mobile preview" height="700px">
@@ -391,10 +391,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 ---
 
 
-
-## **Maps**
-- The displayed map uses a custom icon ("temple_ruins.png"), hosted locally.
-**Features**
+## **FEATURES**
 - Implemented:
   - APIs:
     - Google Maps Markers
@@ -403,7 +400,11 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
   - Embedded:
     - Google Fonts
     - FontAwesome
-    - 
+  - Libraries:
+    - Bootstrap
+    - MDB UI
+    - jQuery
+    - Popper 
 - To be implemented:
   - The APIs need an internet connection to work. If the connection is down, some APIs won't work. Unless you refresh the page, the page would not load the content. Therefore a script to check if `window.navigator.onLine` is `true` - which means the connection is up and the API will run correctly. Otherwise, if is `false`, there must be a way to retry the request few times more and if the connection is still down, an alert would ask the user to check the connection and retry to refresh the page.
   - Another page, named Gallery, to display images using the Google Places Photos API: when one of the cities' tab is presset, the backend will search on Google Places Details about the location, but only fetch a limited number of picture references returned in the Details object. Using those refrences and Google Photos
@@ -411,11 +412,9 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 ---
 ## **ISSUES**
 - **Issues and bugs/errors encountered:**
-
   - Lighthouse CEO score was affected by optimization advice: ```Links are not crawlable```:
     - Cause: Lighthouse description: "Search engines may use `href` attributes on links to crawl websites. Ensure that the `href` attribute of anchor elements links to an appropriate destination, so that more pages of the site can be discovered." Learn more"
     - Solution: found a solution [here](https://webmasters.stackexchange.com/questions/132481/lighthouse-says-links-are-not-crawlable-on-the-skip-to-content-link). I changed the a element to a span element, but kept the id, so that the "Back to top" button would still work, as follows: from ```<a id="top"></a>``` to ```<span id="top" tabindex="-1"></span>```.
-  
   - Chrome added support for source maps:
     -   ```DevTools failed to load source map: Could not load content for chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/browser-polyfill.js.map: System error: net::ERR_FILE_NOT_FOUND
         DevTools failed to load source map: Could not load content for chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/editor/config.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
@@ -437,10 +436,10 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
   - GoogleStreet & Google 360 warning: Device orientation events are blocked by permissions policy:
     - ``` The deviceorientation events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features ```
     - Cause: warning 
-    - Solution
+    - Solution: not solved. I couldn't find a solution to fix this warning.
   - GoogleStreet & Google 360 warning: ``` Added non-passive event listener to a scroll-blocking <touchstart/touchmove> event. Consider marking event handler as 'passive' to make the page more responsive. See <URL> ```
     - Cause: this warning is present on Google Maps site too and couldn't find a solution to fix it.
-- Google Maps API - loading map and markers failed with this error: 
+  - Google Maps API - loading map and markers failed with this error: 
   ``` Uncaught (in promise) _.Be {message: 'gMapsMap is not a function', stack: 'Error\n    at _.Be.captureStackTrace (https://maps.…lpIUNjRBPtOZUBPjUaim1HE&callback=gMapsMap:215:255', name: 'InvalidValueError'} ```
     - Cause: Google Maps Markers API base code has been changed and I didn't have any notification to adapt my code also. The behavior was quite strange, as I didn't change the code at that time and couldn't relate any of my actions to the new error. 
     - Solution: change API's link's attribute from "async" to "defer". This eliminated the error straight away and map was rendered properly.
