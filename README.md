@@ -28,8 +28,8 @@
       - [**Success page**](#success-page)
       - [**404 page**](#404-page)
     - [**FOOTER**](#footer)
-  - [*Typography*\*](#typography)
-  - [\*\* Color theme\*](#-color-theme)
+  - [**Typography**](#typography)
+  - [**Color theme**](#-color-theme)
   - [**FEATURES**](#features)
   - [**ISSUES**](#issues)
   - [**BUGS**](#bugs)
@@ -46,8 +46,7 @@
 ---
 
 ### Live site on 
-  - [GitHub Pages (custom domain)](http://phloreenm.me/MP2-JS--CI-CoBC-FM/) 
-  - or [GitHub Pages 'https'](https://phloreenm.github.io/MP2-JS--CI-CoBC-FM//MP2-JS--CI-CoBC-FM/)
+  - [Netlify website free hosting](https://greekcitadels.netlify.app/) 
 ### Link to this GitHub repository [here](https://github.com/phloreenm/MP2-JS--CI-CoBC-FM)  
 The structure of this documentatiois spread along more *.md files linked in this Readme.md Reading a large document becomes more difficult d.p. with the complexity, so sections as Wireframes, Contrast tn esting, Testing, Deployment have their own separate document. These are are all linked in following chapters.
 
