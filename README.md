@@ -34,6 +34,7 @@
   - [**ISSUES**](#issues)
   - [**BUGS**](#bugs)
   - [**CREDITS**](#credits)
+
 ---
 
 <br>
@@ -457,7 +458,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 
 
 ## **FEATURES**
-- Implemented:
+- **Implemented**:
   - APIs:
     - Google Maps Markers
     - EmailJS
@@ -470,11 +471,13 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
     - MDB UI
     - jQuery
     - Popper 
-- To be implemented:
+- **To be implemented**:
   - The APIs need an internet connection to work. If the connection is down, some APIs won't work. Unless you refresh the page, the page would not load the content. Therefore a script to check if `window.navigator.onLine` is `true` - which means the connection is up and the API will run correctly. Otherwise, if is `false`, there must be a way to retry the request few times more and if the connection is still down, an alert would ask the user to check the connection and retry to refresh the page.
   - Another page, named Gallery, to display images using the Google Places Photos API: when one of the cities' tab is presset, the backend will search on Google Places Details about the location, but only fetch a limited number of picture references returned in the Details object. Using those refrences and Google Photos
-  - 
+  
+
 ---
+
 ## **ISSUES**
 - **Issues and bugs/errors encountered:**
   - Lighthouse CEO score was affected by optimization advice: ```Links are not crawlable```:
@@ -508,7 +511,9 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
   ``` Uncaught (in promise) _.Be {message: 'gMapsMap is not a function', stack: 'Error\n    at _.Be.captureStackTrace (https://maps.…lpIUNjRBPtOZUBPjUaim1HE&callback=gMapsMap:215:255', name: 'InvalidValueError'} ```
     - Cause: Google Maps Markers API base code has been changed and I didn't have any notification to adapt my code also. The behavior was quite strange, as I didn't change the code at that time and couldn't relate any of my actions to the new error. 
     - Solution: change API's link's attribute from "async" to "defer". This eliminated the error straight away and map was rendered properly.
+
 ---
+
 ## **BUGS**
 - navigating between the cities:
   - Behavior:
@@ -519,7 +524,9 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
       - This bug renders no content inside the section.
   - Solution:
     - Added defaultInfo() function to simulate a click on the Chronicle Sub_tab button, so that each time a new city is selected, the content displayed is defaulted to the Chronicle page.
+  
 ---
+
 ## **CREDITS**
 - Research, Information and Sources Credits
   - Histria
