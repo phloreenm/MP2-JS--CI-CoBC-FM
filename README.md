@@ -1,4 +1,7 @@
 
+<p align="center">
+    <img width="900px" src="./readme-files/readme-images/readme-banner.png">
+</p>
 
 ![GitHub contributors](https://img.shields.io/github/contributors/phloreenm/MP2-JS--CI-CoBC-FM)
 ![GitHub last commit](https://img.shields.io/github/last-commit/phloreenm/MP2-JS--CI-CoBC-FM)
@@ -11,29 +14,29 @@
     - [Link to this GitHub repository here](#link-to-this-github-repository-here)
 - [**UX (User Experience)**](#ux-user-experience)
   - [**UX Design**](#ux-design)
-- [**Strategy**](#strategy)
-- [**Scope**](#scope)
-- [**Structure**](#structure)
-- [**Skeleton**](#skeleton)
-- [**Surface**](#surface)
+  - [**Strategy**](#strategy)
+  - [**Scope**](#scope)
+  - [**Structure**](#structure)
+  - [**Skeleton**](#skeleton)
+  - [**Surface**](#surface)
 - [**UI (User Interface)**](#ui-user-interface)
   - [**Site structure**](#site-structure)
   - [**Responsiveness**](#responsiveness)
   - [**Layout**](#layout)
-    - [**HEADER**](#header)
-    - [**MAIN CONTENT SECTION**](#main-content-section)
+    - [**Header**](#header)
+    - [**Main content section**](#main-content-section)
       - [**Home page**](#home-page)
       - [**Cities page**](#cities-page)
       - [**Contact page**](#contact-page)
       - [**Success page**](#success-page)
       - [**404 page**](#404-page)
-    - [**FOOTER**](#footer)
+    - [**Footer**](#footer)
   - [**Typography**](#typography)
   - [**Color theme**](#color-theme)
-  - [**FEATURES**](#features)
-  - [**ISSUES**](#issues)
-  - [**BUGS**](#bugs)
-  - [**CREDITS**](#credits)
+  - [**Features**](#features)
+  - [**Issues**](#issues)
+  - [**Credits**](#credits)
+  - [**Technologies**](#technologies)
 
 
 ---
@@ -41,7 +44,7 @@
 ### Live site: 
   - [Netlify free website hosting service](https://greekcitadels.netlify.app/) 
 ### Link to this GitHub repository [here](https://github.com/phloreenm/MP2-JS--CI-CoBC-FM)  
-The structure of this documentatiois spread along more *.md files linked in this Readme.md Reading a large document becomes more difficult d.p. with the complexity, so sections as Wireframes, Contrast tn esting, Testing, Deployment have their own separate document. These are are all linked in following chapters.
+The structure of this documentation spreads along more *.md files linked in this Readme.md Reading a large document becomes more difficult d.p. with the complexity, so sections as Wireframes, Contrast, Testing, Deployment have their own separate document. These are are all linked in following chapters.
 
 ---
 
@@ -50,7 +53,7 @@ The structure of this documentatiois spread along more *.md files linked in this
 # **UX (User Experience)**
 ## **UX Design**
 The User Experience design was shaped using the theory of the Five Elements of UX.
-# **Strategy**
+## **Strategy**
 - **Website objective**
   - **Planning Stage**
     - The purpose of this website is to make known some general information to a specific audience. More specifically, tourists travelling or planning to visit Dobrogea would be guided to visit three of the most prominent archaeological locations with connections to ancient Greek colonist.
@@ -72,11 +75,12 @@ The User Experience design was shaped using the theory of the Five Elements of U
             | As a                  | I want to...          | So that I can...       | 
             |-----------------------|-----------------------|------------------------|
             | **Prospective Visitor**|                       |                        |
-            |                       | find local historical places | plan a visit | 
-            |                       | read some Wikipedia articles related to these locations | learn  | 
-            |                       | view local maps | see if visits are posible | 
-            |                       | view local maps | see if visits are posible | 
-
+            |                       | find information about local historical places | learn more | 
+            |                       | read some Wikipedia articles related to these locations | enhace related knowledges  | 
+            |                       | view a map of the location | see if visits are posible | 
+            |                       | view site's location | plan a trip | 
+            |                       | see pictures of the sites | if foot access is possible | 
+            |                       | see pictures of the sites | if there is a museum | 
 
         - As a **website owner** the users stories are related to the purpose of the website itself:
 
@@ -85,10 +89,10 @@ The User Experience design was shaped using the theory of the Five Elements of U
             | **Website Owner**|                       |                   |       
             |                   | promote local archaeological sites | develop local turism  |            
             |                   | provide various information | raise the visitors interest to stay on the page  |            
-            |                   | come up with photos, maps | inform in more detail about the archaeological sites |            
+            |                   | provide visual information through photos and maps means | inform in more detail about the archaeological sites |            
 
 ---
-# **Scope**
+## **Scope**
 - Functional specifications:
     - A user should be able achieve its goals by visiting the site's sections.
     - An user may understand site's structure by accessing the navigation menu bar.
@@ -101,7 +105,7 @@ The User Experience design was shaped using the theory of the Five Elements of U
         - Browsing Navigation Menu
         - Written text
         - Embedded Google Maps
-        - Icons (from FontAwasome)
+        - Icons (from FontAwesome)
         - Internal links
         - External links to other sites or services:
             - Information sources
@@ -114,7 +118,7 @@ The User Experience design was shaped using the theory of the Five Elements of U
   
 ---
 
-# **Structure**
+## **Structure**
 - Information architecture:
     - 1. Elements available on all pages of the website:
         - Header and Footer:
@@ -138,7 +142,7 @@ The User Experience design was shaped using the theory of the Five Elements of U
   
 ---
 
-# **Skeleton**
+## **Skeleton**
 The skeleton plane is represented by the wireframe sketches and they're are located in [wireframes.md](readme-files/docs/wireframes.md) file.
 
 <br>
@@ -149,7 +153,7 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
 
 ---
 
-# **Surface**
+## **Surface**
 # **UI (User Interface)**
 
 ## **Site structure**
@@ -218,7 +222,7 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
 The general layout of the website is composed of three main areas: [Header](#header), [Content](#main-content-section) and [Footer](#footer). 
 The Header (containing the Logo and the Navigation Menu) and the Footer are common to all pages, but the Content area is different for each page.
 
-### **HEADER** 
+### **Header** 
 - contains the company's logo and, depending on the device's screen width, a menu navigation bar to the top right (on larger screens) or a hamburger menu button (which opens the hidden menu - in mobile view).
 
 <p align="center">Header with logo, banner and navigation buttons in desktop view"<br>
@@ -231,7 +235,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 
 ---
 
-### **MAIN CONTENT SECTION**
+### **Main content section**
 - The "main content" is the area between the header and the footer of the page and it contains the information specific to the page.
 - There are:
   -  three accessible pages through the navigation menu:
@@ -381,7 +385,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 
 ---
 
-### **FOOTER**
+### **Footer**
 - The footer is composed three sub-areas, as follows:
     - **SOCIAL MEDIA LINK** - icons to access the social media pages of the website.
     - **Disclaimer**
@@ -451,7 +455,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 ---
 
 
-## **FEATURES**
+## **Features**
 - **Implemented**:
   - APIs:
     - Google Maps Markers
@@ -472,7 +476,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 
 ---
 
-## **ISSUES**
+## **Issues**
 - **Issues and bugs/errors encountered:**
   - Lighthouse CEO score was affected by optimization advice: ```Links are not crawlable```:
     - Cause: Lighthouse description: "Search engines may use `href` attributes on links to crawl websites. Ensure that the `href` attribute of anchor elements links to an appropriate destination, so that more pages of the site can be discovered." Learn more"
@@ -505,23 +509,19 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
   ``` Uncaught (in promise) _.Be {message: 'gMapsMap is not a function', stack: 'Error\n    at _.Be.captureStackTrace (https://maps.…lpIUNjRBPtOZUBPjUaim1HE&callback=gMapsMap:215:255', name: 'InvalidValueError'} ```
     - Cause: Google Maps Markers API base code has been changed and I didn't have any notification to adapt my code also. The behavior was quite strange, as I didn't change the code at that time and couldn't relate any of my actions to the new error. 
     - Solution: change API's link's attribute from "async" to "defer". This eliminated the error straight away and map was rendered properly.
-
+  - navigating between the cities' tabs:
+    - Behavior:
+      - When navigating through the city tabs:
+        - Select City: any of the three
+        - The default sub-tab displayed is "Chronicle"
+        - If you select any of the sub-tabs, then navigate to another city, the default content is not shown anymore and must select a sub-tab to display content for the selected City.
+        - This bug renders no content inside the section.
+    - Solution:
+      - Added defaultInfo() function to simulate a click on the Chronicle Sub_tab button, so that each time a new city is selected, the content displayed is defaulted to the Chronicle page.
+    
 ---
 
-## **BUGS**
-- navigating between the cities:
-  - Behavior:
-    - When navigating through the city tabs:
-      - Select City: any of the three
-      - The default sub-tab displayed is "Chronicle"
-      - If you select any of the sub-tabs, then navigate to another city, the default content is not shown anymore and must select a sub-tab to display content for the selected City.
-      - This bug renders no content inside the section.
-  - Solution:
-    - Added defaultInfo() function to simulate a click on the Chronicle Sub_tab button, so that each time a new city is selected, the content displayed is defaulted to the Chronicle page.
-  
----
-
-## **CREDITS**
+## **Credits**
 - Research, Information and Sources Credits
   - Histria
     - [Histria - Wikipedia](https://en.wikipedia.org/wiki/Histria_(ancient_city))
@@ -581,3 +581,33 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
   - [Font Gelio](https://www.fontspace.com/gelio-font-f11521)
   - [Dobruja (dark green) within Romania and Bulgaria (light green) both in Eastern Europe](https://en.wikipedia.org/wiki/Dobruja)
 
+## **Technologies**
+- For the development of this project I've used different technologies, libraries, API available:
+  - Languages:
+    - HTML
+    - CSS
+    - JavScript
+  - APIs:
+    - Google Maps API 3
+    - EmailJS API
+    - Wikipedia article fetching API
+  - Libraries:
+    - jQuery
+    - Boostrap 5
+    - MDB UI Kit
+    - Font-Awesome
+    - Google Fonts
+  - Other tools:
+    - GitHub
+    - GitHub Codespaces
+    - Git
+    - GitPod
+    - VS Code app
+    - Balsamiq
+    - Google Chrome Developer Tools
+    - Adobe Photoshop
+  - Validation and testing:
+    - Lighthouse
+    - WC3 Markup
+    - W3C Jigsaw
+    - JSHint
