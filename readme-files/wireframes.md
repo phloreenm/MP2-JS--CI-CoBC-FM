@@ -1,5 +1,9 @@
 [Back to MAIN README.md](../README.md)
 
+<p align="center">
+    <img width="900px" src="./readme-images/readme-banner.png">
+</p>
+
 # **WIREFRAMES**
 - **Landing Page**
     - [**Mobile view**](#landing-page-mobile-view)

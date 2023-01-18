@@ -1,5 +1,9 @@
 [Back to MAIN README.md](../README.md)
 
+<p align="center">
+    <img width="900px" src="./readme-images/readme-banner.png">
+</p>
+
 # **TESTING**
 - During the development stages I encountered numerous errors, emerging from different reasons. The syntax errors were the easiest of all to fix. Probably the most difficult errors to fix were the ones caused by the external dependencies and APIs. One example is when the base code for the Google Maps API changed without notice (of which I was unaware at least), the map and the markers were not loading anymore and the console errors were not guiding towards the actual problem. Another type of issue I had was the outdated or deprecated code. For example, the jQuery, the Material Design for Bootstrap UI and the Popper libraries were older versions and during the Lighthouse testing I got a lower score because of some security known issues of these. So upgrading these libraries to the latest versions fixed that problem, but caused some other bugs, which were fixed later.
 

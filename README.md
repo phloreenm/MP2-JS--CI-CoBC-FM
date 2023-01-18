@@ -35,6 +35,7 @@
   - [**Color theme**](#color-theme)
   - [**Features**](#features)
   - [**Issues**](#issues)
+  - [**Testing**](#testing)
   - [**Credits**](#credits)
   - [**Technologies**](#technologies)
 
@@ -143,7 +144,7 @@ The User Experience design was shaped using the theory of the Five Elements of U
 ---
 
 ## **Skeleton**
-The skeleton plane is represented by the wireframe sketches and they're are located in [wireframes.md](readme-files/docs/wireframes.md) file.
+The skeleton plane is represented by the wireframe sketches and they're are located in [wireframes.md](readme-files/wireframes.md) file.
 
 <br>
 <p align="right">
@@ -437,24 +438,6 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 
 ---
 
-
-
-
-
-
-
-
-==============================================================================================================
-
-- Call To Action:
-  - When to MAIN element's content would not fill an entire page, the FOOTER would be displayed only 10vh at the bottom of the page, to drive  the user to scroll down to the bottom.
-  - Cities page doesn't load the tabs' content, unless the user clicks any of the three Cities' tabs. There is a highlighted message to guide the user to select any City's tab. Only then the sub-tabs' content is being displayed (the Chronicle sub-tabs' content) or loaded dynamically (Wikipedia searching API and Google Maps embedded maps).
-
-
-
----
-
-
 ## **Features**
 - **Implemented**:
   - APIs:
@@ -520,6 +503,9 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
       - Added defaultInfo() function to simulate a click on the Chronicle Sub_tab button, so that each time a new city is selected, the content displayed is defaulted to the Chronicle page.
     
 ---
+
+## **Testing**
+- Testing documentation can be found in the [testing.md](readme-files/testing.md) file.
 
 ## **Credits**
 - Research, Information and Sources Credits
