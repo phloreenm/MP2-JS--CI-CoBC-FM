@@ -7,7 +7,7 @@
 
 # **Table of Contents**
 - [**Table of Contents**](#table-of-contents)
-    - [Live site on](#live-site-on)
+    - [Live site:](#live-site)
     - [Link to this GitHub repository here](#link-to-this-github-repository-here)
 - [**UX (User Experience)**](#ux-user-experience)
   - [**UX Design**](#ux-design)
@@ -29,30 +29,24 @@
       - [**404 page**](#404-page)
     - [**FOOTER**](#footer)
   - [**Typography**](#typography)
-  - [**Color theme**](#-color-theme)
+  - [**Color theme**](#color-theme)
   - [**FEATURES**](#features)
   - [**ISSUES**](#issues)
   - [**BUGS**](#bugs)
   - [**CREDITS**](#credits)
 
----
-
-<br>
-<p align="right">
-    <a href="#table-of-contents">Return to Table of Contents</a>
-</p>
-<br>
 
 ---
 
-### Live site on 
-  - [Netlify website free hosting](https://greekcitadels.netlify.app/) 
+### Live site: 
+  - [Netlify free website hosting service](https://greekcitadels.netlify.app/) 
 ### Link to this GitHub repository [here](https://github.com/phloreenm/MP2-JS--CI-CoBC-FM)  
 The structure of this documentatiois spread along more *.md files linked in this Readme.md Reading a large document becomes more difficult d.p. with the complexity, so sections as Wireframes, Contrast tn esting, Testing, Deployment have their own separate document. These are are all linked in following chapters.
 
 ---
+
 **About the site**
-- "Scythia Minor Greek Ancient Colonies" website focuses on promoting cultural heritage tourism of ones of the most famous archaeological sites on the western shores of the Black Sea. Today, these site are located on Romanian territory, in a region called Dobrudja (Dobrogea - the area lies between the Danube river on West and the Black Sea at East, part of historical Thrace). Dobruja boasts a rich history and many more site of archaeological significance, but I chose only three of them, as they have in common as being located close to the sea, so they were important port cities, but also economic centers.
+- "Scythia Minor Greek Ancient Colonies" website focuses on promoting cultural heritage tourism of ones of the most famous archaeological sites on the western shores of the Black Sea. Today, these site are located on Romanian territory, in a region called Dobrudja (Dobrogea - the area lies between the Danube river on West and the Black Sea at East, part of historical Thrace). Dobruja boasts a rich history and many more site of archaeological significance, but I chose only three of them, as they have in common as being located close to the sea, and they were important port cities, but also economic centers.
 # **UX (User Experience)**
 ## **UX Design**
 The User Experience design was shaped using the theory of the Five Elements of UX.
@@ -78,9 +72,10 @@ The User Experience design was shaped using the theory of the Five Elements of U
             | As a                  | I want to...          | So that I can...       | 
             |-----------------------|-----------------------|------------------------|
             | **Prospective Visitor**|                       |                        |
-            |                       | find more details about local ancient history | visit some POI | 
-            |                       | learn how far the site is located | plan a trip | 
-            |                       | learn how I can get to the sites | travel there | 
+            |                       | find local historical places | plan a visit | 
+            |                       | read some Wikipedia articles related to these locations | learn  | 
+            |                       | view local maps | see if visits are posible | 
+            |                       | view local maps | see if visits are posible | 
 
 
         - As a **website owner** the users stories are related to the purpose of the website itself:
@@ -406,7 +401,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 </p>
 <br>
 
-## *Typography**
+## **Typography**
 - Fonts:
   - Type: serif:
     - Main paragraphs and header title font: "GFS Didot"
@@ -417,7 +412,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
     - Navigation links: 16px to 20px, default weight.
     - Paragraphs: used "small", "medium" font-sizes
     - To attain some hover effect, or active buttons, the selected elements would change the font size from 0.9rems to 1rem or more.
-## ** Color theme*
+## **Color theme**
 - [Color theme generated at coolors.co](https://coolors.co/242331-0075c4-efa00b-fbfefb-c33c54)
   <p align="center">Raisin Black   -   French Blue   -   Marigold Yellow   -   Baby Powder   -   Brick Red<br>
     <img src="readme-files/readme-images/coolors-co-color-theme.png" alt="coolor.co color theme" width="90%">
