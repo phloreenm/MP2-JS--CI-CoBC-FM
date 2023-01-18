@@ -33,11 +33,11 @@
     - [**Footer**](#footer)
   - [**Typography**](#typography)
   - [**Color theme**](#color-theme)
-  - [**Features**](#features)
-  - [**Issues**](#issues)
-  - [**Testing**](#testing)
-  - [**Credits**](#credits)
-  - [**Technologies**](#technologies)
+- [**Features**](#features)
+- [**Issues**](#issues)
+- [**Testing**](#testing)
+- [**Credits**](#credits)
+- [**Technologies**](#technologies)
 - [**Aknowledgment**](#aknowledgment)
 
 
@@ -434,7 +434,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 
 ---
 
-## **Features**
+# **Features**
 - **Implemented**:
   - APIs:
     - Google Maps Markers
@@ -450,12 +450,15 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
     - Popper 
 - **To be implemented**:
   - The APIs need an internet connection to work. If the connection is down, some APIs won't work. Unless you refresh the page, the page would not load the content. Therefore a script to check if `window.navigator.onLine` is `true` - which means the connection is up and the API will run correctly. Otherwise, if is `false`, there must be a way to retry the request few times more and if the connection is still down, an alert would ask the user to check the connection and retry to refresh the page.
-  - Another page, named Gallery, to display images using the Google Places Photos API: when one of the cities' tab is presset, the backend will search on Google Places Details about the location, but only fetch a limited number of picture references returned in the Details object. Using those refrences and Google Photos
-  
+  - Another page, named Gallery, to display images using the Google Places Photos API: 
+    - Will need a function to make a request to Google Places API, using the location or place name.
+    - Inside the function, using the "fetch" method to make a GET request to the API endpoint for photos. The endpoint includes the place ID. 
+    - Using the place ID, we need a request to return a list of photos, with a reference to each photo.
+    - Since the API returns a list of raw photos, we need to process this data and display the photos in a gallery.
 
 ---
 
-## **Issues**
+# **Issues**
 - **Issues and bugs/errors encountered:**
   - Lighthouse CEO score was affected by optimization advice: ```Links are not crawlable```:
     - Cause: Lighthouse description: "Search engines may use `href` attributes on links to crawl websites. Ensure that the `href` attribute of anchor elements links to an appropriate destination, so that more pages of the site can be discovered." Learn more"
@@ -500,10 +503,10 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
     
 ---
 
-## **Testing**
+# **Testing**
 - Testing documentation can be found in the [testing.md](readme-files/testing.md) file.
 
-## **Credits**
+# **Credits**
 - Research, Information and Sources Credits
   - Histria
     - [Histria - Wikipedia](https://en.wikipedia.org/wiki/Histria_(ancient_city))
@@ -563,7 +566,12 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
   - [Font Gelio](https://www.fontspace.com/gelio-font-f11521)
   - [Dobruja (dark green) within Romania and Bulgaria (light green) both in Eastern Europe](https://en.wikipedia.org/wiki/Dobruja)
 
-## **Technologies**
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+
+# **Technologies**
 - For the development of this project I've used different technologies, libraries, API available:
   - Languages:
     - HTML
@@ -594,9 +602,19 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
     - W3C Jigsaw
     - JSHint
 
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
+
 ---
 # **Aknowledgment**
-I would like to thank you to everyone involved into helping me to developing this project, from the Code Institute team and Slack members to my mentor, to City of Bristol College team to my family and friends.
+I would like to thank to everyone involved into helping me to developing this project, from the Code Institute team and Slack members to my mentor, to City of Bristol College team to my family and friends.
 To my mentor, [Adegbenga Adeye](https://github.com/deye9), to whom I am very grateful for his support and guidance throughout the project. To my tutors from City Of Bristol College, [Pasquale F.](https://www.linkedin.com/in/pasquale-fasulo-68612218a/) and [Ben Smith](https://www.linkedin.com/in/benjaminsmith1981/), for their support and patience.
 To my family and friends for their encouragement and moments I had to study and had to be missing spending time with them.
 Thank you all!
+
+<br>
+<p align="right">
+    <a href="#table-of-contents">Return to Table of Contents</a>
+</p>
