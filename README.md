@@ -38,6 +38,7 @@
   - [**Testing**](#testing)
   - [**Credits**](#credits)
   - [**Technologies**](#technologies)
+- [**Aknowledgment**](#aknowledgment)
 
 
 ---
@@ -181,11 +182,6 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
       - External Links Disclaimer
   - Copyright Notice with a link to the GitHub repository of this project.
 
-
-<p align="center">The following diagram represents this structure<br>
-    <img src="readme-files/readme-images/site-structure-diagram-upd.jpg" alt="Site's structure" width="90%">
-</p>
-
 <br>
 <p align="right">
     <a href="#table-of-contents">Return to Table of Contents</a>
@@ -193,6 +189,7 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
 <br>
 
 ---
+
 ## **Responsiveness**
 - The website is built to be responsive on different devices from small to larger screens.
   - To fit smaller screens, the minimum width of the layout is set to 300px. 
@@ -221,17 +218,17 @@ The skeleton plane is represented by the wireframe sketches and they're are loca
 ---
 ## **Layout**
 The general layout of the website is composed of three main areas: [Header](#header), [Content](#main-content-section) and [Footer](#footer). 
-The Header (containing the Logo and the Navigation Menu) and the Footer are common to all pages, but the Content area is different for each page.
+The Header (containing the Logo and the Navigation Menu) and the Footer are common to all pages, but the Content area is specific to each page.
 
 ### **Header** 
 - contains the company's logo and, depending on the device's screen width, a menu navigation bar to the top right (on larger screens) or a hamburger menu button (which opens the hidden menu - in mobile view).
 
 <p align="center">Header with logo, banner and navigation buttons in desktop view"<br>
-    <img src="readme-files/readme-images/pages-view/06-d-nav.png" alt="Header with logo, banner and navigation buttons in desktop view" width="90%">
+    <img src="readme-files/readme-images/pages-view/06-d-nav.png" alt="Header with logo, banner and navigation buttons in desktop view" width="900px">
 </p>
 <p align="center">Mobile view - navigation closed and opened<br>
-<img src="readme-files/readme-images/pages-view/06-m-nav-closed.png" alt="Mobile view - navigation opened" width="40%">
-    <img src="readme-files/readme-images/pages-view/06-m-nav-opened.png" alt="Mobile view - navigation closed" width="40%">
+<img src="readme-files/readme-images/pages-view/06-m-nav-closed.png" alt="Mobile view - navigation opened" width="450px">
+    <img src="readme-files/readme-images/pages-view/06-m-nav-opened.png" alt="Mobile view - navigation closed" width="450px">
 </p>
 
 ---
@@ -240,12 +237,12 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 - The "main content" is the area between the header and the footer of the page and it contains the information specific to the page.
 - There are:
   -  three accessible pages through the navigation menu:
-     - Landing page - briefly about the site.
-     - Cities page - offer information about each of the archaeological site/cities.
-     - Contact page - to send an email.
-   - two directly inaccessible pages:
-     - Success page - displayed when an email has been successfully sent.
-     - 404 page - displayed by the server when an inexistent resource is being accessed.
+     - [Landing page](index.html) - briefly about the site.
+     - [Cities page](citadels-maps.html)- offer information about each of the archaeological site/cities.
+     - [Contact page](contact.html) - to send an email.
+   - two not directly accessible pages:
+     - [Success page](success.html) - displayed when an email has been successfully sent.
+     - [404 page](404.html) - displayed by the server when an inexistent resource is being accessed.
 
 <br>
 <p align="right">
@@ -259,7 +256,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 <p align="center"><strong>Mobile and desktop view</strong>:</p>
 <p align="center">
     <img src="readme-files/readme-images/pages-view/00-m.png" alt="Left - Mobile view" height="600px">
-    <img src="readme-files/readme-images/pages-view/00-d.png" alt="Bottom - Mobile view" width="66%">
+    <img src="readme-files/readme-images/pages-view/00-d.png" alt="Bottom - Mobile view" width="650px">
 </p>
 
 - It contains:
@@ -270,7 +267,7 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
     - On click on each of the markers, the user is directed to the Cities page, where the information about the city is displayed.
     - The map is rendered by using the Google Maps API v3. The scripts to display custom markers is available in the [gmaps-earth.js](/scripts/gmaps-earth.js) file.
 <p align="center">
-    <img src="readme-files/readme-images/pages-view/markers-map.png" alt="Bottom - Mobile view" width="66%">
+    <img src="readme-files/readme-images/pages-view/markers-map.png" alt="Bottom - Mobile view" width="600px">
 </p>
 
 
@@ -284,21 +281,21 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 #### **Cities page**
 - The cities page contains information about the three cities of interest: Histria, Tomis and Callatis. Here the visitor finds the main interest content of the website.
 <p align="center">
-    <img src="readme-files/readme-images/pages-view/02.0-m.png" alt="Bottom - Mobile view" height="700px">
-    <img src="readme-files/readme-images/pages-view/02.1-d.png" alt="Bottom - Mobile view" height="700px" max-width="66%">
+    <img src="readme-files/readme-images/pages-view/02.0-m.png" alt="Bottom - Mobile view" height="600px">
+    <img src="readme-files/readme-images/pages-view/02.1-d.png" alt="Bottom - Mobile view" width="650px">
 </p>
 
 - At first rendering the page displays a call-to-action area, brightly colored, which invites the visitor to click one of the tabs bellow, which correspond to the three cities.
 <p align="center"><strong>Call to Action element, in yellow color</strong>:</p>
 <p align="center">
-    <img src="readme-files/readme-images/pages-view/cta-select-city.png" alt="Call to action element" width="66%">
+    <img src="readme-files/readme-images/pages-view/cta-select-city.png" alt="Call to action element" width="650px">
 </p>
 <p align="center"><strong>After the user clicks any of the cities button, the sub-tabs buttons are displayed too</strong>:</p>
 <p align="center">
-    <img src="readme-files/readme-images/pages-view/nav-tabs-subtabs.png" alt="Tabs and Subtabs buttons" width="66%">
+    <img src="readme-files/readme-images/pages-view/nav-tabs-subtabs.png" alt="Tabs and Subtabs buttons" width="650px">
 </p>
 
-- When a city is selected, by default the `Chronicle` sub-tab content is displayed. 
+- When a city tab is clicked, by default the `Chronicle` sub-tab content is displayed. This was achieved by using a script. 
 - The tabs and the sub-tabs buttons have hover effects applied to them, so that the user can see that they are clickable. Also all tabs have an active class attached to them dynamically, so that the user can see which tab is currently active. For the main tabs (the cities' tabs) the active class makes the buttons text all to uppercase and text grows and adds a bottom red line. For the sub-tabs the active class makes the buttons' text to grow and adds a bottom red line. These effects are obtained by using CSS and JS [script `tabs-display.js`](/scripts/tabs-display.js).
 - When the user clicks on any of the three tabs, the call-to-action area is not displayed anymore and the content area  displays a new layout composed of three main tabs (the cities' tabs) and bellow those other three subtabs, which correspond to three categories of information about the city: 
   - <strong>Chronicle:</strong>
@@ -306,17 +303,16 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
     - an image of a coinage of the city is displayed bellow the content's header.
     - at the very bottom some links to external resources are displayed. They also serve as sources of the information.
 <p align="center">
-    <img src="readme-files/readme-images/pages-view/02.1.1-m.png" alt="Chronicle - Mobile view" height="700px">
-    <img src="readme-files/readme-images/pages-view/02.1.1-d.png" alt="Chronicle - Desktop view" max-width="66%">
+    <img src="readme-files/readme-images/pages-view/02.1.1-m.png" alt="Chronicle - Mobile view" height="900px">
+    <img src="readme-files/readme-images/pages-view/02.1.1-d.png" alt="Chronicle - Desktop view" width="650px">
 </p>
 
   - <strong>Wikipedia:</strong>
-  - 
-    - When the user clicks the Wikipedia sub-tab, the content area is rendered. It contains fetched information from sending a request to Wikipedia API and reading the content of the response from the API. The information is grouped in seven links list; each have a header and a short preview of the article which the link takes to. On hover over the links there are effects applied to the links and the preview text, so that the user may know that the links are clickable.
+    - When the user clicks the Wikipedia sub-tab, the content area is rendered. It contains fetched information from sending a request to Wikipedia API and reading the content of the response from the API. The information is grouped in seven links list; each have a header and a short preview of the article which the link takes to. On hover over the links there are effects applied to the links and the preview text, so that the user may know that the links are clickable. On clikc on each of the link a new tab is opened, which takes the user to the Wikipedia article.
     - The fetching is done at the first press of the Wikipedia sub-tab button. If the user leaves the page and comes back, the content is fetched again.
 <p align="center">
-    <img src="readme-files/readme-images/pages-view/02.2.1-m.png" alt="Wikipedia - Mobile view" height="700px">
-    <img src="readme-files/readme-images/pages-view/02.2.1-d.png" alt="Wikipedia - Desktop view" height="700px" max-width="66%">
+    <img src="readme-files/readme-images/pages-view/02.1.2-m.png" alt="Wikipedia - Mobile view" height="600px">
+    <img src="readme-files/readme-images/pages-view/02.1.2-d.png" alt="Wikipedia - Desktop view" width="650px">
 </p>
 
   - <strong>Maps:</strong>
@@ -324,8 +320,8 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
       - Satellite views of the archaeological site.
       - 360 view of the archaeological site or museums dedicated to each city.
 <p align="center">
-    <img src="readme-files/readme-images/pages-view/02.3.1-m.png" alt="Maps - Mobile view" height="700px">
-    <img src="readme-files/readme-images/pages-view/02.3.1-d.png" alt="Maps - Desktop view" height="700px" max-width="66%">
+    <img src="readme-files/readme-images/pages-view/02.1.3-m.png" alt="Maps - Mobile view" height="600px">
+    <img src="readme-files/readme-images/pages-view/02.1.3-d.png" alt="Maps - Desktop view" width="650px">
 </p>
 
 <br>
@@ -397,8 +393,8 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
 
 <p align="center">Mobile and Desktop view</p>
 <p align="center">
-    <img src="readme-files/readme-images/pages-view/07-foo-m.png" alt="Footer in mobile view" height="700px">
-    <img src="readme-files/readme-images/pages-view/07-foo-d.png" alt="Footer in desktop view" height="700px" max-width="66%">
+    <img src="readme-files/readme-images/pages-view/07-foo-m.png" alt="Footer in mobile view" height="600px">
+    <img src="readme-files/readme-images/pages-view/07-foo-d.png" alt="Footer in desktop view" width="650px">
 </p>
 <br>
 <p align="right">
@@ -597,3 +593,10 @@ The Header (containing the Logo and the Navigation Menu) and the Footer are comm
     - WC3 Markup
     - W3C Jigsaw
     - JSHint
+
+---
+# **Aknowledgment**
+I would like to thank you to everyone involved into helping me to developing this project, from the Code Institute team and Slack members to my mentor, to City of Bristol College team to my family and friends.
+To my mentor, [Adegbenga Adeye](https://github.com/deye9), to whom I am very grateful for his support and guidance throughout the project. To my tutors from City Of Bristol College, [Pasquale F.](https://www.linkedin.com/in/pasquale-fasulo-68612218a/) and [Ben Smith](https://www.linkedin.com/in/benjaminsmith1981/), for their support and patience.
+To my family and friends for their encouragement and moments I had to study and had to be missing spending time with them.
+Thank you all!
