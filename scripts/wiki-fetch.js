@@ -19,7 +19,6 @@ function fetchWiki(id) {
 
 // This function fetches the results from the Wikipedia API:
 function fetchWikiResults(x) {
-	// let url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${x}`;
 	let url = "https://en.wikipedia.org/w/api.php?" +
 		new URLSearchParams({
 			"action": "query",
@@ -62,7 +61,6 @@ function printResultsOnPage(myArray) {
 		let itemTitle = item.title;
 		let itemSnippet = item.snippet;
 		let itemUrl = encodeURI(`https://en.wikipedia.org/wiki/${item.title}`);
-
 		fetchedInfoResponse.insertAdjacentHTML('beforeend',
 			`<div class="resultItem">
          <h3 class="resultTitle">
