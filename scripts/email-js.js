@@ -14,7 +14,6 @@ function sendMail(contactForm) {
                 alert("Email couldn't be sent. Please check your internet connection and try again!");
             }
         );
-    // To block from loading a new page
     return false;
 }
 
